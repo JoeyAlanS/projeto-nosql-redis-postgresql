@@ -1,0 +1,12 @@
+{
+  "name": "observatorio-iot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ferramentas de teste do dashboard acadêmico PostgreSQL/Redis",
+  "scripts": {
+    "test:browser": "node scripts/browser_check.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

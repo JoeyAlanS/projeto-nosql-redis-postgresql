@@ -1,0 +1,13 @@
+data
+results
+output
+tmp
+.git
+.venv
+.env
+.env.*
+docs
+node_modules
+__pycache__
+*.pyc
+.chart-data-*

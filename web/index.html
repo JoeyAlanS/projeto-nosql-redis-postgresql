@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Observatório IoT · Telemetria do campus</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+<aside>
+  <a class="brand" href="/" aria-label="Observatório IoT, início"><span class="brand-icon">◉</span><span>observatório<span class="brand-sub">IoT / CAMPUS</span></span></a>
+  <div class="aside-label">ESPAÇO DE ANÁLISE</div>
+  <a class="nav active" href="#overview"><span>◫</span> Visão geral</a>
+  <a class="nav" href="#comparison"><span>↔</span> Comparar bancos</a>
+  <a class="nav" href="#experiment"><span>▥</span> Experimento</a>
+  <div class="aside-bottom"><span class="green-dot"></span> Projeto 3 · Banco de Dados<span>Redis e PostgreSQL</span><a href="/docs" target="_blank" rel="noopener">Documentação da API ↗</a></div>
+</aside>
+<main>
+  <header><div class="breadcrumb">Campus / Monitoramento</div><div id="connection" role="status">Conectando aos bancos…</div></header>
+  <section id="overview">
+    <div class="heading"><div><p class="eyebrow">OBSERVATÓRIO DE SENSORES</p><h1>Telemetria do campus</h1><p class="muted">Explore as leituras ambientais e compare o tempo de consulta dos dois bancos.</p></div><button id="refresh" class="secondary">↻ Atualizar</button></div>
+    <div class="toolbar">
+      <div><span class="label">Fonte de dados</span><div class="source-switch" role="group" aria-label="Fonte de dados"><button data-source="postgres" aria-pressed="true">PostgreSQL</button><button data-source="redis" aria-pressed="false">Redis</button></div></div>
+      <label>Local<select id="location"><option value="">Todos os locais</option></select></label>
+      <label>Sensor<select id="sensor"><option value="">Todos os sensores</option></select></label>
+      <label>De (UTC)<input id="start" type="datetime-local" step="60"></label>
+      <label>Até (UTC)<input id="end" type="datetime-local" step="60"></label>
+      <button id="apply" class="primary">Aplicar filtros</button>
+    </div>
+    <div id="error" role="alert" hidden></div>
+    <div class="summary-heading"><span id="scope">Carregando dados…</span><span id="query-time" class="timing">—</span></div>
+    <div class="metrics">
+      <article class="metric"><span>Leituras no período</span><strong id="count">—</strong><small>Medições ambientais</small></article>
+      <article class="metric"><span>Temperatura média</span><strong id="temperature">—</strong><small id="temperature-range">—</small></article>
+      <article class="metric"><span>Sensores com leituras</span><strong id="sensor-count">—</strong><small>Dentro dos filtros selecionados</small></article>
+      <article class="metric"><span>Leituras em alerta</span><strong id="alerts">—</strong><small id="alert-percentage">Temperatura acima de 32 °C</small></article>
+    </div>
+    <article class="panel chart-panel"><div class="panel-head"><div><p class="eyebrow">EVOLUÇÃO DA TEMPERATURA</p><h2 id="history-title">Histórico do sensor</h2></div><span id="history-time" class="timing">—</span></div><div id="chart" aria-live="polite"></div><div class="chart-note"><span><i class="line-key"></i> Temperatura (°C)</span><span id="history-note">Leituras em ordem cronológica</span></div></article>
+  </section>
+  <section id="comparison" class="comparison-section">
+    <div class="section-heading"><div><p class="eyebrow">CONSULTA AO VIVO</p><h2>Uma leitura, dois bancos</h2><p class="muted">Busque o mesmo identificador nas duas fontes e confira os resultados.</p></div><div class="lookup"><label for="reading-id">ID da leitura</label><input id="reading-id" type="number" min="1" value="500001"><button id="lookup" class="primary">Comparar agora ↗</button></div></div>
+    <div class="comparison-grid"><article class="panel"><div class="panel-head"><h3>Busca por identificador</h3><span id="equivalence" class="badge">Aguardando consulta</span></div><div id="live-bars"></div><p class="small muted">Tempo de acesso ao banco com rede e leitura da resposta. Uma execução por fonte; variações são esperadas.</p></article><article class="panel"><p class="eyebrow">RESULTADO DA CONSULTA</p><div id="reading-detail" class="reading-detail">Selecione uma leitura para consultar os bancos.</div></article></div>
+  </section>
+  <section id="experiment"><div class="section-heading"><div><p class="eyebrow">MEDIÇÕES REPRODUZÍVEIS</p><h2>Desempenho por operação</h2><p id="benchmark-description" class="muted">Carregando resultados do experimento…</p></div><div class="legend"><span><i class="pg-key"></i> PostgreSQL</span><span><i class="redis-key"></i> Redis</span></div></div><article class="panel"><div id="benchmark-chart"></div><p class="small muted">Medianas em milissegundos. Barras com escala própria em cada operação. Veja os valores para comparar operações diferentes.</p></article><p class="footnote" id="dataset-info"></p></section>
+  <footer>Observatório IoT <span>Projeto 3 · Bancos de Dados NoSQL · 2026</span></footer>
+</main>
+</body></html>

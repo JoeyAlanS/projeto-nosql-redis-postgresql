@@ -1,0 +1,15 @@
+{
+  "initial_count": "1.000.000",
+  "source_switch_equivalent": true,
+  "location_count": 100000,
+  "sensor_count": 1000,
+  "filtered_count": 145,
+  "live_equivalent": true,
+  "missing_reading_handled": true,
+  "divergent_sources_handled": true,
+  "invalid_dates_handled": true,
+  "query_requests": 14,
+  "console_errors": [],
+  "mobile_horizontal_overflow": false,
+  "passed": true
+}

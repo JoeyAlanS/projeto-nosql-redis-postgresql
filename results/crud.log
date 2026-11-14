@@ -1,0 +1,44 @@
+{
+  "executed_at": "2026-11-14T14:48:03.763682+00:00",
+  "operations": [
+    {
+      "source": "postgres",
+      "created_and_read": {
+        "id": 9000000002,
+        "sensor_id": 1,
+        "ts": 1793963700,
+        "temperature_centi": 2900,
+        "humidity_centi": 6000
+      },
+      "updated_and_read": {
+        "id": 9000000002,
+        "sensor_id": 1,
+        "ts": 1793963700,
+        "temperature_centi": 3400,
+        "humidity_centi": 6000
+      },
+      "after_delete": null,
+      "passed": true
+    },
+    {
+      "source": "redis",
+      "created_and_read": {
+        "id": 9000000002,
+        "sensor_id": 1,
+        "ts": 1793963700,
+        "temperature_centi": 2900,
+        "humidity_centi": 6000
+      },
+      "updated_and_read": {
+        "id": 9000000002,
+        "sensor_id": 1,
+        "ts": 1793963700,
+        "temperature_centi": 3400,
+        "humidity_centi": 6000
+      },
+      "after_delete": null,
+      "passed": true
+    }
+  ],
+  "equivalent": true
+}

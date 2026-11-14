@@ -1,0 +1,44 @@
+[
+  {
+    "Service": "app",
+    "Image": "projeto-nosql-iot-app",
+    "State": "running",
+    "Health": "healthy",
+    "Publishers": [
+      {
+        "URL": "127.0.0.1",
+        "TargetPort": 8000,
+        "PublishedPort": 8000,
+        "Protocol": "tcp"
+      }
+    ]
+  },
+  {
+    "Service": "postgres",
+    "Image": "postgres:17@sha256:846a7ddaa67a4b354ae1d21087b683901aa6113a4ed626d3787cfbf6c85e3e07",
+    "State": "running",
+    "Health": "healthy",
+    "Publishers": [
+      {
+        "URL": "127.0.0.1",
+        "TargetPort": 5432,
+        "PublishedPort": 55432,
+        "Protocol": "tcp"
+      }
+    ]
+  },
+  {
+    "Service": "redis",
+    "Image": "redis:8@sha256:1f88291b4c57bdf249f02eb085a8669889b2d2954e91d4de5118a5da6b78dd53",
+    "State": "running",
+    "Health": "healthy",
+    "Publishers": [
+      {
+        "URL": "127.0.0.1",
+        "TargetPort": 6379,
+        "PublishedPort": 56379,
+        "Protocol": "tcp"
+      }
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "postgres_table_and_index_bytes": 217669632,
+  "indexes": [
+    {
+      "indexname": "sensors_pkey",
+      "indexdef": "CREATE UNIQUE INDEX sensors_pkey ON public.sensors USING btree (id)",
+      "bytes": 40960
+    },
+    {
+      "indexname": "sensors_location_idx",
+      "indexdef": "CREATE INDEX sensors_location_idx ON public.sensors USING btree (location, id)",
+      "bytes": 57344
+    },
+    {
+      "indexname": "readings_pkey",
+      "indexdef": "CREATE UNIQUE INDEX readings_pkey ON public.readings USING btree (id)",
+      "bytes": 22487040
+    },
+    {
+      "indexname": "readings_sensor_id_ts_key",
+      "indexdef": "CREATE UNIQUE INDEX readings_sensor_id_ts_key ON public.readings USING btree (sensor_id, ts)",
+      "bytes": 42123264
+    },
+    {
+      "indexname": "readings_sensor_ts_idx",
+      "indexdef": "CREATE INDEX readings_sensor_ts_idx ON public.readings USING btree (sensor_id, ts DESC, id DESC) INCLUDE (temperature_centi, humidity_centi)",
+      "bytes": 84287488
+    },
+    {
+      "indexname": "readings_ts_idx",
+      "indexdef": "CREATE INDEX readings_ts_idx ON public.readings USING btree (ts)",
+      "bytes": 8241152
+    }
+  ],
+  "note": "Diret\u00f3rios persistidos incluem WAL/configura\u00e7\u00e3o. M\u00e9tricas complementares em load.json."
+}

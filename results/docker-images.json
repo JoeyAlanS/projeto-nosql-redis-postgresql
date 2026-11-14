@@ -1,0 +1,32 @@
+[
+  {
+    "ID": "sha256:ada05791ad9a087dacdc8e5ba1b94468624b02cd4a1d81d8625af98464832df4",
+    "ContainerName": "projeto-nosql-iot-app-1",
+    "Repository": "projeto-nosql-iot-app",
+    "Tag": "latest",
+    "Platform": "linux/amd64",
+    "Size": 235519192,
+    "Created": "2026-11-14T11:47:04.79108688-03:00",
+    "LastTagTime": "2026-11-14T14:47:04.911821527Z"
+  },
+  {
+    "ID": "sha256:1f88291b4c57bdf249f02eb085a8669889b2d2954e91d4de5118a5da6b78dd53",
+    "ContainerName": "projeto-nosql-iot-redis-1",
+    "Repository": "redis",
+    "Tag": "",
+    "Platform": "linux/amd64",
+    "Size": 210830552,
+    "Created": "2026-11-05T07:36:42.330039317Z",
+    "LastTagTime": "2026-11-14T14:01:32.02456934Z"
+  },
+  {
+    "ID": "sha256:846a7ddaa67a4b354ae1d21087b683901aa6113a4ed626d3787cfbf6c85e3e07",
+    "ContainerName": "projeto-nosql-iot-postgres-1",
+    "Repository": "postgres",
+    "Tag": "",
+    "Platform": "linux/amd64",
+    "Size": 665162665,
+    "Created": "2026-11-12T20:55:34.149099236Z",
+    "LastTagTime": "2026-11-14T14:01:37.023931577Z"
+  }
+]

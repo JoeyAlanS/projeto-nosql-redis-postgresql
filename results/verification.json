@@ -1,0 +1,16 @@
+{
+  "verified_at": "2026-11-14T14:48:51.424194+00:00",
+  "checked_readings": 1000000,
+  "postgres_count": 1000000,
+  "redis_count": 1000000,
+  "sha256": {
+    "csv": "519f2a3fceac765890289c51876e3be1980ff8c03d9f74d9768beb84a264369f",
+    "postgres": "519f2a3fceac765890289c51876e3be1980ff8c03d9f74d9768beb84a264369f",
+    "redis": "519f2a3fceac765890289c51876e3be1980ff8c03d9f74d9768beb84a264369f"
+  },
+  "sensors_verified": 1000,
+  "all_temporal_and_unique_indexes_verified": true,
+  "redis_evicted_keys": 0,
+  "seconds": 47.10602739699971,
+  "equivalent": true
+}

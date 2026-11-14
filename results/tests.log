@@ -1,0 +1,16 @@
+test_conflicting_update_keeps_original_record_and_indexes (test_integration.DatabaseContracts.test_conflicting_update_keeps_original_record_and_indexes) ... ok
+test_crud_maintains_temporal_and_unique_indexes (test_integration.DatabaseContracts.test_crud_maintains_temporal_and_unique_indexes) ... ok
+test_duplicate_and_foreign_key_rejected (test_integration.DatabaseContracts.test_duplicate_and_foreign_key_rejected) ... ok
+test_empty_and_unknown_location_return_equivalent_empty_results (test_integration.DatabaseContracts.test_empty_and_unknown_location_return_equivalent_empty_results) ... ok
+test_equivalent_reads_and_empty_ranges (test_integration.DatabaseContracts.test_equivalent_reads_and_empty_ranges) ... ok
+test_http_crud_roundtrip (test_integration.DatabaseContracts.test_http_crud_roundtrip) ... ok
+test_http_filters_comparison_and_validation (test_integration.DatabaseContracts.test_http_filters_comparison_and_validation) ... ok
+test_invalid_numbers_rejected_without_writing (test_integration.DatabaseContracts.test_invalid_numbers_rejected_without_writing) ... ok
+test_missing_update_and_delete (test_integration.DatabaseContracts.test_missing_update_and_delete) ... ok
+test_query_and_path_integer_boundaries (test_integration.DatabaseContracts.test_query_and_path_integer_boundaries) ... ok
+test_redis_delete_returns_version_deleted_under_interleaved_update (test_integration.DatabaseContracts.test_redis_delete_returns_version_deleted_under_interleaved_update) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.847s
+
+OK

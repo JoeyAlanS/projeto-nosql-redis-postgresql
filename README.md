@@ -60,11 +60,17 @@ Filtros de local/sensor atualizam as consultas imediatamente. O gráfico tempora
 
 ## CRUD
 
+Para a entrega de **17/11**, a pasta [exemplos/redis](exemplos/redis/README.md) contém três programas curtos: CRUD com hash, histórico com sorted set e cache com TTL. Execute `make up` e `make exemplos-redis`; teste com `make test-exemplos-redis`. Os programas usam chaves `demo:` exclusivas e não dependem da massa principal.
+
+O [guia de demonstração de 17/11](docs/DEMONSTRACAO_17_11.md) explica o que mostrar na tela, quais trechos de código apresentar e como comparar PostgreSQL com Redis. A [revisão do Projeto_Vendas fornecido](docs/REVISAO_PROJETO_VENDAS.md) registra os problemas reproduzidos e as correções necessárias antes de usá-lo como evidência.
+
 Cada operação recebe `source=postgres` ou `source=redis`. Não há transação distribuída. A demonstração abaixo aplica o mesmo CRUD nas duas fontes e limpa os dados de demonstração:
 
 ```bash
 docker compose exec -T app python -m scripts.crud_demo
 ```
+
+O atalho equivalente é `make crud`. O resultado esperado é `passed: true` para cada fonte e `equivalent: true` para os registros criados e lidos.
 
 Exemplo HTTP de criação, seguido de leitura, atualização e exclusão. Repita trocando a fonte para exercitar os dois bancos:
 

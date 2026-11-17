@@ -11,6 +11,7 @@ O conteúdo técnico foi preparado e executado localmente em 14/11/2026. Os PDFs
 | Aplicações reais no mercado | MEO, Axis Bank e WRSTBND com fontes primárias |
 | Vantagens/desvantagens e comparação explícita | Entrega 2 e docs/02_modelagem.md |
 | Definição do problema e modelos nos dois bancos | Entrega 2, SVGs e DDL/índices SQL |
+| Exemplos didáticos para demonstrar a entrega de 17/11 | exemplos/redis: hash/CRUD, histórico por período e cache com TTL |
 | CRUD equivalente | API por fonte, scripts/crud_demo.py, results/crud.json |
 | Massa de pelo menos 1.000.000 de registros lógicos | Contagem e verificação integral com SHA-256 idêntico |
 | Geração/carga, origem, tamanho e tempo | Entrega 3 e results/load.json |

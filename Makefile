@@ -1,4 +1,4 @@
-.PHONY: up load verify benchmark test browser audit logs stop package all
+.PHONY: up load verify benchmark test browser audit logs stop package all crud exemplos-redis test-exemplos-redis
 .NOTPARALLEL: all
 up:
 	docker compose up -d --build --wait
@@ -14,6 +14,14 @@ test:
 	@cat results/tests.log
 browser:
 	npm run test:browser
+crud:
+	docker compose exec -T app python -m scripts.crud_demo
+exemplos-redis:
+	docker compose exec -T app python exemplos/redis/01_crud_hash.py
+	docker compose exec -T app python exemplos/redis/02_historico_sensor.py
+	docker compose exec -T app python exemplos/redis/03_cache_ttl.py
+test-exemplos-redis:
+	docker compose exec -T app python -m unittest discover -s exemplos/redis -p 'test_*.py' -v
 audit:
 	python3 scripts/audit_delivery.py
 logs:

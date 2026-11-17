@@ -1,0 +1,159 @@
+{
+  "data_local": "2026-11-16",
+  "ambiente": "Bancos isolados em PostgreSQL 17 e Redis 8; cópia temporária dos scripts; CSVs fornecidos; sem .env original.",
+  "contagens_antes": {
+    "tipo_cliente": {
+      "postgres": 2,
+      "redis": 2
+    },
+    "cliente": {
+      "postgres": 100000,
+      "redis": 100000
+    },
+    "endereco": {
+      "postgres": 100000,
+      "redis": 100000
+    },
+    "telefone": {
+      "postgres": 100000,
+      "redis": 100000
+    },
+    "categoria": {
+      "postgres": 8,
+      "redis": 8
+    },
+    "produto": {
+      "postgres": 100000,
+      "redis": 100000
+    },
+    "status": {
+      "postgres": 5,
+      "redis": 5
+    },
+    "pedido": {
+      "postgres": 500000,
+      "redis": 500000
+    },
+    "pedido_has_produto": {
+      "postgres": 500000,
+      "redis": 500000
+    }
+  },
+  "sequencias_apos_copy": {
+    "cliente": {
+      "max_id": 100000,
+      "last_value": 1,
+      "is_called": false
+    },
+    "endereco": {
+      "max_id": 100000,
+      "last_value": 1,
+      "is_called": false
+    },
+    "telefone": {
+      "max_id": 100000,
+      "last_value": 1,
+      "is_called": false
+    },
+    "produto": {
+      "max_id": 100000,
+      "last_value": 1,
+      "is_called": false
+    },
+    "pedido": {
+      "max_id": 500000,
+      "last_value": 1,
+      "is_called": false
+    }
+  },
+  "crud_original": [
+    {
+      "script": "testar_crud.py",
+      "exit_code": 0,
+      "duplicidade_pk": true,
+      "mensagem_sucesso": false,
+      "fim_log": "\n1. CREATE - CADASTRAR CLIENTE\n\nErro durante o CRUD: duplicate key value violates unique constraint \"cliente_pkey\"\nDETAIL:  Key (id_cliente)=(1) already exists.\n"
+    },
+    {
+      "script": "testar_crud_produto.py",
+      "exit_code": 1,
+      "duplicidade_pk": true,
+      "mensagem_sucesso": false,
+      "fim_log": "ndas-1711/scripts/testar_crud_produto.py\", line 48, in <module>\n    cursor.execute(\"\"\"\n    ~~~~~~~~~~~~~~^^^^\n        INSERT INTO produto\n        ^^^^^^^^^^^^^^^^^^^\n    ...<2 lines>...\n        RETURNING id_produto\n        ^^^^^^^^^^^^^^^^^^^^\n    \"\"\", (id_categoria, nome, descricao, preco, estoque))\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/revisao-projeto-vendas-1711/venv/lib/python3.14/site-packages/psycopg/cursor.py\", line 117, in execute\n    raise ex.with_traceback(None)\npsycopg.errors.UniqueViolation: duplicate key value violates unique constraint \"produto_pkey\"\nDETAIL:  Key (id_produto)=(1) already exists.\n"
+    },
+    {
+      "script": "testar_crud_pedido.py",
+      "exit_code": 1,
+      "duplicidade_pk": true,
+      "mensagem_sucesso": false,
+      "fim_log": "-vendas-1711/scripts/testar_crud_pedido.py\", line 57, in <module>\n    cursor.execute(\"\"\"\n    ~~~~~~~~~~~~~~^^^^\n        INSERT INTO pedido\n        ^^^^^^^^^^^^^^^^^^\n    ...<2 lines>...\n        RETURNING id_pedido, data_pedido\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    \"\"\", (id_cliente, id_status, valor_total))\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/revisao-projeto-vendas-1711/venv/lib/python3.14/site-packages/psycopg/cursor.py\", line 117, in execute\n    raise ex.with_traceback(None)\npsycopg.errors.UniqueViolation: duplicate key value violates unique constraint \"pedido_pkey\"\nDETAIL:  Key (id_pedido)=(1) already exists.\n"
+    },
+    {
+      "script": "testar_crud_item_pedido.py",
+      "exit_code": 0,
+      "duplicidade_pk": false,
+      "mensagem_sucesso": true,
+      "fim_log": "\n1. CREATE - CADASTRAR ITEM DO PEDIDO\nItem cadastrado nos dois bancos!\nPedido: 1\nProduto: 1\n\n2. READ - CONSULTAR ITEM DO PEDIDO\nPostgreSQL: (1, 1, 2, Decimal('199.90'))\nRedis: {'id_pedido': '1', 'id_produto': '1', 'quantidade': '2', 'preco_unitario': '199.9'}\n\n3. UPDATE - ATUALIZAR ITEM DO PEDIDO\nItem atualizado nos dois bancos!\n\n4. DELETE - EXCLUIR ITEM DO PEDIDO\nItem excluido dos dois bancos!\n\nVerificacao final:\nPostgreSQL: 0\nRedis: 0\n\nCRUD FINALIZADO COM SUCESSO!\n"
+    }
+  ],
+  "contagens_depois": {
+    "tipo_cliente": {
+      "postgres": 2,
+      "redis": 2
+    },
+    "cliente": {
+      "postgres": 100000,
+      "redis": 100000
+    },
+    "endereco": {
+      "postgres": 100000,
+      "redis": 100000
+    },
+    "telefone": {
+      "postgres": 100000,
+      "redis": 100000
+    },
+    "categoria": {
+      "postgres": 8,
+      "redis": 8
+    },
+    "produto": {
+      "postgres": 100000,
+      "redis": 100000
+    },
+    "status": {
+      "postgres": 5,
+      "redis": 5
+    },
+    "pedido": {
+      "postgres": 500000,
+      "redis": 500000
+    },
+    "pedido_has_produto": {
+      "postgres": 500000,
+      "redis": 500000
+    }
+  },
+  "totais_pedidos": {
+    "pedidos": 500000,
+    "totais_divergentes": 499998,
+    "exemplos": [
+      {
+        "id_pedido": "1",
+        "total_pedido": "1568.07",
+        "total_item": "7979.4"
+      },
+      {
+        "id_pedido": "2",
+        "total_pedido": "1418.27",
+        "total_item": "4167.12"
+      },
+      {
+        "id_pedido": "3",
+        "total_pedido": "1806.8",
+        "total_item": "2732.54"
+      }
+    ]
+  },
+  "limites": "Contagens nos dois bancos e verificação integral dos totais dos CSVs. Não foi feita comparação integral campo a campo de todos os registros entre os bancos. Carga executada em paralelo, sem finalidade de benchmark."
+}

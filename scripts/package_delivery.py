@@ -19,7 +19,7 @@ if CSV.exists():
     with gzip.open(GZIP,'rb') as f:
         h=hashlib.file_digest(f,'sha256').hexdigest()
     assert h==expected,'A massa compactada diverge do CSV verificado'
-include_dirs=['app','web','sql','scripts','tests','docs','results','output/pdf','output/apresentacao']
+include_dirs=['app','web','sql','scripts','tests','exemplos','docs','results','output/pdf','output/apresentacao']
 include_files=['README.md','Makefile','Dockerfile','compose.yaml','requirements.txt','requirements.lock.txt',
                'package.json','package-lock.json','.gitattributes','.gitignore','.dockerignore','.env.example','data/readings.csv.gz']
 files=[ROOT/name for name in include_files if (ROOT/name).exists()]

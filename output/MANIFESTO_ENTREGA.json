@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-11-17T01:57:49.607776+00:00",
+  "created_at": "2026-11-17T02:35:16.492052+00:00",
   "files": [
     {
       "path": ".dockerignore",
@@ -43,8 +43,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 11155,
-      "sha256": "0779c21790651e17ff47aa406111de0400994aa6eb5b159696889b0437fbefae"
+      "bytes": 11553,
+      "sha256": "97eb8f8525fd5e7e36ceec196160e744a603df88d91ffd66e3b346c547b6e0ad"
     },
     {
       "path": "app/__init__.py",
@@ -112,6 +112,11 @@
       "sha256": "50621f7c1e309fc3af660cd4aad6f648ada879259ee6bdb433a0ee2546ba8c78"
     },
     {
+      "path": "docs/MANUAL_COMPLETO.md",
+      "bytes": 20834,
+      "sha256": "550aea64e9be89599da186eadf724dc538ce6453bd23adc2e9ae6e74c77eba77"
+    },
+    {
       "path": "docs/REVISAO_PROJETO_VENDAS.md",
       "bytes": 5754,
       "sha256": "304ed55fe08bfa54b55a0b660b11c49b723c681574ae2ca08b48e55219307a00"
@@ -150,6 +155,16 @@
       "path": "docs/modelos/arquitetura.svg",
       "bytes": 3418,
       "sha256": "8d02647a994b070d95112da504c9a0736909de9124c36e5d52fc1c87db281601"
+    },
+    {
+      "path": "docs/modelos/fluxo_leitura.png",
+      "bytes": 40153,
+      "sha256": "73120b41b23f29a14d8dbab0322ca5c1adc5d03a3f2a1ff7f1335fec2f0c5823"
+    },
+    {
+      "path": "docs/modelos/fluxo_leitura.svg",
+      "bytes": 2876,
+      "sha256": "c6ee4ce97122cafb51b6b0e7d0665a429189d0e6ebeae56a95d36e1ea286bbe9"
     },
     {
       "path": "docs/modelos/redis.svg",
@@ -212,6 +227,11 @@
       "sha256": "c177cb38e8117883d8904c80bbfa3f9fa61a5251757dfe205a6af62ae8bfb8ac"
     },
     {
+      "path": "output/documentos/Manual_Completo_Observatorio_IoT.docx",
+      "bytes": 87195,
+      "sha256": "9944c123678f73024d3926a74d8795fb442cdc8ea124072770fc86ea66624185"
+    },
+    {
       "path": "output/pdf/Entrega_1_Pesquisa.pdf",
       "bytes": 158506,
       "sha256": "e852bfd6529a5d529ee7b286ebffe6ca4c54f0180e2220293054251ecc3b1970"
@@ -230,6 +250,11 @@
       "path": "output/pdf/Entrega_4_Experimentos_e_Dashboard.pdf",
       "bytes": 263808,
       "sha256": "63ad521d4518d9a44f09de206c93f1a2c6b2d35e219e1ab7bfdc04789f01d746"
+    },
+    {
+      "path": "output/pdf/Manual_Completo_Observatorio_IoT.pdf",
+      "bytes": 247180,
+      "sha256": "320a6eceb8272c106f9a9192c25b0eff175442683aaf6d570d295dd73a07c6fc"
     },
     {
       "path": "output/pdf/Relatorio_Completo_Projeto_3.pdf",
@@ -279,12 +304,17 @@
     {
       "path": "results/crud.json",
       "bytes": 993,
-      "sha256": "85f5837e8886311e0de8dca3336f65bbe0dc40eff3cfac206bf7245a2226e009"
+      "sha256": "0daaa467f8c7f64c8807955538b6a594086be6acc8865b1fd7facce1249542b2"
     },
     {
       "path": "results/crud.log",
       "bytes": 993,
       "sha256": "0f7c339b194bb3ea6b78de30e3be309e17adb72606b5d6ea53620b3d2a3c4bd6"
+    },
+    {
+      "path": "results/demonstracao_fluxo.json",
+      "bytes": 5102,
+      "sha256": "1ee52a6cb7cb7cddea74e0d6b8328da10b6c7377a949e4e4af84b4966e25d194"
     },
     {
       "path": "results/docker-images.json",
@@ -438,8 +468,8 @@
     },
     {
       "path": "scripts/package_delivery.py",
-      "bytes": 2148,
-      "sha256": "48fa07dfb3616b7fb95a18699d4fdae33c2cf2637f8df60ee4ce4ac04ab4ce5b"
+      "bytes": 2168,
+      "sha256": "01c0bc8de2f152df16f5f13951e5fe661971c33daa119116aed39bd367a64cff"
     },
     {
       "path": "scripts/summarize_results.py",

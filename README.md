@@ -6,6 +6,8 @@ Repositório dedicado da entrega: [JoeyAlanS/projeto-nosql-redis-postgresql](htt
 
 Para ensaiar, siga o [roteiro de apresentação e VS Code](docs/ROTEIRO_VSCODE.md). Abra `Observatorio_IoT.code-workspace` no VS Code e use **Terminal > Executar Tarefa**, escolhendo as tarefas `IoT:` para iniciar os serviços, executar os exemplos e testar a aplicação.
 
+O [manual completo](docs/MANUAL_COMPLETO.md) demonstra o fluxo de leitura, os quatro exemplos, a modelagem, o benchmark e a quantidade de registros. As versões para leitura e edição estão em [PDF](output/pdf/Manual_Completo_Observatorio_IoT.pdf) e [Word](output/documentos/Manual_Completo_Observatorio_IoT.docx). A execução demonstrada está registrada em `results/demonstracao_fluxo.json`.
+
 ## Executar
 
 Requisitos: Docker com Compose v2 ou superior, aproximadamente 2 GB de RAM disponíveis para os serviços e 2 GB de disco livre. O computador usado na entrega tem 16 GB de RAM. O frontend usa HTML/CSS/JavaScript local, sem CDN ou instalação de Node.

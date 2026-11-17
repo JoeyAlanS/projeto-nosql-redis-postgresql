@@ -1,0 +1,205 @@
+{
+  "executed_at_utc": "2026-11-17T02:24:28.300641+00:00",
+  "health": {
+    "postgres": "ok",
+    "redis": "ok"
+  },
+  "point_compare": {
+    "results": [
+      {
+        "source": "postgres",
+        "operation": "point",
+        "elapsed_ms": 0.322312,
+        "data": {
+          "id": 500001,
+          "sensor_id": 1,
+          "ts": 1793641200,
+          "temperature_centi": 3059,
+          "humidity_centi": 4573
+        }
+      },
+      {
+        "source": "redis",
+        "operation": "point",
+        "elapsed_ms": 0.199573,
+        "data": {
+          "id": 500001,
+          "sensor_id": 1,
+          "ts": 1793641200,
+          "temperature_centi": 3059,
+          "humidity_centi": 4573
+        }
+      }
+    ],
+    "equivalent": true,
+    "note": "Uma execução por fonte. Use o benchmark para medianas com aquecimento e ordem alternada."
+  },
+  "history_compare": {
+    "results": [
+      {
+        "source": "postgres",
+        "operation": "history",
+        "elapsed_ms": 1.232707,
+        "data": [
+          {
+            "id": 1001,
+            "sensor_id": 1,
+            "ts": 1793491500,
+            "temperature_centi": 2366,
+            "humidity_centi": 3086
+          },
+          {
+            "id": 2001,
+            "sensor_id": 1,
+            "ts": 1793491800,
+            "temperature_centi": 2373,
+            "humidity_centi": 3099
+          }
+        ]
+      },
+      {
+        "source": "redis",
+        "operation": "history",
+        "elapsed_ms": 0.668774,
+        "data": [
+          {
+            "id": 1001,
+            "sensor_id": 1,
+            "ts": 1793491500,
+            "temperature_centi": 2366,
+            "humidity_centi": 3086
+          },
+          {
+            "id": 2001,
+            "sensor_id": 1,
+            "ts": 1793491800,
+            "temperature_centi": 2373,
+            "humidity_centi": 3099
+          }
+        ]
+      }
+    ],
+    "equivalent": true,
+    "note": "Uma execução por fonte. Use o benchmark para medianas com aquecimento e ordem alternada."
+  },
+  "examples": [
+    {
+      "file": "exemplos/redis/01_crud_hash.py",
+      "result": {
+        "exemplo": "CRUD com hash",
+        "prefixo": "demo:crud:5935251e9d854d438b5c3c1030bb7d36",
+        "criada": {
+          "id": "1",
+          "sensor_id": "1",
+          "ts": "1793491200",
+          "temperature_centi": "2850",
+          "humidity_centi": "6100"
+        },
+        "atualizada": {
+          "id": "1",
+          "sensor_id": "1",
+          "ts": "1793491200",
+          "temperature_centi": "3300",
+          "humidity_centi": "6100"
+        },
+        "excluida": true
+      }
+    },
+    {
+      "file": "exemplos/redis/02_historico_sensor.py",
+      "result": {
+        "exemplo": "Histórico por sensor e período",
+        "prefixo": "demo:historico:0fd75db33cd8488bababe0ea40881178",
+        "inicio_utc": "2026-11-01 00:05",
+        "fim_utc": "2026-11-01 00:10",
+        "ids": [
+          "2",
+          "3"
+        ],
+        "leituras": [
+          {
+            "id": "2",
+            "sensor_id": "1",
+            "ts": "1793491500",
+            "temperature_centi": "2900",
+            "humidity_centi": "6100"
+          },
+          {
+            "id": "3",
+            "sensor_id": "1",
+            "ts": "1793491800",
+            "temperature_centi": "2950",
+            "humidity_centi": "6100"
+          }
+        ]
+      }
+    },
+    {
+      "file": "exemplos/redis/03_cache_ttl.py",
+      "result": {
+        "exemplo": "Cache com TTL",
+        "prefixo": "demo:cache:8fa660e525ca4f37ae87eafa9ef2c8d2",
+        "ausente_antes": true,
+        "acerto": {
+          "sensor_id": 1,
+          "leituras": 3,
+          "temperatura_media": 29.0
+        },
+        "ttl_segundos_observado": 2,
+        "expirou": true
+      }
+    }
+  ],
+  "crud_compare": {
+    "executed_at": "2026-11-17T02:24:31.082095+00:00",
+    "operations": [
+      {
+        "source": "postgres",
+        "created_and_read": {
+          "id": 9000000002,
+          "sensor_id": 1,
+          "ts": 1793963700,
+          "temperature_centi": 2900,
+          "humidity_centi": 6000
+        },
+        "updated_and_read": {
+          "id": 9000000002,
+          "sensor_id": 1,
+          "ts": 1793963700,
+          "temperature_centi": 3400,
+          "humidity_centi": 6000
+        },
+        "after_delete": null,
+        "passed": true
+      },
+      {
+        "source": "redis",
+        "created_and_read": {
+          "id": 9000000002,
+          "sensor_id": 1,
+          "ts": 1793963700,
+          "temperature_centi": 2900,
+          "humidity_centi": 6000
+        },
+        "updated_and_read": {
+          "id": 9000000002,
+          "sensor_id": 1,
+          "ts": 1793963700,
+          "temperature_centi": 3400,
+          "humidity_centi": 6000
+        },
+        "after_delete": null,
+        "passed": true
+      }
+    ],
+    "equivalent": true
+  },
+  "counts_after": {
+    "readings": 1000000,
+    "sensors": 1000,
+    "redis_keys": 1003003,
+    "redis_sensor_ids": 1000,
+    "redis_sensor_1_readings": 1000,
+    "demo_keys_remaining": []
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "captured_at": "2026-11-17T22:50:27.180Z",
+  "difference": {
+    "documentWidth": 1405,
+    "operation": "Atualizar leitura · Redis: HTTP 200. Operação concluída no banco selecionado.",
+    "pg": "PostgreSQLRELACIONAL · LINHAreadings WHERE id = 900000001028,50 °CUmidade 55,00 % · sensor 1Uma linha da tabela readingsidsensor_idtstemperature_centihumidity_centi9000000010117950032002850Diferente5500Editar no PostgreSQLSem mudança observadaNão foi enviada escrita a este banco.A tabela define colunas e restrições. O índice de chave primária localiza esta linha.",
+    "redis": "RedisCHAVE-VALOR · HASHiot:reading:900000001033,50 °CUmidade 55,00 % · sensor 1Campos do hashCampo do hashValor armazenadoid9000000010sensor_id1ts1795003200temperature_centi3350Diferentehumidity_centi5500Editar no RedisValores alteradosEscrita: PUT · HTTP 200Temperatura: 28,50 °C → 33,50 °CA chave localiza o hash. Neste projeto, scripts Lua também mantêm o índice por sensor e a unicidade.",
+    "state": "different",
+    "width": 1422
+  },
+  "summary_text": "Resumo retornado pelos bancosPostgreSQL10.000 leituras1.000 sensores · 3.522 alertasMédia: 29,93 °CRedis10.000 leituras1.000 sensores · 3.522 alertasMédia: 29,93 °CFiltros e retornos completos no console. Este resumo não altera a leitura individual mostrada acima.",
+  "performance_5m": "Q1 · Uma leitura pelo ID\n\n5.000.000 leituras armazenadas\n\nPostgreSQL\n0,435 ms\nRedis\n0,344 ms\nMediana em ms · escala de 0 a 0,435 ms\nQ2 · Até 200 leituras de um sensor\n\n5.000.000 leituras armazenadas\n\nPostgreSQL\n0,877 ms\nRedis\n4,161 ms\nMediana em ms · escala de 0 a 4,161 ms\nQ3 · Resumo de todo o volume\n\n5.000.000 leituras armazenadas\n\nPostgreSQL\n1.270,031 ms\nRedis\n21.690,764 ms\nMediana em ms · escala de 0 a 21.690,764 ms",
+  "console": []
+}

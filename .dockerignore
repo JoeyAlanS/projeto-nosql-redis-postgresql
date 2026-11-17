@@ -4,6 +4,11 @@ output
 tmp
 .git
 .venv
+.venv-graficos
+.pytest_cache
+coverage
+playwright-report
+test-results
 .env
 .env.*
 docs

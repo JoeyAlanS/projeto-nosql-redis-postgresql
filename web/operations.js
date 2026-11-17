@@ -1,5 +1,8 @@
 import {actions, names, demo, period, buildOperation, describeCommand, compareResults, errorHint} from './operations-core.mjs';
 
+import {executeWithSnapshots, readRequests} from './reading-comparison.mjs';
+import {renderReadingPair, renderAggregate} from './reading-view.js';
+
 const el = id => document.getElementById(id);
 const form = el('operation-form');
 const log = el('operation-log');
@@ -59,7 +62,8 @@ function preset(name) {
 function toggleBusy(value) {
   running = value;
   el('operation-fields').disabled = value;
-  document.querySelectorAll('[data-preset]').forEach(button => { button.disabled = value; });
+  document.querySelectorAll('[data-preset], [data-demo-step], .visual-edit, .console-edit, #visual-refresh, #visual-reading-id').forEach(button => { button.disabled = value; });
+  el('reading-visual').setAttribute('aria-busy', String(value));
   el('operation-run').textContent = value ? 'Executando…' : 'Executar operação →';
   el('console-clear').disabled = value || !entries.length;
   el('console-export').disabled = value || !entries.length;
@@ -97,28 +101,28 @@ function renderResult(result, operation) {
     edit.type = 'button';
     edit.addEventListener('click', () => {
       if (running) return;
-      const row = result.response;
-      const values = {source: result.source, action: 'update', id: row.id, sensor: row.sensor_id,
-        ts: new Date(row.ts * 1000).toISOString().slice(0, 19),
-        temperature: (row.temperature_centi / 100).toFixed(2), humidity: (row.humidity_centi / 100).toFixed(2)};
-      for (const [key, value] of Object.entries(values)) el('op-' + key).value = value;
-      updateForm();
-      status('Campos preenchidos com a leitura consultada. Revise os valores e execute para salvar.');
-      el('op-temperature').focus();
+      prepareEditing(result.response, result.source);
     });
     section.append(edit);
   }
   return section;
 }
-form.addEventListener('submit', async event => {
-  event.preventDefault();
+function prepareEditing(row, source) {
   if (running) return;
-  let operation;
-  try { operation = buildOperation(inputs()); }
-  catch (error) { status('Validação local: ' + error.message + ' Nenhuma requisição enviada.', true); return; }
+  const values = {source, action: 'update', id: row.id, sensor: row.sensor_id,
+    ts: new Date(row.ts * 1000).toISOString().slice(0, 19),
+    temperature: (row.temperature_centi / 100).toFixed(2), humidity: (row.humidity_centi / 100).toFixed(2)};
+  for (const [key, value] of Object.entries(values)) el('op-' + key).value = value;
+  updateForm();
+  status(`Leitura #${row.id} carregada do ${names[source]}. Altere os valores e clique em Executar operação para salvar.`);
+  el('operation-editor').scrollIntoView({behavior: 'smooth', block: 'start'});
+  el('op-temperature').focus({preventScroll: true});
+}
+async function perform(operation, origin = 'form') {
+  if (running) return;
   toggleBusy(true);
   status('Executando nos bancos selecionados…');
-  const entry = {number: ++sequence, executed_at: new Date().toISOString(), operation, results: []};
+  const entry = {number: ++sequence, executed_at: new Date().toISOString(), origin, operation, results: []};
   const container = node('details', undefined, 'console-run'); container.open = true;
   const title = node('summary');
   title.append(node('strong', `#${entry.number} · ${actions[operation.action]}`), node('span', new Date(entry.executed_at).toLocaleTimeString('pt-BR') + ' · Executando…'));
@@ -127,13 +131,14 @@ form.addEventListener('submit', async event => {
   for (const previous of log.querySelectorAll(':scope > details')) previous.open = false;
   log.prepend(container); log.scrollTop = 0;
   try {
-    // Requisições independentes: renderiza a primeira mesmo se a segunda falhar.
-    for (const request of operation.requests) {
-      status(`Executando ${actions[operation.action].toLowerCase()} em ${names[request.source]}…`);
-      const result = await send(request);
-      entry.results.push(result);
+    const execution = await executeWithSnapshots(operation, send, result => {
       container.append(renderResult(result, operation));
-    }
+    });
+    Object.assign(entry, execution);
+    if (entry.after.length) {
+      el('visual-reading-id').value = operation.data.id;
+      renderReadingPair({id: operation.data.id, ...entry, onEdit: prepareEditing, action: operation.action});
+    } else renderAggregate(entry.results, operation.action);
     entry.comparison = compareResults(entry.results, operation.action);
     const verdict = node('div', undefined, 'console-comparison console-' + entry.comparison.kind);
     verdict.append(node('p', entry.comparison.message));
@@ -148,8 +153,50 @@ form.addEventListener('submit', async event => {
     if (entries.length > 30) { entries.pop(); log.lastElementChild.remove(); }
     el('console-count').textContent = `${entries.length} ${entries.length === 1 ? 'execução' : 'execuções'}`;
     status(entry.comparison.message, entry.comparison.kind === 'error');
+    if (operation.mutation) {
+      const note = node('details');
+      note.append(node('summary', 'Capturas antes e depois da escrita'), node('pre', JSON.stringify({before: entry.before, after: entry.after}, null, 2)));
+      const section = node('section', undefined, 'console-result'); section.append(note); container.append(section);
+      el('reading-visual').scrollIntoView({behavior: 'smooth', block: 'start'});
+      dispatchEvent(new Event('iot:readings-changed'));
+    }
+    if (origin === 'guided') el('guided-status').textContent = `${entry.comparison.message} ${el('visual-status').textContent}`;
   } finally { toggleBusy(false); }
+}
+form.addEventListener('submit', async event => {
+  event.preventDefault();
+  if (running) return;
+  let operation;
+  try { operation = buildOperation(inputs()); }
+  catch (error) { status('Validação local: ' + error.message + ' Nenhuma requisição enviada.', true); return; }
+  await perform(operation);
 });
+async function inspectReading(event) {
+  event?.preventDefault();
+  if (running) return;
+  let operation;
+  try { operation = buildOperation({...inputs(), action: 'point', source: 'both', id: el('visual-reading-id').value}); }
+  catch (error) { el('visual-status').textContent = error.message; el('visual-status').dataset.state = 'unknown'; return; }
+  toggleBusy(true);
+  el('visual-status').textContent = 'Consultando a mesma leitura nos dois bancos…';
+  try {
+    const after = [];
+    for (const request of readRequests(operation.data.id)) after.push(await send(request));
+    renderReadingPair({id: operation.data.id, after, onEdit: prepareEditing});
+  } finally { toggleBusy(false); }
+}
+el('visual-lookup').addEventListener('submit', inspectReading);
+document.querySelectorAll('[data-demo-step]').forEach(button => button.addEventListener('click', async () => {
+  if (running) return;
+  const step = button.dataset.demoStep;
+  const input = {...inputs(), ...demo, source: step === 'diverge' ? 'redis' : 'both',
+    action: step === 'create' ? 'create' : step === 'remove' ? 'delete' : 'update',
+    temperature: step === 'diverge' ? '33.50' : demo.temperature};
+  for (const [key, value] of Object.entries(input)) el('op-' + key).value = value;
+  updateForm();
+  el('guided-status').textContent = 'Executando a etapa e consultando os dois bancos…';
+  await perform(buildOperation(input), 'guided');
+}));
 form.addEventListener('input', updateForm);
 form.addEventListener('change', updateForm);
 document.querySelectorAll('[data-preset]').forEach(button => button.addEventListener('click', () => preset(button.dataset.preset)));
@@ -172,7 +219,7 @@ for (const [key, value] of Object.entries({...demo, ...period})) el('op-' + key)
 el('op-id').value = '500001';
 updateForm();
 function highlightSection() {
-  const selected = location.hash || '#overview';
+  const selected = location.hash || '#operations';
   document.querySelectorAll('aside a.nav').forEach(link => {
     const active = link.getAttribute('href') === selected;
     link.classList.toggle('active', active);
@@ -182,3 +229,5 @@ function highlightSection() {
 }
 addEventListener('hashchange', highlightSection);
 highlightSection();
+
+inspectReading();

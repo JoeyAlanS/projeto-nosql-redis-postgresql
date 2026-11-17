@@ -1,0 +1,21 @@
+Verificação integral: 200,000 leituras
+Verificação integral: 400,000 leituras
+Verificação integral: 600,000 leituras
+Verificação integral: 800,000 leituras
+Verificação integral: 1,000,000 leituras
+{
+  "verified_at": "2026-11-17T22:53:04.361124+00:00",
+  "checked_readings": 1000000,
+  "postgres_count": 1000000,
+  "redis_count": 1000000,
+  "sha256": {
+    "csv": "519f2a3fceac765890289c51876e3be1980ff8c03d9f74d9768beb84a264369f",
+    "postgres": "519f2a3fceac765890289c51876e3be1980ff8c03d9f74d9768beb84a264369f",
+    "redis": "519f2a3fceac765890289c51876e3be1980ff8c03d9f74d9768beb84a264369f"
+  },
+  "sensors_verified": 1000,
+  "all_temporal_and_unique_indexes_verified": true,
+  "redis_evicted_keys": 0,
+  "seconds": 57.58326914300051,
+  "equivalent": true
+}

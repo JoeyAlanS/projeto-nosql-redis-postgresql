@@ -2,19 +2,18 @@
 
 Implementação comparativa de telemetria ambiental com **PostgreSQL e Redis**, massa sintética de **1.000.000 de leituras**, CRUD, benchmark e dashboard funcional. A fundamentação inclui Memcached como referência teórica do paradigma chave-valor/cache.
 
-Repositório dedicado da entrega: [JoeyAlanS/projeto-nosql-redis-postgresql](https://github.com/JoeyAlanS/projeto-nosql-redis-postgresql). Consulte o [guia do funcionamento e dos exemplos de código](docs/GUIA_CODIGO_REDIS.md) para apresentar o trabalho. A apresentação no Canva está [neste link](https://www.canva.com/design/DAHaf2M-EsI/rfjGTKd6PsB6jzMruNGYug/edit).
+Repositório da entrega: [JoeyAlanS/projeto-nosql-redis-postgresql](https://github.com/JoeyAlanS/projeto-nosql-redis-postgresql).
 
-Para ensaiar, siga o [roteiro de apresentação e VS Code](docs/ROTEIRO_VSCODE.md). Abra `Observatorio_IoT.code-workspace` no VS Code e use **Terminal > Executar Tarefa**, escolhendo as tarefas `IoT:` para iniciar os serviços, executar os exemplos e testar a aplicação.
+## Comece pela dashboard
 
-O [roteiro de comandos de teste](docs/COMANDOS_TESTES.md) separa contagens, consultas, leitura e comparação de **10.000 registros da base existente**, CRUD temporário, exemplos Redis e testes automáticos. A base completa continua com **1.000.000 de leituras por banco**.
+Com os dados já carregados, execute `make up` e abra **http://localhost:8000/#operations**.
 
-O [laboratório de operações](docs/CONSOLE_DASHBOARD.md) fica em **http://localhost:8000/#operations**. Execute CRUD, histórico e resumo em PostgreSQL, Redis ou ambos, veja o retorno JSON no console e destaque diferenças entre os bancos. Há exemplos preenchidos, explicação dos erros e exportação do histórico.
+- **Compare lado a lado:** uma linha PostgreSQL e um hash Redis, valores nas mesmas unidades e campos divergentes destacados.
+- **Envie alterações:** clique em **Editar no PostgreSQL/Redis**, mude os valores e execute. A dashboard consulta ambos novamente e mostra **antes → depois**.
+- **Demonstre em quatro passos:** crie o exemplo nos dois bancos, mude só no Redis, iguale os valores e exclua o exemplo.
+- **Veja desempenho:** em **http://localhost:8000/#scalability**, alterne entre 1 e 5 milhões para visualizar as medianas reais por consulta.
 
-A [comparação de 1 milhão e 5 milhões](docs/COMPARACAO_1M_5M.md) acrescenta carga inicial, consultas com 30 repetições, planos PostgreSQL e carga HTTP com 1, 4 e 16 clientes. Veja o [guia de comandos dos cenários isolados](docs/TESTES_CARGA_1M_5M.md) e o [PDF explicativo](output/pdf/Comparacao_Carga_1M_5M.pdf). O dashboard mostra as tabelas e os planos em **http://localhost:8000/#scalability**. São bancos separados; o experimento não substitui a massa principal.
-
-Os [seis gráficos em Python](docs/GRAFICOS_CARGA.md) apresentam carga inicial, consultas, vazão, mediana/p95 e distribuições. Estão disponíveis em PNG/SVG em `output/graficos/` e reunidos em [PDF](output/pdf/Graficos_Carga_1M_5M.pdf). Para gerar novamente, instale `requirements-graficos.txt` no ambiente descrito no guia e execute `make graficos`.
-
-O [manual completo](docs/MANUAL_COMPLETO.md) demonstra o fluxo de leitura, os quatro exemplos, a modelagem, o benchmark e a quantidade de registros. As versões para leitura e edição estão em [PDF](output/pdf/Manual_Completo_Observatorio_IoT.pdf) e [Word](output/documentos/Manual_Completo_Observatorio_IoT.docx). A execução demonstrada está registrada em `results/demonstracao_fluxo.json`.
+Consulte o [guia da dashboard e das escritas](docs/CONSOLE_DASHBOARD.md), o [índice de documentos e entregáveis](docs/INDICE.md) e o [roteiro do VS Code](docs/ROTEIRO_VSCODE.md). As escritas são reais, por banco; “Ambos” não é uma transação distribuída.
 
 ## Executar
 
@@ -41,6 +40,20 @@ docker compose exec -T app python -m scripts.benchmark --repetitions 30 --warmup
 ```
 
 Os serviços ficam acessíveis apenas no localhost: dashboard 8000, PostgreSQL 55432 e Redis 56379. As credenciais padrão são exclusivamente acadêmicas locais. Copie `.env.example` para `.env` se precisar alterá-las. A rede usa `10.203.17.0/24` para funcionar inclusive em ambientes com os pools automáticos do Docker esgotados. Se houver sobreposição, configure `IOT_SUBNET` com outra sub-rede privada livre.
+
+## Organização e verificação
+
+| Pasta | Conteúdo |
+|---|---|
+| `app/`, `web/`, `sql/` | API, dashboard e esquema PostgreSQL |
+| `scripts/`, `tests/`, `exemplos/` | Carga, verificações, gráficos e exemplos Redis |
+| `docs/` | Guias, fundamentação e requisitos fornecidos |
+| `results/` | Medições e evidências reproduzíveis; o novo fluxo visual está em `results/dashboard/` |
+| `output/` | Documentos, apresentação, gráficos e manifesto da entrega |
+
+`make check` executa os 30 testes atuais (11 de integração, 11 de JavaScript, 3 dos exemplos Redis e 5 das ferramentas de carga) e a auditoria dos resultados. Requer os serviços ativos, Node 20+ para os testes do frontend e as bases equivalentes, sem uma divergência de demonstração em andamento. Node não é necessário para usar a dashboard.
+
+`make verify` compara integralmente os dados e índices com o CSV original. `make package` recompõe o ZIP local e seu manifesto. Dados volumosos, ambientes virtuais, caches, credenciais locais e ZIPs gerados ficam fora do Git; os resultados e arquivos finais versionados são evidências do trabalho.
 
 ## Entregas
 

@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="/static/style.css">
   <link rel="stylesheet" href="/static/scalability.css">
   <link rel="stylesheet" href="/static/operations.css">
+  <link rel="stylesheet" href="/static/reading-comparison.css">
   <script src="/static/app.js" defer></script>
   <script src="/static/operations.js" type="module"></script>
 </head>
@@ -13,18 +14,69 @@
 <aside>
   <a class="brand" href="/" aria-label="Observatório IoT, início"><span class="brand-icon">◉</span><span>observatório<span class="brand-sub">IoT / CAMPUS</span></span></a>
   <div class="aside-label">ESPAÇO DE ANÁLISE</div>
-  <a class="nav active" href="#overview"><span>◫</span> Visão geral</a>
+  <a class="nav active" href="#operations"><span>⌘</span> Alterar e comparar</a>
+  <a class="nav" href="#overview"><span>◫</span> Visão geral</a>
   <a class="nav" href="#comparison"><span>↔</span> Comparar bancos</a>
-  <a class="nav" href="#operations"><span>⌘</span> Operações e console</a>
   <a class="nav" href="#experiment"><span>▥</span> Experimento</a>
   <a class="nav" href="#scalability"><span>↗</span> 1 milhão × 5 milhões</a>
   <div class="aside-bottom"><span class="green-dot"></span> Projeto 3 · Banco de Dados<span>Redis e PostgreSQL</span><a href="/docs" target="_blank" rel="noopener">Documentação da API ↗</a></div>
 </aside>
 <main>
-  <nav class="mobile-sections" aria-label="Seções da dashboard"><a href="#overview">Visão geral</a><a href="#operations">Operações e console</a><a href="#scalability">Testes de carga</a></nav>
+  <nav class="mobile-sections" aria-label="Seções da dashboard"><a href="#overview">Visão geral</a><a href="#operations">Alterar e comparar</a><a href="#scalability">Testes de carga</a></nav>
   <header><div class="breadcrumb">Campus / Monitoramento</div><div id="connection" role="status">Conectando aos bancos…</div></header>
+  <section id="operations" aria-labelledby="operations-title">
+    <div class="section-heading"><div><p class="eyebrow">LABORATÓRIO AO VIVO</p><h1 id="operations-title">Redis e PostgreSQL, lado a lado</h1><p class="muted">Envie uma alteração pela dashboard e veja o que mudou em cada banco.</p></div><span class="badge">Base principal · execução ao vivo</span></div>
+    <article class="reading-lab" aria-labelledby="visual-id">
+      <div class="reading-lab-header"><div><p class="eyebrow">VALORES CONSULTADOS AGORA</p><h3 id="visual-id">Leitura #500001</h3></div><form id="visual-lookup"><label for="visual-reading-id">ID para comparar</label><input id="visual-reading-id" type="number" min="1" max="9000000000000000" step="1" value="500001" required><button id="visual-refresh" class="secondary" type="submit">Consultar os dois</button></form></div>
+      <p id="visual-operation" class="visual-operation" hidden role="status"></p>
+      <p id="visual-status" class="visual-status" role="status">Carregando a leitura nos dois bancos…</p>
+      <div id="reading-visual" aria-busy="true"></div>
+      <p id="visual-observed" class="visual-observed"></p>
+    </article>
+    <article class="guided-demo" aria-labelledby="guided-title"><div><p class="eyebrow">DEMONSTRAÇÃO EM 4 PASSOS</p><h3 id="guided-title">Faça a diferença aparecer</h3><p>Cada botão executa uma mudança real no exemplo <strong>#9000000010</strong>. A comparação acima é atualizada automaticamente.</p></div><div class="guided-actions"><button type="button" data-demo-step="create"><span>1</span><strong>Criar nos dois</strong><small>28,50 °C em ambos</small></button><button type="button" data-demo-step="diverge"><span>2</span><strong>Mudar só Redis</strong><small>Redis passa para 33,50 °C</small></button><button type="button" data-demo-step="align"><span>3</span><strong>Igualar valores</strong><small>Gravar 28,50 °C nos dois</small></button><button type="button" data-demo-step="remove"><span>4</span><strong>Excluir exemplo</strong><small>Remover somente esse ID</small></button></div><p id="guided-status" role="status">Comece pelo passo 1. A massa original fica fora desse exemplo.</p></article>
+    <div class="editor-intro"><div><h3>Envie sua própria operação</h3><p>Escolha o destino e preencha os valores. Para alterar uma leitura existente, use “Editar” no cartão do banco acima.</p></div><a class="secondary" href="#scalability">Ver desempenho de 1M × 5M ↗</a></div>
+    <div class="operation-presets" aria-label="Exemplos de operações">
+      <button type="button" data-preset="point"><strong>01 · Comparar uma leitura</strong><span>Busque o ID 500001 nos dois bancos.</span></button>
+      <button type="button" data-preset="demo"><strong>02 · Experimentar o CRUD</strong><span>Preencha uma nova leitura para criar, alterar e excluir.</span></button>
+      <button type="button" data-preset="summary"><strong>03 · Resumir 10 mil leituras</strong><span>Compare o mesmo intervalo nas duas fontes.</span></button>
+    </div>
+    <div id="aggregate-visual" class="aggregate-visual" hidden></div>
+    <div class="operation-workspace">
+      <article class="panel operation-editor" id="operation-editor">
+        <h3>Editar e enviar ao banco</h3>
+        <form id="operation-form" novalidate>
+          <fieldset id="operation-fields">
+            <div class="operation-inputs">
+              <label>Banco de destino<select id="op-source"><option value="both">Ambos · comparar retornos</option><option value="postgres">PostgreSQL</option><option value="redis">Redis</option></select></label>
+              <label>Operação<select id="op-action"><option value="point">Consultar por ID</option><option value="create">Criar leitura · INSERT / HSET</option><option value="update">Atualizar leitura · UPDATE / HSET</option><option value="delete">Excluir leitura · DELETE / DEL</option><option value="history">Histórico do sensor</option><option value="summary">Resumo do período</option></select></label>
+              <label data-ops="point create update delete">ID da leitura<input id="op-id" type="number" min="1" max="9000000000000000" step="1" value="500001" required></label>
+              <label data-ops="create update history summary">ID do sensor<input id="op-sensor" type="number" min="1" max="2147483647" step="1" value="1"><small id="op-sensor-help">Use um sensor existente, de 1 a 1000.</small></label>
+              <label data-ops="create update">Instante da leitura (UTC)<input id="op-ts" type="datetime-local" step="1" required></label>
+              <label data-ops="create update">Temperatura (°C)<input id="op-temperature" type="number" min="-50" max="100" step="0.01" value="28.50" required><small>28,50 °C é armazenado como 2850.</small></label>
+              <label data-ops="create update">Umidade (%)<input id="op-humidity" type="number" min="0" max="100" step="0.01" value="55.00" required></label>
+              <label data-ops="history summary">Início do período (UTC)<input id="op-start" type="datetime-local" step="1" required></label>
+              <label data-ops="history summary">Fim do período (UTC)<input id="op-end" type="datetime-local" step="1" required></label>
+              <label data-ops="history">Máximo de leituras<input id="op-limit" type="number" min="1" max="1000" step="1" value="20" required></label>
+            </div>
+            <p id="operation-help" class="operation-help"></p>
+            <button id="operation-run" class="primary" type="submit">Executar operação →</button>
+          </fieldset>
+        </form>
+        <p id="operation-status" role="status" aria-live="polite">Escolha um exemplo ou configure os campos.</p>
+        <details class="operation-preview"><summary>Requisição e caminho no banco</summary><p>Prévia explicativa do código. A execução usa a API do projeto.</p><pre id="operation-preview"></pre></details>
+      </article>
+      <article class="operation-console" aria-labelledby="console-title">
+        <div class="console-head"><div><span class="console-dot"></span><h3 id="console-title">Console de operações</h3></div><span id="console-count">0 execuções</span></div>
+        <div class="console-tools"><span>Retornos HTTP + JSON</span><button id="console-export" type="button" disabled>Baixar JSON</button><button id="console-clear" type="button" disabled>Limpar console</button></div>
+        <p class="console-note">Tempos de ponta a ponta: navegador, API, conexão e banco. Cada banco recebe sua própria requisição.</p>
+        <div id="operation-log" tabindex="0" aria-label="Histórico do console"><div class="console-empty"><span>›_</span><h4>Pronto para executar</h4><p>O resultado aparecerá aqui, com o banco, o tempo, o código HTTP e os dados retornados.</p><p>Comece por <strong>Comparar uma leitura</strong> e clique em <strong>Executar operação</strong>.</p></div></div>
+        <p class="console-footnote">Últimas 30 execuções nesta aba. Baixe o JSON para guardar o histórico antes de recarregar.</p>
+      </article>
+    </div>
+    <details class="operation-walkthrough"><summary>Roteiro: como demonstrar uma diferença e um erro</summary><ol><li>Clique em <strong>Experimentar o CRUD</strong> e execute <strong>Criar</strong> em <strong>Ambos</strong>. O exemplo usa o ID 9000000010, fora da massa original.</li><li>Execute <strong>Criar</strong> novamente: o console mostra <strong>HTTP 409</strong>, pois a leitura já existe.</li><li>Escolha <strong>Redis</strong>, operação <strong>Atualizar</strong>, temperatura <strong>33,50 °C</strong> e execute.</li><li>Escolha <strong>Ambos</strong> e <strong>Consultar por ID</strong>, mantendo o ID do exemplo. O console destaca a diferença no campo <code>temperature_centi</code>.</li><li>Escolha <strong>Excluir</strong> em <strong>Ambos</strong> para remover o exemplo. Consulte novamente: <strong>HTTP 404</strong> significa que a leitura não existe.</li></ol><p>As escritas alteram o banco selecionado. Em “Ambos”, PostgreSQL e Redis são executados em sequência, sem transação conjunta ou reversão automática. Os ensaios salvos de 1 e 5 milhões continuam na seção Testes de carga.</p></details>
+  </section>
   <section id="overview">
-    <div class="heading"><div><p class="eyebrow">OBSERVATÓRIO DE SENSORES</p><h1>Telemetria do campus</h1><p class="muted">Explore as leituras ambientais e compare o tempo de consulta dos dois bancos.</p></div><button id="refresh" class="secondary">↻ Atualizar</button></div>
+    <div class="heading"><div><p class="eyebrow">OBSERVATÓRIO DE SENSORES</p><h2>Telemetria do campus</h2><p class="muted">Explore as leituras ambientais e compare o tempo de consulta dos dois bancos.</p></div><button id="refresh" class="secondary">↻ Atualizar</button></div>
     <div class="toolbar">
       <div><span class="label">Fonte de dados</span><div class="source-switch" role="group" aria-label="Fonte de dados"><button data-source="postgres" aria-pressed="true">PostgreSQL</button><button data-source="redis" aria-pressed="false">Redis</button></div></div>
       <label>Local<select id="location"><option value="">Todos os locais</option></select></label>
@@ -47,50 +99,10 @@
     <div class="section-heading"><div><p class="eyebrow">CONSULTA AO VIVO</p><h2>Uma leitura, dois bancos</h2><p class="muted">Busque o mesmo identificador nas duas fontes e confira os resultados.</p></div><div class="lookup"><label for="reading-id">ID da leitura</label><input id="reading-id" type="number" min="1" value="500001"><button id="lookup" class="primary">Comparar agora ↗</button></div></div>
     <div class="comparison-grid"><article class="panel"><div class="panel-head"><h3>Busca por identificador</h3><span id="equivalence" class="badge">Aguardando consulta</span></div><div id="live-bars"></div><p class="small muted">Tempo de acesso ao banco com rede e leitura da resposta. Uma execução por fonte; variações são esperadas.</p></article><article class="panel"><p class="eyebrow">RESULTADO DA CONSULTA</p><div id="reading-detail" class="reading-detail">Selecione uma leitura para consultar os bancos.</div></article></div>
   </section>
-  <section id="operations" aria-labelledby="operations-title">
-    <div class="section-heading"><div><p class="eyebrow">LABORATÓRIO AO VIVO</p><h2 id="operations-title">Operações e console</h2><p class="muted">Execute, veja o retorno e entenda as diferenças entre PostgreSQL e Redis.</p></div><span class="badge">Base principal · execução ao vivo</span></div>
-    <div class="operation-presets" aria-label="Exemplos de operações">
-      <button type="button" data-preset="point"><strong>01 · Comparar uma leitura</strong><span>Busque o ID 500001 nos dois bancos.</span></button>
-      <button type="button" data-preset="demo"><strong>02 · Experimentar o CRUD</strong><span>Preencha uma nova leitura para criar, alterar e excluir.</span></button>
-      <button type="button" data-preset="summary"><strong>03 · Resumir 10 mil leituras</strong><span>Compare o mesmo intervalo nas duas fontes.</span></button>
-    </div>
-    <div class="operation-workspace">
-      <article class="panel operation-editor">
-        <h3>Configure a operação</h3>
-        <form id="operation-form" novalidate>
-          <fieldset id="operation-fields">
-            <div class="operation-inputs">
-              <label>Banco de destino<select id="op-source"><option value="both">Ambos · comparar retornos</option><option value="postgres">PostgreSQL</option><option value="redis">Redis</option></select></label>
-              <label>Operação<select id="op-action"><option value="point">Consultar por ID</option><option value="create">Criar leitura · INSERT / HSET</option><option value="update">Atualizar leitura · UPDATE / HSET</option><option value="delete">Excluir leitura · DELETE / DEL</option><option value="history">Histórico do sensor</option><option value="summary">Resumo do período</option></select></label>
-              <label data-ops="point create update delete">ID da leitura<input id="op-id" type="number" min="1" max="9000000000000000" step="1" value="500001" required></label>
-              <label data-ops="create update history summary">ID do sensor<input id="op-sensor" type="number" min="1" max="2147483647" step="1" value="1"><small id="op-sensor-help">Use um sensor existente, de 1 a 1000.</small></label>
-              <label data-ops="create update">Instante da leitura (UTC)<input id="op-ts" type="datetime-local" step="1" required></label>
-              <label data-ops="create update">Temperatura (°C)<input id="op-temperature" type="number" min="-50" max="100" step="0.01" value="28.50" required><small>28,50 °C é armazenado como 2850.</small></label>
-              <label data-ops="create update">Umidade (%)<input id="op-humidity" type="number" min="0" max="100" step="0.01" value="55.00" required></label>
-              <label data-ops="history summary">Início do período (UTC)<input id="op-start" type="datetime-local" step="1" required></label>
-              <label data-ops="history summary">Fim do período (UTC)<input id="op-end" type="datetime-local" step="1" required></label>
-              <label data-ops="history">Máximo de leituras<input id="op-limit" type="number" min="1" max="1000" step="1" value="20" required></label>
-            </div>
-            <p id="operation-help" class="operation-help"></p>
-            <button id="operation-run" class="primary" type="submit">Executar operação →</button>
-          </fieldset>
-        </form>
-        <p id="operation-status" role="status" aria-live="polite">Escolha um exemplo ou configure os campos.</p>
-        <details class="operation-preview" open><summary>Requisição e caminho no banco</summary><p>Prévia explicativa do código. A execução usa a API do projeto.</p><pre id="operation-preview"></pre></details>
-      </article>
-      <article class="operation-console" aria-labelledby="console-title">
-        <div class="console-head"><div><span class="console-dot"></span><h3 id="console-title">Console de operações</h3></div><span id="console-count">0 execuções</span></div>
-        <div class="console-tools"><span>Retornos HTTP + JSON</span><button id="console-export" type="button" disabled>Baixar JSON</button><button id="console-clear" type="button" disabled>Limpar console</button></div>
-        <p class="console-note">Tempos de ponta a ponta: navegador, API, conexão e banco. Cada banco recebe sua própria requisição.</p>
-        <div id="operation-log" tabindex="0" aria-label="Histórico do console"><div class="console-empty"><span>›_</span><h4>Pronto para executar</h4><p>O resultado aparecerá aqui, com o banco, o tempo, o código HTTP e os dados retornados.</p><p>Comece por <strong>Comparar uma leitura</strong> e clique em <strong>Executar operação</strong>.</p></div></div>
-        <p class="console-footnote">Últimas 30 execuções nesta aba. Baixe o JSON para guardar o histórico antes de recarregar.</p>
-      </article>
-    </div>
-    <details class="operation-walkthrough"><summary>Roteiro: como demonstrar uma diferença e um erro</summary><ol><li>Clique em <strong>Experimentar o CRUD</strong> e execute <strong>Criar</strong> em <strong>Ambos</strong>. O exemplo usa o ID 9000000010, fora da massa original.</li><li>Execute <strong>Criar</strong> novamente: o console mostra <strong>HTTP 409</strong>, pois a leitura já existe.</li><li>Escolha <strong>Redis</strong>, operação <strong>Atualizar</strong>, temperatura <strong>33,50 °C</strong> e execute.</li><li>Escolha <strong>Ambos</strong> e <strong>Consultar por ID</strong>, mantendo o ID do exemplo. O console destaca a diferença no campo <code>temperature_centi</code>.</li><li>Escolha <strong>Excluir</strong> em <strong>Ambos</strong> para remover o exemplo. Consulte novamente: <strong>HTTP 404</strong> significa que a leitura não existe.</li></ol><p>As escritas alteram o banco selecionado. Em “Ambos”, PostgreSQL e Redis são executados em sequência, sem transação conjunta ou reversão automática. Os ensaios salvos de 1 e 5 milhões continuam na seção Testes de carga.</p></details>
-  </section>
   <section id="experiment"><div class="section-heading"><div><p class="eyebrow">MEDIÇÕES REPRODUZÍVEIS</p><h2>Desempenho por operação</h2><p id="benchmark-description" class="muted">Carregando resultados do experimento…</p></div><div class="legend"><span><i class="pg-key"></i> PostgreSQL</span><span><i class="redis-key"></i> Redis</span></div></div><article class="panel"><div id="benchmark-chart"></div><p class="small muted">Medianas em milissegundos. Barras com escala própria em cada operação. Veja os valores para comparar operações diferentes.</p></article><p class="footnote" id="dataset-info"></p></section>
   <section id="scalability">
     <div class="section-heading"><div><p class="eyebrow">VOLUME E CLIENTES SIMULTÂNEOS</p><h2>1 milhão × 5 milhões de leituras</h2><p id="scale-description" class="muted">Carregando a comparação dos cenários…</p></div></div>
+    <article class="panel performance-visual"><div class="performance-heading"><div><h3>Qual banco foi mais rápido em cada consulta?</h3><p class="muted">Medianas medidas nos testes salvos. Menor tempo é melhor.</p></div><label>Massa do experimento<select id="scale-volume"><option value="1000000">1 milhão de leituras</option><option value="5000000">5 milhões de leituras</option></select></label></div><div id="scale-visual-charts" class="scale-visual-charts"></div><p class="small muted">30 repetições por consulta e banco. Escala linear própria em cada cartão, começando em zero. Consultas diferentes percorrem quantidades diferentes de dados.</p></article>
     <div class="scale-concepts"><article class="panel"><h3>Carga inicial</h3><p>Tempo para inserir os dados e preparar seus índices.</p></article><article class="panel"><h3>Teste de volume</h3><p>As mesmas consultas com 1 e 5 milhões de leituras armazenadas.</p></article><article class="panel"><h3>Carga concorrente</h3><p>1, 4 e 16 clientes consultando por ID. Mede latência, requisições por segundo e erros.</p></article></div>
     <div id="scale-results" hidden>
       <article class="panel scale-panel"><h3>Tempo de carga inicial</h3><p class="small muted">Uma carga por cenário e banco. PostgreSQL inclui VACUUM ANALYZE; Redis cria hashes e índices e usa AOF everysec.</p><div id="scale-loading" class="table-scroll"></div></article>

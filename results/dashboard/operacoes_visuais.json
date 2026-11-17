@@ -1,0 +1,762 @@
+{
+  "exported_at": "2026-11-17T22:45:51.128Z",
+  "scope": "Base principal local; tempos HTTP de ponta a ponta",
+  "entries": [
+    {
+      "number": 5,
+      "executed_at": "2026-11-17T22:45:43.204Z",
+      "origin": "guided",
+      "operation": {
+        "action": "delete",
+        "source": "both",
+        "data": {
+          "id": 9000000010
+        },
+        "mutation": true,
+        "requests": [
+          {
+            "source": "postgres",
+            "method": "DELETE",
+            "path": "/api/readings/9000000010?source=postgres"
+          },
+          {
+            "source": "redis",
+            "method": "DELETE",
+            "path": "/api/readings/9000000010?source=redis"
+          }
+        ]
+      },
+      "results": [
+        {
+          "source": "postgres",
+          "request": {
+            "source": "postgres",
+            "method": "DELETE",
+            "path": "/api/readings/9000000010?source=postgres"
+          },
+          "status": 200,
+          "ok": true,
+          "elapsed_ms": 32.69999999925494,
+          "response": {
+            "id": 9000000010,
+            "sensor_id": 1,
+            "ts": 1795003200,
+            "temperature_centi": 2850,
+            "humidity_centi": 5500
+          }
+        },
+        {
+          "source": "redis",
+          "request": {
+            "source": "redis",
+            "method": "DELETE",
+            "path": "/api/readings/9000000010?source=redis"
+          },
+          "status": 200,
+          "ok": true,
+          "elapsed_ms": 9.5,
+          "response": {
+            "id": 9000000010,
+            "sensor_id": 1,
+            "ts": 1795003200,
+            "temperature_centi": 2850,
+            "humidity_centi": 5500
+          }
+        }
+      ],
+      "before": [
+        {
+          "source": "postgres",
+          "request": {
+            "source": "postgres",
+            "method": "GET",
+            "path": "/api/readings/9000000010?source=postgres"
+          },
+          "status": 200,
+          "ok": true,
+          "elapsed_ms": 26,
+          "response": {
+            "id": 9000000010,
+            "sensor_id": 1,
+            "ts": 1795003200,
+            "temperature_centi": 2850,
+            "humidity_centi": 5500
+          }
+        },
+        {
+          "source": "redis",
+          "request": {
+            "source": "redis",
+            "method": "GET",
+            "path": "/api/readings/9000000010?source=redis"
+          },
+          "status": 200,
+          "ok": true,
+          "elapsed_ms": 9.600000001490116,
+          "response": {
+            "id": 9000000010,
+            "sensor_id": 1,
+            "ts": 1795003200,
+            "temperature_centi": 2850,
+            "humidity_centi": 5500
+          }
+        }
+      ],
+      "after": [
+        {
+          "source": "postgres",
+          "request": {
+            "source": "postgres",
+            "method": "GET",
+            "path": "/api/readings/9000000010?source=postgres"
+          },
+          "status": 404,
+          "ok": false,
+          "elapsed_ms": 25.600000001490116,
+          "response": {
+            "detail": "Leitura não encontrada"
+          }
+        },
+        {
+          "source": "redis",
+          "request": {
+            "source": "redis",
+            "method": "GET",
+            "path": "/api/readings/9000000010?source=redis"
+          },
+          "status": 404,
+          "ok": false,
+          "elapsed_ms": 8.899999998509884,
+          "response": {
+            "detail": "Leitura não encontrada"
+          }
+        }
+      ],
+      "comparison": {
+        "kind": "success",
+        "message": "Resultados equivalentes nos dois bancos.",
+        "differences": []
+      }
+    },
+    {
+      "number": 4,
+      "executed_at": "2026-11-17T22:45:42.870Z",
+      "origin": "guided",
+      "operation": {
+        "action": "update",
+        "source": "both",
+        "data": {
+          "id": 9000000010,
+          "sensor_id": 1,
+          "ts": 1795003200,
+          "temperature_centi": 2850,
+          "humidity_centi": 5500
+        },
+        "mutation": true,
+        "requests": [
+          {
+            "source": "postgres",
+            "method": "PUT",
+            "path": "/api/readings/9000000010?source=postgres",
+            "body": {
+              "id": 9000000010,
+              "sensor_id": 1,
+              "ts": 1795003200,
+              "temperature_centi": 2850,
+              "humidity_centi": 5500
+            }
+          },
+          {
+            "source": "redis",
+            "method": "PUT",
+            "path": "/api/readings/9000000010?source=redis",
+            "body": {
+              "id": 9000000010,
+              "sensor_id": 1,
+              "ts": 1795003200,
+              "temperature_centi": 2850,
+              "humidity_centi": 5500
+            }
+          }
+        ]
+      },
+      "results": [
+        {
+          "source": "postgres",
+          "request": {
+            "source": "postgres",
+            "method": "PUT",
+            "path": "/api/readings/9000000010?source=postgres",
+            "body": {
+              "id": 9000000010,
+              "sensor_id": 1,
+              "ts": 1795003200,
+              "temperature_centi": 2850,
+              "humidity_centi": 5500
+            }
+          },
+          "status": 200,
+          "ok": true,
+          "elapsed_ms": 35,
+          "response": {
+            "id": 9000000010,
+            "sensor_id": 1,
+            "ts": 1795003200,
+            "temperature_centi": 2850,
+            "humidity_centi": 5500
+          }
+        },
+        {
+          "source": "redis",
+          "request": {
+            "source": "redis",
+            "method": "PUT",
+            "path": "/api/readings/9000000010?source=redis",
+            "body": {
+              "id": 9000000010,
+              "sensor_id": 1,
+              "ts": 1795003200,
+              "temperature_centi": 2850,
+              "humidity_centi": 5500
+            }
+          },
+          "status": 200,
+          "ok": true,
+          "elapsed_ms": 11,
+          "response": {
+            "id": 9000000010,
+            "sensor_id": 1,
+            "ts": 1795003200,
+            "temperature_centi": 2850,
+            "humidity_centi": 5500
+          }
+        }
+      ],
+      "before": [
+        {
+          "source": "postgres",
+          "request": {
+            "source": "postgres",
+            "method": "GET",
+            "path": "/api/readings/9000000010?source=postgres"
+          },
+          "status": 200,
+          "ok": true,
+          "elapsed_ms": 27.799999997019768,
+          "response": {
+            "id": 9000000010,
+            "sensor_id": 1,
+            "ts": 1795003200,
+            "temperature_centi": 3125,
+            "humidity_centi": 6125
+          }
+        },
+        {
+          "source": "redis",
+          "request": {
+            "source": "redis",
+            "method": "GET",
+            "path": "/api/readings/9000000010?source=redis"
+          },
+          "status": 200,
+          "ok": true,
+          "elapsed_ms": 8.800000000745058,
+          "response": {
+            "id": 9000000010,
+            "sensor_id": 1,
+            "ts": 1795003200,
+            "temperature_centi": 3350,
+            "humidity_centi": 5500
+          }
+        }
+      ],
+      "after": [
+        {
+          "source": "postgres",
+          "request": {
+            "source": "postgres",
+            "method": "GET",
+            "path": "/api/readings/9000000010?source=postgres"
+          },
+          "status": 200,
+          "ok": true,
+          "elapsed_ms": 24.800000000745058,
+          "response": {
+            "id": 9000000010,
+            "sensor_id": 1,
+            "ts": 1795003200,
+            "temperature_centi": 2850,
+            "humidity_centi": 5500
+          }
+        },
+        {
+          "source": "redis",
+          "request": {
+            "source": "redis",
+            "method": "GET",
+            "path": "/api/readings/9000000010?source=redis"
+          },
+          "status": 200,
+          "ok": true,
+          "elapsed_ms": 10.199999999254942,
+          "response": {
+            "id": 9000000010,
+            "sensor_id": 1,
+            "ts": 1795003200,
+            "temperature_centi": 2850,
+            "humidity_centi": 5500
+          }
+        }
+      ],
+      "comparison": {
+        "kind": "success",
+        "message": "Resultados equivalentes nos dois bancos.",
+        "differences": []
+      }
+    },
+    {
+      "number": 3,
+      "executed_at": "2026-11-17T22:45:35.815Z",
+      "origin": "form",
+      "operation": {
+        "action": "update",
+        "source": "postgres",
+        "data": {
+          "id": 9000000010,
+          "sensor_id": 1,
+          "ts": 1795003200,
+          "temperature_centi": 3125,
+          "humidity_centi": 6125
+        },
+        "mutation": true,
+        "requests": [
+          {
+            "source": "postgres",
+            "method": "PUT",
+            "path": "/api/readings/9000000010?source=postgres",
+            "body": {
+              "id": 9000000010,
+              "sensor_id": 1,
+              "ts": 1795003200,
+              "temperature_centi": 3125,
+              "humidity_centi": 6125
+            }
+          }
+        ]
+      },
+      "results": [
+        {
+          "source": "postgres",
+          "request": {
+            "source": "postgres",
+            "method": "PUT",
+            "path": "/api/readings/9000000010?source=postgres",
+            "body": {
+              "id": 9000000010,
+              "sensor_id": 1,
+              "ts": 1795003200,
+              "temperature_centi": 3125,
+              "humidity_centi": 6125
+            }
+          },
+          "status": 200,
+          "ok": true,
+          "elapsed_ms": 24.800000000745058,
+          "response": {
+            "id": 9000000010,
+            "sensor_id": 1,
+            "ts": 1795003200,
+            "temperature_centi": 3125,
+            "humidity_centi": 6125
+          }
+        }
+      ],
+      "before": [
+        {
+          "source": "postgres",
+          "request": {
+            "source": "postgres",
+            "method": "GET",
+            "path": "/api/readings/9000000010?source=postgres"
+          },
+          "status": 200,
+          "ok": true,
+          "elapsed_ms": 26.199999999254942,
+          "response": {
+            "id": 9000000010,
+            "sensor_id": 1,
+            "ts": 1795003200,
+            "temperature_centi": 2850,
+            "humidity_centi": 5500
+          }
+        },
+        {
+          "source": "redis",
+          "request": {
+            "source": "redis",
+            "method": "GET",
+            "path": "/api/readings/9000000010?source=redis"
+          },
+          "status": 200,
+          "ok": true,
+          "elapsed_ms": 8,
+          "response": {
+            "id": 9000000010,
+            "sensor_id": 1,
+            "ts": 1795003200,
+            "temperature_centi": 3350,
+            "humidity_centi": 5500
+          }
+        }
+      ],
+      "after": [
+        {
+          "source": "postgres",
+          "request": {
+            "source": "postgres",
+            "method": "GET",
+            "path": "/api/readings/9000000010?source=postgres"
+          },
+          "status": 200,
+          "ok": true,
+          "elapsed_ms": 23.699999999254942,
+          "response": {
+            "id": 9000000010,
+            "sensor_id": 1,
+            "ts": 1795003200,
+            "temperature_centi": 3125,
+            "humidity_centi": 6125
+          }
+        },
+        {
+          "source": "redis",
+          "request": {
+            "source": "redis",
+            "method": "GET",
+            "path": "/api/readings/9000000010?source=redis"
+          },
+          "status": 200,
+          "ok": true,
+          "elapsed_ms": 8.899999998509884,
+          "response": {
+            "id": 9000000010,
+            "sensor_id": 1,
+            "ts": 1795003200,
+            "temperature_centi": 3350,
+            "humidity_centi": 5500
+          }
+        }
+      ],
+      "comparison": {
+        "kind": "success",
+        "message": "Operação concluída no banco selecionado."
+      }
+    },
+    {
+      "number": 2,
+      "executed_at": "2026-11-17T22:44:32.534Z",
+      "origin": "guided",
+      "operation": {
+        "action": "update",
+        "source": "redis",
+        "data": {
+          "id": 9000000010,
+          "sensor_id": 1,
+          "ts": 1795003200,
+          "temperature_centi": 3350,
+          "humidity_centi": 5500
+        },
+        "mutation": true,
+        "requests": [
+          {
+            "source": "redis",
+            "method": "PUT",
+            "path": "/api/readings/9000000010?source=redis",
+            "body": {
+              "id": 9000000010,
+              "sensor_id": 1,
+              "ts": 1795003200,
+              "temperature_centi": 3350,
+              "humidity_centi": 5500
+            }
+          }
+        ]
+      },
+      "results": [
+        {
+          "source": "redis",
+          "request": {
+            "source": "redis",
+            "method": "PUT",
+            "path": "/api/readings/9000000010?source=redis",
+            "body": {
+              "id": 9000000010,
+              "sensor_id": 1,
+              "ts": 1795003200,
+              "temperature_centi": 3350,
+              "humidity_centi": 5500
+            }
+          },
+          "status": 200,
+          "ok": true,
+          "elapsed_ms": 18.100000001490116,
+          "response": {
+            "id": 9000000010,
+            "sensor_id": 1,
+            "ts": 1795003200,
+            "temperature_centi": 3350,
+            "humidity_centi": 5500
+          }
+        }
+      ],
+      "before": [
+        {
+          "source": "postgres",
+          "request": {
+            "source": "postgres",
+            "method": "GET",
+            "path": "/api/readings/9000000010?source=postgres"
+          },
+          "status": 200,
+          "ok": true,
+          "elapsed_ms": 26.300000000745058,
+          "response": {
+            "id": 9000000010,
+            "sensor_id": 1,
+            "ts": 1795003200,
+            "temperature_centi": 2850,
+            "humidity_centi": 5500
+          }
+        },
+        {
+          "source": "redis",
+          "request": {
+            "source": "redis",
+            "method": "GET",
+            "path": "/api/readings/9000000010?source=redis"
+          },
+          "status": 200,
+          "ok": true,
+          "elapsed_ms": 9.100000001490116,
+          "response": {
+            "id": 9000000010,
+            "sensor_id": 1,
+            "ts": 1795003200,
+            "temperature_centi": 2850,
+            "humidity_centi": 5500
+          }
+        }
+      ],
+      "after": [
+        {
+          "source": "postgres",
+          "request": {
+            "source": "postgres",
+            "method": "GET",
+            "path": "/api/readings/9000000010?source=postgres"
+          },
+          "status": 200,
+          "ok": true,
+          "elapsed_ms": 22.599999997764826,
+          "response": {
+            "id": 9000000010,
+            "sensor_id": 1,
+            "ts": 1795003200,
+            "temperature_centi": 2850,
+            "humidity_centi": 5500
+          }
+        },
+        {
+          "source": "redis",
+          "request": {
+            "source": "redis",
+            "method": "GET",
+            "path": "/api/readings/9000000010?source=redis"
+          },
+          "status": 200,
+          "ok": true,
+          "elapsed_ms": 8.600000001490116,
+          "response": {
+            "id": 9000000010,
+            "sensor_id": 1,
+            "ts": 1795003200,
+            "temperature_centi": 3350,
+            "humidity_centi": 5500
+          }
+        }
+      ],
+      "comparison": {
+        "kind": "success",
+        "message": "Operação concluída no banco selecionado."
+      }
+    },
+    {
+      "number": 1,
+      "executed_at": "2026-11-17T22:44:26.819Z",
+      "origin": "guided",
+      "operation": {
+        "action": "create",
+        "source": "both",
+        "data": {
+          "id": 9000000010,
+          "sensor_id": 1,
+          "ts": 1795003200,
+          "temperature_centi": 2850,
+          "humidity_centi": 5500
+        },
+        "mutation": true,
+        "requests": [
+          {
+            "source": "postgres",
+            "method": "POST",
+            "path": "/api/readings?source=postgres",
+            "body": {
+              "id": 9000000010,
+              "sensor_id": 1,
+              "ts": 1795003200,
+              "temperature_centi": 2850,
+              "humidity_centi": 5500
+            }
+          },
+          {
+            "source": "redis",
+            "method": "POST",
+            "path": "/api/readings?source=redis",
+            "body": {
+              "id": 9000000010,
+              "sensor_id": 1,
+              "ts": 1795003200,
+              "temperature_centi": 2850,
+              "humidity_centi": 5500
+            }
+          }
+        ]
+      },
+      "results": [
+        {
+          "source": "postgres",
+          "request": {
+            "source": "postgres",
+            "method": "POST",
+            "path": "/api/readings?source=postgres",
+            "body": {
+              "id": 9000000010,
+              "sensor_id": 1,
+              "ts": 1795003200,
+              "temperature_centi": 2850,
+              "humidity_centi": 5500
+            }
+          },
+          "status": 201,
+          "ok": true,
+          "elapsed_ms": 34.79999999701977,
+          "response": {
+            "id": 9000000010,
+            "sensor_id": 1,
+            "ts": 1795003200,
+            "temperature_centi": 2850,
+            "humidity_centi": 5500
+          }
+        },
+        {
+          "source": "redis",
+          "request": {
+            "source": "redis",
+            "method": "POST",
+            "path": "/api/readings?source=redis",
+            "body": {
+              "id": 9000000010,
+              "sensor_id": 1,
+              "ts": 1795003200,
+              "temperature_centi": 2850,
+              "humidity_centi": 5500
+            }
+          },
+          "status": 201,
+          "ok": true,
+          "elapsed_ms": 9.800000000745058,
+          "response": {
+            "id": 9000000010,
+            "sensor_id": 1,
+            "ts": 1795003200,
+            "temperature_centi": 2850,
+            "humidity_centi": 5500
+          }
+        }
+      ],
+      "before": [
+        {
+          "source": "postgres",
+          "request": {
+            "source": "postgres",
+            "method": "GET",
+            "path": "/api/readings/9000000010?source=postgres"
+          },
+          "status": 404,
+          "ok": false,
+          "elapsed_ms": 25.299999997019768,
+          "response": {
+            "detail": "Leitura não encontrada"
+          }
+        },
+        {
+          "source": "redis",
+          "request": {
+            "source": "redis",
+            "method": "GET",
+            "path": "/api/readings/9000000010?source=redis"
+          },
+          "status": 404,
+          "ok": false,
+          "elapsed_ms": 9.200000002980232,
+          "response": {
+            "detail": "Leitura não encontrada"
+          }
+        }
+      ],
+      "after": [
+        {
+          "source": "postgres",
+          "request": {
+            "source": "postgres",
+            "method": "GET",
+            "path": "/api/readings/9000000010?source=postgres"
+          },
+          "status": 200,
+          "ok": true,
+          "elapsed_ms": 22.800000000745058,
+          "response": {
+            "id": 9000000010,
+            "sensor_id": 1,
+            "ts": 1795003200,
+            "temperature_centi": 2850,
+            "humidity_centi": 5500
+          }
+        },
+        {
+          "source": "redis",
+          "request": {
+            "source": "redis",
+            "method": "GET",
+            "path": "/api/readings/9000000010?source=redis"
+          },
+          "status": 200,
+          "ok": true,
+          "elapsed_ms": 10.300000000745058,
+          "response": {
+            "id": 9000000010,
+            "sensor_id": 1,
+            "ts": 1795003200,
+            "temperature_centi": 2850,
+            "humidity_centi": 5500
+          }
+        }
+      ],
+      "comparison": {
+        "kind": "success",
+        "message": "Resultados equivalentes nos dois bancos.",
+        "differences": []
+      }
+    }
+  ]
+}

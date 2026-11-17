@@ -120,6 +120,9 @@ function scaleTable(target, caption, headers, rows) {
 async function scalability() {
   try {
     const report=await api('/api/scalability');
+    const select=$('scale-volume');
+    const draw=()=>renderScaleVisuals(report.scenarios.find(s=>s.records===Number(select.value)));
+    select.addEventListener('change',draw);draw();
     const loading=[],queries=[],concurrent=[];$('scale-plans').replaceChildren();
     for(const scenario of report.scenarios) {
       const volume=n(scenario.records);
@@ -164,3 +167,29 @@ $('location').addEventListener('change',()=>{sensors();refresh();});
 $('sensor').addEventListener('change',refresh);
 $('apply').addEventListener('click',refresh);$('refresh').addEventListener('click',refresh);$('lookup').addEventListener('click',lookup);
 init();
+
+// Uma escrita no laboratório atualiza os indicadores sob os filtros da visão geral.
+addEventListener('iot:readings-changed', () => { if (state.sensors.length) refresh(); });
+
+function renderScaleVisuals(scenario) {
+  $('scale-visual-charts').replaceChildren();
+  const descriptions={Q1:'Uma leitura pelo ID',Q2:'Até 200 leituras de um sensor',Q3:'Resumo de todo o volume'};
+  for(const q of scenario.queries) {
+    const card=document.createElement('article');card.className='performance-card';
+    const heading=document.createElement('h4');heading.textContent=q.query+' · '+descriptions[q.query];
+    const context=document.createElement('p');context.textContent=n(scenario.records)+' leituras armazenadas';
+    card.append(heading,context);
+    const max=Math.max(q.metrics.postgres.median_ms,q.metrics.redis.median_ms,0.001);
+    for(const source of ['postgres','redis']) {
+      const value=q.metrics[source].median_ms;
+      const label=document.createElement('div');label.className='performance-bar-label';
+      const name=document.createElement('span');name.textContent=source==='postgres'?'PostgreSQL':'Redis';
+      const timing=document.createElement('strong');timing.textContent=ms(value);label.append(name,timing);
+      const track=document.createElement('div');track.className='performance-track';track.setAttribute('aria-hidden','true');
+      const fill=document.createElement('div');fill.className='performance-fill '+source;fill.style.width=(value/max*100)+'%';track.append(fill);
+      card.append(label,track);
+    }
+    const note=document.createElement('small');note.textContent='Mediana em ms · escala de 0 a '+ms(max);card.append(note);
+    $('scale-visual-charts').append(card);
+  }
+}

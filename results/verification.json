@@ -1,5 +1,5 @@
 {
-  "verified_at": "2026-11-17T21:38:16.980257+00:00",
+  "verified_at": "2026-11-17T22:53:04.361124+00:00",
   "checked_readings": 1000000,
   "postgres_count": 1000000,
   "redis_count": 1000000,
@@ -11,6 +11,6 @@
   "sensors_verified": 1000,
   "all_temporal_and_unique_indexes_verified": true,
   "redis_evicted_keys": 0,
-  "seconds": 56.92169508900042,
+  "seconds": 57.58326914300051,
   "equivalent": true
 }

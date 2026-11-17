@@ -1,6 +1,6 @@
-.PHONY: up load verify benchmark test test-console browser audit logs stop package all crud exemplos-redis test-exemplos-redis escala graficos
+.PHONY: up load verify benchmark test test-console test-tools check browser audit logs stop package all crud exemplos-redis test-exemplos-redis escala graficos
 PYTHON_GRAFICOS ?= .venv-graficos/bin/python
-.NOTPARALLEL: all
+.NOTPARALLEL: all check
 up:
 	docker compose up -d --build --wait
 load:
@@ -16,7 +16,10 @@ test:
 browser:
 	npm run test:browser
 test-console:
-	node --test tests/frontend/operations.test.mjs
+	node --test tests/frontend/*.test.mjs
+test-tools:
+	docker compose exec -T app python -m unittest discover -s tests/scalability -p 'test_*.py' -v
+check: test test-console test-exemplos-redis test-tools audit
 crud:
 	docker compose exec -T app python -m scripts.crud_demo
 exemplos-redis:

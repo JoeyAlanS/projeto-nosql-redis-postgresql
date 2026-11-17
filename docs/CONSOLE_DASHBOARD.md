@@ -4,6 +4,29 @@ Abra **http://localhost:8000/#operations**. Se os serviços estiverem parados ou
 
 O painel faz requisições reais à API FastAPI, que acessa os bancos locais da base principal de 1 milhão de leituras. Os bancos isolados de 1 e 5 milhões usados nos testes de carga não são modificados por este painel.
 
+## Comparação visual e mudanças pela dashboard
+
+O laboratório aparece no início da página. Os dois cartões consultam o mesmo ID: à esquerda, a linha de `readings` no PostgreSQL; à direita, o hash `iot:reading:<id>` do Redis. Temperatura e umidade aparecem nas mesmas unidades, e uma faixa amarela destaca campos diferentes. Os valores armazenados também ficam visíveis, como `2850` para 28,50 °C.
+
+Para **enviar uma alteração sua**, consulte o ID e clique em **Editar no PostgreSQL** ou **Editar no Redis**. O formulário abre com os valores realmente consultados. Mude temperatura, umidade, sensor ou instante, confira o destino e clique em **Executar operação**. O painel faz novas consultas aos dois bancos e exibe **antes → depois**, inclusive no banco que não recebeu escrita. O console mantém a requisição, a resposta e as capturas para exportação.
+
+Uma leitura ausente (HTTP 404) aparece como ausente. Se a consulta falhar, o painel informa que não foi possível confirmar a leitura; não trata falha de rede como exclusão. O resultado da escrita fica separado do estado consultado depois: isso torna visível uma falha parcial mesmo quando os valores acabam iguais.
+
+### Demonstração em quatro botões
+
+1. **Criar nos dois:** cria a leitura #9000000010 com 28,50 °C e 55% em ambos.
+2. **Mudar só Redis:** grava 33,50 °C apenas no Redis. PostgreSQL permanece em 28,50 °C; o campo de temperatura fica destacado.
+3. **Igualar valores:** grava 28,50 °C e 55% nos dois bancos para demonstrar equivalência novamente.
+4. **Excluir exemplo:** remove somente a leitura #9000000010 dos dois bancos. O painel confirma sua ausência com novas consultas.
+
+Esses botões executam as operações indicadas. Já os três cartões “Comparar uma leitura”, “Experimentar o CRUD” e “Resumir 10 mil leituras” apenas preenchem o formulário e aguardam **Executar operação**.
+
+A divergência demonstra **cópias independentes**, não um defeito do Redis ou PostgreSQL. Não existe sincronização automática neste projeto. Os bancos representam o mesmo dado lógico em estruturas distintas. As capturas antes/depois são consultas independentes e podem observar escritas de outra sessão; não são controle de concorrência ou uma transação conjunta.
+
+### Comparar desempenho visualmente
+
+Na seção **1 milhão × 5 milhões**, selecione a massa para ver barras das medianas salvas de Q1 (ID), Q2 (histórico) e Q3 (resumo). Cada cartão usa a mesma escala para os dois bancos, iniciando em zero; a escala muda entre consultas. Valores e unidade em milissegundos permanecem visíveis. São as 30 repetições do ensaio anterior, e trocar a seleção não gera uma nova carga.
+
 ## Uso básico
 
 1. Escolha **PostgreSQL**, **Redis** ou **Ambos** em Banco de destino.
@@ -72,11 +95,15 @@ As últimas **30 execuções** ficam na memória da aba. **Baixar JSON** exporta
 - `web/index.html`: campos, exemplos e roteiro visível.
 - `web/operations.css`: formulário responsivo e console.
 - `web/operations-core.mjs`: validação, conversão de unidades, requisições e comparação estrutural.
-- `web/operations.js`: envio real via fetch, retorno por banco, erros, edição e exportação.
+- `web/operations.js`: envio real via fetch, demonstração guiada, erros, edição e exportação.
+- `web/reading-comparison.mjs`: distingue ausência de erro, compara campos e captura antes/depois.
+- `web/reading-view.js` e `web/reading-comparison.css`: cartões visuais, estruturas e transições de valores.
 - `app/main.py` e `app/store.py`: API e operações existentes, reaproveitadas sem mudar seu contrato.
-- `tests/frontend/operations.test.mjs`: testes das rotas/payloads, limites, filtros, comparação e falhas parciais. Rode `make test-console` com Node 20 ou superior.
+- `tests/frontend/*.test.mjs`: 11 testes das rotas/payloads, limites, filtros, comparação, estados desconhecidos, capturas e falhas parciais. Rode `make test-console` com Node 20 ou superior.
 - `make test`: testes de integração com PostgreSQL e Redis. Execute com as bases equivalentes, depois de remover a leitura de demonstração; diferenças criadas intencionalmente no roteiro fazem os testes de equivalência falharem.
 - `results/console_operacoes.json`: histórico real exportado da interface, com 13 operações cobrindo CRUD, divergência, falha parcial, 404/409/422, histórico e resumo de 10 mil.
 - `results/console_validacao.json`: evidências da interface e da limpeza dos dados de demonstração.
 
 Não é necessário instalar Node para usar a dashboard; ele é usado apenas no teste isolado do JavaScript. Os testes de carga e gráficos anteriores permanecem em `results/escala/` e `output/graficos/`.
+
+A verificação desta versão e as operações reais exportadas estão em `results/dashboard/`. Execute `make check` para rodar os 30 testes e a auditoria; finalize a demonstração antes para manter as bases equivalentes.

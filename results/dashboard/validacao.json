@@ -1,0 +1,68 @@
+{
+  "verified_at": "2026-11-17T22:54:05.264286+00:00",
+  "passed": true,
+  "automated_tests": {
+    "integration": 11,
+    "frontend": 11,
+    "redis_examples": 3,
+    "scale_tools": 5,
+    "total": 30
+  },
+  "browser_checks": {
+    "real_create_update_delete": true,
+    "manual_form_postgres_temperature_and_humidity_update": true,
+    "redis_only_update_leaves_postgres_unchanged": true,
+    "same_values_after_align": true,
+    "delete_confirmed_by_two_404_reads": true,
+    "partial_409_201_visible_despite_equal_after_state": true,
+    "summary_of_10000_equal": true,
+    "performance_1m_5m_selector_checked": true,
+    "performance_5m_labels_match_saved_measurements": true,
+    "page_console_errors": [],
+    "default_viewport_width": 1422,
+    "document_width": 1405
+  },
+  "full_dataset_verification": {
+    "verified_at": "2026-11-17T22:53:04.361124+00:00",
+    "checked_readings": 1000000,
+    "postgres_count": 1000000,
+    "redis_count": 1000000,
+    "sha256": {
+      "csv": "519f2a3fceac765890289c51876e3be1980ff8c03d9f74d9768beb84a264369f",
+      "postgres": "519f2a3fceac765890289c51876e3be1980ff8c03d9f74d9768beb84a264369f",
+      "redis": "519f2a3fceac765890289c51876e3be1980ff8c03d9f74d9768beb84a264369f"
+    },
+    "sensors_verified": 1000,
+    "all_temporal_and_unique_indexes_verified": true,
+    "redis_evicted_keys": 0,
+    "seconds": 57.58326914300051,
+    "equivalent": true
+  },
+  "repository_checks": {
+    "untracked_credentials_or_dependencies_added": false,
+    "original_measurements_preserved": true,
+    "new_runtime_dependencies": 0
+  },
+  "source_sha256": {
+    "web/index.html": "71aebd6127a168be809da65290aa0992e485dd0a5e6ba5bbd2bd9afc0184c3dc",
+    "web/app.js": "bcad0aa630cfc48ba425b37129303fb546676ea40457aacca83fbdb61e57bfe0",
+    "web/operations.js": "8285993b241684b7c69de503ad14df94e0ed8aa7e865f6cbabd82448875f91ff",
+    "web/operations-core.mjs": "95132ada83f33899cf5e9a086535129ba095ddfa9c02ee30782cc0ee4ec7a192",
+    "web/operations.css": "08cfa305123d22bf3878d1e79427af959b65cab9968d964f94313efe44088de9",
+    "web/reading-comparison.mjs": "abb383cbc9cb3cbbbc893ef108cfc9b2d3e76ca2acf01b291a00199ca2c5af57",
+    "web/reading-view.js": "0c8376f7022dba1f50398c9686d5260f2b29465bc6479c899125d99a5ba6d9aa",
+    "web/reading-comparison.css": "875c6045854172cf769b00521bde49933756bd5fac9016f2db28ee8bd8d7b816"
+  },
+  "evidence": [
+    "results/dashboard/operacoes_visuais.json",
+    "results/dashboard/falha_parcial.json",
+    "results/dashboard/confirmacao_final.json",
+    "results/dashboard/browser.json",
+    "results/evidencias/dashboard_lado_a_lado.png"
+  ],
+  "limitations": [
+    "As capturas antes/depois são consultas independentes; não há transação distribuída ou controle de concorrência.",
+    "Medições de carga permanecem resultados salvos; não foram repetidas para esta mudança de interface.",
+    "Inspeção visual feita na janela padrão, sem alterar o tamanho do navegador."
+  ]
+}

@@ -1,0 +1,19 @@
+✔ CRUD envia inteiros exatos e fontes separadas para os endpoints existentes (5.434721ms)
+✔ resumo de 10 mil usa todos os sensores; histórico requer um sensor e limite (5.840449ms)
+✔ rejeita entradas vazias, imprecisas, fora dos limites e datas inexistentes (0.772157ms)
+✔ comparação ignora a ordem de propriedades e tempos, mas detecta tipos, campos e listas diferentes (0.999882ms)
+✔ falha parcial não aparece como equivalência nem como reversão confirmada (0.613699ms)
+✔ 404 confirma ausência; falha HTTP, rede e JSON incorreto permanecem desconhecidos (2.229273ms)
+✔ comparação separa equivalência, diferença de campo, ausência e comparação incompleta (3.004613ms)
+✔ antes/depois não inventa mudança quando uma das consultas falha (1.00098ms)
+✔ captura ambos antes e depois; falha parcial não repete nem reverte escritas (2.739197ms)
+✔ consulta depois da escrita determina a tela; uma resposta de sucesso não substitui a confirmação (0.834247ms)
+✔ consulta por ID usa somente GET e unidades são convertidas sem alterar os valores armazenados (28.362225ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 203.586413

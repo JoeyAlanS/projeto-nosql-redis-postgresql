@@ -1,10 +1,10 @@
 {
-  "created_at": "2026-11-17T21:42:38.702845+00:00",
+  "created_at": "2026-11-17T22:54:15.464668+00:00",
   "files": [
     {
       "path": ".dockerignore",
-      "bytes": 97,
-      "sha256": "fa2af072fb2c03900b77ecc5236decf465c168741eeed3ea3ec08f8120602730"
+      "bytes": 166,
+      "sha256": "26e7c0546e0ddafe0340ed874059c3ed7271f4a3779eb433d25f81eb5001aa74"
     },
     {
       "path": ".env.example",
@@ -33,8 +33,8 @@
     },
     {
       "path": "Makefile",
-      "bytes": 1439,
-      "sha256": "3e9fbd8e3256045ae51153e371eee6034025893cf581fe1590c11419765b8e04"
+      "bytes": 1622,
+      "sha256": "222c49cdc3064478dc3b95f52d3a2a7472bd997adbae2ba181d32499580473af"
     },
     {
       "path": "Observatorio_IoT.code-workspace",
@@ -43,8 +43,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 12984,
-      "sha256": "d9751d4b4e76b30de10d7831975b19070ebef294a171dda2702c5a4b58d49940"
+      "bytes": 12706,
+      "sha256": "e29cded7671e326c9a24cad1adbfbaa16a3a919d96f9872b2febc52a192297c0"
     },
     {
       "path": "app/__init__.py",
@@ -113,8 +113,8 @@
     },
     {
       "path": "docs/CONSOLE_DASHBOARD.md",
-      "bytes": 7470,
-      "sha256": "140ffb740bac0cdd4d87ef64e1a3ee801ce54af16411ce8319cf18acd6870f79"
+      "bytes": 10652,
+      "sha256": "74d4a41077ef162bbddb72563566934104c275d66820de2cd560343508d437a7"
     },
     {
       "path": "docs/DEMONSTRACAO_17_11.md",
@@ -135,6 +135,11 @@
       "path": "docs/GUIA_CODIGO_REDIS.md",
       "bytes": 7259,
       "sha256": "50621f7c1e309fc3af660cd4aad6f648ada879259ee6bdb433a0ee2546ba8c78"
+    },
+    {
+      "path": "docs/INDICE.md",
+      "bytes": 2141,
+      "sha256": "fb995c4824ad32a2c786814966572fc37efd9f20f9b6ba26ace93dfc55aba7b5"
     },
     {
       "path": "docs/MANUAL_COMPLETO.md",
@@ -457,6 +462,46 @@
       "sha256": "0f7c339b194bb3ea6b78de30e3be309e17adb72606b5d6ea53620b3d2a3c4bd6"
     },
     {
+      "path": "results/dashboard/browser.json",
+      "bytes": 1841,
+      "sha256": "77083f7a015468614845dd4e4af0a3067283ee74a1a61cb2e0c5896c8257f28e"
+    },
+    {
+      "path": "results/dashboard/check.log",
+      "bytes": 4886,
+      "sha256": "acf93e31809484c1f1d307e9d688c15484d2fdd37337a2a21146c8eb60126b09"
+    },
+    {
+      "path": "results/dashboard/confirmacao_final.json",
+      "bytes": 9919,
+      "sha256": "abbe0510ea8fa342cddc46a14ef32cb22fe2814b8e95078fd7264352e453215a"
+    },
+    {
+      "path": "results/dashboard/falha_parcial.json",
+      "bytes": 7996,
+      "sha256": "87267d9adb7af223576ef1d34f2a0444bab70405e7ce5e7ab830779bfcfd53ef"
+    },
+    {
+      "path": "results/dashboard/frontend_tests.log",
+      "bytes": 1220,
+      "sha256": "d80072eec9ab94750fc4319b056ac1b027a02d8b213a8830618164ce7a82956a"
+    },
+    {
+      "path": "results/dashboard/operacoes_visuais.json",
+      "bytes": 20334,
+      "sha256": "d5a643a32532208ad8c9b7054004331508ec30419cd671bef427ca1a0bc5cb05"
+    },
+    {
+      "path": "results/dashboard/validacao.json",
+      "bytes": 2958,
+      "sha256": "b80c2267261237dd7509cd3feb8bfa7d04d43e0a76cb437dc44e6462310e8068"
+    },
+    {
+      "path": "results/dashboard/verification.log",
+      "bytes": 772,
+      "sha256": "30349a0f873d7f1d09a9a8268342e5d6cf4ebf30d92f153be39f9e472dce0f91"
+    },
+    {
       "path": "results/demonstracao_fluxo.json",
       "bytes": 5102,
       "sha256": "1ee52a6cb7cb7cddea74e0d6b8328da10b6c7377a949e4e4af84b4966e25d194"
@@ -622,6 +667,11 @@
       "sha256": "ee7bb759851d495ba7153dbc492d592b951d8c584d3e67b5047d01c4e5729f5e"
     },
     {
+      "path": "results/evidencias/dashboard_lado_a_lado.png",
+      "bytes": 91417,
+      "sha256": "e3e048447234036a03086c7eb8035dd2404c70c5b86900fcb47a6299648d90c0"
+    },
+    {
       "path": "results/evidencias/dashboard_mobile.png",
       "bytes": 155909,
       "sha256": "a638412b4b9b3c88d05245e54e4f645e0d14db6b3dbc4bfdf837724e0187772f"
@@ -694,12 +744,12 @@
     {
       "path": "results/tests.log",
       "bytes": 1585,
-      "sha256": "23e87d7abcd2da90fcaa1f0880198976815884055815d07a5060fefc36ba0935"
+      "sha256": "e7477e98fa426cb1182c0d12d94d84a5fdd33b96660887ca82f8df560eb6a78c"
     },
     {
       "path": "results/verification.json",
       "bytes": 565,
-      "sha256": "25cf5e75f4228466e9168b38bab5022d2c3b21fbbd1351a43f05ccc14861c179"
+      "sha256": "d3f6df7f635bfe3f64c8b49bd7da4a26181188cd61998c8520e73e04f1c32920"
     },
     {
       "path": "scripts/__init__.py",
@@ -812,6 +862,11 @@
       "sha256": "bf3dc4cd208789a6ed088da498f47a578fffd8580aa76f6e78bdd42b77299e49"
     },
     {
+      "path": "tests/frontend/reading-comparison.test.mjs",
+      "bytes": 4208,
+      "sha256": "608a951639d1e4bab71f86f8675f15e62ab6be7c2d2985b67c2593e331b48dc0"
+    },
+    {
       "path": "tests/scalability/test_tools.py",
       "bytes": 3329,
       "sha256": "a879630e147c583be9f4928bf1528cc0f409c6f20e59daca4d70ab7ade011beb"
@@ -823,13 +878,13 @@
     },
     {
       "path": "web/app.js",
-      "bytes": 13069,
-      "sha256": "349a08379f7acafbe82bff38f92fe79b95c23d27dac1b5b75968e3e1765b0020"
+      "bytes": 14974,
+      "sha256": "bcad0aa630cfc48ba425b37129303fb546676ea40457aacca83fbdb61e57bfe0"
     },
     {
       "path": "web/index.html",
-      "bytes": 13916,
-      "sha256": "72541c3c4a758534cdc666dceb46bea84effed39c99621769a45924356830efa"
+      "bytes": 16850,
+      "sha256": "71aebd6127a168be809da65290aa0992e485dd0a5e6ba5bbd2bd9afc0184c3dc"
     },
     {
       "path": "web/operations-core.mjs",
@@ -838,13 +893,28 @@
     },
     {
       "path": "web/operations.css",
-      "bytes": 5187,
-      "sha256": "eab6e068e81c3e91874e4629321adad45ddfb454f8bf6964d2d3b91078034cd1"
+      "bytes": 5389,
+      "sha256": "08cfa305123d22bf3878d1e79427af959b65cab9968d964f94313efe44088de9"
     },
     {
       "path": "web/operations.js",
-      "bytes": 10889,
-      "sha256": "bc8e124e5a763deb006f2f449a949b315378448a77e09eea6fb214aa280e0c28"
+      "bytes": 13578,
+      "sha256": "8285993b241684b7c69de503ad14df94e0ed8aa7e865f6cbabd82448875f91ff"
+    },
+    {
+      "path": "web/reading-comparison.css",
+      "bytes": 7923,
+      "sha256": "875c6045854172cf769b00521bde49933756bd5fac9016f2db28ee8bd8d7b816"
+    },
+    {
+      "path": "web/reading-comparison.mjs",
+      "bytes": 3886,
+      "sha256": "abb383cbc9cb3cbbbc893ef108cfc9b2d3e76ca2acf01b291a00199ca2c5af57"
+    },
+    {
+      "path": "web/reading-view.js",
+      "bytes": 8079,
+      "sha256": "0c8376f7022dba1f50398c9686d5260f2b29465bc6479c899125d99a5ba6d9aa"
     },
     {
       "path": "web/scalability.css",

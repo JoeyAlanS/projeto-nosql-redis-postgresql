@@ -1,0 +1,128 @@
+{
+  "generated_at": "2026-11-17T19:52:00.410574+00:00",
+  "python": "3.14.8",
+  "matplotlib": "3.10.8",
+  "numpy": "2.5.5",
+  "script_sha256": "293fcef74956d5d93cf9574d6454767e3f9860a0366aa13a8f7b29e2bf9f2936",
+  "records": [
+    1000000,
+    5000000
+  ],
+  "figures": 6,
+  "png_dpi": 240,
+  "benchmark_samples_rechecked": 360,
+  "http_samples_rechecked": 14400,
+  "raw_medians_p95_and_throughput_match": true,
+  "load_trials_per_source_per_size": 1,
+  "http_errors": 0,
+  "inputs": [
+    {
+      "path": "results/escala/comparacao.json",
+      "sha256": "84fcedc25a739a25466bbb9c5f52867a18362e75faccdc65597e8a21f204178e"
+    },
+    {
+      "path": "results/escala/1000000/benchmark_raw.csv",
+      "sha256": "98c9415d08d73b29e9067ecc82020bacfaa237cfa0fc258a66b14c2bb5ee9af8"
+    },
+    {
+      "path": "results/escala/1000000/concurrent_load_raw.csv",
+      "sha256": "62a2a6d398749d464ae776d3659e54b2bf7ca02f302dc7f8ca27d28dc0d327e3"
+    },
+    {
+      "path": "results/escala/1000000/load.json",
+      "sha256": "8a0f8152935d2d964aca3b1d23f50143ea321348fc54a1ee99467a1df1a4a2a2"
+    },
+    {
+      "path": "results/escala/1000000/verification.json",
+      "sha256": "a1624fad3fb30bf883ce466e277e09db012f8de6973c6f1f376f6d3b3853cf58"
+    },
+    {
+      "path": "results/escala/5000000/benchmark_raw.csv",
+      "sha256": "013c90f8bfc827cc378c95ca9339923f1efdccc0cf1b338f22e2d71ab1deea97"
+    },
+    {
+      "path": "results/escala/5000000/concurrent_load_raw.csv",
+      "sha256": "7f0fe0975c5e6cb94bb8ac2094e7ed7dab4a8dffc7b6312171fb52f3a18e8833"
+    },
+    {
+      "path": "results/escala/5000000/load.json",
+      "sha256": "cd1c613a5333f0cfcb498d32f48b0cbc76815797765f57160acb769f6321806f"
+    },
+    {
+      "path": "results/escala/5000000/verification.json",
+      "sha256": "c09208bae0abf15d63a8c62399118bce6a27fc47f4916b487531fd05ffca0613"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "output/graficos/01_tempo_carga.png",
+      "bytes": 261938,
+      "sha256": "e53399f23dc5e563a4dd795747a4a9ea3f8b987429c2f4d1fd1e4e19fa3b39d4"
+    },
+    {
+      "path": "output/graficos/01_tempo_carga.svg",
+      "bytes": 8943,
+      "sha256": "c6ef49c59b25b672265f3c3d794fe0a64a83296af4328ff49f8ab4813f01707c"
+    },
+    {
+      "path": "output/graficos/02_mediana_consultas.png",
+      "bytes": 335117,
+      "sha256": "e915f70ef939a3b39f5418c8c405769fc996e3e15d5ea6d417843c1ac701f609"
+    },
+    {
+      "path": "output/graficos/02_mediana_consultas.svg",
+      "bytes": 19646,
+      "sha256": "05944825fc8c5ed8310a242e0ebe7decba9fd9f82c7c4728302af7c2acf0701b"
+    },
+    {
+      "path": "output/graficos/03_vazao_concorrencia.png",
+      "bytes": 351520,
+      "sha256": "dfee8e38a3749e9366215637c2c5783fac6c5ae4b648932f26a03503f8a17a24"
+    },
+    {
+      "path": "output/graficos/03_vazao_concorrencia.svg",
+      "bytes": 21872,
+      "sha256": "62383870fb8137fd0b2b9c540476ea942a83f097bc768295fbe71821a2535ff3"
+    },
+    {
+      "path": "output/graficos/04_latencia_concorrencia.png",
+      "bytes": 412907,
+      "sha256": "ada68ab1d5f0ee4eebb8ca21d94b2f8b568ac4f337beb3e8ca098df25b84d05c"
+    },
+    {
+      "path": "output/graficos/04_latencia_concorrencia.svg",
+      "bytes": 32299,
+      "sha256": "888ca3683ee55c7bef7d0767c9017603bcdd1b106050413fc5a0839f4c75c1db"
+    },
+    {
+      "path": "output/graficos/05_distribuicao_consultas.png",
+      "bytes": 446679,
+      "sha256": "28bab3d677c0544f27ba91860321ae362d18651685158da246e3e5c044139318"
+    },
+    {
+      "path": "output/graficos/05_distribuicao_consultas.svg",
+      "bytes": 88497,
+      "sha256": "f09acd9cdec38dd4aad3ff0f8b73c1e6d74afbe5f7a3d9b9228ba4ef70d3a544"
+    },
+    {
+      "path": "output/graficos/06_distribuicao_http.png",
+      "bytes": 338878,
+      "sha256": "a5e3460af3b5010d6e99ab32d5444f9dbbd481711fea329e67604cd8628f0fe8"
+    },
+    {
+      "path": "output/graficos/06_distribuicao_http.svg",
+      "bytes": 124665,
+      "sha256": "22d1b2d01e46136b61c09da9c33ae7a707c52b243e9b46311c77d6c2aab1741f"
+    },
+    {
+      "path": "output/pdf/Graficos_Carga_1M_5M.pdf",
+      "bytes": 86536,
+      "sha256": "975f9cbee53f45fb955ea9cf89e41a9bde8591b6b425a504c82474bb79e42b49"
+    },
+    {
+      "path": "output/Graficos_Carga_1M_5M.zip",
+      "bytes": 2015548,
+      "sha256": "deeb365f6000def71a9c6ee4db927da7e8c65b48a2fa2a90ca53ce13bb61631d"
+    }
+  ]
+}

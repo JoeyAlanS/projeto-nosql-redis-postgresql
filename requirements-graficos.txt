@@ -1,0 +1,2 @@
+# Dependência de autoria; separada das dependências da aplicação Docker.
+matplotlib==3.10.8

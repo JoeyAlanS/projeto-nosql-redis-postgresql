@@ -40,7 +40,19 @@ python3 -m scripts.build_scale_report
 
 O primeiro comando valida as amostras brutas e os hashes e reconstitui o resumo; o segundo gera `docs/COMPARACAO_1M_5M.md` e `output/pdf/Comparacao_Carga_1M_5M.pdf`. Confira as seis páginas renderizadas antes de distribuir a revisão. O experimento original em `results/benchmark.json` permanece independente.
 
-## Pacote
+## Gráficos em Python
+
+As dependências de gráficos ficam separadas das da aplicação:
+
+```bash
+python3 -m venv .venv-graficos
+.venv-graficos/bin/python -m pip install -r requirements-graficos.txt
+make graficos
+```
+
+O comando valida os dados brutos e gera seis PNGs, seis SVGs e um PDF com seis páginas. O guia `docs/GRAFICOS_CARGA.md` explica as medidas, escalas e falas para apresentar. Confira as imagens antes de distribuir uma revisão.
+
+## Gerar o pacote
 
 ```bash
 make audit

@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-11-17T18:19:26.785549+00:00",
+  "created_at": "2026-11-17T19:52:10.618143+00:00",
   "files": [
     {
       "path": ".dockerignore",
@@ -18,8 +18,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 223,
-      "sha256": "33f686337e19141b9c03d22f6af85bd8ee5a98ecba7719ad4cc98a28d5c200c6"
+      "bytes": 239,
+      "sha256": "ff811398018ca4b547bd19fba9d273b7bd830f4de5e039867cf851ffbfa05af9"
     },
     {
       "path": ".vscode/tasks.json",
@@ -33,8 +33,8 @@
     },
     {
       "path": "Makefile",
-      "bytes": 1253,
-      "sha256": "1a782212d05027bc4e4c2fcfd86c0d8bd539c6f469c3e10ed40093861427238a"
+      "bytes": 1364,
+      "sha256": "1a4c71da80b4ef5af10fb57925cb385891936bbc397514c1e8673bf3d81a5dfd"
     },
     {
       "path": "Observatorio_IoT.code-workspace",
@@ -43,8 +43,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 12306,
-      "sha256": "6e5a09e7f7507013478de51628dd0b7572b1c34e7bd7ff5d9aee20146a796cfe"
+      "bytes": 12662,
+      "sha256": "7e402a9a98e0335c17725e5d09afa741f7c0c98fd12e0b03696b578a82faf8cb"
     },
     {
       "path": "app/__init__.py",
@@ -98,8 +98,8 @@
     },
     {
       "path": "docs/AUTORIA.md",
-      "bytes": 3185,
-      "sha256": "701413089a86701e33e7f3a294f23153f83368f124df8d4d9e637a15af07d37e"
+      "bytes": 3640,
+      "sha256": "65ee0416c762a456a2caa1ad9c03707bc568b0d0212ebd335e506e916a504d2f"
     },
     {
       "path": "docs/COMANDOS_TESTES.md",
@@ -120,6 +120,11 @@
       "path": "docs/ENTREGAS.md",
       "bytes": 3221,
       "sha256": "458ddf169ce2b7fe096c5f56fd9cc373034208d668d558952b4cc81d5ece98d8"
+    },
+    {
+      "path": "docs/GRAFICOS_CARGA.md",
+      "bytes": 6542,
+      "sha256": "c9829bce2b12862858b1a44bf5fe8d03bde806af50f80e7965cc6fdb9387c897"
     },
     {
       "path": "docs/GUIA_CODIGO_REDIS.md",
@@ -252,6 +257,66 @@
       "sha256": "9944c123678f73024d3926a74d8795fb442cdc8ea124072770fc86ea66624185"
     },
     {
+      "path": "output/graficos/01_tempo_carga.png",
+      "bytes": 261938,
+      "sha256": "e53399f23dc5e563a4dd795747a4a9ea3f8b987429c2f4d1fd1e4e19fa3b39d4"
+    },
+    {
+      "path": "output/graficos/01_tempo_carga.svg",
+      "bytes": 8943,
+      "sha256": "c6ef49c59b25b672265f3c3d794fe0a64a83296af4328ff49f8ab4813f01707c"
+    },
+    {
+      "path": "output/graficos/02_mediana_consultas.png",
+      "bytes": 335117,
+      "sha256": "e915f70ef939a3b39f5418c8c405769fc996e3e15d5ea6d417843c1ac701f609"
+    },
+    {
+      "path": "output/graficos/02_mediana_consultas.svg",
+      "bytes": 19646,
+      "sha256": "05944825fc8c5ed8310a242e0ebe7decba9fd9f82c7c4728302af7c2acf0701b"
+    },
+    {
+      "path": "output/graficos/03_vazao_concorrencia.png",
+      "bytes": 351520,
+      "sha256": "dfee8e38a3749e9366215637c2c5783fac6c5ae4b648932f26a03503f8a17a24"
+    },
+    {
+      "path": "output/graficos/03_vazao_concorrencia.svg",
+      "bytes": 21872,
+      "sha256": "62383870fb8137fd0b2b9c540476ea942a83f097bc768295fbe71821a2535ff3"
+    },
+    {
+      "path": "output/graficos/04_latencia_concorrencia.png",
+      "bytes": 412907,
+      "sha256": "ada68ab1d5f0ee4eebb8ca21d94b2f8b568ac4f337beb3e8ca098df25b84d05c"
+    },
+    {
+      "path": "output/graficos/04_latencia_concorrencia.svg",
+      "bytes": 32299,
+      "sha256": "888ca3683ee55c7bef7d0767c9017603bcdd1b106050413fc5a0839f4c75c1db"
+    },
+    {
+      "path": "output/graficos/05_distribuicao_consultas.png",
+      "bytes": 446679,
+      "sha256": "28bab3d677c0544f27ba91860321ae362d18651685158da246e3e5c044139318"
+    },
+    {
+      "path": "output/graficos/05_distribuicao_consultas.svg",
+      "bytes": 88497,
+      "sha256": "f09acd9cdec38dd4aad3ff0f8b73c1e6d74afbe5f7a3d9b9228ba4ef70d3a544"
+    },
+    {
+      "path": "output/graficos/06_distribuicao_http.png",
+      "bytes": 338878,
+      "sha256": "a5e3460af3b5010d6e99ab32d5444f9dbbd481711fea329e67604cd8628f0fe8"
+    },
+    {
+      "path": "output/graficos/06_distribuicao_http.svg",
+      "bytes": 124665,
+      "sha256": "22d1b2d01e46136b61c09da9c33ae7a707c52b243e9b46311c77d6c2aab1741f"
+    },
+    {
       "path": "output/pdf/Comparacao_Carga_1M_5M.pdf",
       "bytes": 45683,
       "sha256": "3090135defb6a7ef179d8ddb406a8db42c89162afac60480d3dd9d7e9dcc15cf"
@@ -277,6 +342,11 @@
       "sha256": "63ad521d4518d9a44f09de206c93f1a2c6b2d35e219e1ab7bfdc04789f01d746"
     },
     {
+      "path": "output/pdf/Graficos_Carga_1M_5M.pdf",
+      "bytes": 86536,
+      "sha256": "975f9cbee53f45fb955ea9cf89e41a9bde8591b6b425a504c82474bb79e42b49"
+    },
+    {
       "path": "output/pdf/Manual_Completo_Observatorio_IoT.pdf",
       "bytes": 247180,
       "sha256": "320a6eceb8272c106f9a9192c25b0eff175442683aaf6d570d295dd73a07c6fc"
@@ -300,6 +370,11 @@
       "path": "package.json",
       "bytes": 284,
       "sha256": "ce94dd701c2ffa743844b9b9949f2ee24fe6f266e906c8740f47c21d266b8f8c"
+    },
+    {
+      "path": "requirements-graficos.txt",
+      "bytes": 96,
+      "sha256": "8c01f060c1cafb1b6a23f0de91ce2c0053ab25892326b744899051fadddbf3c2"
     },
     {
       "path": "requirements.lock.txt",
@@ -522,6 +597,11 @@
       "sha256": "b265331222d5e16d5ae2dd73da5f68c8c78be569e883f5c51a66bcf9e0b7e681"
     },
     {
+      "path": "results/graficos/manifesto_graficos.json",
+      "bytes": 4347,
+      "sha256": "186a1ebc00d23e337103d1a1c7668da07bf169ff039d6f3b38ec86d3b4f02373"
+    },
+    {
       "path": "results/load.json",
       "bytes": 965,
       "sha256": "a9c6fea6338b672fc74879db96a654cc440ed65e7265d642d3b75e59c7d7d428"
@@ -648,8 +728,13 @@
     },
     {
       "path": "scripts/package_delivery.py",
-      "bytes": 2190,
-      "sha256": "7b7afb053a4174d47dd42fbb387aa0341e25379f6ca4b80294211e87d366ad7d"
+      "bytes": 2236,
+      "sha256": "c6c01460906f1452ce90f387d11f7189f75611477b95bd113f2a5730f6bb94ea"
+    },
+    {
+      "path": "scripts/plot_load_tests.py",
+      "bytes": 21316,
+      "sha256": "293fcef74956d5d93cf9574d6454767e3f9860a0366aa13a8f7b29e2bf9f2936"
     },
     {
       "path": "scripts/summarize_results.py",

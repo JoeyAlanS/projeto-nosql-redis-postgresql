@@ -1,4 +1,5 @@
-.PHONY: up load verify benchmark test browser audit logs stop package all crud exemplos-redis test-exemplos-redis escala
+.PHONY: up load verify benchmark test browser audit logs stop package all crud exemplos-redis test-exemplos-redis escala graficos
+PYTHON_GRAFICOS ?= .venv-graficos/bin/python
 .NOTPARALLEL: all
 up:
 	docker compose up -d --build --wait
@@ -30,6 +31,8 @@ stop:
 	docker compose stop
 escala:
 	python3 -m scripts.compare_scales
+graficos:
+	$(PYTHON_GRAFICOS) -m scripts.plot_load_tests
 package:
 	python3 scripts/package_delivery.py
 all: up load verify test benchmark

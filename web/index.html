@@ -4,6 +4,7 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Observatório IoT · Telemetria do campus</title>
   <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/scalability.css">
   <script src="/static/app.js" defer></script>
 </head>
 <body>
@@ -13,6 +14,7 @@
   <a class="nav active" href="#overview"><span>◫</span> Visão geral</a>
   <a class="nav" href="#comparison"><span>↔</span> Comparar bancos</a>
   <a class="nav" href="#experiment"><span>▥</span> Experimento</a>
+  <a class="nav" href="#scalability"><span>↗</span> 1 milhão × 5 milhões</a>
   <div class="aside-bottom"><span class="green-dot"></span> Projeto 3 · Banco de Dados<span>Redis e PostgreSQL</span><a href="/docs" target="_blank" rel="noopener">Documentação da API ↗</a></div>
 </aside>
 <main>
@@ -42,6 +44,17 @@
     <div class="comparison-grid"><article class="panel"><div class="panel-head"><h3>Busca por identificador</h3><span id="equivalence" class="badge">Aguardando consulta</span></div><div id="live-bars"></div><p class="small muted">Tempo de acesso ao banco com rede e leitura da resposta. Uma execução por fonte; variações são esperadas.</p></article><article class="panel"><p class="eyebrow">RESULTADO DA CONSULTA</p><div id="reading-detail" class="reading-detail">Selecione uma leitura para consultar os bancos.</div></article></div>
   </section>
   <section id="experiment"><div class="section-heading"><div><p class="eyebrow">MEDIÇÕES REPRODUZÍVEIS</p><h2>Desempenho por operação</h2><p id="benchmark-description" class="muted">Carregando resultados do experimento…</p></div><div class="legend"><span><i class="pg-key"></i> PostgreSQL</span><span><i class="redis-key"></i> Redis</span></div></div><article class="panel"><div id="benchmark-chart"></div><p class="small muted">Medianas em milissegundos. Barras com escala própria em cada operação. Veja os valores para comparar operações diferentes.</p></article><p class="footnote" id="dataset-info"></p></section>
+  <section id="scalability">
+    <div class="section-heading"><div><p class="eyebrow">VOLUME E CLIENTES SIMULTÂNEOS</p><h2>1 milhão × 5 milhões de leituras</h2><p id="scale-description" class="muted">Carregando a comparação dos cenários…</p></div></div>
+    <div class="scale-concepts"><article class="panel"><h3>Carga inicial</h3><p>Tempo para inserir os dados e preparar seus índices.</p></article><article class="panel"><h3>Teste de volume</h3><p>As mesmas consultas com 1 e 5 milhões de leituras armazenadas.</p></article><article class="panel"><h3>Carga concorrente</h3><p>1, 4 e 16 clientes consultando por ID. Mede latência, requisições por segundo e erros.</p></article></div>
+    <div id="scale-results" hidden>
+      <article class="panel scale-panel"><h3>Tempo de carga inicial</h3><p class="small muted">Uma carga por cenário e banco. PostgreSQL inclui VACUUM ANALYZE; Redis cria hashes e índices e usa AOF everysec.</p><div id="scale-loading" class="table-scroll"></div></article>
+      <article class="panel scale-panel"><h3>Consultas com um cliente</h3><p class="small muted">Q1: uma leitura por ID. Q2: primeiras 200 leituras de um sensor. Q3: resumo de todo o volume.</p><div id="scale-queries" class="table-scroll"></div></article>
+      <article class="panel scale-panel"><h3>Teste de carga HTTP por ID</h3><p class="small muted">Inclui HTTP, API e conexão ao banco. Cada cliente aguarda a resposta antes da próxima requisição. Cada resposta é validada.</p><div id="scale-concurrent" class="table-scroll"></div></article>
+      <article class="panel scale-panel"><h3>Planos PostgreSQL e caminhos Redis</h3><p class="small muted">EXPLAIN ANALYZE executa a consulta. O custo estimado não é tempo em milissegundos. No Redis, mostramos os comandos e as estruturas usados pelo código.</p><div id="scale-plans"></div></article>
+      <p class="footnote">Resultados salvos de execuções reais em bancos separados. O dashboard acima continua consultando sua base principal de 1 milhão. Um computador compartilhado, cache aquecido e ensaios curtos: estes testes não determinam a capacidade máxima do sistema.</p>
+    </div>
+  </section>
   <footer>Observatório IoT <span>Projeto 3 · Bancos de Dados NoSQL · 2026</span></footer>
 </main>
 </body></html>

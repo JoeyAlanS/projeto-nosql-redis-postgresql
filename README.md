@@ -8,6 +8,8 @@ Para ensaiar, siga o [roteiro de apresentação e VS Code](docs/ROTEIRO_VSCODE.m
 
 O [roteiro de comandos de teste](docs/COMANDOS_TESTES.md) separa contagens, consultas, leitura e comparação de **10.000 registros da base existente**, CRUD temporário, exemplos Redis e testes automáticos. A base completa continua com **1.000.000 de leituras por banco**.
 
+A [comparação de 1 milhão e 5 milhões](docs/COMPARACAO_1M_5M.md) acrescenta carga inicial, consultas com 30 repetições, planos PostgreSQL e carga HTTP com 1, 4 e 16 clientes. Veja o [guia de comandos dos cenários isolados](docs/TESTES_CARGA_1M_5M.md) e o [PDF explicativo](output/pdf/Comparacao_Carga_1M_5M.pdf). O dashboard mostra as tabelas e os planos em **http://localhost:8000/#scalability**. São bancos separados; o experimento não substitui a massa principal.
+
 O [manual completo](docs/MANUAL_COMPLETO.md) demonstra o fluxo de leitura, os quatro exemplos, a modelagem, o benchmark e a quantidade de registros. As versões para leitura e edição estão em [PDF](output/pdf/Manual_Completo_Observatorio_IoT.pdf) e [Word](output/documentos/Manual_Completo_Observatorio_IoT.docx). A execução demonstrada está registrada em `results/demonstracao_fluxo.json`.
 
 ## Executar

@@ -1,4 +1,4 @@
-.PHONY: up load verify benchmark test browser audit logs stop package all crud exemplos-redis test-exemplos-redis
+.PHONY: up load verify benchmark test browser audit logs stop package all crud exemplos-redis test-exemplos-redis escala
 .NOTPARALLEL: all
 up:
 	docker compose up -d --build --wait
@@ -28,6 +28,8 @@ logs:
 	docker compose logs --tail 50 app
 stop:
 	docker compose stop
+escala:
+	python3 -m scripts.compare_scales
 package:
 	python3 scripts/package_delivery.py
 all: up load verify test benchmark

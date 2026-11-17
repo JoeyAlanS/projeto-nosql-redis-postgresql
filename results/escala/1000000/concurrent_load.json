@@ -1,0 +1,98 @@
+{
+  "executed_at": "2026-11-17T18:10:10.892228+00:00",
+  "records": 1000000,
+  "dataset_sha256": "519f2a3fceac765890289c51876e3be1980ff8c03d9f74d9768beb84a264369f",
+  "operation": "GET /api/readings/{id}?source=...",
+  "model": "Carga fechada, sem think time; cada cliente espera a resposta antes da próxima requisição",
+  "measurement": "HTTP completo: conexão HTTP, FastAPI, conexão ao banco, consulta e resposta JSON; sem reutilização intencional de conexões HTTP",
+  "scope": "Consulta por ID; não mede escrita concorrente nem resumo Q3 concorrente",
+  "order": "Alternada por nível: PostgreSQL/Redis no primeiro nível; Redis/PostgreSQL no seguinte",
+  "ids": "Sequência determinística distribuída por toda a faixa, igual nas duas fontes",
+  "warmup_requests_per_source": 10,
+  "requests_per_source_per_level": 1200,
+  "clients": [
+    1,
+    4,
+    16
+  ],
+  "metrics": [
+    {
+      "source": "postgres",
+      "concurrency": 1,
+      "requests": 1200,
+      "successes": 1200,
+      "errors": 0,
+      "wall_seconds": 18.564319075000185,
+      "requests_per_second": 64.64013008783023,
+      "successful_requests_per_second": 64.64013008783023,
+      "median_ms": 15.146817,
+      "p95_ms": 17.631794499999998
+    },
+    {
+      "source": "redis",
+      "concurrency": 1,
+      "requests": 1200,
+      "successes": 1200,
+      "errors": 0,
+      "wall_seconds": 3.694487830000071,
+      "requests_per_second": 324.80821570333256,
+      "successful_requests_per_second": 324.80821570333256,
+      "median_ms": 3.120736,
+      "p95_ms": 3.8774212
+    },
+    {
+      "source": "redis",
+      "concurrency": 4,
+      "requests": 1200,
+      "successes": 1200,
+      "errors": 0,
+      "wall_seconds": 2.519395863999762,
+      "requests_per_second": 476.3046638073363,
+      "successful_requests_per_second": 476.3046638073363,
+      "median_ms": 8.292919999999999,
+      "p95_ms": 10.7651471
+    },
+    {
+      "source": "postgres",
+      "concurrency": 4,
+      "requests": 1200,
+      "successes": 1200,
+      "errors": 0,
+      "wall_seconds": 6.937052273000063,
+      "requests_per_second": 172.9841368891742,
+      "successful_requests_per_second": 172.9841368891742,
+      "median_ms": 22.580434,
+      "p95_ms": 28.5577234
+    },
+    {
+      "source": "postgres",
+      "concurrency": 16,
+      "requests": 1200,
+      "successes": 1200,
+      "errors": 0,
+      "wall_seconds": 6.116257304999635,
+      "requests_per_second": 196.1984168028836,
+      "successful_requests_per_second": 196.1984168028836,
+      "median_ms": 78.455868,
+      "p95_ms": 112.62598584999999
+    },
+    {
+      "source": "redis",
+      "concurrency": 16,
+      "requests": 1200,
+      "successes": 1200,
+      "errors": 0,
+      "wall_seconds": 2.2978434920000836,
+      "requests_per_second": 522.2287784950483,
+      "successful_requests_per_second": 522.2287784950483,
+      "median_ms": 29.751811,
+      "p95_ms": 39.0060615
+    }
+  ],
+  "code_sha256": {
+    "app/main.py": "451b0780d4fff632e5f252eb8725d1304385b89ba65754383636fe618292cb5f",
+    "app/store.py": "ff164d826163934de7ca07601b0d1f97fb02a4a896295e50188ec76a03fa5a5d",
+    "scripts/concurrent_load.py": "1d402eed5bd7e2fd80ae241f83b8f58f41bae3a10def8938f8bae679b1c1dbe8"
+  },
+  "all_responses_valid": true
+}

@@ -1,0 +1,49 @@
+# Bancos exclusivos do experimento. Sem portas publicadas e sem volumes da aplicação principal.
+services:
+  postgres:
+    image: postgres:17@sha256:846a7ddaa67a4b354ae1d21087b683901aa6113a4ed626d3787cfbf6c85e3e07
+    environment:
+      POSTGRES_DB: iot
+      POSTGRES_USER: iot
+      POSTGRES_PASSWORD: iot_local_academico
+    volumes: ["postgres_data:/var/lib/postgresql/data"]
+    shm_size: 256mb
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U iot -d iot"]
+      interval: 3s
+      timeout: 3s
+      retries: 30
+  redis:
+    image: redis:8@sha256:1f88291b4c57bdf249f02eb085a8669889b2d2954e91d4de5118a5da6b78dd53
+    command: ["redis-server", "--appendonly", "yes", "--appendfsync", "everysec", "--maxmemory-policy", "noeviction", "--save", ""]
+    volumes: ["redis_data:/data"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 3s
+      timeout: 3s
+      retries: 30
+  app:
+    build: .
+    user: "${ESCALA_UID:-1000}:${ESCALA_GID:-1000}"
+    environment:
+      DATABASE_URL: postgresql://iot:iot_local_academico@postgres:5432/iot
+      REDIS_URL: redis://redis:6379/0
+    volumes:
+      - ./data/escala/${ESCALA_REGISTROS:-1000000}:/app/data
+      - ./results/escala/${ESCALA_REGISTROS:-1000000}:/app/results
+    depends_on:
+      postgres: {condition: service_healthy}
+      redis: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health', timeout=10)"]
+      interval: 5s
+      timeout: 12s
+      retries: 10
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: ${ESCALA_SUBNET:-10.203.18.0/24}
+volumes:
+  postgres_data:
+  redis_data:

@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-11-17T17:37:54.100328+00:00",
+  "records": 1000000,
+  "sensors": 1000,
+  "seed": 42,
+  "logical_record": "Uma medição de um sensor em um instante",
+  "fields": [
+    "id",
+    "sensor_id",
+    "ts",
+    "temperature_centi",
+    "humidity_centi"
+  ],
+  "start": 1793491200,
+  "end": 1793790900,
+  "interval_seconds": 300,
+  "alert_rule": "temperature_centi > 3200",
+  "csv_sha256": "519f2a3fceac765890289c51876e3be1980ff8c03d9f74d9768beb84a264369f",
+  "csv_bytes": 31781896,
+  "generation_seconds": 4.383862219999969,
+  "postgres_load_seconds": 17.637761482999963,
+  "redis_load_seconds": 59.438656656000035,
+  "postgres_bytes": 217669632,
+  "postgres_version": "17.12 (Debian 17.12-1.pgdg13+1)",
+  "redis_version": "8.10.3",
+  "redis_used_memory_bytes": 249969736,
+  "redis_dataset_bytes": 208010352,
+  "redis_aof_bytes": 174525283,
+  "redis_maxmemory_policy": "noeviction",
+  "redis_appendfsync": "everysec",
+  "redis_evicted_keys": 0
+}

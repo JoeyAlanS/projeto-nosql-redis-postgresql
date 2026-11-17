@@ -335,6 +335,8 @@ Para retomar, use o comando da seção 1. Os volumes preservam PostgreSQL e Redi
 
 ## Ordem curta para apresentar
 
+Para comparar **1 milhão e 5 milhões**, medir clientes simultâneos e demonstrar os planos de cada cenário, continue no [guia de testes de carga e volume](TESTES_CARGA_1M_5M.md). Esse experimento usa bancos isolados e preserva a base principal.
+
 1. Iniciar e mostrar `docker compose ps`.
 2. Contar o milhão nos dois bancos (seção 2).
 3. Consultar o ID `500001` (seção 4).

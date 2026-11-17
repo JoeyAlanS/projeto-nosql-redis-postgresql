@@ -98,7 +98,7 @@ async function lookup() {
 async function experiment() {
   try {
     const b=await api('/api/benchmark');
-    $('benchmark-description').textContent=`${b.repetitions} repetições por banco e operação · ${b.warmup} aquecimentos · ${n(b.records)} registros`;
+    $('benchmark-description').textContent=`Experimento original de ${new Date(b.executed_at).toLocaleDateString('pt-BR')} · ${b.repetitions} repetições por banco e operação · ${b.warmup} aquecimentos · ${n(b.records)} registros`;
     $('benchmark-chart').replaceChildren();
     for(const q of b.queries) {
       const row=document.createElement('div');row.className='experiment-row';
@@ -107,6 +107,44 @@ async function experiment() {
       text.append(title,caption);const bar=document.createElement('div');bar.innerHTML=bars(q.metrics.postgres.median_ms,q.metrics.redis.median_ms);row.append(text,bar);$('benchmark-chart').append(row);
     }
   } catch(e) { $('benchmark-description').textContent=e.message; }
+}
+function scaleTable(target, caption, headers, rows) {
+  const table=document.createElement('table');table.className='scale-table';
+  const label=document.createElement('caption');label.textContent=caption;table.append(label);
+  const head=table.createTHead().insertRow();
+  for(const title of headers) {const cell=document.createElement('th');cell.scope='col';cell.textContent=title;head.append(cell);}
+  const body=table.createTBody();
+  for(const values of rows) {const row=body.insertRow();for(const value of values)row.insertCell().textContent=value;}
+  $(target).replaceChildren(table);
+}
+async function scalability() {
+  try {
+    const report=await api('/api/scalability');
+    const loading=[],queries=[],concurrent=[];$('scale-plans').replaceChildren();
+    for(const scenario of report.scenarios) {
+      const volume=n(scenario.records);
+      for(const source of ['postgres','redis']) {
+        const seconds=scenario.load[source+'_load_seconds'];
+        loading.push([volume,source==='postgres'?'PostgreSQL':'Redis',dec(seconds,2)+' s',n(Math.round(scenario.records/seconds))]);
+      }
+      for(const q of scenario.queries)queries.push([volume,q.query,ms(q.metrics.postgres.median_ms),ms(q.metrics.redis.median_ms),ms(q.metrics.postgres.p95_ms),ms(q.metrics.redis.p95_ms)]);
+      for(const metric of scenario.concurrent)concurrent.push([volume,metric.source==='postgres'?'PostgreSQL':'Redis',n(metric.concurrency),dec(metric.successful_requests_per_second,1),ms(metric.median_ms),ms(metric.p95_ms),n(metric.errors)]);
+      const detail=document.createElement('details');detail.className='scale-plan';
+      const summary=document.createElement('summary');summary.textContent=volume+' leituras · abrir planos e comandos';detail.append(summary);
+      for(const [code,plan] of Object.entries(scenario.postgres_plans)) {
+        const title=document.createElement('h4');title.textContent=`${code} · PostgreSQL · execução no servidor ${ms(plan.execution_ms)}`;
+        const tree=document.createElement('pre');tree.textContent=plan.tree;
+        const redis=document.createElement('p');redis.textContent='Redis: '+scenario.redis_paths[code];
+        detail.append(title,tree,redis);
+      }
+      const link=document.createElement('a');link.href=`/api/scalability/${scenario.records}/plans`;link.target='_blank';link.rel='noopener';link.textContent='Abrir os planos em texto ↗';detail.append(link);$('scale-plans').append(detail);
+    }
+    scaleTable('scale-loading','Inserção e preparação dos dados',['Leituras','Banco','Tempo','Leituras/s'],loading);
+    scaleTable('scale-queries','Medianas e percentil 95 das consultas',['Leituras','Consulta','PG mediana','Redis mediana','PG p95','Redis p95'],queries);
+    scaleTable('scale-concurrent','Leitura por ID com clientes simultâneos',['Leituras','Banco','Clientes','Sucessos/s','Mediana','p95','Erros'],concurrent);
+    $('scale-description').textContent=`Ensaio comparativo de ${new Date(report.generated_at).toLocaleDateString('pt-BR')} · ${report.protocol.repetitions} repetições por consulta e fonte · ${report.protocol.requests_per_source_per_level} requisições por fonte e nível de carga · massas verificadas integralmente`;
+    $('scale-results').hidden=false;
+  }catch(e){$('scale-description').textContent=e.message;}
 }
 async function init() {
   try {
@@ -118,7 +156,7 @@ async function init() {
     $('start').value=datetime(meta.load.start);$('end').value=datetime(meta.load.end);
     $('reading-id').value=Math.min(500001,meta.load.records);
     $('dataset-info').textContent=`Massa sintética determinística · ${n(meta.load.records)} leituras · ${n(meta.load.sensors)} sensores · seed ${meta.load.seed} · Intervalo de 5 minutos · Horários em UTC`;
-    await Promise.all([refresh(),lookup(),experiment()]);
+    await Promise.all([refresh(),lookup(),experiment(),scalability()]);
   }catch(e){$('connection').textContent='Conexão não concluída';error(e.message);}
 }
 document.querySelectorAll('[data-source]').forEach(button=>button.addEventListener('click',()=>{state.source=button.dataset.source;document.querySelectorAll('[data-source]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));refresh();}));

@@ -1,0 +1,10 @@
+test_http_errors_count_as_failures_and_not_fast_successes (test_tools.ScaleTools.test_http_errors_count_as_failures_and_not_fast_successes) ... ok
+test_http_success_does_not_hide_wrong_fields (test_tools.ScaleTools.test_http_success_does_not_hide_wrong_fields) ... ok
+test_projects_and_subnets_are_different_from_main_and_each_other (test_tools.ScaleTools.test_projects_and_subnets_are_different_from_main_and_each_other) ... ok
+test_sequence_covers_first_and_last_id_without_duplicates (test_tools.ScaleTools.test_sequence_covers_first_and_last_id_without_duplicates) ... ok
+test_workers_execute_every_request_exactly_once (test_tools.ScaleTools.test_workers_execute_every_request_exactly_once) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.552s
+
+OK

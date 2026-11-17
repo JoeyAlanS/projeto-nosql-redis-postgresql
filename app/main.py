@@ -92,6 +92,22 @@ def benchmark():
     return json.loads(path.read_text())
 
 
+@app.get("/api/scalability")
+def scalability():
+    path = ROOT / "results/escala/comparacao.json"
+    if not path.exists():
+        raise HTTPException(404, "A comparação de 1 e 5 milhões ainda não foi executada")
+    return json.loads(path.read_text())
+
+
+@app.get("/api/scalability/{records}/plans")
+def scalability_plans(records: Literal["1000000", "5000000"]):
+    path = ROOT / "results/escala" / str(records) / "plans.txt"
+    if not path.exists():
+        raise HTTPException(404, "Planos deste cenário ainda não foram gerados")
+    return FileResponse(path, media_type="text/plain; charset=utf-8")
+
+
 def mutate(source, operation, row=None, reading_id=None):
     try:
         with store(source) as s:

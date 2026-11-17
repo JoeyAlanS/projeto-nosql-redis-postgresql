@@ -1,9 +1,8 @@
-docker compose exec -T app python -m unittest discover -s exemplos/redis -p 'test_*.py' -v
 test_cache_ausencia_acerto_expiracao_e_limpeza (test_exemplos.ExemplosRedis.test_cache_ausencia_acerto_expiracao_e_limpeza) ... ok
 test_crud_e_limpeza (test_exemplos.ExemplosRedis.test_crud_e_limpeza) ... ok
 test_historico_inclusivo_ordenado_e_limpeza (test_exemplos.ExemplosRedis.test_historico_inclusivo_ordenado_e_limpeza) ... ok
 
 ----------------------------------------------------------------------
-Ran 3 tests in 9.217s
+Ran 3 tests in 18.659s
 
 OK

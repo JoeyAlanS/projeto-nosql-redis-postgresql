@@ -1,0 +1,31 @@
+{
+  "executed_at": "2026-11-17T18:16:36.433361+00:00",
+  "scenarios": [
+    {
+      "records": 1000000,
+      "postgres_count": 1000000,
+      "redis_count": 1000000,
+      "last_reading": {
+        "id": 1000000,
+        "sensor_id": 1000,
+        "ts": 1793790900,
+        "temperature_centi": 2535,
+        "humidity_centi": 7029
+      },
+      "last_reading_equivalent": true
+    },
+    {
+      "records": 5000000,
+      "postgres_count": 5000000,
+      "redis_count": 5000000,
+      "last_reading": {
+        "id": 5000000,
+        "sensor_id": 1000,
+        "ts": 1794990900,
+        "temperature_centi": 2535,
+        "humidity_centi": 4029
+      },
+      "last_reading_equivalent": true
+    }
+  ]
+}

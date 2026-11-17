@@ -1,0 +1,32 @@
+POSTGRESQL: 1,000,000 LEITURAS
+Extraído do EXPLAIN (ANALYZE, BUFFERS, FORMAT JSON).
+Linhas e tempos de cada nó são médias por loop; não some tempos de pais e filhos.
+Listas ANY extensas estão abreviadas; o plano integral está em plans.json.
+
+Q1
+Index Scan using readings_pkey on readings: cost=0.42..8.44, estimadas=1, linhas reais/loop=1, loops=1, tempo/loop=0.016 ms, blocos hit=4, read=0
+  Index Cond: (id = 500001)
+Planning Time: 0.118 ms
+Execution Time: 0.034 ms
+
+Q2
+Limit: cost=0.42..14.58, estimadas=200, linhas reais/loop=200, loops=1, tempo/loop=0.112 ms, blocos hit=6, read=0
+  Index Only Scan using readings_sensor_ts_idx on readings: cost=0.42..70.79, estimadas=994, linhas reais/loop=200, loops=1, tempo/loop=0.083 ms, blocos hit=6, read=0
+    Index Cond: ((sensor_id = '501'::smallint) AND (ts >= 1793491200) AND (ts <= 1793790900))
+    Heap Fetches: 0
+Planning Time: 0.244 ms
+Execution Time: 0.148 ms
+
+Q3
+Aggregate: cost=48218.15..48218.16, estimadas=1, linhas reais/loop=1, loops=1, tempo/loop=287.831 ms, blocos hit=11110, read=0
+  Index Only Scan using readings_sensor_ts_idx on readings: cost=0.42..35572.05, estimadas=632305, linhas reais/loop=1000000, loops=1, tempo/loop=154.79 ms, blocos hit=11110, read=0
+    Index Cond: ((sensor_id = ANY ('{1,2,3,...,1000}'::smallint[] [1000 IDs; lista abreviada])) AND (ts >= 1793491200) AND (ts <= 1793790900))
+    Heap Fetches: 0
+Planning Time: 1.306 ms
+Execution Time: 287.877 ms
+
+REDIS: CAMINHO DOS COMANDOS
+Rastreamento do código, não plano de otimizador SQL.
+Q1: HGETALL iot:reading:500001 -> cinco campos de um único hash.
+Q2: EVALSHA HISTORY_LUA -> ZRANGEBYSCORE de 1 sorted set (1000 membros), LIMIT 200 -> 200 HMGET -> 200 leituras.
+Q3: EVALSHA SUMMARY_LUA -> 1000 ZRANGEBYSCORE -> 1,000,000 HMGET de temperatura/umidade -> agregação em Lua; bloqueia outras operações Redis durante o script.

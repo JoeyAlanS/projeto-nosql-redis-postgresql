@@ -29,6 +29,17 @@ python3 scripts/export_slide_pdf.py
 
 O primeiro comando requer as duas variáveis de ambiente descritas acima, Node.js compatível com o runtime e Noto Sans instalada. Use um nome ainda inexistente: o finalizador evita sobrescrever apresentações já validadas. Confira todas as imagens geradas em `tmp/slides/` e, ao adotar a revisão, atualize o arquivo final referenciado na auditoria. O segundo comando gera o PDF a partir dessas imagens.
 
+## Complemento de volume e carga: 1M e 5M
+
+Depois dos ensaios isolados, use o ambiente Python de autoria com ReportLab e Noto Sans para atualizar o complemento em Markdown e PDF:
+
+```bash
+python3 -m scripts.compare_scales --summarize-only
+python3 -m scripts.build_scale_report
+```
+
+O primeiro comando valida as amostras brutas e os hashes e reconstitui o resumo; o segundo gera `docs/COMPARACAO_1M_5M.md` e `output/pdf/Comparacao_Carga_1M_5M.pdf`. Confira as seis páginas renderizadas antes de distribuir a revisão. O experimento original em `results/benchmark.json` permanece independente.
+
 ## Pacote
 
 ```bash

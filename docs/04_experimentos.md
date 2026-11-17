@@ -30,7 +30,11 @@ O experimento usa cache aquecido. Não limpa caches de disco ou do SO. Redis usa
 
 Um fator PostgreSQL/Redis maior que 1 indica menor mediana Redis. Um fator menor que 1 favorece PostgreSQL. A explicação da busca por ID considera o acesso direto a hash versus um índice B-tree e a execução SQL. Q2 inclui reconstrução de objetos nas duas fontes. Q3 evidencia a capacidade de agregação do SQL frente ao loop Lua sobre hashes. A análise final usa os números efetivamente obtidos, inclusive resultados desfavoráveis ao Redis.
 
-O ensaio não mede throughput concorrente, cache frio, failover, replicação, recuperação após falha, custo de nuvem ou escalabilidade horizontal. A diferença de durabilidade (AOF everysec versus confirmação WAL) precisa acompanhar a interpretação. Não há medição empírica de Cluster ou Memcached. Q3 em Lua bloqueia o Redis da instância única durante a execução; isso restringe seu uso para painéis concorrentes.
+O ensaio original de um cliente não mede throughput concorrente, cache frio, failover, replicação, recuperação após falha, custo de nuvem ou escalabilidade horizontal. A diferença de durabilidade (AOF everysec versus confirmação WAL) precisa acompanhar a interpretação. Não há medição empírica de Cluster ou Memcached. Q3 em Lua bloqueia o Redis da instância única durante a execução; isso restringe seu uso para painéis concorrentes.
+
+## Complemento: volume e carga concorrente
+
+A [comparação de 1M e 5M](COMPARACAO_1M_5M.md) usa duas bases isoladas, verificação integral, o mesmo protocolo de consultas e um ensaio HTTP de leitura por ID com 1, 4 e 16 clientes. Os tempos de carga inicial, latências de consultas e métricas de concorrência são apresentados separadamente. As instruções e os planos demonstráveis estão em [TESTES_CARGA_1M_5M.md](TESTES_CARGA_1M_5M.md). Os resultados originais de `results/benchmark.json` permanecem preservados; as novas medições ficam em `results/escala/`.
 
 ## Dashboard funcional
 

@@ -1,0 +1,22 @@
+{
+  "largura_pagina": 488,
+  "largura_visivel": 488,
+  "plano_5m_aberto": true,
+  "tabelas": [
+    {
+      "linhas": 4,
+      "titulo": "Inserção e preparação dos dados"
+    },
+    {
+      "linhas": 6,
+      "titulo": "Medianas e percentil 95 das consultas"
+    },
+    {
+      "linhas": 12,
+      "titulo": "Leitura por ID com clientes simultâneos"
+    }
+  ],
+  "titulo": "1 milhão × 5 milhões de leituras",
+  "console": [],
+  "passed": true
+}

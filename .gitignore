@@ -9,6 +9,7 @@ tmp/
 .codex-finalizer/
 data/*.csv
 data/*.csv.gz
+data/escala/
 output/*.zip
 .chart-data-*/
 .DS_Store

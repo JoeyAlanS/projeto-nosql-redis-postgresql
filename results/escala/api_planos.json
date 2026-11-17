@@ -1,0 +1,11 @@
+{
+  "1000000": {
+    "status": 200,
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "5000000": {
+    "status": 200,
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "invalid_size_rejected": 422
+}

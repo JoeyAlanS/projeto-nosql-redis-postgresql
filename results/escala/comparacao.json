@@ -1,0 +1,397 @@
+{
+  "generated_at": "2026-11-17T18:11:20.903795+00:00",
+  "scenarios": [
+    {
+      "records": 1000000,
+      "sensors": 1000,
+      "start": 1793491200,
+      "end": 1793790900,
+      "dataset_sha256": "519f2a3fceac765890289c51876e3be1980ff8c03d9f74d9768beb84a264369f",
+      "verified_readings": 1000000,
+      "versions": {
+        "postgres": "17.12 (Debian 17.12-1.pgdg13+1)",
+        "redis": "8.10.3"
+      },
+      "equivalent": true,
+      "load": {
+        "generation_seconds": 4.383862219999969,
+        "postgres_load_seconds": 17.637761482999963,
+        "redis_load_seconds": 59.438656656000035,
+        "csv_bytes": 31781896,
+        "postgres_bytes": 217669632,
+        "redis_used_memory_bytes": 249969736,
+        "redis_aof_bytes": 174525283
+      },
+      "queries": [
+        {
+          "query": "Q1",
+          "name": "Leitura por ID",
+          "metrics": {
+            "postgres": {
+              "median_ms": 0.1129415,
+              "p95_ms": 0.3970677999999998,
+              "min_ms": 0.083074,
+              "max_ms": 0.653571,
+              "samples": 30
+            },
+            "redis": {
+              "median_ms": 0.11039550000000001,
+              "p95_ms": 0.31007384999999993,
+              "min_ms": 0.086,
+              "max_ms": 0.391517,
+              "samples": 30
+            }
+          },
+          "equivalent": true
+        },
+        {
+          "query": "Q2",
+          "name": "Histórico de sensor",
+          "metrics": {
+            "postgres": {
+              "median_ms": 0.758355,
+              "p95_ms": 1.0969626499999998,
+              "min_ms": 0.61173,
+              "max_ms": 1.413362,
+              "samples": 30
+            },
+            "redis": {
+              "median_ms": 3.7125425,
+              "p95_ms": 4.183853849999999,
+              "min_ms": 3.321775,
+              "max_ms": 4.236525,
+              "samples": 30
+            }
+          },
+          "equivalent": true
+        },
+        {
+          "query": "Q3",
+          "name": "Resumo de telemetria",
+          "metrics": {
+            "postgres": {
+              "median_ms": 223.6874275,
+              "p95_ms": 248.1038164,
+              "min_ms": 208.707453,
+              "max_ms": 323.744503,
+              "samples": 30
+            },
+            "redis": {
+              "median_ms": 3883.099532,
+              "p95_ms": 4055.823116,
+              "min_ms": 3692.773696,
+              "max_ms": 4156.931802,
+              "samples": 30
+            }
+          },
+          "equivalent": true
+        }
+      ],
+      "postgres_plans": {
+        "Q1": {
+          "execution_ms": 0.034,
+          "tree": "Index Scan using readings_pkey on readings: cost=0.42..8.44, estimadas=1, linhas reais/loop=1, loops=1, tempo/loop=0.016 ms, blocos hit=4, read=0\n  Index Cond: (id = 500001)"
+        },
+        "Q2": {
+          "execution_ms": 0.148,
+          "tree": "Limit: cost=0.42..14.58, estimadas=200, linhas reais/loop=200, loops=1, tempo/loop=0.112 ms, blocos hit=6, read=0\n  Index Only Scan using readings_sensor_ts_idx on readings: cost=0.42..70.79, estimadas=994, linhas reais/loop=200, loops=1, tempo/loop=0.083 ms, blocos hit=6, read=0\n    Index Cond: ((sensor_id = '501'::smallint) AND (ts >= 1793491200) AND (ts <= 1793790900))\n    Heap Fetches: 0"
+        },
+        "Q3": {
+          "execution_ms": 287.877,
+          "tree": "Aggregate: cost=48218.15..48218.16, estimadas=1, linhas reais/loop=1, loops=1, tempo/loop=287.831 ms, blocos hit=11110, read=0\n  Index Only Scan using readings_sensor_ts_idx on readings: cost=0.42..35572.05, estimadas=632305, linhas reais/loop=1000000, loops=1, tempo/loop=154.79 ms, blocos hit=11110, read=0\n    Index Cond: ((sensor_id = ANY ('{1,2,3,...,1000}'::smallint[] [1000 IDs; lista abreviada])) AND (ts >= 1793491200) AND (ts <= 1793790900))\n    Heap Fetches: 0"
+        }
+      },
+      "redis_paths": {
+        "Q1": "HGETALL iot:reading:500001 -> cinco campos de um único hash.",
+        "Q2": "EVALSHA HISTORY_LUA -> ZRANGEBYSCORE de 1 sorted set (1000 membros), LIMIT 200 -> 200 HMGET -> 200 leituras.",
+        "Q3": "EVALSHA SUMMARY_LUA -> 1000 ZRANGEBYSCORE -> 1,000,000 HMGET de temperatura/umidade -> agregação em Lua; bloqueia outras operações Redis durante o script."
+      },
+      "concurrent": [
+        {
+          "source": "postgres",
+          "concurrency": 1,
+          "requests": 1200,
+          "successes": 1200,
+          "errors": 0,
+          "wall_seconds": 18.564319075000185,
+          "requests_per_second": 64.64013008783023,
+          "successful_requests_per_second": 64.64013008783023,
+          "median_ms": 15.146817,
+          "p95_ms": 17.631794499999998
+        },
+        {
+          "source": "redis",
+          "concurrency": 1,
+          "requests": 1200,
+          "successes": 1200,
+          "errors": 0,
+          "wall_seconds": 3.694487830000071,
+          "requests_per_second": 324.80821570333256,
+          "successful_requests_per_second": 324.80821570333256,
+          "median_ms": 3.120736,
+          "p95_ms": 3.8774212
+        },
+        {
+          "source": "redis",
+          "concurrency": 4,
+          "requests": 1200,
+          "successes": 1200,
+          "errors": 0,
+          "wall_seconds": 2.519395863999762,
+          "requests_per_second": 476.3046638073363,
+          "successful_requests_per_second": 476.3046638073363,
+          "median_ms": 8.292919999999999,
+          "p95_ms": 10.7651471
+        },
+        {
+          "source": "postgres",
+          "concurrency": 4,
+          "requests": 1200,
+          "successes": 1200,
+          "errors": 0,
+          "wall_seconds": 6.937052273000063,
+          "requests_per_second": 172.9841368891742,
+          "successful_requests_per_second": 172.9841368891742,
+          "median_ms": 22.580434,
+          "p95_ms": 28.5577234
+        },
+        {
+          "source": "postgres",
+          "concurrency": 16,
+          "requests": 1200,
+          "successes": 1200,
+          "errors": 0,
+          "wall_seconds": 6.116257304999635,
+          "requests_per_second": 196.1984168028836,
+          "successful_requests_per_second": 196.1984168028836,
+          "median_ms": 78.455868,
+          "p95_ms": 112.62598584999999
+        },
+        {
+          "source": "redis",
+          "concurrency": 16,
+          "requests": 1200,
+          "successes": 1200,
+          "errors": 0,
+          "wall_seconds": 2.2978434920000836,
+          "requests_per_second": 522.2287784950483,
+          "successful_requests_per_second": 522.2287784950483,
+          "median_ms": 29.751811,
+          "p95_ms": 39.0060615
+        }
+      ]
+    },
+    {
+      "records": 5000000,
+      "sensors": 1000,
+      "start": 1793491200,
+      "end": 1794990900,
+      "dataset_sha256": "1e8304f6f3f7a938ab0a8f47fbd6943cda917f30c946f85170cf110781bd6d1e",
+      "verified_readings": 5000000,
+      "versions": {
+        "postgres": "17.12 (Debian 17.12-1.pgdg13+1)",
+        "redis": "8.10.3"
+      },
+      "equivalent": true,
+      "load": {
+        "generation_seconds": 21.664634089999936,
+        "postgres_load_seconds": 92.7631203530002,
+        "redis_load_seconds": 301.05498492599986,
+        "csv_bytes": 163353896,
+        "postgres_bytes": 1103503360,
+        "redis_used_memory_bytes": 1396617584,
+        "redis_aof_bytes": 927756718
+      },
+      "queries": [
+        {
+          "query": "Q1",
+          "name": "Leitura por ID",
+          "metrics": {
+            "postgres": {
+              "median_ms": 0.4354285,
+              "p95_ms": 0.7269079999999999,
+              "min_ms": 0.208956,
+              "max_ms": 0.860262,
+              "samples": 30
+            },
+            "redis": {
+              "median_ms": 0.3438955,
+              "p95_ms": 0.5188615499999997,
+              "min_ms": 0.165024,
+              "max_ms": 0.746787,
+              "samples": 30
+            }
+          },
+          "equivalent": true
+        },
+        {
+          "query": "Q2",
+          "name": "Histórico de sensor",
+          "metrics": {
+            "postgres": {
+              "median_ms": 0.876609,
+              "p95_ms": 1.5244911999999995,
+              "min_ms": 0.676383,
+              "max_ms": 1.705719,
+              "samples": 30
+            },
+            "redis": {
+              "median_ms": 4.161201999999999,
+              "p95_ms": 5.2387516,
+              "min_ms": 3.472519,
+              "max_ms": 5.488432,
+              "samples": 30
+            }
+          },
+          "equivalent": true
+        },
+        {
+          "query": "Q3",
+          "name": "Resumo de telemetria",
+          "metrics": {
+            "postgres": {
+              "median_ms": 1270.0306489999998,
+              "p95_ms": 1399.4239898499998,
+              "min_ms": 1023.326634,
+              "max_ms": 1445.589878,
+              "samples": 30
+            },
+            "redis": {
+              "median_ms": 21690.7635715,
+              "p95_ms": 22436.75325925,
+              "min_ms": 17583.710256,
+              "max_ms": 22762.805868,
+              "samples": 30
+            }
+          },
+          "equivalent": true
+        }
+      ],
+      "postgres_plans": {
+        "Q1": {
+          "execution_ms": 9.186,
+          "tree": "Index Scan using readings_pkey on readings: cost=0.43..8.45, estimadas=1, linhas reais/loop=1, loops=1, tempo/loop=9.17 ms, blocos hit=0, read=4\n  Index Cond: (id = 500001)"
+        },
+        "Q2": {
+          "execution_ms": 0.19,
+          "tree": "Limit: cost=0.43..14.41, estimadas=200, linhas reais/loop=200, loops=1, tempo/loop=0.148 ms, blocos hit=3, read=3\n  Index Only Scan using readings_sensor_ts_idx on readings: cost=0.43..348.5, estimadas=4981, linhas reais/loop=200, loops=1, tempo/loop=0.116 ms, blocos hit=3, read=3\n    Index Cond: ((sensor_id = '501'::smallint) AND (ts >= 1793491200) AND (ts <= 1794990900))\n    Heap Fetches: 0"
+        },
+        "Q3": {
+          "execution_ms": 1263.21,
+          "tree": "Aggregate: cost=238167.08..238167.09, estimadas=1, linhas reais/loop=1, loops=1, tempo/loop=1262.614 ms, blocos hit=2605, read=53504\n  Index Only Scan using readings_sensor_ts_idx on readings: cost=0.43..174931.36, estimadas=3161786, linhas reais/loop=5000000, loops=1, tempo/loop=785.328 ms, blocos hit=2605, read=53504\n    Index Cond: ((sensor_id = ANY ('{1,2,3,...,1000}'::smallint[] [1000 IDs; lista abreviada])) AND (ts >= 1793491200) AND (ts <= 1794990900))\n    Heap Fetches: 0"
+        }
+      },
+      "redis_paths": {
+        "Q1": "HGETALL iot:reading:500001 -> cinco campos de um único hash.",
+        "Q2": "EVALSHA HISTORY_LUA -> ZRANGEBYSCORE de 1 sorted set (5000 membros), LIMIT 200 -> 200 HMGET -> 200 leituras.",
+        "Q3": "EVALSHA SUMMARY_LUA -> 1000 ZRANGEBYSCORE -> 5,000,000 HMGET de temperatura/umidade -> agregação em Lua; bloqueia outras operações Redis durante o script."
+      },
+      "concurrent": [
+        {
+          "source": "postgres",
+          "concurrency": 1,
+          "requests": 1200,
+          "successes": 1200,
+          "errors": 0,
+          "wall_seconds": 19.474434423000275,
+          "requests_per_second": 61.6192477755729,
+          "successful_requests_per_second": 61.6192477755729,
+          "median_ms": 16.078006000000002,
+          "p95_ms": 18.2198087
+        },
+        {
+          "source": "redis",
+          "concurrency": 1,
+          "requests": 1200,
+          "successes": 1200,
+          "errors": 0,
+          "wall_seconds": 4.039723970000068,
+          "requests_per_second": 297.0499986908709,
+          "successful_requests_per_second": 297.0499986908709,
+          "median_ms": 3.2810639999999998,
+          "p95_ms": 4.7057851
+        },
+        {
+          "source": "redis",
+          "concurrency": 4,
+          "requests": 1200,
+          "successes": 1200,
+          "errors": 0,
+          "wall_seconds": 2.4730073400000947,
+          "requests_per_second": 485.2391582468793,
+          "successful_requests_per_second": 485.2391582468793,
+          "median_ms": 8.116249,
+          "p95_ms": 10.392635249999998
+        },
+        {
+          "source": "postgres",
+          "concurrency": 4,
+          "requests": 1200,
+          "successes": 1200,
+          "errors": 0,
+          "wall_seconds": 6.902859438999712,
+          "requests_per_second": 173.8410017767783,
+          "successful_requests_per_second": 173.8410017767783,
+          "median_ms": 22.4564825,
+          "p95_ms": 28.726347999999998
+        },
+        {
+          "source": "postgres",
+          "concurrency": 16,
+          "requests": 1200,
+          "successes": 1200,
+          "errors": 0,
+          "wall_seconds": 6.012527964000128,
+          "requests_per_second": 199.58327132696468,
+          "successful_requests_per_second": 199.58327132696468,
+          "median_ms": 76.2012775,
+          "p95_ms": 110.74119755
+        },
+        {
+          "source": "redis",
+          "concurrency": 16,
+          "requests": 1200,
+          "successes": 1200,
+          "errors": 0,
+          "wall_seconds": 2.5002160959998037,
+          "requests_per_second": 479.95851315409425,
+          "successful_requests_per_second": 479.95851315409425,
+          "median_ms": 31.657438,
+          "p95_ms": 46.988972099999984
+        }
+      ]
+    }
+  ],
+  "http_code_sha256": {
+    "app/main.py": "451b0780d4fff632e5f252eb8725d1304385b89ba65754383636fe618292cb5f",
+    "app/store.py": "ff164d826163934de7ca07601b0d1f97fb02a4a896295e50188ec76a03fa5a5d",
+    "scripts/concurrent_load.py": "1d402eed5bd7e2fd80ae241f83b8f58f41bae3a10def8938f8bae679b1c1dbe8"
+  },
+  "volume_factor": 5,
+  "load_time_factor_5m_over_1m": {
+    "postgres": 5.259347703641945,
+    "redis": 5.064969530996456
+  },
+  "protocol": {
+    "repetitions": 30,
+    "warmup": 5,
+    "clients": [
+      1,
+      4,
+      16
+    ],
+    "requests_per_source_per_level": 1200,
+    "cache": "Aquecido; sem limpar cache do SO",
+    "isolated_database_projects": true,
+    "load_trials_per_size": 1,
+    "http_load_trials_per_source_per_level": 1
+  },
+  "limits": [
+    "Um computador compartilhado; sem isolamento de CPU ou cache do SO.",
+    "Carga inicial medida uma vez por tamanho; não demonstra significância estatística.",
+    "Carga PostgreSQL inclui COPY, índices existentes e VACUUM ANALYZE; Redis inclui criação dos índices e espera de 1,1 s para AOF everysec.",
+    "Tamanho PostgreSQL em disco e memória Redis são métricas diferentes.",
+    "Concorrência mede leitura pontual HTTP, não escrita, resumo concorrente nem teste de estresse até falhar.",
+    "Banco maior não significa mais usuários simultâneos; os dois fatores foram variados separadamente."
+  ]
+}

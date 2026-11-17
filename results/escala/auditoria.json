@@ -1,0 +1,23 @@
+{
+  "audited_at": "2026-11-17T18:17:58.619532+00:00",
+  "records": [
+    1000000,
+    5000000
+  ],
+  "live_counts_checked": true,
+  "full_dataset_and_indexes_verified": true,
+  "raw_benchmark_measurements": 360,
+  "http_requests": 14400,
+  "http_errors": 0,
+  "http_code_hashes_match_current_sources": true,
+  "tests": {
+    "results/tests.log": 11,
+    "results/exemplos_redis_tests.log": 3,
+    "results/escala/testes_ferramentas.log": 5
+  },
+  "browser_passed": true,
+  "api_plans_checked": true,
+  "live_explain_helper_checked_both_sizes": true,
+  "pdf_pages": 6,
+  "pdf_visually_reviewed": true
+}

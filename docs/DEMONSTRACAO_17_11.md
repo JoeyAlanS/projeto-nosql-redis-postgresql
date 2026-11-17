@@ -52,7 +52,7 @@ O programa [scripts/crud_demo.py](../scripts/crud_demo.py) cria uma leitura temp
 | Atualizar | `UPDATE readings SET ... WHERE id=%s RETURNING *` | Script Lua atualiza hash, sorted set e índice de unicidade |
 | Excluir | `DELETE FROM readings WHERE id=%s RETURNING *` | Script Lua remove o hash e as referências nos índices |
 
-Mostre [PostgresStore](../app/store.py) para o SQL e, no mesmo arquivo, `RedisStore.point` e `MUTATE_LUA` para a implementação Redis. O PostgreSQL usa FK e `UNIQUE(sensor_id, ts)`; no Redis a aplicação verifica o sensor e mantém `iot:unique:<sensor_id>`. A API não oferece uma transação distribuída entre os dois bancos.
+Mostre [PostgresStore](../app/store.py) para o SQL e, no mesmo arquivo, `RedisStore.point` e `WRITE_LUA` para a implementação Redis. O PostgreSQL usa FK e `UNIQUE(sensor_id, ts)`; no Redis a aplicação verifica o sensor e mantém `iot:unique:<sensor_id>`. A API não oferece uma transação distribuída entre os dois bancos.
 
 ## Texto de apoio aos slides
 

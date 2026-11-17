@@ -316,6 +316,8 @@ def main():
             for extension in ('png', 'svg'):
                 path = output / f'{name}.{extension}'
                 fig.savefig(path, dpi=args.dpi)
+                if extension == 'svg':
+                    path.write_text('\n'.join(line.rstrip() for line in path.read_text().splitlines()) + '\n')
                 files.append(path)
             pdf.savefig(fig)
             plt.close(fig)

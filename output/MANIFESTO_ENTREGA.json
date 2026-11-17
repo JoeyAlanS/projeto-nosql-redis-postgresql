@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-11-17T19:52:10.618143+00:00",
+  "created_at": "2026-11-17T19:53:25.825401+00:00",
   "files": [
     {
       "path": ".dockerignore",
@@ -263,8 +263,8 @@
     },
     {
       "path": "output/graficos/01_tempo_carga.svg",
-      "bytes": 8943,
-      "sha256": "c6ef49c59b25b672265f3c3d794fe0a64a83296af4328ff49f8ab4813f01707c"
+      "bytes": 8899,
+      "sha256": "a675802a2737708266e36371dc696c732b0d8b34f7150392c55a5ed7bc3bff0c"
     },
     {
       "path": "output/graficos/02_mediana_consultas.png",
@@ -273,8 +273,8 @@
     },
     {
       "path": "output/graficos/02_mediana_consultas.svg",
-      "bytes": 19646,
-      "sha256": "05944825fc8c5ed8310a242e0ebe7decba9fd9f82c7c4728302af7c2acf0701b"
+      "bytes": 19542,
+      "sha256": "7c079088c57bf5b5928ef63892657985da8528c39661f3019c15045842673d48"
     },
     {
       "path": "output/graficos/03_vazao_concorrencia.png",
@@ -283,8 +283,8 @@
     },
     {
       "path": "output/graficos/03_vazao_concorrencia.svg",
-      "bytes": 21872,
-      "sha256": "62383870fb8137fd0b2b9c540476ea942a83f097bc768295fbe71821a2535ff3"
+      "bytes": 21780,
+      "sha256": "d1bef66bdb2c00a52cc7828406800ca14d325198477e882990386bf5def0a1a2"
     },
     {
       "path": "output/graficos/04_latencia_concorrencia.png",
@@ -293,8 +293,8 @@
     },
     {
       "path": "output/graficos/04_latencia_concorrencia.svg",
-      "bytes": 32299,
-      "sha256": "888ca3683ee55c7bef7d0767c9017603bcdd1b106050413fc5a0839f4c75c1db"
+      "bytes": 32179,
+      "sha256": "aaa79478e03a0354616580e464d1633633454edfa49507f56af517228ee3e138"
     },
     {
       "path": "output/graficos/05_distribuicao_consultas.png",
@@ -303,8 +303,8 @@
     },
     {
       "path": "output/graficos/05_distribuicao_consultas.svg",
-      "bytes": 88497,
-      "sha256": "f09acd9cdec38dd4aad3ff0f8b73c1e6d74afbe5f7a3d9b9228ba4ef70d3a544"
+      "bytes": 88233,
+      "sha256": "80413eff4149d47a5a80825359ab60b914b552996cbe3604eb9bf11989ff353b"
     },
     {
       "path": "output/graficos/06_distribuicao_http.png",
@@ -313,8 +313,8 @@
     },
     {
       "path": "output/graficos/06_distribuicao_http.svg",
-      "bytes": 124665,
-      "sha256": "22d1b2d01e46136b61c09da9c33ae7a707c52b243e9b46311c77d6c2aab1741f"
+      "bytes": 120241,
+      "sha256": "94d24243a8e3a897f597ceaef434c7e5726e4e80056764e2b21e779d951ac1c7"
     },
     {
       "path": "output/pdf/Comparacao_Carga_1M_5M.pdf",
@@ -344,7 +344,7 @@
     {
       "path": "output/pdf/Graficos_Carga_1M_5M.pdf",
       "bytes": 86536,
-      "sha256": "975f9cbee53f45fb955ea9cf89e41a9bde8591b6b425a504c82474bb79e42b49"
+      "sha256": "19a81fc5458fbac789b1ba610341d844c605c430009088b0de4a2198e37bfb03"
     },
     {
       "path": "output/pdf/Manual_Completo_Observatorio_IoT.pdf",
@@ -599,7 +599,7 @@
     {
       "path": "results/graficos/manifesto_graficos.json",
       "bytes": 4347,
-      "sha256": "186a1ebc00d23e337103d1a1c7668da07bf169ff039d6f3b38ec86d3b4f02373"
+      "sha256": "87d85d2858eb7a4092442e3eccd6d1a9a06d18c582e405cea73a8647c12a71ed"
     },
     {
       "path": "results/load.json",
@@ -733,8 +733,8 @@
     },
     {
       "path": "scripts/plot_load_tests.py",
-      "bytes": 21316,
-      "sha256": "293fcef74956d5d93cf9574d6454767e3f9860a0366aa13a8f7b29e2bf9f2936"
+      "bytes": 21466,
+      "sha256": "349725fa399313ff4132eacebe19fc98680381271acbfe6b5f04927f040c64c6"
     },
     {
       "path": "scripts/summarize_results.py",

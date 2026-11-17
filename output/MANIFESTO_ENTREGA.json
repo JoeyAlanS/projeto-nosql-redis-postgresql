@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-11-17T01:09:30.239825+00:00",
+  "created_at": "2026-11-17T01:57:49.607776+00:00",
   "files": [
     {
       "path": ".dockerignore",
@@ -22,6 +22,11 @@
       "sha256": "c18b0de0e8d53c81d64812494732a11dce816469c19620d863021ebef5818ff9"
     },
     {
+      "path": ".vscode/tasks.json",
+      "bytes": 2796,
+      "sha256": "863005c6b4fac2eeaaa9192b17eeb7bec7f6346d0ee73279dc7f614d8eedabef"
+    },
+    {
       "path": "Dockerfile",
       "bytes": 404,
       "sha256": "cc913153115fba44b8e92ed6cfe3589d0c2ad406bf2594c34e1de20ebe4b02b2"
@@ -32,9 +37,14 @@
       "sha256": "ac48ac9aaec750782b538d1db5e622204d9033e546f9b9e5323f2ac1d18e79ee"
     },
     {
+      "path": "Observatorio_IoT.code-workspace",
+      "bytes": 92,
+      "sha256": "b0dc6b21fa5fcbb545a338e029efea7d5c60cca19a55755e46c036de513e1a6f"
+    },
+    {
       "path": "README.md",
-      "bytes": 10881,
-      "sha256": "578333ca3bf057dceead60332186510bbf553face512320ae68c0030849e3ede"
+      "bytes": 11155,
+      "sha256": "0779c21790651e17ff47aa406111de0400994aa6eb5b159696889b0437fbefae"
     },
     {
       "path": "app/__init__.py",
@@ -105,6 +115,11 @@
       "path": "docs/REVISAO_PROJETO_VENDAS.md",
       "bytes": 5754,
       "sha256": "304ed55fe08bfa54b55a0b660b11c49b723c681574ae2ca08b48e55219307a00"
+    },
+    {
+      "path": "docs/ROTEIRO_VSCODE.md",
+      "bytes": 14722,
+      "sha256": "a7397964a70400c1276a90b608dca7b0d1e3846aad907fc49c2a77c6aef92a68"
     },
     {
       "path": "docs/evidencias_dados.md",
@@ -264,7 +279,7 @@
     {
       "path": "results/crud.json",
       "bytes": 993,
-      "sha256": "980910fd238bbcb696d1a6b79aad22b258ee6b68cf19c72690435bd66030e53e"
+      "sha256": "85f5837e8886311e0de8dca3336f65bbe0dc40eff3cfac206bf7245a2226e009"
     },
     {
       "path": "results/crud.log",
@@ -423,8 +438,8 @@
     },
     {
       "path": "scripts/package_delivery.py",
-      "bytes": 2088,
-      "sha256": "ca551399fc2b16d60851bfe246b7719bb85c1c5aef054ed197801990d4191397"
+      "bytes": 2148,
+      "sha256": "48fa07dfb3616b7fb95a18699d4fdae33c2cf2637f8df60ee4ce4ac04ab4ce5b"
     },
     {
       "path": "scripts/summarize_results.py",

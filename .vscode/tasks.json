@@ -1,0 +1,79 @@
+{
+  "version": "2.0.0",
+  "options": { "cwd": "${workspaceFolder}" },
+  "presentation": { "reveal": "always", "panel": "shared", "clear": false },
+  "tasks": [
+    {
+      "label": "IoT: 0 - Iniciar servicos",
+      "type": "process",
+      "command": "docker",
+      "args": ["compose", "up", "-d", "--build", "--wait"],
+      "problemMatcher": [],
+      "detail": "Inicia a aplicacao, PostgreSQL e Redis e espera os servicos ficarem saudaveis."
+    },
+    {
+      "label": "IoT: Status dos servicos",
+      "type": "process",
+      "command": "docker",
+      "args": ["compose", "ps"],
+      "problemMatcher": []
+    },
+    {
+      "label": "IoT: 1 - CRUD Redis",
+      "type": "process",
+      "command": "docker",
+      "args": ["compose", "exec", "-T", "app", "python", "exemplos/redis/01_crud_hash.py"],
+      "problemMatcher": [],
+      "detail": "Hash de uma leitura: criar, ler, atualizar a temperatura e excluir."
+    },
+    {
+      "label": "IoT: 2 - Historico Redis",
+      "type": "process",
+      "command": "docker",
+      "args": ["compose", "exec", "-T", "app", "python", "exemplos/redis/02_historico_sensor.py"],
+      "problemMatcher": [],
+      "detail": "Sorted set com timestamps: buscar as leituras entre 00:05 e 00:10."
+    },
+    {
+      "label": "IoT: 3 - Cache com TTL",
+      "type": "process",
+      "command": "docker",
+      "args": ["compose", "exec", "-T", "app", "python", "exemplos/redis/03_cache_ttl.py"],
+      "problemMatcher": [],
+      "detail": "Resumo JSON com validade de dois segundos: ausencia, acerto e expiracao."
+    },
+    {
+      "label": "IoT: 4 - CRUD nos dois bancos",
+      "type": "process",
+      "command": "docker",
+      "args": ["compose", "exec", "-T", "app", "python", "-m", "scripts.crud_demo"],
+      "problemMatcher": [],
+      "detail": "Aplica o mesmo CRUD temporario em PostgreSQL e Redis e confere os resultados."
+    },
+    {
+      "label": "IoT: 5 - Testar exemplos Redis",
+      "type": "process",
+      "command": "docker",
+      "args": ["compose", "exec", "-T", "app", "python", "-m", "unittest", "discover", "-s", "exemplos/redis", "-p", "test_*.py", "-v"],
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "IoT: 6 - Testar aplicacao",
+      "type": "process",
+      "command": "docker",
+      "args": ["compose", "exec", "-T", "app", "python", "-m", "unittest", "discover", "-s", "tests", "-v"],
+      "group": "test",
+      "problemMatcher": [],
+      "detail": "Executa os onze testes da aplicacao. Requer a massa principal carregada."
+    },
+    {
+      "label": "IoT: Parar servicos",
+      "type": "process",
+      "command": "docker",
+      "args": ["compose", "stop"],
+      "problemMatcher": [],
+      "detail": "Interrompe os servicos e preserva os dados nos volumes."
+    }
+  ]
+}

@@ -4,6 +4,8 @@ Implementação comparativa de telemetria ambiental com **PostgreSQL e Redis**, 
 
 Repositório dedicado da entrega: [JoeyAlanS/projeto-nosql-redis-postgresql](https://github.com/JoeyAlanS/projeto-nosql-redis-postgresql). Consulte o [guia do funcionamento e dos exemplos de código](docs/GUIA_CODIGO_REDIS.md) para apresentar o trabalho. A apresentação no Canva está [neste link](https://www.canva.com/design/DAHaf2M-EsI/rfjGTKd6PsB6jzMruNGYug/edit).
 
+Para ensaiar, siga o [roteiro de apresentação e VS Code](docs/ROTEIRO_VSCODE.md). Abra `Observatorio_IoT.code-workspace` no VS Code e use **Terminal > Executar Tarefa**, escolhendo as tarefas `IoT:` para iniciar os serviços, executar os exemplos e testar a aplicação.
+
 ## Executar
 
 Requisitos: Docker com Compose v2 ou superior, aproximadamente 2 GB de RAM disponíveis para os serviços e 2 GB de disco livre. O computador usado na entrega tem 16 GB de RAM. O frontend usa HTML/CSS/JavaScript local, sem CDN ou instalação de Node.

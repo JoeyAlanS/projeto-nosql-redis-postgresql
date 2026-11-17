@@ -11,6 +11,6 @@ test_query_and_path_integer_boundaries (test_integration.DatabaseContracts.test_
 test_redis_delete_returns_version_deleted_under_interleaved_update (test_integration.DatabaseContracts.test_redis_delete_returns_version_deleted_under_interleaved_update) ... ok
 
 ----------------------------------------------------------------------
-Ran 11 tests in 0.920s
+Ran 11 tests in 0.998s
 
 OK

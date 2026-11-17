@@ -1,4 +1,4 @@
-.PHONY: up load verify benchmark test browser audit logs stop package all crud exemplos-redis test-exemplos-redis escala graficos
+.PHONY: up load verify benchmark test test-console browser audit logs stop package all crud exemplos-redis test-exemplos-redis escala graficos
 PYTHON_GRAFICOS ?= .venv-graficos/bin/python
 .NOTPARALLEL: all
 up:
@@ -15,6 +15,8 @@ test:
 	@cat results/tests.log
 browser:
 	npm run test:browser
+test-console:
+	node --test tests/frontend/operations.test.mjs
 crud:
 	docker compose exec -T app python -m scripts.crud_demo
 exemplos-redis:

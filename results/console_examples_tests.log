@@ -1,0 +1,8 @@
+test_cache_ausencia_acerto_expiracao_e_limpeza (test_exemplos.ExemplosRedis.test_cache_ausencia_acerto_expiracao_e_limpeza) ... ok
+test_crud_e_limpeza (test_exemplos.ExemplosRedis.test_crud_e_limpeza) ... ok
+test_historico_inclusivo_ordenado_e_limpeza (test_exemplos.ExemplosRedis.test_historico_inclusivo_ordenado_e_limpeza) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 26.467s
+
+OK

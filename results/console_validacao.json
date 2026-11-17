@@ -1,0 +1,77 @@
+{
+  "verified_at": "2026-11-17T21:42:28.331030+00:00",
+  "passed": true,
+  "story": "Formulário da dashboard → API FastAPI → PostgreSQL/Redis locais → retorno HTTP/JSON e comparação no console",
+  "automated_tests": {
+    "integration": 11,
+    "frontend": 5,
+    "redis_examples": 3,
+    "scale_tools": 5,
+    "total": 24
+  },
+  "browser_operations_exported": 13,
+  "browser_checks": {
+    "crud_both_sources": true,
+    "duplicate_409": true,
+    "invalid_sensor_422": true,
+    "missing_reading_404": true,
+    "partial_success_409_201": true,
+    "field_difference_2850_3350": true,
+    "history_same_10_rows": true,
+    "summary_same_10000_readings": true,
+    "invalid_interval_sent_no_request": true,
+    "json_download_valid": true,
+    "prepare_edit_loaded_actual_reading_without_write": true,
+    "clear_console_only": true,
+    "no_horizontal_overflow_default_viewport": true,
+    "final_console_errors": []
+  },
+  "layout_validation": {
+    "viewport": {
+      "height": 800,
+      "width": 1422
+    },
+    "additional_viewport_overrides_used": false
+  },
+  "full_data_verification": {
+    "verified_at": "2026-11-17T21:38:16.980257+00:00",
+    "checked_readings": 1000000,
+    "postgres_count": 1000000,
+    "redis_count": 1000000,
+    "sha256": {
+      "csv": "519f2a3fceac765890289c51876e3be1980ff8c03d9f74d9768beb84a264369f",
+      "postgres": "519f2a3fceac765890289c51876e3be1980ff8c03d9f74d9768beb84a264369f",
+      "redis": "519f2a3fceac765890289c51876e3be1980ff8c03d9f74d9768beb84a264369f"
+    },
+    "sensors_verified": 1000,
+    "all_temporal_and_unique_indexes_verified": true,
+    "redis_evicted_keys": 0,
+    "seconds": 56.92169508900042,
+    "equivalent": true
+  },
+  "cleanup": {
+    "checked_at": "2026-11-17T21:41:20.068201+00:00",
+    "postgres_count": 1000000,
+    "postgres_demo": null,
+    "redis_demo_exists": 0,
+    "redis_demo_temporal_score": null,
+    "redis_demo_unique_owner": null,
+    "redis_dbsize": 1003003
+  },
+  "test_note": "A primeira execução da suíte de integração coincidiu com a divergência intencional de temperatura da demonstração; o teste de equivalência detectou a diferença. Depois da limpeza, os 11 testes passaram e a base inteira foi verificada.",
+  "source_sha256": {
+    "web/index.html": "72541c3c4a758534cdc666dceb46bea84effed39c99621769a45924356830efa",
+    "web/operations-core.mjs": "95132ada83f33899cf5e9a086535129ba095ddfa9c02ee30782cc0ee4ec7a192",
+    "web/operations.js": "bc8e124e5a763deb006f2f449a949b315378448a77e09eea6fb214aa280e0c28",
+    "web/operations.css": "eab6e068e81c3e91874e4629321adad45ddfb454f8bf6964d2d3b91078034cd1",
+    "app/main.py": "451b0780d4fff632e5f252eb8725d1304385b89ba65754383636fe618292cb5f",
+    "app/store.py": "ff164d826163934de7ca07601b0d1f97fb02a4a896295e50188ec76a03fa5a5d"
+  },
+  "evidence": [
+    "results/console_operacoes.json",
+    "results/console_browser.json",
+    "results/console_limpeza.json",
+    "results/evidencias/console_operacoes.png",
+    "results/evidencias/console_divergencia.png"
+  ]
+}

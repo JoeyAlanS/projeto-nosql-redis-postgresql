@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-11-17T21:41:20.068201+00:00",
+  "postgres_count": 1000000,
+  "postgres_demo": null,
+  "redis_demo_exists": 0,
+  "redis_demo_temporal_score": null,
+  "redis_demo_unique_owner": null,
+  "redis_dbsize": 1003003
+}

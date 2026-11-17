@@ -1,0 +1,41 @@
+{
+  "captured_at": "2026-11-17T21:42:02.328Z",
+  "activeNav": "⌘ Operações e console",
+  "documentWidth": 1405,
+  "responses": [
+    {
+      "data": {
+        "alerts": 3522,
+        "count": 10000,
+        "humidity_sum": 54385000,
+        "maximum": 3699,
+        "minimum": 2300,
+        "sensors": 1000,
+        "temperature_sum": 29932800
+      },
+      "elapsed_ms": 17.720542,
+      "operation": "summary",
+      "source": "postgres"
+    },
+    {
+      "data": {
+        "alerts": 3522,
+        "count": 10000,
+        "humidity_sum": 54385000,
+        "maximum": 3699,
+        "minimum": 2300,
+        "sensors": 1000,
+        "temperature_sum": 29932800
+      },
+      "elapsed_ms": 54.888533,
+      "operation": "summary",
+      "source": "redis"
+    }
+  ],
+  "status": "Resultados equivalentes nos dois bancos.",
+  "viewport": {
+    "height": 800,
+    "width": 1422
+  },
+  "console_errors": []
+}

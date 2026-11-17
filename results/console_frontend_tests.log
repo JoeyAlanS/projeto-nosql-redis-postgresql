@@ -1,0 +1,14 @@
+node --test tests/frontend/operations.test.mjs
+✔ CRUD envia inteiros exatos e fontes separadas para os endpoints existentes (4.952348ms)
+✔ resumo de 10 mil usa todos os sensores; histórico requer um sensor e limite (6.386422ms)
+✔ rejeita entradas vazias, imprecisas, fora dos limites e datas inexistentes (0.724526ms)
+✔ comparação ignora a ordem de propriedades e tempos, mas detecta tipos, campos e listas diferentes (0.940514ms)
+✔ falha parcial não aparece como equivalência nem como reversão confirmada (0.545874ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 154.802654

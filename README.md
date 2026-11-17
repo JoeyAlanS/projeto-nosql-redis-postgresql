@@ -6,6 +6,8 @@ Repositório dedicado da entrega: [JoeyAlanS/projeto-nosql-redis-postgresql](htt
 
 Para ensaiar, siga o [roteiro de apresentação e VS Code](docs/ROTEIRO_VSCODE.md). Abra `Observatorio_IoT.code-workspace` no VS Code e use **Terminal > Executar Tarefa**, escolhendo as tarefas `IoT:` para iniciar os serviços, executar os exemplos e testar a aplicação.
 
+O [roteiro de comandos de teste](docs/COMANDOS_TESTES.md) separa contagens, consultas, leitura e comparação de **10.000 registros da base existente**, CRUD temporário, exemplos Redis e testes automáticos. A base completa continua com **1.000.000 de leituras por banco**.
+
 O [manual completo](docs/MANUAL_COMPLETO.md) demonstra o fluxo de leitura, os quatro exemplos, a modelagem, o benchmark e a quantidade de registros. As versões para leitura e edição estão em [PDF](output/pdf/Manual_Completo_Observatorio_IoT.pdf) e [Word](output/documentos/Manual_Completo_Observatorio_IoT.docx). A execução demonstrada está registrada em `results/demonstracao_fluxo.json`.
 
 ## Executar

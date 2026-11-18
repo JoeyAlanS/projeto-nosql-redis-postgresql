@@ -99,8 +99,6 @@ def main():
                     if i % 200000 == 0:
                         print(f"Redis: {i:,}/{args.records:,}", flush=True)
                 pipe.execute()
-        rd.set("iot:loaded", json.dumps(report, ensure_ascii=False))
-        rd.set("iot:load_state", "complete")
         # Aguarda fsync periódico sem alterar a configuração de durabilidade.
         time.sleep(1.1)
         report["redis_load_seconds"] = time.perf_counter() - t
@@ -115,8 +113,27 @@ def main():
                       redis_maxmemory_policy=rd.config_get("maxmemory-policy")["maxmemory-policy"],
                       redis_appendfsync=rd.config_get("appendfsync")["appendfsync"],
                       redis_evicted_keys=info["evicted_keys"])
-        (ROOT / "results/load.json").write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n")
+        publish_report(rd, report)
         print(json.dumps(report, indent=2, ensure_ascii=False), flush=True)
+
+
+def publish_report(rd, report):
+    """Publica o manifesto completo; complete só é visível após os metadados.
+
+    O arquivo é substituído atomicamente e as duas chaves são publicadas em
+    uma transação Redis. Isso não constitui uma transação entre disco e Redis:
+    falhas de publicação não são ocultadas e exigem conferência do estado.
+    As medidas de espaço descrevem o instante anterior à publicação final.
+    """
+    payload = json.dumps(report, indent=2, ensure_ascii=False) + "\n"
+    manifest = ROOT / "results/load.json"
+    temporary = manifest.with_suffix(".json.tmp")
+    temporary.write_text(payload)
+    temporary.replace(manifest)
+    with rd.pipeline(transaction=True) as pipe:
+        pipe.set("iot:loaded", payload)
+        pipe.set("iot:load_state", "complete")
+        pipe.execute()
 
 
 if __name__ == "__main__":

@@ -1,0 +1,20 @@
+flowchart TB
+  A["Usuário envia filtros"] --> B["Pydantic valida tipos e limites"]
+  B --> C{"Requisição válida?"}
+  C -- "não" --> E["HTTP 422"]
+  C -- "sim" --> D["run_query
+valida período e sensor local"]
+  D --> F["store seleciona fonte
+prepara IDs de sensores"]
+  F --> G{"operation"}
+  G -- "point" --> H["HGETALL
+ou SELECT por PK"]
+  G -- "history" --> I["HISTORY_LUA
+ou SQL com LIMIT"]
+  G -- "summary" --> J["SUMMARY_LUA
+ou SQL agregado"]
+  H --> K["Normaliza dados e mede elapsed_ms"]
+  I --> K
+  J --> K
+  K --> L["Retorna JSON na mesma chamada HTTP"]
+  L --> M["Frontend renderiza resultado"]

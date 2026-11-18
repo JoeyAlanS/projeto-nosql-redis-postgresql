@@ -52,7 +52,15 @@ make graficos
 
 O comando valida os dados brutos e gera seis PNGs, seis SVGs e um PDF com seis páginas. O guia `docs/GRAFICOS_CARGA.md` explica as medidas, escalas e falas para apresentar. Confira as imagens antes de distribuir uma revisão.
 
-## Gerar o pacote
+## Revisar a análise técnica
+
+O texto da engenharia reversa está em `docs/engenharia/ANALISE_TECNICA_COMPLETA.md`. Após editar o código, confira os trechos, caminhos e linhas citados. Os cinco diagramas editáveis estão em `docs/engenharia/diagramas/`; suas imagens PNG devem corresponder aos arquivos Mermaid.
+
+No ambiente de autoria com python-docx e Pillow, `python3 -m scripts.build_engineering_document` gera o Word. Renderize o Word para PDF e confira todas as páginas antes de distribuir. `python3 -m scripts.build_documents` atualiza os PDFs acadêmicos, incluindo os resultados 1M/5M e a matriz `docs/CONFORMIDADE_TRABALHO.md`.
+
+Com os bancos ativos e sem escritas concorrentes, `make verify` seguido de `docker compose exec -T app python -m scripts.validate_documentation` captura contagens, tipos SQL, equivalência das consultas e dos manifestos em `results/documentation_validation.json`. Essa validação não repete os benchmarks. Os manifestos de cargas antigas devem estar completos antes dessa conferência.
+
+## Gerar o pacote atualizado
 
 ```bash
 make audit

@@ -1,0 +1,49 @@
+{
+  "reviewed_at": "2026-11-18T22:28:26.061635+00:00",
+  "documents": {
+    "Entrega_2_Modelagem_e_Comparacao.pdf": {
+      "pages": 6,
+      "words_outside_page": 0,
+      "sha256": "b9fb5c791951d4b052c7bd32521c4301fc7cb5c56096afb4c080e81b77e6e201"
+    },
+    "Entrega_3_Massa_de_Dados.pdf": {
+      "pages": 6,
+      "words_outside_page": 0,
+      "sha256": "67e6aa3381d094e160925f0bf88fa2e058c1f7d3f8acd7292841cef0fb02c52e"
+    },
+    "Entrega_4_Experimentos_e_Dashboard.pdf": {
+      "pages": 19,
+      "words_outside_page": 0,
+      "sha256": "1aee29a2802b02be3a7cc124b59fce47510462cd57e597496f6c57e011212f1f"
+    },
+    "Relatorio_Completo_Projeto_3.pdf": {
+      "pages": 28,
+      "words_outside_page": 0,
+      "sha256": "64eb0925ab76b98d420072e36aea90350ff90881626cfd2401511d72dcd08052"
+    },
+    "Analise_Tecnica_Completa_Redis_PostgreSQL.pdf": {
+      "pages": 35,
+      "words_outside_page": 0,
+      "sha256": "d44b9dcde4490f27d8dc1020e079d852d33667ae3db782f9f17388d2b8ec5f2f"
+    }
+  },
+  "functional_tests": {
+    "integration": 11,
+    "javascript": 11,
+    "redis_examples": 3,
+    "load_tools": 5,
+    "total": 30,
+    "log": "results/documentacao_tests.log"
+  },
+  "current_data_verification": "results/verification.json",
+  "current_database_counts": {
+    "postgres": 1000000,
+    "redis": 1000000
+  },
+  "isolated_loader_validation_records": 1001,
+  "code_snippets_compared_to_sources": 21,
+  "mermaid_diagrams": 5,
+  "historical_benchmarks_reexecuted": false,
+  "historical_query_samples_recomputed": 360,
+  "historical_http_samples_recomputed": 14400
+}

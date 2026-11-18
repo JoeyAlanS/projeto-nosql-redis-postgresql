@@ -2,6 +2,7 @@
 
 ## Usar e apresentar
 
+- [Engenharia reversa completa de Redis, consultas, testes e Dashboard](engenharia/ANALISE_TECNICA_COMPLETA.md), [PDF](../output/pdf/Analise_Tecnica_Completa_Redis_PostgreSQL.pdf) e [Word](../output/documentos/Analise_Tecnica_Completa_Redis_PostgreSQL.docx).
 - [Dashboard: alterações, comparação visual e console](CONSOLE_DASHBOARD.md).
 - [Comandos para testar os dados e as 10 mil leituras](COMANDOS_TESTES.md).
 - [Roteiro de apresentação e VS Code](ROTEIRO_VSCODE.md).
@@ -11,6 +12,7 @@
 
 ## Pesquisa, modelo e entregas
 
+- [Conferência do documento com todos os requisitos do trabalho](CONFORMIDADE_TRABALHO.md).
 - [Paradigma e pesquisa](01_pesquisa.md).
 - [Modelagem e comparação](02_modelagem.md); diagramas em `modelos/`.
 - [Massa de dados](03_dados.md).

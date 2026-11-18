@@ -1,0 +1,73 @@
+test_conflicting_update_keeps_original_record_and_indexes (test_integration.DatabaseContracts.test_conflicting_update_keeps_original_record_and_indexes) ... ok
+test_crud_maintains_temporal_and_unique_indexes (test_integration.DatabaseContracts.test_crud_maintains_temporal_and_unique_indexes) ... ok
+test_duplicate_and_foreign_key_rejected (test_integration.DatabaseContracts.test_duplicate_and_foreign_key_rejected) ... ok
+test_empty_and_unknown_location_return_equivalent_empty_results (test_integration.DatabaseContracts.test_empty_and_unknown_location_return_equivalent_empty_results) ... ok
+test_equivalent_reads_and_empty_ranges (test_integration.DatabaseContracts.test_equivalent_reads_and_empty_ranges) ... ok
+test_http_crud_roundtrip (test_integration.DatabaseContracts.test_http_crud_roundtrip) ... ok
+test_http_filters_comparison_and_validation (test_integration.DatabaseContracts.test_http_filters_comparison_and_validation) ... ok
+test_invalid_numbers_rejected_without_writing (test_integration.DatabaseContracts.test_invalid_numbers_rejected_without_writing) ... ok
+test_missing_update_and_delete (test_integration.DatabaseContracts.test_missing_update_and_delete) ... ok
+test_query_and_path_integer_boundaries (test_integration.DatabaseContracts.test_query_and_path_integer_boundaries) ... ok
+test_redis_delete_returns_version_deleted_under_interleaved_update (test_integration.DatabaseContracts.test_redis_delete_returns_version_deleted_under_interleaved_update) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 1.154s
+
+OK
+node --test tests/frontend/*.test.mjs
+✔ CRUD envia inteiros exatos e fontes separadas para os endpoints existentes (19.919958ms)
+✔ resumo de 10 mil usa todos os sensores; histórico requer um sensor e limite (6.946748ms)
+✔ rejeita entradas vazias, imprecisas, fora dos limites e datas inexistentes (0.833985ms)
+✔ comparação ignora a ordem de propriedades e tempos, mas detecta tipos, campos e listas diferentes (1.122125ms)
+✔ falha parcial não aparece como equivalência nem como reversão confirmada (0.82241ms)
+✔ 404 confirma ausência; falha HTTP, rede e JSON incorreto permanecem desconhecidos (2.219101ms)
+✔ comparação separa equivalência, diferença de campo, ausência e comparação incompleta (3.217045ms)
+✔ antes/depois não inventa mudança quando uma das consultas falha (1.387916ms)
+✔ captura ambos antes e depois; falha parcial não repete nem reverte escritas (4.502008ms)
+✔ consulta depois da escrita determina a tela; uma resposta de sucesso não substitui a confirmação (1.404172ms)
+✔ consulta por ID usa somente GET e unidades são convertidas sem alterar os valores armazenados (65.041336ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 262.274688
+docker compose exec -T app python -m unittest discover -s exemplos/redis -p 'test_*.py' -v
+test_cache_ausencia_acerto_expiracao_e_limpeza (test_exemplos.ExemplosRedis.test_cache_ausencia_acerto_expiracao_e_limpeza) ... ok
+test_crud_e_limpeza (test_exemplos.ExemplosRedis.test_crud_e_limpeza) ... ok
+test_historico_inclusivo_ordenado_e_limpeza (test_exemplos.ExemplosRedis.test_historico_inclusivo_ordenado_e_limpeza) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 36.253s
+
+OK
+docker compose exec -T app python -m unittest discover -s tests/scalability -p 'test_*.py' -v
+test_http_errors_count_as_failures_and_not_fast_successes (test_tools.ScaleTools.test_http_errors_count_as_failures_and_not_fast_successes) ... ok
+test_http_success_does_not_hide_wrong_fields (test_tools.ScaleTools.test_http_success_does_not_hide_wrong_fields) ... ok
+test_projects_and_subnets_are_different_from_main_and_each_other (test_tools.ScaleTools.test_projects_and_subnets_are_different_from_main_and_each_other) ... ok
+test_sequence_covers_first_and_last_id_without_duplicates (test_tools.ScaleTools.test_sequence_covers_first_and_last_id_without_duplicates) ... ok
+test_workers_execute_every_request_exactly_once (test_tools.ScaleTools.test_workers_execute_every_request_exactly_once) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.574s
+
+OK
+python3 scripts/audit_delivery.py
+{
+  "requirements_documented": true,
+  "logical_records_per_database": 1000000,
+  "full_dataset_equivalent": true,
+  "raw_measurements": 180,
+  "samples_per_source_per_query": 30,
+  "statistics_recomputed": true,
+  "per_pair_result_hashes_equal": true,
+  "nosql_advantage_observed": true,
+  "integration_tests_passed": 11,
+  "browser_passed": true,
+  "slides": 14,
+  "chart_zero_baseline_verified": true,
+  "embedded_dashboard_image_verified": true,
+  "remaining_personalization": "Curso, professor e integrantes em docs/identificacao.json. Submissão e apresentação a cargo da equipe."
+}

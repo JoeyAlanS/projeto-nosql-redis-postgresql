@@ -12,11 +12,12 @@ def mib(v):return fmt(v/1024**2,2)+' MiB'
 b=load('benchmark.json'); l=load('load.json'); v=load('verification.json'); browser=load('browser.json')
 tests_count=int(re.search(r'^Ran (\d+) tests? in ',(ROOT/'results/tests.log').read_text(),re.MULTILINE).group(1))
 q1,q2,q3=b['queries']
+benchmark_date=datetime.fromisoformat(b['executed_at']).strftime('%d/%m/%Y')
 rows='\n'.join(f"| {q['query']} - {q['name']} | {fmt(q['metrics']['postgres']['median_ms'])} | {fmt(q['metrics']['redis']['median_ms'])} | {fmt(q['metrics']['postgres']['p95_ms'])} | {fmt(q['metrics']['redis']['p95_ms'])} |" for q in b['queries'])
 reduction=(1-q1['metrics']['redis']['median_ms']/q1['metrics']['postgres']['median_ms'])*100
 text=f'''# Resultados medidos e análise
 
-Execução em 14/11/2026, sobre {fmt(b['records'],0)} leituras em cada base. Foram realizadas {b['repetitions']} repetições de cada consulta por fonte, após {b['warmup']} aquecimentos. O arquivo bruto contém 180 amostras e os resultados de cada par coincidem. Tempos em milissegundos, medidos no cliente.
+Execução em {benchmark_date}, sobre {fmt(b['records'],0)} leituras em cada base. Foram realizadas {b['repetitions']} repetições de cada consulta por fonte, após {b['warmup']} aquecimentos. O arquivo bruto contém 180 amostras e os resultados de cada par coincidem. Tempos em milissegundos, medidos no cliente. Este é o ensaio original; as medições posteriores de 1M/5M estão em docs/COMPARACAO_1M_5M.md.
 
 ## Medianas e p95
 
@@ -59,7 +60,7 @@ Os contêineres não têm limite adicional de CPU/RAM via cgroup. Outros serviç
 
 ## Validação do produto
 
-Os {tests_count} testes de integração passaram com bancos reais, incluindo CRUD, conflitos de unicidade, sensor inexistente, limites numéricos, validação HTTP, manutenção de índices, exclusão com atualização intercalada e equivalência de consultas. A inspeção automatizada do navegador confirmou {browser['query_requests']} novas chamadas de consulta, alternância de fonte equivalente, filtro de local com 100.000 leituras, filtro de sensor com 1.000 leituras e recorte temporal com 145 leituras. Também verificou ID inexistente, respostas divergentes e recuperação após datas inválidas. A consulta pontual real retornou resultados iguais.
+Os {tests_count} testes de integração passaram com bancos reais, incluindo CRUD, conflitos de unicidade, sensor inexistente, limites numéricos, validação HTTP, manutenção de índices, exclusão com atualização intercalada e equivalência de consultas. O log atual está em results/tests.log. A inspeção automatizada de navegador preservada em results/browser.json confirmou {browser['query_requests']} chamadas de consulta, alternância de fonte equivalente, filtro de local com 100.000 leituras, filtro de sensor com 1.000 leituras e recorte temporal com 145 leituras. Também verificou ID inexistente, respostas divergentes e recuperação após datas inválidas. Essa inspeção de navegador não foi repetida na revisão documental. A consulta pontual real retornou resultados iguais.
 
 Não houve erros JavaScript ou rolagem horizontal indevida na viewport móvel testada. Capturas do dashboard e da consulta ao vivo estão em results/evidencias/. Essa verificação demonstra funcionamento no ambiente local, sem substituir testes de carga concorrente ou de recuperação após falha.
 
@@ -95,6 +96,8 @@ SHA-256 idêntico no CSV, no fluxo ordenado PostgreSQL e nos hashes Redis:
 
 {l['csv_sha256']}
 
+A verificação integral desta evidência foi executada em {v['verified_at']}. Ela não altera a data ou os tempos do benchmark original.
+
 A verificação também conferiu todos os sorted sets e índices de unicidade por sensor. O relatório completo está em results/verification.json. Não há redução do mínimo de um milhão nem contagem de índices como registros de negócio.
 
 ## Carga e espaço ocupado
@@ -114,9 +117,6 @@ A verificação também conferiu todos os sorted sets e índices de unicidade po
 
 RAM de processo, tabelas/índices e diretórios em disco medem categorias distintas. Os valores não são uma comparação direta de custo total. Os diretórios podem crescer após operações de teste. A carga Redis usa AOF everysec e PostgreSQL usa WAL com sincronização ativa, portanto diferenças de tempo não indicam a mesma durabilidade de escrita.
 
-## Reproduzir e auditar
-
-Use make up, make load e make verify. O CSV é determinístico para a seed e o volume registrados em results/load.json. O script de CRUD remove os dados temporários, preservando a massa original. As imagens executadas e os índices/bytes foram preservados em results/docker-images.json e results/storage.json. As instruções completas estão no README e em docs/03_dados.md.
 '''
-(ROOT/'docs/evidencias_dados.md').write_text(data)
+(ROOT/'docs/evidencias_dados.md').write_text(data.rstrip()+'\n')
 print('Resultados e evidências textuais gerados sem valores manuais.')

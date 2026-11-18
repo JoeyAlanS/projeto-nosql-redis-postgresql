@@ -38,12 +38,17 @@ tests_log=(root/'results/tests.log').read_text()
 test_runs=re.findall(r'^Ran (\d+) tests? in ',tests_log,re.MULTILINE)
 assert len(test_runs)==1 and int(test_runs[0])>=11 and tests_log.rstrip().endswith('\nOK')
 tests_count=int(test_runs[0])
+identity=json.loads((root/'docs/identificacao.json').read_text())
+missing_identity=[label for key,label in [('curso','Curso'),('professor','Professor'),('integrantes','Integrantes')]
+                  if not identity.get(key)]
 record={'requirements_documented':True,'logical_records_per_database':1000000,
         'full_dataset_equivalent':True,'raw_measurements':len(rows),'samples_per_source_per_query':30,
         'statistics_recomputed':True,'per_pair_result_hashes_equal':True,
         'nosql_advantage_observed':b['nosql_advantage_observed'],'integration_tests_passed':tests_count,
         'browser_passed':True,'slides':14,'chart_zero_baseline_verified':True,
         'embedded_dashboard_image_verified':True,
-        'remaining_personalization':'Curso, professor e integrantes em docs/identificacao.json. Submissão e apresentação a cargo da equipe.'}
+        'missing_identity_fields':missing_identity,
+        'remaining_personalization':(', '.join(missing_identity)+' em docs/identificacao.json. ' if missing_identity else '')+
+                                   'Submissão e apresentação a cargo da equipe.'}
 (root/'results/entrega_status.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps(record,ensure_ascii=False,indent=2))

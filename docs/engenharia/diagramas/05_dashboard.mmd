@@ -1,0 +1,20 @@
+flowchart TB
+  R[("Redis ou PostgreSQL")] --> ST["Store normaliza retorno"]
+  ST --> API["api/query ou api/readings
+JSON HTTP"]
+  API --> JS["refresh lookup ou send
+JavaScript no navegador"]
+  JS --> MET["Resumo
+count temperatura sensores alertas"]
+  JS --> CH["Histórico
+gráfico SVG até 200 pontos"]
+  JS --> LAB["Laboratório
+linha SQL e hash Redis
+antes e depois"]
+  LAB --> CON["Console local
+últimas 30 operações e exportação"]
+  F["results em disco"] --> REP["api/benchmark e api/scalability"]
+  REP --> PERF["experiment e scalability
+barras tabelas e planos salvos"]
+  EVT["Escrita concluída
+evento iot:readings-changed"] --> JS

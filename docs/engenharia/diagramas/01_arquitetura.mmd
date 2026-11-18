@@ -1,0 +1,22 @@
+flowchart TB
+  UI["Navegador
+HTML e JavaScript"] --> API["FastAPI
+app/main.py"]
+  API --> DIS["run_query ou mutate
+store(source)"]
+  DIS --> PG["PostgresStore
+SQL parametrizado"]
+  DIS --> RD["RedisStore
+comandos e Lua"]
+  PG --> PDB[("PostgreSQL
+sensors e readings")]
+  RD --> RDB[("Redis standalone
+hashes e sorted sets")]
+  LOAD["scripts.load
+CSV determinístico"] --> PDB
+  LOAD --> RDB
+  EXP["Scripts de experimentos"] --> FILES["results
+JSON CSV e planos"]
+  FILES --> STATIC["Endpoints benchmark
+e scalability"]
+  STATIC --> UI

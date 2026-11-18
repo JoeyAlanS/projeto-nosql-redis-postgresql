@@ -12,5 +12,9 @@
   "slides": 14,
   "chart_zero_baseline_verified": true,
   "embedded_dashboard_image_verified": true,
-  "remaining_personalization": "Curso, professor e integrantes em docs/identificacao.json. Submissão e apresentação a cargo da equipe."
+  "missing_identity_fields": [
+    "Curso",
+    "Integrantes"
+  ],
+  "remaining_personalization": "Curso, Integrantes em docs/identificacao.json. Submissão e apresentação a cargo da equipe."
 }

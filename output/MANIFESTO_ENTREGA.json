@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-11-17T22:54:15.464668+00:00",
+  "created_at": "2026-11-18T22:30:05.137216+00:00",
   "files": [
     {
       "path": ".dockerignore",
@@ -43,8 +43,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 12706,
-      "sha256": "e29cded7671e326c9a24cad1adbfbaa16a3a919d96f9872b2febc52a192297c0"
+      "bytes": 13754,
+      "sha256": "1c5e4829555ad256e73615f6a887d7a98f11bda0e3b2639be67087a1474f439d"
     },
     {
       "path": "app/__init__.py",
@@ -88,8 +88,8 @@
     },
     {
       "path": "docs/03_dados.md",
-      "bytes": 3594,
-      "sha256": "6d7b0421fe07de574355a7e65ddee9c9d57fbb8c2a9a10678d0afe67a80ba280"
+      "bytes": 3993,
+      "sha256": "7afd61c5a158c1f987978e0ff63c30cfbb99be3b18782b497c69467b5be5e4d3"
     },
     {
       "path": "docs/04_experimentos.md",
@@ -97,9 +97,14 @@
       "sha256": "823d32b4e6141cec855841c92fe76fbbaa4e1754b8d7c7368a891e49b4b84dc0"
     },
     {
+      "path": "docs/ANALISE_TECNICA_COMPLETA.md",
+      "bytes": 163,
+      "sha256": "d53e519bf2e071833a91f5be0566542986b72e2a69109d4fe7a518d2da59e54c"
+    },
+    {
       "path": "docs/AUTORIA.md",
-      "bytes": 3640,
-      "sha256": "65ee0416c762a456a2caa1ad9c03707bc568b0d0212ebd335e506e916a504d2f"
+      "bytes": 4685,
+      "sha256": "e3b03c1dd1221440cb0420f47a15a53703ba5953ef581ff3a337f5553b833c08"
     },
     {
       "path": "docs/COMANDOS_TESTES.md",
@@ -110,6 +115,11 @@
       "path": "docs/COMPARACAO_1M_5M.md",
       "bytes": 15164,
       "sha256": "87271bd499848e3bc8a66340bcfbf210785850f82600a398f981801514ebb0bf"
+    },
+    {
+      "path": "docs/CONFORMIDADE_TRABALHO.md",
+      "bytes": 6653,
+      "sha256": "3b5dd4cfbbf2f6177de1e8c145e41c91850364ef2ef7bdf7bc2e2893509e775d"
     },
     {
       "path": "docs/CONSOLE_DASHBOARD.md",
@@ -123,8 +133,8 @@
     },
     {
       "path": "docs/ENTREGAS.md",
-      "bytes": 3221,
-      "sha256": "458ddf169ce2b7fe096c5f56fd9cc373034208d668d558952b4cc81d5ece98d8"
+      "bytes": 3739,
+      "sha256": "f89e04965dc857d9d5c341669c2962726bc2f7e20f59ce70e520e1718c7485d5"
     },
     {
       "path": "docs/GRAFICOS_CARGA.md",
@@ -138,8 +148,8 @@
     },
     {
       "path": "docs/INDICE.md",
-      "bytes": 2141,
-      "sha256": "fb995c4824ad32a2c786814966572fc37efd9f20f9b6ba26ace93dfc55aba7b5"
+      "bytes": 2493,
+      "sha256": "f0c6d9bbcf432b4c09bf94ae14e8e3fab192b153a937df414a3468aaf70d2373"
     },
     {
       "path": "docs/MANUAL_COMPLETO.md",
@@ -162,9 +172,69 @@
       "sha256": "898052cdf7fe2bee3f66dd03333736da1583acb7798766acd5224f38f6461395"
     },
     {
+      "path": "docs/engenharia/ANALISE_TECNICA_COMPLETA.md",
+      "bytes": 103119,
+      "sha256": "1a571b70b413fd984a0d9906333ac40176c85fc5140d0a42ed8c9fdf84750d26"
+    },
+    {
+      "path": "docs/engenharia/diagramas/01_arquitetura.mmd",
+      "bytes": 535,
+      "sha256": "d663f2ed235d7dcaf39a3195099c6108d5c62ac04ab735f54b60e6f73b661498"
+    },
+    {
+      "path": "docs/engenharia/diagramas/01_arquitetura.png",
+      "bytes": 140883,
+      "sha256": "3dbde3edd7ddc2045eb574740a63f8da1bea5a7218f04a24fd5ded0c33d02552"
+    },
+    {
+      "path": "docs/engenharia/diagramas/02_execucao.mmd",
+      "bytes": 611,
+      "sha256": "222855647e06f9e492f4813c18df7e8716e38f14e8eb754355561e3fbb699e81"
+    },
+    {
+      "path": "docs/engenharia/diagramas/02_execucao.png",
+      "bytes": 172661,
+      "sha256": "b09cc2dad5c956c3c05754b86fac86c13a8dfa6622e66a0526cd1bcfe4cfc16f"
+    },
+    {
+      "path": "docs/engenharia/diagramas/03_redis.mmd",
+      "bytes": 571,
+      "sha256": "d6f678aca6a3e7aecf2107517a2060f58a2338e5b5490a4cf64be085e4306bc7"
+    },
+    {
+      "path": "docs/engenharia/diagramas/03_redis.png",
+      "bytes": 160690,
+      "sha256": "771620b0621f789ff20ea712bfb3a31f98be7ac738d3f1effb45ec346f5f4a13"
+    },
+    {
+      "path": "docs/engenharia/diagramas/04_testes.mmd",
+      "bytes": 623,
+      "sha256": "ce958e9fd08c4ec767f21c21e08fb16cfa3781c6dba56a0968dfe44a7c572b5b"
+    },
+    {
+      "path": "docs/engenharia/diagramas/04_testes.png",
+      "bytes": 166413,
+      "sha256": "9d7f9cc35d1d96965fa42ca27047ecd6f85c0b2b514642f1c736c111f8613e22"
+    },
+    {
+      "path": "docs/engenharia/diagramas/05_dashboard.mmd",
+      "bytes": 645,
+      "sha256": "c5c4ce69736c96863a5713a7abef3524dee60ca119c74de83933a511f526fcda"
+    },
+    {
+      "path": "docs/engenharia/diagramas/05_dashboard.png",
+      "bytes": 174634,
+      "sha256": "ce02485158b0918019daeb5467cb06890c2ff47d24cfc84d984210ebfc5f15e3"
+    },
+    {
+      "path": "docs/engenharia/manifesto_fontes.json",
+      "bytes": 8916,
+      "sha256": "c0c91172005c5c834ec3b9b94b020a2d285d4198327fe674870760e0b161b13f"
+    },
+    {
       "path": "docs/evidencias_dados.md",
-      "bytes": 2025,
-      "sha256": "5f72b30120bfacf5e7e4c3757df893e9d2b3c04f6c5c44f52c46444041b849c1"
+      "bytes": 1775,
+      "sha256": "20bd4fc7aa772223ec243c37c5e60478aefbf01d40a94ac6a7d842755896215e"
     },
     {
       "path": "docs/fontes/Entrega_1_NoSQL_Chave_Valor_Redis_Memcached.pdf",
@@ -183,8 +253,8 @@
     },
     {
       "path": "docs/identificacao.json",
-      "bytes": 164,
-      "sha256": "18a66e4a7229770881f11e40255d4b102931dd986e02d6b50b05181b737d2845"
+      "bytes": 177,
+      "sha256": "e3706505f81b9c1857c69824dd4ef0c3a0b95313ca456e679a3794cbf004e9d1"
     },
     {
       "path": "docs/modelos/arquitetura.svg",
@@ -218,8 +288,8 @@
     },
     {
       "path": "docs/resultados.md",
-      "bytes": 5162,
-      "sha256": "059996cc1d6d32ad60144814225d89e26317df1a6f3fa63114ec021c13f0b303"
+      "bytes": 5400,
+      "sha256": "a13e2a80c2badc444c6bc5fd2ded1b07284eef4b6454ba7b29e97456cabf535c"
     },
     {
       "path": "docs/roteiro_apresentacao.md",
@@ -260,6 +330,11 @@
       "path": "output/apresentacao/Apresentacao_Final_Projeto_3.pptx",
       "bytes": 115824,
       "sha256": "c177cb38e8117883d8904c80bbfa3f9fa61a5251757dfe205a6af62ae8bfb8ac"
+    },
+    {
+      "path": "output/documentos/Analise_Tecnica_Completa_Redis_PostgreSQL.docx",
+      "bytes": 791354,
+      "sha256": "edb3abe1b98ce20fe2796dc12940e1b78588f42029dc8914d1291d0cc02a60dd"
     },
     {
       "path": "output/documentos/Manual_Completo_Observatorio_IoT.docx",
@@ -327,6 +402,11 @@
       "sha256": "94d24243a8e3a897f597ceaef434c7e5726e4e80056764e2b21e779d951ac1c7"
     },
     {
+      "path": "output/pdf/Analise_Tecnica_Completa_Redis_PostgreSQL.pdf",
+      "bytes": 1287467,
+      "sha256": "d44b9dcde4490f27d8dc1020e079d852d33667ae3db782f9f17388d2b8ec5f2f"
+    },
+    {
       "path": "output/pdf/Comparacao_Carga_1M_5M.pdf",
       "bytes": 45683,
       "sha256": "3090135defb6a7ef179d8ddb406a8db42c89162afac60480d3dd9d7e9dcc15cf"
@@ -338,18 +418,18 @@
     },
     {
       "path": "output/pdf/Entrega_2_Modelagem_e_Comparacao.pdf",
-      "bytes": 263046,
-      "sha256": "4b94111b72a113bcdc87bca904ecf351558ab6e1fc0c4015ed6c9bf2199cb83d"
+      "bytes": 262986,
+      "sha256": "b9fb5c791951d4b052c7bd32521c4301fc7cb5c56096afb4c080e81b77e6e201"
     },
     {
       "path": "output/pdf/Entrega_3_Massa_de_Dados.pdf",
-      "bytes": 38280,
-      "sha256": "3ea65a24a2c6a1d296cc6aa2ebf18aaef99edcbd29978099b5b6b60dbbc40354"
+      "bytes": 44553,
+      "sha256": "67e6aa3381d094e160925f0bf88fa2e058c1f7d3f8acd7292841cef0fb02c52e"
     },
     {
       "path": "output/pdf/Entrega_4_Experimentos_e_Dashboard.pdf",
-      "bytes": 263808,
-      "sha256": "63ad521d4518d9a44f09de206c93f1a2c6b2d35e219e1ab7bfdc04789f01d746"
+      "bytes": 1171907,
+      "sha256": "1aee29a2802b02be3a7cc124b59fce47510462cd57e597496f6c57e011212f1f"
     },
     {
       "path": "output/pdf/Graficos_Carga_1M_5M.pdf",
@@ -363,8 +443,8 @@
     },
     {
       "path": "output/pdf/Relatorio_Completo_Projeto_3.pdf",
-      "bytes": 627270,
-      "sha256": "50afc9c668e6522de5a68143384a3904949843465b59ce2fb87c5c9fe9a1b86a"
+      "bytes": 1534568,
+      "sha256": "64eb0925ab76b98d420072e36aea90350ff90881626cfd2401511d72dcd08052"
     },
     {
       "path": "output/pdf/Slides_Projeto_3.pdf",
@@ -512,9 +592,19 @@
       "sha256": "f5f57a941747aa7b75ccb2f59bc78c1efb1ef2e72279634e326317ec2021cdff"
     },
     {
+      "path": "results/documentacao_tests.log",
+      "bytes": 4887,
+      "sha256": "871e3b113f5f5c302610c8e33682928c3bc4dcdf415defa853e4f7e6f0281dbc"
+    },
+    {
+      "path": "results/documentation_validation.json",
+      "bytes": 2869,
+      "sha256": "e21cd391426220b84563014fe047c36a680b198118a24b31746069a32bda7e6a"
+    },
+    {
       "path": "results/entrega_status.json",
-      "bytes": 591,
-      "sha256": "a4672ec17bd2da047c9eef5413a2df7f04b9c8924a881acc8b59d8324195646b"
+      "bytes": 646,
+      "sha256": "4ccb2d4159a93296abbc5e88007cabb8af8b16629d2cd3e9439ef671d034b43f"
     },
     {
       "path": "results/escala/1000000/benchmark.json",
@@ -707,6 +797,11 @@
       "sha256": "a9c6fea6338b672fc74879db96a654cc440ed65e7265d642d3b75e59c7d7d428"
     },
     {
+      "path": "results/load_manifest_sync.json",
+      "bytes": 1300,
+      "sha256": "e7938a0c64cf7e22c6205734b18920f5b73f4f93a031d518496cff2b279b5fa6"
+    },
+    {
       "path": "results/plans.json",
       "bytes": 10148,
       "sha256": "9d5a4674f80498f701abbd8d1aed591bb768fada8cfa4b212bc075dd3f6e6281"
@@ -727,6 +822,11 @@
       "sha256": "e06e3b13d77e5b9f18b0c8c8e14dc34703608e2cd7b1ce072258c1192ad3e674"
     },
     {
+      "path": "results/revisao_documental.json",
+      "bytes": 1579,
+      "sha256": "7dc62bb558191d4a6ceb487c5407cb28a5ea7a5a444ff821594507a63f532507"
+    },
+    {
       "path": "results/revisao_projeto_vendas.json",
       "bytes": 5343,
       "sha256": "73eaa8e4c487503a4297d7c7c2542577431724038d018d8a68b6fa78c96bd82b"
@@ -737,6 +837,11 @@
       "sha256": "e9b37c6c37b1e9632b071af816a4046c142dd5b30efcaa989f5d2052ff3b0ce8"
     },
     {
+      "path": "results/sql_example_validation.json",
+      "bytes": 218,
+      "sha256": "37ff64968d0670af2c375fa18350dbd46011bac582f43ec7ff2d53b27f205e1d"
+    },
+    {
       "path": "results/storage.json",
       "bytes": 1291,
       "sha256": "be905bf6f85fdcfe430ced3b30e07542c4baaecc7500a4ba17b25e796a50af05"
@@ -744,12 +849,17 @@
     {
       "path": "results/tests.log",
       "bytes": 1585,
-      "sha256": "e7477e98fa426cb1182c0d12d94d84a5fdd33b96660887ca82f8df560eb6a78c"
+      "sha256": "1327993a71420d5ac88aadbcbb649115589b54efbf6cfaf6e15c2513cabee118"
+    },
+    {
+      "path": "results/validacao_carga_documentacao.json",
+      "bytes": 4880,
+      "sha256": "dac81cb8071648f746c5d221f5c0cea19fe278ad593b099c27523a3ad3c4c47a"
     },
     {
       "path": "results/verification.json",
-      "bytes": 565,
-      "sha256": "d3f6df7f635bfe3f64c8b49bd7da4a26181188cd61998c8520e73e04f1c32920"
+      "bytes": 564,
+      "sha256": "ff2d1aba2116dadb887e2f514b575a6229a14234cedf210b8ef05324eebb4d69"
     },
     {
       "path": "scripts/__init__.py",
@@ -758,8 +868,8 @@
     },
     {
       "path": "scripts/audit_delivery.py",
-      "bytes": 2871,
-      "sha256": "96e10b6d210a0966363077fbd47ee24373be4065e577872910ef5328281fe727"
+      "bytes": 3217,
+      "sha256": "d96a44d44fff5897020aec062ad6194ecbb9f489e326fbced8f559673120a384"
     },
     {
       "path": "scripts/benchmark.py",
@@ -773,8 +883,13 @@
     },
     {
       "path": "scripts/build_documents.py",
-      "bytes": 9450,
-      "sha256": "32f023f7e1fb56ec305ad2e5ae389db02f07b7e47253fe2dc47f12d4ed30e0fb"
+      "bytes": 11098,
+      "sha256": "b7879385861051beef565d8d9e533c490950d5b3d5bd88aa7cc9c533456621a2"
+    },
+    {
+      "path": "scripts/build_engineering_document.py",
+      "bytes": 7302,
+      "sha256": "58010a841cebe7e951bb851670499fa2019ad5a27d95d5c6c87f145cd84cffa5"
     },
     {
       "path": "scripts/build_models.py",
@@ -823,8 +938,8 @@
     },
     {
       "path": "scripts/load.py",
-      "bytes": 6563,
-      "sha256": "13f17833ba6f8d90ae1e0fd844618026dfcee03625a1b1ec548b6152d95cd90f"
+      "bytes": 7212,
+      "sha256": "fe426f1f2693606b717c5085d8c48ea051df1e3e494c1c73ff34db9ff40eca9a"
     },
     {
       "path": "scripts/package_delivery.py",
@@ -838,8 +953,13 @@
     },
     {
       "path": "scripts/summarize_results.py",
-      "bytes": 9097,
-      "sha256": "d52ffd4545a6f524a44a527af3ae3a8df5f73c51c9b809563117d618ee554db0"
+      "bytes": 9169,
+      "sha256": "36d524e033437750338b5ecc4989058d75ab33b292899a020bada89d9f421828"
+    },
+    {
+      "path": "scripts/validate_documentation.py",
+      "bytes": 3522,
+      "sha256": "c192e17fc6c563a8acadeb3ced26b17ba48a2164357b763be8ce83f6aadebc38"
     },
     {
       "path": "scripts/verify.py",
@@ -848,8 +968,8 @@
     },
     {
       "path": "sql/queries.sql",
-      "bytes": 1015,
-      "sha256": "f72f3a2b06a843541e6da800200a2577c437d2e27d88488c74255b1f60f02d7a"
+      "bytes": 5497,
+      "sha256": "58e19b618b19036d08f145739be2b3c41ffe8fe672a7baf40130c88e0e2e2190"
     },
     {
       "path": "sql/schema.sql",

@@ -4,6 +4,8 @@ Implementação comparativa de telemetria ambiental com **PostgreSQL e Redis**, 
 
 Repositório da entrega: [JoeyAlanS/projeto-nosql-redis-postgresql](https://github.com/JoeyAlanS/projeto-nosql-redis-postgresql).
 
+O [relatório completo](output/pdf/Relatorio_Completo_Projeto_3.pdf) reúne os pontos do enunciado e os gráficos de 1M/5M. Consulte também a [análise técnica do código](docs/engenharia/ANALISE_TECNICA_COMPLETA.md) e a [conferência dos requisitos](docs/CONFORMIDADE_TRABALHO.md), revisadas com os bancos reais em 18/11/2026.
+
 ## Comece pela dashboard
 
 Com os dados já carregados, execute `make up` e abra **http://localhost:8000/#operations**.
@@ -127,7 +129,9 @@ make test
 make benchmark
 ```
 
-Para uma experiência opcional com 5 milhões, altere o valor de `--records`. Os resultados entregues usam 1 milhão. Refaça a documentação com os novos números se alterar a massa.
+A aplicação principal mantém 1 milhão de leituras. Os experimentos de **1 e 5 milhões já foram executados** em projetos Docker isolados, com resultados brutos em `results/escala/`, gráficos e [relatório comparativo](docs/COMPARACAO_1M_5M.md). `make escala` reproduz os dois cenários sem substituir a base principal; exige recursos adicionais e pode levar vários minutos. Selecionar um volume na dashboard exibe as medições salvas desse cenário; os filtros e o CRUD continuam consultando a base principal.
+
+`results/load.json` e `iot:loaded` descrevem a carga original, incluindo tempos e espaço medidos. Não são contadores atualizados após o CRUD. `make verify` conta as leituras reais e compara todos os dados e índices com o CSV; execute sem escritas concorrentes. Novas cargas publicam o mesmo manifesto completo no arquivo e no Redis antes de sinalizar `iot:load_state=complete`.
 
 O benchmark executa 5 aquecimentos e 30 amostras de cada uma das 3 operações por fonte, alternando a ordem. Salva 180 tempos reais, mediana, p95, filtros, hashes de resultados, hardware, versões e planos PostgreSQL. Veja `docs/04_experimentos.md` e `docs/resultados.md` para método, resultados e limitações. Os digests das imagens estão fixados no Compose e no Dockerfile; as dependências Python resolvidas ficam em `results/python-packages.txt`.
 

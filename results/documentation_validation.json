@@ -1,0 +1,116 @@
+{
+  "validated_at": "2026-11-18T22:09:21.595295+00:00",
+  "logical_records_per_database": {
+    "postgres": 1000000,
+    "redis": 1000000
+  },
+  "columns": [
+    {
+      "table_name": "readings",
+      "column_name": "id",
+      "data_type": "bigint"
+    },
+    {
+      "table_name": "readings",
+      "column_name": "sensor_id",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "readings",
+      "column_name": "ts",
+      "data_type": "bigint"
+    },
+    {
+      "table_name": "readings",
+      "column_name": "temperature_centi",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "readings",
+      "column_name": "humidity_centi",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "sensors",
+      "column_name": "id",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "sensors",
+      "column_name": "name",
+      "data_type": "text"
+    },
+    {
+      "table_name": "sensors",
+      "column_name": "location",
+      "data_type": "text"
+    },
+    {
+      "table_name": "sensors",
+      "column_name": "active",
+      "data_type": "boolean"
+    }
+  ],
+  "psycopg_parameter_types": {
+    "scalar": "smallint",
+    "array": "smallint[]"
+  },
+  "manifest_equal": true,
+  "load_state": "complete",
+  "point": {
+    "id": 500001,
+    "sensor_id": 1,
+    "ts": 1793641200,
+    "temperature_centi": 3059,
+    "humidity_centi": 4573
+  },
+  "history_limit_3": [
+    {
+      "id": 1,
+      "sensor_id": 1,
+      "ts": 1793491200,
+      "temperature_centi": 2359,
+      "humidity_centi": 3073
+    },
+    {
+      "id": 1001,
+      "sensor_id": 1,
+      "ts": 1793491500,
+      "temperature_centi": 2366,
+      "humidity_centi": 3086
+    },
+    {
+      "id": 2001,
+      "sensor_id": 1,
+      "ts": 1793491800,
+      "temperature_centi": 2373,
+      "humidity_centi": 3099
+    }
+  ],
+  "summary_range": {
+    "start": 1793491200,
+    "end": 1793493900,
+    "data": {
+      "count": 10000,
+      "sensors": 1000,
+      "temperature_sum": 29932800,
+      "humidity_sum": 54385000,
+      "alerts": 3522,
+      "minimum": 2300,
+      "maximum": 3699
+    }
+  },
+  "full_verification_at": "2026-11-18T22:07:31.436267+00:00",
+  "full_verification_sha256": {
+    "csv": "519f2a3fceac765890289c51876e3be1980ff8c03d9f74d9768beb84a264369f",
+    "postgres": "519f2a3fceac765890289c51876e3be1980ff8c03d9f74d9768beb84a264369f",
+    "redis": "519f2a3fceac765890289c51876e3be1980ff8c03d9f74d9768beb84a264369f"
+  },
+  "historical_benchmark_reexecuted": false,
+  "source_sha256": {
+    "app/store.py": "ff164d826163934de7ca07601b0d1f97fb02a4a896295e50188ec76a03fa5a5d",
+    "sql/schema.sql": "2c10135a8b124bcfaaf7993f175f691f2a83386454f39763ff53e1d3bc93ca1c",
+    "sql/queries.sql": "58e19b618b19036d08f145739be2b3c41ffe8fe672a7baf40130c88e0e2e2190",
+    "scripts/load.py": "fe426f1f2693606b717c5085d8c48ea051df1e3e494c1c73ff34db9ff40eca9a"
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "date": "2026-11-18",
+  "root": "/home/joey/Documentos/GitHub/trabalho-banco-dados",
+  "commit": "e7ae3267a2957c8f83a78f00efc086267be3ac03",
+  "sources": [
+    {
+      "path": "Dockerfile",
+      "sha256": "cc913153115fba44b8e92ed6cfe3589d0c2ad406bf2594c34e1de20ebe4b02b2",
+      "lines": 12
+    },
+    {
+      "path": "app/__init__.py",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "lines": 1
+    },
+    {
+      "path": "app/main.py",
+      "sha256": "451b0780d4fff632e5f252eb8725d1304385b89ba65754383636fe618292cb5f",
+      "lines": 158
+    },
+    {
+      "path": "app/store.py",
+      "sha256": "ff164d826163934de7ca07601b0d1f97fb02a4a896295e50188ec76a03fa5a5d",
+      "lines": 244
+    },
+    {
+      "path": "compose.escala.yaml",
+      "sha256": "8903be208b14853b4207c11155de3e88bdb4ea68fa86d9f0f48b916f70770075",
+      "lines": 49
+    },
+    {
+      "path": "compose.yaml",
+      "sha256": "20a8a84ea4da8f44b9951acddb604676371ef4b7570b122b8ca931b7caea2b66",
+      "lines": 52
+    },
+    {
+      "path": "exemplos/redis/01_crud_hash.py",
+      "sha256": "bc63cd0ede62a90563879f5aec5c3e2b63aec273618c84b08cd0cd1577312b6f",
+      "lines": 38
+    },
+    {
+      "path": "exemplos/redis/02_historico_sensor.py",
+      "sha256": "d39ecc2c142672b1c453456e24b2ddd5c79bac6829cf165e94c97f75ece651c6",
+      "lines": 35
+    },
+    {
+      "path": "exemplos/redis/03_cache_ttl.py",
+      "sha256": "519b663ddb1cf692456cb5c06e156364e9e53a47b223750826b16d5b6689317d",
+      "lines": 36
+    },
+    {
+      "path": "exemplos/redis/_conexao.py",
+      "sha256": "d800294bf48c56c358dd86564d310fad5db422c33f851e33cba5836b6236038c",
+      "lines": 13
+    },
+    {
+      "path": "exemplos/redis/test_exemplos.py",
+      "sha256": "a4abd08b8413631ec2c05835bce330df516d16fd29d7ac62ec567cac99952f3b",
+      "lines": 45
+    },
+    {
+      "path": "scripts/__init__.py",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "lines": 1
+    },
+    {
+      "path": "scripts/audit_delivery.py",
+      "sha256": "d96a44d44fff5897020aec062ad6194ecbb9f489e326fbced8f559673120a384",
+      "lines": 54
+    },
+    {
+      "path": "scripts/benchmark.py",
+      "sha256": "55a4774e7cf41c2ef6ae6c4b5e15ff65a83e01f5ab7558aedaa4b6004cc75635",
+      "lines": 116
+    },
+    {
+      "path": "scripts/build_documents.py",
+      "sha256": "b7879385861051beef565d8d9e533c490950d5b3d5bd88aa7cc9c533456621a2",
+      "lines": 180
+    },
+    {
+      "path": "scripts/build_engineering_document.py",
+      "sha256": "58010a841cebe7e951bb851670499fa2019ad5a27d95d5c6c87f145cd84cffa5",
+      "lines": 118
+    },
+    {
+      "path": "scripts/build_models.py",
+      "sha256": "977b298ad93bcdd9cd01a61ca3763c53babbebdcc356b9a487cf53a52631c659",
+      "lines": 53
+    },
+    {
+      "path": "scripts/build_scale_report.py",
+      "sha256": "68d460d1065da8e27f302351ca097f16ede8167a778aa3dec7a81aa247d6256b",
+      "lines": 204
+    },
+    {
+      "path": "scripts/capture_environment.py",
+      "sha256": "797b926e5a798b7bc9133d7dc9a86e4a8bccbd0bd9989a6a70b27814a174ce3c",
+      "lines": 11
+    },
+    {
+      "path": "scripts/compare_scales.py",
+      "sha256": "e1d22bfbae141425e9bc71cb0a94d8ea752b81854c3401fd488009c9cc9e73f9",
+      "lines": 177
+    },
+    {
+      "path": "scripts/concurrent_load.py",
+      "sha256": "1d402eed5bd7e2fd80ae241f83b8f58f41bae3a10def8938f8bae679b1c1dbe8",
+      "lines": 119
+    },
+    {
+      "path": "scripts/crud_demo.py",
+      "sha256": "9a0f1c1d67060ae0736d3c1a549e16a666d0da8280970a13aa6d078cbfee17f7",
+      "lines": 34
+    },
+    {
+      "path": "scripts/explain_queries.py",
+      "sha256": "adf3fd0c64a1fdbaf96b9cfc085588148868c67e3dbaeb3a5ce814123456166c",
+      "lines": 47
+    },
+    {
+      "path": "scripts/export_slide_pdf.py",
+      "sha256": "1ff4b9879528469e95306b900181d4f74a0b0995e50cf167d1d2cb809af042b1",
+      "lines": 16
+    },
+    {
+      "path": "scripts/load.py",
+      "sha256": "fe426f1f2693606b717c5085d8c48ea051df1e3e494c1c73ff34db9ff40eca9a",
+      "lines": 140
+    },
+    {
+      "path": "scripts/package_delivery.py",
+      "sha256": "c6c01460906f1452ce90f387d11f7189f75611477b95bd113f2a5730f6bb94ea",
+      "lines": 40
+    },
+    {
+      "path": "scripts/plot_load_tests.py",
+      "sha256": "349725fa399313ff4132eacebe19fc98680381271acbfe6b5f04927f040c64c6",
+      "lines": 355
+    },
+    {
+      "path": "scripts/summarize_results.py",
+      "sha256": "36d524e033437750338b5ecc4989058d75ab33b292899a020bada89d9f421828",
+      "lines": 122
+    },
+    {
+      "path": "scripts/validate_documentation.py",
+      "sha256": "c192e17fc6c563a8acadeb3ced26b17ba48a2164357b763be8ce83f6aadebc38",
+      "lines": 61
+    },
+    {
+      "path": "scripts/verify.py",
+      "sha256": "782ea493709080a2bff1779f9ef784ce45ace809c8a2d9983d751ede354e44a8",
+      "lines": 58
+    },
+    {
+      "path": "sql/queries.sql",
+      "sha256": "58e19b618b19036d08f145739be2b3c41ffe8fe672a7baf40130c88e0e2e2190",
+      "lines": 68
+    },
+    {
+      "path": "sql/schema.sql",
+      "sha256": "2c10135a8b124bcfaaf7993f175f691f2a83386454f39763ff53e1d3bc93ca1c",
+      "lines": 20
+    },
+    {
+      "path": "tests/frontend/operations.test.mjs",
+      "sha256": "bf3dc4cd208789a6ed088da498f47a578fffd8580aa76f6e78bdd42b77299e49",
+      "lines": 47
+    },
+    {
+      "path": "tests/frontend/reading-comparison.test.mjs",
+      "sha256": "608a951639d1e4bab71f86f8675f15e62ab6be7c2d2985b67c2593e331b48dc0",
+      "lines": 57
+    },
+    {
+      "path": "tests/scalability/test_tools.py",
+      "sha256": "a879630e147c583be9f4928bf1528cc0f409c6f20e59daca4d70ab7ade011beb",
+      "lines": 79
+    },
+    {
+      "path": "tests/test_integration.py",
+      "sha256": "c431a4cc038c3962877b053557a92c7c53bc069afdad35ca5939f07f62824ac9",
+      "lines": 182
+    },
+    {
+      "path": "web/app.js",
+      "sha256": "bcad0aa630cfc48ba425b37129303fb546676ea40457aacca83fbdb61e57bfe0",
+      "lines": 195
+    },
+    {
+      "path": "web/index.html",
+      "sha256": "71aebd6127a168be809da65290aa0992e485dd0a5e6ba5bbd2bd9afc0184c3dc",
+      "lines": 117
+    },
+    {
+      "path": "web/operations-core.mjs",
+      "sha256": "95132ada83f33899cf5e9a086535129ba095ddfa9c02ee30782cc0ee4ec7a192",
+      "lines": 97
+    },
+    {
+      "path": "web/operations.css",
+      "sha256": "08cfa305123d22bf3878d1e79427af959b65cab9968d964f94313efe44088de9",
+      "lines": 204
+    },
+    {
+      "path": "web/operations.js",
+      "sha256": "8285993b241684b7c69de503ad14df94e0ed8aa7e865f6cbabd82448875f91ff",
+      "lines": 233
+    },
+    {
+      "path": "web/reading-comparison.css",
+      "sha256": "875c6045854172cf769b00521bde49933756bd5fac9016f2db28ee8bd8d7b816",
+      "lines": 289
+    },
+    {
+      "path": "web/reading-comparison.mjs",
+      "sha256": "abb383cbc9cb3cbbbc893ef108cfc9b2d3e76ca2acf01b291a00199ca2c5af57",
+      "lines": 52
+    },
+    {
+      "path": "web/reading-view.js",
+      "sha256": "0c8376f7022dba1f50398c9686d5260f2b29465bc6479c899125d99a5ba6d9aa",
+      "lines": 118
+    },
+    {
+      "path": "web/scalability.css",
+      "sha256": "b0273d627951b2a454a1236bb4a26fc6ac73fd48de9cebceb0495cdd4291aa82",
+      "lines": 1
+    },
+    {
+      "path": "web/style.css",
+      "sha256": "9b16615485e9a6b0b9ce776712ae8d83830f73246e0c6055b68f773796adc047",
+      "lines": 3
+    }
+  ],
+  "revision": "Correções de 18/11/2026 sobre o commit de base; fontes identificadas individualmente por SHA-256",
+  "investigation_checks": {
+    "database_services": "main_services_running",
+    "live_health": {
+      "postgres": "ok",
+      "redis": "ok"
+    },
+    "new_database_tests_executed": true,
+    "functional_tests_passed": 30,
+    "live_validation": "results/documentation_validation.json",
+    "isolated_load_validation": "results/validacao_carga_documentacao.json",
+    "scenarios": [
+      {
+        "records": 1000000,
+        "query_samples_checked": 180,
+        "http_samples_checked": 7200,
+        "csv_rows_counted": 1000000,
+        "csv_sha256": "519f2a3fceac765890289c51876e3be1980ff8c03d9f74d9768beb84a264369f",
+        "code_hashes_match_current": {
+          "app/main.py": true,
+          "app/store.py": true,
+          "scripts/concurrent_load.py": true
+        },
+        "raw_statistics_match": true
+      },
+      {
+        "records": 5000000,
+        "query_samples_checked": 180,
+        "http_samples_checked": 7200,
+        "csv_rows_counted": 5000000,
+        "csv_sha256": "1e8304f6f3f7a938ab0a8f47fbd6943cda917f30c946f85170cf110781bd6d1e",
+        "code_hashes_match_current": {
+          "app/main.py": true,
+          "app/store.py": true,
+          "scripts/concurrent_load.py": true
+        },
+        "raw_statistics_match": true
+      }
+    ],
+    "calculated_example": {
+      "id": 500001,
+      "sensor_id": 1,
+      "ts": 1793641200,
+      "temperature_centi": 3059,
+      "humidity_centi": 4573
+    }
+  }
+}

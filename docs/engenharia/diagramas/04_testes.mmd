@@ -1,0 +1,22 @@
+flowchart TB
+  O["compare_scales
+cenários 1M e 5M em sequência"] --> L["load ou reuse
+volumes separados"]
+  L --> V["verify
+CSV PostgreSQL Redis e índices"]
+  V --> B["benchmark
+Q1 Q2 Q3
+5 aquecimentos e 30 medições"]
+  B --> H["concurrent_load
+1 4 16 clientes
+1200 pedidos por banco e nível"]
+  H --> API["GET readings por ID
+FastAPI e banco selecionado"]
+  API --> VALID["Confere cinco campos esperados
+status latência e erros"]
+  B --> RAW["JSON CSV e EXPLAIN"]
+  VALID --> RAW
+  RAW --> SUM["summarize e plot_load_tests
+validação e gráficos"]
+  SUM --> DASH["api/scalability
+Dashboard lê resultados salvos"]

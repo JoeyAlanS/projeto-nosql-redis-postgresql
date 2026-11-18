@@ -1,0 +1,23 @@
+flowchart TB
+  S["iot:sensors
+Set de IDs"] --> SH["iot:sensor:1
+Hash de metadados"]
+  SH --> Z["iot:sensor:1:readings
+Sorted set
+score timestamp membro ID"]
+  Z --> R["iot:reading:500001
+Hash com cinco campos"]
+  U["iot:unique:1
+Hash timestamp para ID"] --> R
+  W["WRITE_LUA
+criar atualizar excluir"] --> Z
+  W --> U
+  W --> R
+  L["scripts.load"] --> S
+  L --> SH
+  L --> LS["iot:load_state
+String loading ou complete"]
+  L --> LM["iot:loaded
+String JSON do manifesto"]
+  DEMO["Exemplo independente"] --> TTL["demo:cache:UUID:resumo:sensor:1
+String JSON TTL 2 segundos"]

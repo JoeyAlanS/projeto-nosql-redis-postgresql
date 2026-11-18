@@ -1,6 +1,6 @@
 # Conferência dos entregáveis
 
-O conteúdo técnico foi preparado e executado localmente em 14/11/2026. Os PDFs de origem foram preservados. A equipe deve preencher sua identificação e realizar a submissão e a apresentação na disciplina.
+O experimento original foi executado em 14/11/2026 e os cenários de 1M/5M foram ampliados em 17/11. A revisão documental e a conferência do código são de 18/11/2026. Os PDFs de origem foram preservados. A [matriz de conformidade](CONFORMIDADE_TRABALHO.md) relaciona os requisitos à implementação e distingue as medições históricas das validações atuais. A equipe deve conferir sua identificação e realizar a submissão e a apresentação na disciplina.
 
 | Item exigido | Evidência principal |
 |---|---|
@@ -16,7 +16,7 @@ O conteúdo técnico foi preparado e executado localmente em 14/11/2026. Os PDFs
 | Massa de pelo menos 1.000.000 de registros lógicos | Contagem e verificação integral com SHA-256 idêntico |
 | Geração/carga, origem, tamanho e tempo | Entrega 3 e results/load.json |
 | Três operações, pelo menos dez repetições | Três operações com 30 repetições por banco |
-| Caso favorável ao NoSQL e explicação | Q1: Redis com mediana 15,97% menor neste ensaio |
+| Caso favorável ao NoSQL e explicação | Q1 no ensaio original e leitura HTTP por ID nos ensaios isolados; números e limites em cada relatório |
 | Resultados brutos, hardware, versões, índices e cache | CSV, JSON, planos e requirements.lock.txt |
 | Reconhecimento de vantagens do relacional | Q2 e Q3 com menor mediana PostgreSQL |
 | Dashboard com consultas reais | http://localhost:8000, API e inspeção de navegador |
@@ -33,6 +33,7 @@ O conteúdo técnico foi preparado e executado localmente em 14/11/2026. Os PDFs
 - output/pdf/Entrega_3_Massa_de_Dados.pdf: entrega de 19/11.
 - output/pdf/Entrega_4_Experimentos_e_Dashboard.pdf: entrega de 24/11.
 - output/pdf/Relatorio_Completo_Projeto_3.pdf: relatório consolidado.
+- output/documentos/Analise_Tecnica_Completa_Redis_PostgreSQL.docx e output/pdf/Analise_Tecnica_Completa_Redis_PostgreSQL.pdf: análise da implementação, exemplos reais, planos e cinco diagramas Mermaid.
 - output/apresentacao/Apresentacao_Final_Projeto_3.pptx: apresentação editável com notas.
 - output/pdf/Slides_Projeto_3.pdf: apresentação para leitura ou projeção.
 

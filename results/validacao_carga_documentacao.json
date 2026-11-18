@@ -1,0 +1,169 @@
+{
+  "purpose": "Validação isolada da correção do manifesto de carga, sem alterar as massas de 1M e 5M",
+  "records": 1001,
+  "sensors": 10,
+  "load": {
+    "generated_at": "2026-11-18T22:09:22.526686+00:00",
+    "records": 1001,
+    "sensors": 10,
+    "seed": 42,
+    "logical_record": "Uma medição de um sensor em um instante",
+    "fields": [
+      "id",
+      "sensor_id",
+      "ts",
+      "temperature_centi",
+      "humidity_centi"
+    ],
+    "start": 1793491200,
+    "end": 1793521200,
+    "interval_seconds": 300,
+    "alert_rule": "temperature_centi > 3200",
+    "csv_sha256": "99110771f340c27fc175338374e58a3e68a84b325e1a80d377b3c7c82d75c7c1",
+    "csv_bytes": 27021,
+    "generation_seconds": 0.005522792000192567,
+    "postgres_load_seconds": 0.0305454830004237,
+    "redis_load_seconds": 1.1684926959997028,
+    "postgres_bytes": 385024,
+    "postgres_version": "17.12 (Debian 17.12-1.pgdg13+1)",
+    "redis_version": "8.10.3",
+    "redis_used_memory_bytes": 2109832,
+    "redis_dataset_bytes": 546256,
+    "redis_aof_bytes": 613471,
+    "redis_maxmemory_policy": "noeviction",
+    "redis_appendfsync": "everysec",
+    "redis_evicted_keys": 0
+  },
+  "verification": {
+    "verified_at": "2026-11-18T22:09:24.721218+00:00",
+    "checked_readings": 1001,
+    "postgres_count": 1001,
+    "redis_count": 1001,
+    "sha256": {
+      "csv": "99110771f340c27fc175338374e58a3e68a84b325e1a80d377b3c7c82d75c7c1",
+      "postgres": "99110771f340c27fc175338374e58a3e68a84b325e1a80d377b3c7c82d75c7c1",
+      "redis": "99110771f340c27fc175338374e58a3e68a84b325e1a80d377b3c7c82d75c7c1"
+    },
+    "sensors_verified": 10,
+    "all_temporal_and_unique_indexes_verified": true,
+    "redis_evicted_keys": 0,
+    "seconds": 0.11842737599999964,
+    "equivalent": true
+  },
+  "documentation_validation": {
+    "validated_at": "2026-11-18T22:09:25.643743+00:00",
+    "logical_records_per_database": {
+      "postgres": 1001,
+      "redis": 1001
+    },
+    "columns": [
+      {
+        "table_name": "readings",
+        "column_name": "id",
+        "data_type": "bigint"
+      },
+      {
+        "table_name": "readings",
+        "column_name": "sensor_id",
+        "data_type": "integer"
+      },
+      {
+        "table_name": "readings",
+        "column_name": "ts",
+        "data_type": "bigint"
+      },
+      {
+        "table_name": "readings",
+        "column_name": "temperature_centi",
+        "data_type": "integer"
+      },
+      {
+        "table_name": "readings",
+        "column_name": "humidity_centi",
+        "data_type": "integer"
+      },
+      {
+        "table_name": "sensors",
+        "column_name": "id",
+        "data_type": "integer"
+      },
+      {
+        "table_name": "sensors",
+        "column_name": "name",
+        "data_type": "text"
+      },
+      {
+        "table_name": "sensors",
+        "column_name": "location",
+        "data_type": "text"
+      },
+      {
+        "table_name": "sensors",
+        "column_name": "active",
+        "data_type": "boolean"
+      }
+    ],
+    "psycopg_parameter_types": {
+      "scalar": "smallint",
+      "array": "smallint[]"
+    },
+    "manifest_equal": true,
+    "load_state": "complete",
+    "point": {
+      "id": 1001,
+      "sensor_id": 1,
+      "ts": 1793521200,
+      "temperature_centi": 3059,
+      "humidity_centi": 4373
+    },
+    "history_limit_3": [
+      {
+        "id": 1,
+        "sensor_id": 1,
+        "ts": 1793491200,
+        "temperature_centi": 2359,
+        "humidity_centi": 3073
+      },
+      {
+        "id": 11,
+        "sensor_id": 1,
+        "ts": 1793491500,
+        "temperature_centi": 2366,
+        "humidity_centi": 3086
+      },
+      {
+        "id": 21,
+        "sensor_id": 1,
+        "ts": 1793491800,
+        "temperature_centi": 2373,
+        "humidity_centi": 3099
+      }
+    ],
+    "summary_range": {
+      "start": 1793491200,
+      "end": 1793493900,
+      "data": {
+        "count": 100,
+        "sensors": 10,
+        "temperature_sum": 246700,
+        "humidity_sum": 327100,
+        "alerts": 0,
+        "minimum": 2359,
+        "maximum": 2575
+      }
+    },
+    "full_verification_at": "2026-11-18T22:09:24.721218+00:00",
+    "full_verification_sha256": {
+      "csv": "99110771f340c27fc175338374e58a3e68a84b325e1a80d377b3c7c82d75c7c1",
+      "postgres": "99110771f340c27fc175338374e58a3e68a84b325e1a80d377b3c7c82d75c7c1",
+      "redis": "99110771f340c27fc175338374e58a3e68a84b325e1a80d377b3c7c82d75c7c1"
+    },
+    "historical_benchmark_reexecuted": false,
+    "source_sha256": {
+      "app/store.py": "ff164d826163934de7ca07601b0d1f97fb02a4a896295e50188ec76a03fa5a5d",
+      "sql/schema.sql": "2c10135a8b124bcfaaf7993f175f691f2a83386454f39763ff53e1d3bc93ca1c",
+      "sql/queries.sql": "58e19b618b19036d08f145739be2b3c41ffe8fe672a7baf40130c88e0e2e2190",
+      "scripts/load.py": "fe426f1f2693606b717c5085d8c48ea051df1e3e494c1c73ff34db9ff40eca9a"
+    }
+  }
+}

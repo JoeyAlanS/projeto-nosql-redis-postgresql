@@ -1,6 +1,6 @@
 # Resultados medidos e análise
 
-Execução em 14/11/2026, sobre 1.000.000 leituras em cada base. Foram realizadas 30 repetições de cada consulta por fonte, após 5 aquecimentos. O arquivo bruto contém 180 amostras e os resultados de cada par coincidem. Tempos em milissegundos, medidos no cliente.
+Execução em 14/11/2026, sobre 1.000.000 leituras em cada base. Foram realizadas 30 repetições de cada consulta por fonte, após 5 aquecimentos. O arquivo bruto contém 180 amostras e os resultados de cada par coincidem. Tempos em milissegundos, medidos no cliente. Este é o ensaio original; as medições posteriores de 1M/5M estão em docs/COMPARACAO_1M_5M.md.
 
 ## Medianas e p95
 
@@ -45,7 +45,7 @@ Os contêineres não têm limite adicional de CPU/RAM via cgroup. Outros serviç
 
 ## Validação do produto
 
-Os 11 testes de integração passaram com bancos reais, incluindo CRUD, conflitos de unicidade, sensor inexistente, limites numéricos, validação HTTP, manutenção de índices, exclusão com atualização intercalada e equivalência de consultas. A inspeção automatizada do navegador confirmou 14 novas chamadas de consulta, alternância de fonte equivalente, filtro de local com 100.000 leituras, filtro de sensor com 1.000 leituras e recorte temporal com 145 leituras. Também verificou ID inexistente, respostas divergentes e recuperação após datas inválidas. A consulta pontual real retornou resultados iguais.
+Os 11 testes de integração passaram com bancos reais, incluindo CRUD, conflitos de unicidade, sensor inexistente, limites numéricos, validação HTTP, manutenção de índices, exclusão com atualização intercalada e equivalência de consultas. O log atual está em results/tests.log. A inspeção automatizada de navegador preservada em results/browser.json confirmou 14 chamadas de consulta, alternância de fonte equivalente, filtro de local com 100.000 leituras, filtro de sensor com 1.000 leituras e recorte temporal com 145 leituras. Também verificou ID inexistente, respostas divergentes e recuperação após datas inválidas. Essa inspeção de navegador não foi repetida na revisão documental. A consulta pontual real retornou resultados iguais.
 
 Não houve erros JavaScript ou rolagem horizontal indevida na viewport móvel testada. Capturas do dashboard e da consulta ao vivo estão em results/evidencias/. Essa verificação demonstra funcionamento no ambiente local, sem substituir testes de carga concorrente ou de recuperação após falha.
 

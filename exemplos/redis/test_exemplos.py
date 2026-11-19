@@ -17,7 +17,7 @@ class ExemplosRedis(unittest.TestCase):
         resultado = json.loads(processo.stdout)
         self.assertTrue(resultado["prefixo"].startswith("demo:"))
         with conectar() as banco:
-            self.assertEqual(list(banco.scan_iter(match=resultado["prefixo"] + ":*")), [])
+            self.assertEqual(list(banco.scan_iter(match=resultado["prefixo"] + ":*", count=10000)), [])
         return resultado
 
     def test_crud_e_limpeza(self):

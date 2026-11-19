@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="/static/operations.css">
   <link rel="stylesheet" href="/static/reading-comparison.css">
   <script src="/static/app.js" defer></script>
+  <script src="/static/optimization.js" defer></script>
   <script src="/static/operations.js" type="module"></script>
 </head>
 <body>
@@ -17,6 +18,7 @@
   <a class="nav active" href="#operations"><span>⌘</span> Alterar e comparar</a>
   <a class="nav" href="#overview"><span>◫</span> Visão geral</a>
   <a class="nav" href="#comparison"><span>↔</span> Comparar bancos</a>
+  <a class="nav" href="#optimization"><span>⚡</span> Redis otimizado</a>
   <a class="nav" href="#experiment"><span>▥</span> Experimento</a>
   <a class="nav" href="#scalability"><span>↗</span> 1 milhão × 5 milhões</a>
   <div class="aside-bottom"><span class="green-dot"></span> Projeto 3 · Banco de Dados<span>Redis e PostgreSQL</span><a href="/docs" target="_blank" rel="noopener">Documentação da API ↗</a></div>
@@ -56,6 +58,7 @@
               <label data-ops="create update">Umidade (%)<input id="op-humidity" type="number" min="0" max="100" step="0.01" value="55.00" required></label>
               <label data-ops="history summary">Início do período (UTC)<input id="op-start" type="datetime-local" step="1" required></label>
               <label data-ops="history summary">Fim do período (UTC)<input id="op-end" type="datetime-local" step="1" required></label>
+              <label data-ops="history summary">Estratégia Redis<select id="op-redis-mode"><option value="auto">Automático · otimizado quando pronto</option><option value="optimized">Otimizado · índice completo e resumos</option><option value="baseline">Original · hashes e Lua</option></select></label>
               <label data-ops="history">Máximo de leituras<input id="op-limit" type="number" min="1" max="1000" step="1" value="20" required></label>
             </div>
             <p id="operation-help" class="operation-help"></p>
@@ -98,6 +101,16 @@
   <section id="comparison" class="comparison-section">
     <div class="section-heading"><div><p class="eyebrow">CONSULTA AO VIVO</p><h2>Uma leitura, dois bancos</h2><p class="muted">Busque o mesmo identificador nas duas fontes e confira os resultados.</p></div><div class="lookup"><label for="reading-id">ID da leitura</label><input id="reading-id" type="number" min="1" value="500001"><button id="lookup" class="primary">Comparar agora ↗</button></div></div>
     <div class="comparison-grid"><article class="panel"><div class="panel-head"><h3>Busca por identificador</h3><span id="equivalence" class="badge">Aguardando consulta</span></div><div id="live-bars"></div><p class="small muted">Tempo de acesso ao banco com rede e leitura da resposta. Uma execução por fonte; variações são esperadas.</p></article><article class="panel"><p class="eyebrow">RESULTADO DA CONSULTA</p><div id="reading-detail" class="reading-detail">Selecione uma leitura para consultar os bancos.</div></article></div>
+  </section>
+  <section id="optimization" aria-labelledby="optimization-title">
+    <div class="section-heading"><div><p class="eyebrow">MESMOS DADOS · NOVA MODELAGEM</p><h2 id="optimization-title">O que muda ao otimizar o Redis?</h2><p id="optimization-status" class="muted">Carregando o estado dos índices…</p></div></div>
+    <div class="scale-grid">
+      <article class="panel"><h3>Histórico em um comando</h3><p>Antes: índice de IDs → 200 hashes. Agora: o sorted set já contém as 200 leituras completas.</p><pre>ZRANGE iot:opt:v1:sensor:501:full
+-inf +inf BYSCORE LIMIT 0 200</pre></article>
+      <article class="panel"><h3>Resumo atualizado nas escritas</h3><p>Contagem, somas e alertas ficam agrupados por sensor e dia. O filtro combina os dias completos e consulta os registros das bordas parciais.</p><pre>HGETALL iot:opt:v1:sensor:1:day:1793491200</pre></article>
+    </div>
+    <article class="panel"><h3>Comparação justa por estratégia · medições reais</h3><p>Mesmos registros, filtros, sete campos no resumo e ordem alternada. Q2 retorna as mesmas 200 leituras; Q3 usa pré-agregação nos dois bancos na comparação otimizada.</p><div id="optimization-results" class="table-scroll"></div><img id="optimization-chart" alt="Comparações por estratégias equivalentes com um e cinco milhões: histórico indexado, resumo original e resumo pré-agregado" hidden style="width:100%;height:auto;margin-top:20px"><p class="small muted">As variantes retornam os mesmos dados. A view PostgreSQL é atualizada antes do experimento; os resumos Redis acompanham o CRUD. O ensaio não contém escritas concorrentes: as duas estruturas estavam atualizadas. Estes tempos medem somente leitura com um cliente; não igualam custo de manutenção ou durabilidade. PostgreSQL pré-agregado venceu Q3 nestas medições.</p></article>
+    <p class="footnote">Use “Estratégia Redis” no laboratório para testar original ou otimizado ao vivo. A visão geral usa automaticamente os índices prontos. As medições antigas permanecem nas seções seguintes.</p>
   </section>
   <section id="experiment"><div class="section-heading"><div><p class="eyebrow">MEDIÇÕES REPRODUZÍVEIS</p><h2>Desempenho por operação</h2><p id="benchmark-description" class="muted">Carregando resultados do experimento…</p></div><div class="legend"><span><i class="pg-key"></i> PostgreSQL</span><span><i class="redis-key"></i> Redis</span></div></div><article class="panel"><div id="benchmark-chart"></div><p class="small muted">Medianas em milissegundos. Barras com escala própria em cada operação. Veja os valores para comparar operações diferentes.</p></article><p class="footnote" id="dataset-info"></p></section>
   <section id="scalability">

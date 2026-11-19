@@ -1,0 +1,14 @@
+{
+  "executed_at": "2026-11-19T10:57:52.575379+00:00",
+  "state": "ready",
+  "records": 5000000,
+  "sensors": 1000,
+  "daily_buckets": 18000,
+  "sha256_sensor_ts_id_order": "df7c55578f637801f857687de7bb5248ed882bf86d3963483071c06b4d5fa3f9",
+  "all_records_compared_to_postgres": true,
+  "all_full_indexes_and_buckets_verified": true,
+  "seconds": 339.363894503,
+  "memory_before_bytes": 1317282424,
+  "memory_after_bytes": 1831060096,
+  "scope": "Índices adicionais; hashes e índices originais preservados"
+}

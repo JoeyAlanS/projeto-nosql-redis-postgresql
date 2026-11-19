@@ -1,0 +1,183 @@
+{
+  "executed_at": "2026-11-19T10:51:54.671342+00:00",
+  "records": 10000,
+  "sensors": 1000,
+  "redis_version": "8.10.3",
+  "equivalent": true,
+  "repetitions": 10,
+  "warmup": 2,
+  "median_ms": {
+    "postgres_raw": 8.8089825,
+    "redis_optimized": 43.2770355,
+    "redis_timeseries": 96.98832
+  },
+  "samples": [
+    {
+      "repetition": 1,
+      "source": "postgres_raw",
+      "elapsed_ms": 10.508706
+    },
+    {
+      "repetition": 1,
+      "source": "redis_optimized",
+      "elapsed_ms": 43.351336
+    },
+    {
+      "repetition": 1,
+      "source": "redis_timeseries",
+      "elapsed_ms": 96.027035
+    },
+    {
+      "repetition": 2,
+      "source": "redis_optimized",
+      "elapsed_ms": 43.327465
+    },
+    {
+      "repetition": 2,
+      "source": "redis_timeseries",
+      "elapsed_ms": 99.488084
+    },
+    {
+      "repetition": 2,
+      "source": "postgres_raw",
+      "elapsed_ms": 10.129141
+    },
+    {
+      "repetition": 3,
+      "source": "redis_timeseries",
+      "elapsed_ms": 117.912865
+    },
+    {
+      "repetition": 3,
+      "source": "postgres_raw",
+      "elapsed_ms": 11.754117
+    },
+    {
+      "repetition": 3,
+      "source": "redis_optimized",
+      "elapsed_ms": 50.837951
+    },
+    {
+      "repetition": 4,
+      "source": "postgres_raw",
+      "elapsed_ms": 11.600667
+    },
+    {
+      "repetition": 4,
+      "source": "redis_optimized",
+      "elapsed_ms": 51.452473
+    },
+    {
+      "repetition": 4,
+      "source": "redis_timeseries",
+      "elapsed_ms": 120.472307
+    },
+    {
+      "repetition": 5,
+      "source": "redis_optimized",
+      "elapsed_ms": 44.304888
+    },
+    {
+      "repetition": 5,
+      "source": "redis_timeseries",
+      "elapsed_ms": 97.121266
+    },
+    {
+      "repetition": 5,
+      "source": "postgres_raw",
+      "elapsed_ms": 9.132853
+    },
+    {
+      "repetition": 6,
+      "source": "redis_timeseries",
+      "elapsed_ms": 96.855374
+    },
+    {
+      "repetition": 6,
+      "source": "postgres_raw",
+      "elapsed_ms": 7.992042
+    },
+    {
+      "repetition": 6,
+      "source": "redis_optimized",
+      "elapsed_ms": 39.081419
+    },
+    {
+      "repetition": 7,
+      "source": "postgres_raw",
+      "elapsed_ms": 8.485112
+    },
+    {
+      "repetition": 7,
+      "source": "redis_optimized",
+      "elapsed_ms": 35.964989
+    },
+    {
+      "repetition": 7,
+      "source": "redis_timeseries",
+      "elapsed_ms": 105.061362
+    },
+    {
+      "repetition": 8,
+      "source": "redis_optimized",
+      "elapsed_ms": 39.309844
+    },
+    {
+      "repetition": 8,
+      "source": "redis_timeseries",
+      "elapsed_ms": 93.814496
+    },
+    {
+      "repetition": 8,
+      "source": "postgres_raw",
+      "elapsed_ms": 7.375954
+    },
+    {
+      "repetition": 9,
+      "source": "redis_timeseries",
+      "elapsed_ms": 92.425516
+    },
+    {
+      "repetition": 9,
+      "source": "postgres_raw",
+      "elapsed_ms": 6.896172
+    },
+    {
+      "repetition": 9,
+      "source": "redis_optimized",
+      "elapsed_ms": 43.226606
+    },
+    {
+      "repetition": 10,
+      "source": "postgres_raw",
+      "elapsed_ms": 7.631239
+    },
+    {
+      "repetition": 10,
+      "source": "redis_optimized",
+      "elapsed_ms": 42.493823
+    },
+    {
+      "repetition": 10,
+      "source": "redis_timeseries",
+      "elapsed_ms": 94.784554
+    }
+  ],
+  "update_verified": true,
+  "delete_verified": true,
+  "compaction_verified": true,
+  "compact_before": [
+    [
+      1793491200000,
+      "10"
+    ]
+  ],
+  "compact_after": [
+    [
+      1793491200000,
+      "9"
+    ]
+  ],
+  "scope": "Experimento isolado de 10 mil leituras. Não substitui os índices/CRUD da API nem representa ensaio de 1M/5M.",
+  "temporary_keys_removed": true
+}

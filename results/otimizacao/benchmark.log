@@ -1,0 +1,10 @@
+Q1: 5/10 repetições completas
+Q1: 10/10 repetições completas
+{"query": "Q1", "filters": {"id": 500001}, "metrics": {"postgres_raw": {"median_ms": 1.0111985, "p95_ms": 2.231225949999998, "min_ms": 0.579083, "max_ms": 2.954866, "samples": 10}, "redis_baseline": {"median_ms": 0.5236205, "p95_ms": 0.5860006999999999, "min_ms": 0.302819, "max_ms": 0.613538, "samples": 10}, "redis_optimized": {"median_ms": 0.4562665, "p95_ms": 0.821664, "min_ms": 0.244585, "max_ms": 0.822924, "samples": 10}}, "equivalent": true}
+Q2: 5/10 repetições completas
+Q2: 10/10 repetições completas
+{"query": "Q2", "filters": {"sensor_id": 501, "start": 1793491200, "end": 1793790900, "limit": 200}, "metrics": {"postgres_raw": {"median_ms": 1.8031035, "p95_ms": 2.3500992, "min_ms": 1.357341, "max_ms": 2.433, "samples": 10}, "redis_baseline": {"median_ms": 7.084101, "p95_ms": 8.4174738, "min_ms": 5.101742, "max_ms": 8.784447, "samples": 10}, "redis_optimized": {"median_ms": 2.1788045, "p95_ms": 2.9234744999999998, "min_ms": 1.646707, "max_ms": 3.024063, "samples": 10}}, "equivalent": true}
+Q3: 5/10 repetições completas
+Q3: 10/10 repetições completas
+{"query": "Q3", "filters": {"sensors": 1000, "start": 1793491200, "end": 1793790900}, "metrics": {"postgres_raw": {"median_ms": 244.4797355, "p95_ms": 282.2969938, "min_ms": 220.686634, "max_ms": 289.235614, "samples": 10}, "redis_baseline": {"median_ms": 4133.740611499999, "p95_ms": 4333.20056765, "min_ms": 4030.825021, "max_ms": 4382.776313, "samples": 10}, "redis_optimized": {"median_ms": 40.8067275, "p95_ms": 48.68404465, "min_ms": 33.443497, "max_ms": 50.074699, "samples": 10}, "postgres_materialized": {"median_ms": 7.4071565, "p95_ms": 9.968332199999999, "min_ms": 5.559353, "max_ms": 10.263741, "samples": 10}}, "equivalent": true}
+100 amostras reais salvas em /app/results/otimizacao

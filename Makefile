@@ -1,6 +1,17 @@
 .PHONY: up load verify benchmark test test-console test-tools check browser audit logs stop package all crud exemplos-redis test-exemplos-redis escala graficos
 PYTHON_GRAFICOS ?= .venv-graficos/bin/python
 .NOTPARALLEL: all check
+.PHONY: otimizar-redis benchmark-otimizado test-otimizacao timeseries graficos-otimizacao
+otimizar-redis:
+	docker compose exec -T app python -m scripts.optimize_redis
+benchmark-otimizado:
+	docker compose exec -T app python -m scripts.benchmark_optimized --repetitions 30 --warmup 5
+test-otimizacao:
+	docker compose exec -T app python -m unittest discover -s tests/optimization -v
+timeseries:
+	docker compose exec -T app python -m scripts.experiment_timeseries
+graficos-otimizacao:
+	$(PYTHON_GRAFICOS) -m scripts.plot_optimized
 up:
 	docker compose up -d --build --wait
 load:

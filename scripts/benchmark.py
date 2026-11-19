@@ -45,7 +45,8 @@ def main():
     raw, summaries, plans = [], [], {}
     with pg_connect() as pg, redis_connect() as rd:
         pg.autocommit = True
-        stores = {"postgres": PostgresStore(pg), "redis": RedisStore(rd)}
+        # Reproduz o modelo original mesmo quando os índices adicionais estão ativos.
+        stores = {"postgres": PostgresStore(pg), "redis": RedisStore(rd, optimized=False)}
         for code, name, run, filters in queries:
             for _ in range(args.warmup):
                 for s in stores.values():

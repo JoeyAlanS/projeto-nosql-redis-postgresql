@@ -1,0 +1,201 @@
+{
+  "executed_at": "2026-11-19T10:51:03.302826+00:00",
+  "records": 1000000,
+  "dataset_sha256": "519f2a3fceac765890289c51876e3be1980ff8c03d9f74d9768beb84a264369f",
+  "repetitions": 10,
+  "warmup": 2,
+  "concurrency": 1,
+  "measurement": "Cliente Python: execução, rede e desserialização; conexões reutilizadas; sem HTTP",
+  "order": "Rotação da ordem a cada repetição",
+  "cache": "Aquecido; nenhum cache de respostas",
+  "equivalent": true,
+  "queries": [
+    {
+      "query": "Q1",
+      "filters": {
+        "id": 500001
+      },
+      "metrics": {
+        "postgres_raw": {
+          "median_ms": 1.0111985,
+          "p95_ms": 2.231225949999998,
+          "min_ms": 0.579083,
+          "max_ms": 2.954866,
+          "samples": 10
+        },
+        "redis_baseline": {
+          "median_ms": 0.5236205,
+          "p95_ms": 0.5860006999999999,
+          "min_ms": 0.302819,
+          "max_ms": 0.613538,
+          "samples": 10
+        },
+        "redis_optimized": {
+          "median_ms": 0.4562665,
+          "p95_ms": 0.821664,
+          "min_ms": 0.244585,
+          "max_ms": 0.822924,
+          "samples": 10
+        }
+      },
+      "equivalent": true
+    },
+    {
+      "query": "Q2",
+      "filters": {
+        "sensor_id": 501,
+        "start": 1793491200,
+        "end": 1793790900,
+        "limit": 200
+      },
+      "metrics": {
+        "postgres_raw": {
+          "median_ms": 1.8031035,
+          "p95_ms": 2.3500992,
+          "min_ms": 1.357341,
+          "max_ms": 2.433,
+          "samples": 10
+        },
+        "redis_baseline": {
+          "median_ms": 7.084101,
+          "p95_ms": 8.4174738,
+          "min_ms": 5.101742,
+          "max_ms": 8.784447,
+          "samples": 10
+        },
+        "redis_optimized": {
+          "median_ms": 2.1788045,
+          "p95_ms": 2.9234744999999998,
+          "min_ms": 1.646707,
+          "max_ms": 3.024063,
+          "samples": 10
+        }
+      },
+      "equivalent": true
+    },
+    {
+      "query": "Q3",
+      "filters": {
+        "sensors": 1000,
+        "start": 1793491200,
+        "end": 1793790900
+      },
+      "metrics": {
+        "postgres_raw": {
+          "median_ms": 244.4797355,
+          "p95_ms": 282.2969938,
+          "min_ms": 220.686634,
+          "max_ms": 289.235614,
+          "samples": 10
+        },
+        "redis_baseline": {
+          "median_ms": 4133.740611499999,
+          "p95_ms": 4333.20056765,
+          "min_ms": 4030.825021,
+          "max_ms": 4382.776313,
+          "samples": 10
+        },
+        "redis_optimized": {
+          "median_ms": 40.8067275,
+          "p95_ms": 48.68404465,
+          "min_ms": 33.443497,
+          "max_ms": 50.074699,
+          "samples": 10
+        },
+        "postgres_materialized": {
+          "median_ms": 7.4071565,
+          "p95_ms": 9.968332199999999,
+          "min_ms": 5.559353,
+          "max_ms": 10.263741,
+          "samples": 10
+        }
+      },
+      "equivalent": true
+    }
+  ],
+  "filtered_validations": [
+    {
+      "sensor_count": 1000,
+      "start": 1793491200,
+      "end": 1793790900,
+      "count": 1000000,
+      "equivalent": true
+    },
+    {
+      "sensor_count": 1000,
+      "start": 1793491200,
+      "end": 1793493900,
+      "count": 10000,
+      "equivalent": true
+    },
+    {
+      "sensor_count": 1000,
+      "start": 1793577501,
+      "end": 1793577719,
+      "count": 1000,
+      "equivalent": true
+    },
+    {
+      "sensor_count": 100,
+      "start": 1793491201,
+      "end": 1793790899,
+      "count": 99800,
+      "equivalent": true
+    },
+    {
+      "sensor_count": 1,
+      "start": 1793491200,
+      "end": 1793790900,
+      "count": 1000,
+      "equivalent": true
+    },
+    {
+      "sensor_count": 0,
+      "start": 1793491200,
+      "end": 1793790900,
+      "count": 0,
+      "equivalent": true
+    },
+    {
+      "sensor_count": 1000,
+      "start": 1,
+      "end": 2,
+      "count": 0,
+      "equivalent": true
+    }
+  ],
+  "redis_build": {
+    "executed_at": "2026-11-19T10:47:27.658049+00:00",
+    "state": "ready",
+    "records": 1000000,
+    "sensors": 1000,
+    "daily_buckets": 4000,
+    "sha256_sensor_ts_id_order": "fa5e6d40dcb065b48499291a380d9a8721c2ec39ff3a471e44a9dc3d25f33def",
+    "all_records_compared_to_postgres": true,
+    "all_full_indexes_and_buckets_verified": true,
+    "seconds": 74.6585336930001,
+    "memory_before_bytes": 250060320,
+    "memory_after_bytes": 348325384,
+    "scope": "Índices adicionais; hashes e índices originais preservados"
+  },
+  "postgres_materialization_seconds": 0.48218303199996626,
+  "postgres_materialized_bytes": 589824,
+  "versions": {
+    "postgres": "17.12 (Debian 17.12-1.pgdg13+1)",
+    "redis": "8.10.3",
+    "python": "3.12.16"
+  },
+  "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
+  "code_sha256": {
+    "app/store.py": "fa33aae47e0721943fdd910aaca19c833ab11720cc0d4c0ffe54e1cccaac7d32",
+    "app/redis_optimized.py": "1d97d380dbf8c4b8a5765164256e6314a496ff21bf4e4a785c72a51b20cf6a58",
+    "app/postgres_rollup.py": "9fc8c894197857085522814cb23e3b69de1131125000fc813088ea0e74c0fbea",
+    "scripts/benchmark_optimized.py": "5e536f920a9f3760824e4f7d92616bd6bdd7e0089a2df22eb32804ea381ab900"
+  },
+  "limitations": [
+    "Ensaio de consulta com um cliente, não teste de saturação HTTP.",
+    "Redis mantém agregados no CRUD; view PostgreSQL é atualizada antes do ensaio e não é usada na API.",
+    "Comparação pré-agregada mede leitura; não iguala custo/frescor de manutenção nem durabilidade.",
+    "Máquina compartilhada; resultados não garantem vitória em outras cargas."
+  ]
+}

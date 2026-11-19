@@ -23,6 +23,8 @@ function centi(value, label, min, max) {
 }
 export function buildOperation(input) {
   const {action, source} = input;
+  const redisMode = input['redis-mode'] || 'auto';
+  if (!['auto','baseline','optimized'].includes(redisMode)) throw new Error('Estratégia Redis inválida.');
   if (!Object.hasOwn(actions, action) || !['both', 'postgres', 'redis'].includes(source)) throw new Error('Selecione uma operação e um banco válidos.');
   const mutation = ['create', 'update', 'delete'].includes(action);
   const data = {};
@@ -44,6 +46,7 @@ export function buildOperation(input) {
     let path = '/api/readings', method = 'GET';
     if (action === 'history' || action === 'summary') {
       path = '/api/query'; query.set('operation', action);
+      if (bank === 'redis') query.set('redis_mode', redisMode);
       for (const [key, value] of Object.entries(data)) query.set(key, value);
     } else if (action === 'create') method = 'POST';
     else {
@@ -53,7 +56,7 @@ export function buildOperation(input) {
     }
     return {source: bank, method, path: path + '?' + query, ...(writing.has(action) ? {body: data} : {})};
   });
-  return {action, source, data, mutation, requests};
+  return {action, source, data, mutation, requests, redisMode};
 }
 export function describeCommand(operation, source) {
   const {action, data: d} = operation;
@@ -67,10 +70,15 @@ export function describeCommand(operation, source) {
     return `SELECT count(*) AS count,\n  count(DISTINCT sensor_id) AS sensors,\n  COALESCE(sum(temperature_centi),0) AS temperature_sum,\n  COALESCE(sum(humidity_centi),0) AS humidity_sum,\n  count(*) FILTER (WHERE temperature_centi > 3200) AS alerts,\n  min(temperature_centi) AS minimum,\n  max(temperature_centi) AS maximum\nFROM readings\nWHERE sensor_id=ANY($1) AND ts BETWEEN $2 AND $3;\nSensores: ${d.sensor_id ?? 'todos cadastrados'}\nPeríodo: ${d.start} até ${d.end}`;
   }
   if (action === 'point') return `HGETALL iot:reading:${d.id}\nO Python converte os cinco campos para inteiros.`;
+  if (operation.redisMode !== 'baseline' && ['history','summary'].includes(action)) {
+    const preamble = operation.redisMode === 'auto' ? 'Automático: usa os índices abaixo quando prontos; antes da construção usa o modelo original.\n' : 'Redis otimizado (requer make otimizar-redis):\n';
+    if (action === 'history') return preamble + `ZRANGE iot:opt:v1:sensor:${d.sensor_id}:full ${d.start} ${d.end} BYSCORE LIMIT 0 ${d.limit}\nCada membro já contém os cinco campos. Não há HMGET por leitura.`;
+    return preamble + `Por sensor: ZRANGE iot:opt:v1:sensor:<id>:days <dia inicial> <dia final> BYSCORE\nHMGET dos resumos diários: contagem, somas, alertas e extremos.\nDias inteiramente cobertos: combina os agregados.\nBordas parciais: ZRANGE no índice :full, apenas no intervalo solicitado.\nO script Lua ainda ocupa a instância durante sua execução.`;
+  }
   if (action === 'history') return `Script HISTORY_LUA (execução atômica):\nZRANGEBYSCORE iot:sensor:${d.sensor_id}:readings ${d.start} ${d.end} LIMIT 0 ${d.limit}\nPara cada ID: HMGET iot:reading:<id> ${fields.replaceAll(',', ' ')}\nO Python transforma os resultados em objetos.`;
   if (action === 'summary') return `Script SUMMARY_LUA (execução atômica):\nSensores: ${d.sensor_id ?? 'todos cadastrados'}\nPor sensor: ZRANGEBYSCORE iot:sensor:<id>:readings ${d.start} ${d.end}\nPor leitura: HMGET iot:reading:<id> temperature_centi humidity_centi\nLua calcula contagem, somas, alertas (>3200), mínimo e máximo.\nDurante o script, outras operações Redis aguardam.`;
-  if (action === 'delete') return `Script WRITE_LUA, operação delete, ID ${d.id}:\nConfere a existência e lê a versão atual.\nZREM no índice temporal do sensor atual.\nHDEL na unicidade sensor/instante.\nDEL iot:reading:${d.id}\nRetorna os cinco campos excluídos na mesma execução.`;
-  return `Script WRITE_LUA, operação ${action}, ID ${d.id}:\nValida existência, sensor e unicidade sensor/instante.\n${action === 'update' ? 'Remove os índices anteriores (ZREM e HDEL).\n' : ''}HSET iot:reading:${d.id} ${Object.entries(d).flat().join(' ')}\nZADD iot:sensor:${d.sensor_id}:readings ${d.ts} ${d.id}\nHSET iot:unique:${d.sensor_id} ${d.ts} ${d.id}\nTodos os passos são atômicos neste Redis standalone.`;
+  if (action === 'delete') return `Script WRITE_LUA, operação delete, ID ${d.id}:\nConfere a existência e lê a versão atual.\nZREM no índice temporal do sensor atual.\nHDEL na unicidade sensor/instante.\nDEL iot:reading:${d.id}\nRemove também o registro de :full e desconta os resumos diários; extremos são recalculados no dia afetado.\nRetorna os cinco campos excluídos na mesma execução.`;
+  return `Script WRITE_LUA, operação ${action}, ID ${d.id}:\nValida existência, sensor e unicidade sensor/instante.\n${action === 'update' ? 'Remove os índices anteriores (ZREM e HDEL).\n' : ''}HSET iot:reading:${d.id} ${Object.entries(d).flat().join(' ')}\nZADD iot:sensor:${d.sensor_id}:readings ${d.ts} ${d.id}\nHSET iot:unique:${d.sensor_id} ${d.ts} ${d.id}\nCom índices otimizados ativos, atualiza também :full e os resumos diários (HINCRBY).\nTodos os passos são atômicos neste Redis standalone.`;
 }
 // Ignora a ordem das propriedades, preserva ordem de listas e tipos dos valores.
 export function differences(left, right, path = '$', output = []) {

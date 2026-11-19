@@ -1,5 +1,7 @@
 # Operações e console na dashboard
 
+Atualização de 19/11: histórico e resumo possuem o seletor **Estratégia Redis** (automático, original ou otimizado). Veja [estrutura, comandos e novos testes](OTIMIZACAO_REDIS.md). O campo `strategy` do retorno identifica o caminho executado.
+
 Abra **http://localhost:8000/#operations**. Se os serviços estiverem parados ou o código foi atualizado, rode `make up` na pasta do projeto e recarregue a página.
 
 O painel faz requisições reais à API FastAPI, que acessa os bancos locais da base principal de 1 milhão de leituras. Os bancos isolados de 1 e 5 milhões usados nos testes de carga não são modificados por este painel.

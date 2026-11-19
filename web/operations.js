@@ -17,7 +17,7 @@ function node(tag, text, className) {
   return result;
 }
 function inputs() {
-  return Object.fromEntries(['source', 'action', 'id', 'sensor', 'ts', 'temperature', 'humidity', 'start', 'end', 'limit'].map(key => [key, el('op-' + key).value]));
+  return Object.fromEntries(['source', 'action', 'id', 'sensor', 'ts', 'temperature', 'humidity', 'start', 'end', 'limit', 'redis-mode'].map(key => [key, el('op-' + key).value]));
 }
 function status(message, error = false) {
   el('operation-status').textContent = message;

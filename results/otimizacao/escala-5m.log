@@ -1,0 +1,122 @@
+ Image iot-escala-5000000-app Building
+#1 [internal] load local bake definitions
+#1 reading from stdin 560B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 443B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b
+#3 DONE 0.0s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 208B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 240.29kB 0.0s done
+#5 DONE 0.0s
+
+#6 [ 1/10] FROM docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b
+#6 resolve docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b 0.0s done
+#6 DONE 0.0s
+
+#7 [ 2/10] WORKDIR /app
+#7 CACHED
+
+#8 [ 3/10] COPY requirements.lock.txt .
+#8 CACHED
+
+#9 [ 4/10] RUN pip install --no-cache-dir -r requirements.lock.txt
+#9 CACHED
+
+#10 [ 5/10] COPY app app
+#10 DONE 0.0s
+
+#11 [ 6/10] COPY scripts scripts
+#11 DONE 0.0s
+
+#12 [ 7/10] COPY exemplos exemplos
+#12 DONE 0.0s
+
+#13 [ 8/10] COPY tests tests
+#13 DONE 0.0s
+
+#14 [ 9/10] COPY sql sql
+#14 DONE 0.0s
+
+#15 [10/10] COPY web web
+#15 DONE 0.0s
+
+#16 exporting to image
+#16 exporting layers 0.1s done
+#16 exporting manifest sha256:25018970792d78847055fea36ec51f88ae2c0ef1d671d64dbfaadd618d9561f5 done
+#16 exporting config sha256:4fc5217f24dc4995e73df2aea27e64f4ac9f40bb51895d0b934e40236df68f66 done
+#16 exporting attestation manifest sha256:ed638eddcebeca84339309d7b665b89d6a5e41a53801f10726124e73a4792935 done
+#16 exporting manifest list sha256:e725812d0ba82f74c54864138d70d4c099770a56c632b90158c6c5730f0a210f done
+#16 naming to docker.io/library/iot-escala-5000000-app:latest done
+#16 unpacking to docker.io/library/iot-escala-5000000-app:latest 0.1s done
+#16 DONE 0.3s
+
+#17 resolving provenance for metadata file
+#17 DONE 0.0s
+ Image iot-escala-5000000-app Built
+ Container iot-escala-5000000-app-1 Recreate
+ Container iot-escala-5000000-app-1 Recreated
+ Container iot-escala-5000000-redis-1 Starting
+ Container iot-escala-5000000-postgres-1 Starting
+ Container iot-escala-5000000-redis-1 Started
+ Container iot-escala-5000000-postgres-1 Started
+ Container iot-escala-5000000-postgres-1 Waiting
+ Container iot-escala-5000000-redis-1 Waiting
+ Container iot-escala-5000000-redis-1 Healthy
+ Container iot-escala-5000000-postgres-1 Healthy
+ Container iot-escala-5000000-app-1 Starting
+ Container iot-escala-5000000-app-1 Started
+ Container iot-escala-5000000-app-1 Waiting
+ Container iot-escala-5000000-postgres-1 Waiting
+ Container iot-escala-5000000-redis-1 Waiting
+ Container iot-escala-5000000-postgres-1 Healthy
+ Container iot-escala-5000000-redis-1 Healthy
+ Container iot-escala-5000000-app-1 Healthy
+Índices: 100/1000 sensores; 500,000 leituras conferidas
+Índices: 200/1000 sensores; 1,000,000 leituras conferidas
+Índices: 300/1000 sensores; 1,500,000 leituras conferidas
+Índices: 400/1000 sensores; 2,000,000 leituras conferidas
+Índices: 500/1000 sensores; 2,500,000 leituras conferidas
+Índices: 600/1000 sensores; 3,000,000 leituras conferidas
+Índices: 700/1000 sensores; 3,500,000 leituras conferidas
+Índices: 800/1000 sensores; 4,000,000 leituras conferidas
+Índices: 900/1000 sensores; 4,500,000 leituras conferidas
+Índices: 1000/1000 sensores; 5,000,000 leituras conferidas
+{
+  "executed_at": "2026-11-19T10:57:52.575379+00:00",
+  "state": "ready",
+  "records": 5000000,
+  "sensors": 1000,
+  "daily_buckets": 18000,
+  "sha256_sensor_ts_id_order": "df7c55578f637801f857687de7bb5248ed882bf86d3963483071c06b4d5fa3f9",
+  "all_records_compared_to_postgres": true,
+  "all_full_indexes_and_buckets_verified": true,
+  "seconds": 339.363894503,
+  "memory_before_bytes": 1317282424,
+  "memory_after_bytes": 1831060096,
+  "scope": "Índices adicionais; hashes e índices originais preservados"
+}
+Q1: 5/10 repetições completas
+Q1: 10/10 repetições completas
+{"query": "Q1", "filters": {"id": 500001}, "metrics": {"postgres_raw": {"median_ms": 0.5800805, "p95_ms": 0.8501984999999997, "min_ms": 0.328562, "max_ms": 0.951642, "samples": 10}, "redis_baseline": {"median_ms": 0.42097249999999997, "p95_ms": 0.49749709999999997, "min_ms": 0.270841, "max_ms": 0.510035, "samples": 10}, "redis_optimized": {"median_ms": 0.3988845, "p95_ms": 0.5163085, "min_ms": 0.148847, "max_ms": 0.520399, "samples": 10}}, "equivalent": true}
+Q2: 5/10 repetições completas
+Q2: 10/10 repetições completas
+{"query": "Q2", "filters": {"sensor_id": 501, "start": 1793491200, "end": 1794990900, "limit": 200}, "metrics": {"postgres_raw": {"median_ms": 1.1891185000000002, "p95_ms": 1.4388364999999999, "min_ms": 1.047315, "max_ms": 1.456994, "samples": 10}, "redis_baseline": {"median_ms": 4.4900614999999995, "p95_ms": 5.4321611, "min_ms": 3.661606, "max_ms": 5.479817, "samples": 10}, "redis_optimized": {"median_ms": 1.4728275, "p95_ms": 1.61246445, "min_ms": 1.257267, "max_ms": 1.618395, "samples": 10}}, "equivalent": true}
+Q3: 5/10 repetições completas
+Q3: 10/10 repetições completas
+{"query": "Q3", "filters": {"sensors": 1000, "start": 1793491200, "end": 1794990900}, "metrics": {"postgres_raw": {"median_ms": 1407.6019425, "p95_ms": 1525.55299075, "min_ms": 1314.674676, "max_ms": 1544.382928, "samples": 10}, "redis_baseline": {"median_ms": 21396.2617275, "p95_ms": 22432.29248555, "min_ms": 20197.073236, "max_ms": 22506.863696, "samples": 10}, "redis_optimized": {"median_ms": 138.19695000000002, "p95_ms": 154.83755084999999, "min_ms": 125.974371, "max_ms": 157.304202, "samples": 10}, "postgres_materialized": {"median_ms": 23.156711, "p95_ms": 28.157271649999995, "min_ms": 20.687558, "max_ms": 29.242907, "samples": 10}}, "equivalent": true}
+100 amostras reais salvas em /app/results/otimizacao
+ Container iot-escala-5000000-app-1 Stopping
+ Container iot-escala-5000000-app-1 Stopped
+ Container iot-escala-5000000-redis-1 Stopping
+ Container iot-escala-5000000-postgres-1 Stopping
+ Container iot-escala-5000000-postgres-1 Stopped
+ Container iot-escala-5000000-redis-1 Stopped

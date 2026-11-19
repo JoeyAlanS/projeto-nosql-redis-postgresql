@@ -68,6 +68,38 @@
       "detail": "Executa os onze testes da aplicacao. Requer a massa principal carregada."
     },
     {
+      "label": "IoT: 7 - Construir indices Redis otimizados",
+      "type": "process",
+      "command": "docker",
+      "args": ["compose", "exec", "-T", "app", "python", "-m", "scripts.optimize_redis"],
+      "problemMatcher": [],
+      "detail": "Confere os dados e ativa indice completo e resumos diarios, preservando a massa."
+    },
+    {
+      "label": "IoT: 8 - Testar otimizacao",
+      "type": "process",
+      "command": "docker",
+      "args": ["compose", "exec", "-T", "app", "python", "-m", "unittest", "discover", "-s", "tests/optimization", "-v"],
+      "problemMatcher": [],
+      "detail": "Testa CRUD, extremos, filtros, concorrencia e escolha da variante na API."
+    },
+    {
+      "label": "IoT: 9 - Comparar original e otimizado",
+      "type": "process",
+      "command": "docker",
+      "args": ["compose", "exec", "-T", "app", "python", "-m", "scripts.benchmark_optimized", "--repetitions", "10", "--warmup", "2"],
+      "problemMatcher": [],
+      "detail": "Registra um novo ensaio com PostgreSQL bruto/pre-agregado e Redis original/otimizado."
+    },
+    {
+      "label": "IoT: 10 - Experimento TimeSeries",
+      "type": "process",
+      "command": "docker",
+      "args": ["compose", "exec", "-T", "app", "python", "-m", "scripts.experiment_timeseries"],
+      "problemMatcher": [],
+      "detail": "Executa a prova temporaria de 10 mil leituras e remove suas chaves ao terminar."
+    },
+    {
       "label": "IoT: Parar servicos",
       "type": "process",
       "command": "docker",

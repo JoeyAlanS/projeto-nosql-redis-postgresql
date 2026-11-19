@@ -1,0 +1,25 @@
+{
+  "verified_at": "2026-11-19T15:58:06.147Z",
+  "url": "http://localhost:8000/#optimization",
+  "checks": {
+    "optimized_summary_10000_equal": true,
+    "baseline_summary_10000_equal": true,
+    "strategies_visible_in_console": true,
+    "fair_strategy_tables_rendered": true,
+    "python_chart_visible": true,
+    "browser_errors": 0
+  },
+  "summary_data": {
+    "count": 10000,
+    "sensors": 1000,
+    "temperature_sum": 29932800,
+    "humidity_sum": 54385000,
+    "alerts": 3522,
+    "minimum": 2300,
+    "maximum": 3699
+  },
+  "screenshots": [
+    "dashboard.jpg",
+    "comparacao-dashboard.jpg"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "scenarios": [
+    {
+      "records": 1000000,
+      "samples": 100,
+      "medians_and_p95_recomputed": true,
+      "response_hashes_equal": true
+    },
+    {
+      "records": 5000000,
+      "samples": 100,
+      "medians_and_p95_recomputed": true,
+      "response_hashes_equal": true
+    }
+  ],
+  "samples_total": 200,
+  "source_files_match_measured": true
+}

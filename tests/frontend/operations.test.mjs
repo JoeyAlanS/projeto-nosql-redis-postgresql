@@ -2,6 +2,14 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {buildOperation, compareResults, differences, demo, period} from '../../web/operations-core.mjs';
 const base = {source: 'both', action: 'point', ...demo, ...period, limit: '20'};
+test('seleção da variante só muda a consulta Redis e rejeita estratégia desconhecida', () => {
+  for (const mode of ['auto','baseline','optimized']) {
+    const operation = buildOperation({...base, action:'summary', 'redis-mode':mode});
+    assert.equal(new URL(operation.requests[1].path,'http://localhost').searchParams.get('redis_mode'), mode);
+    assert.equal(new URL(operation.requests[0].path,'http://localhost').searchParams.has('redis_mode'), false);
+  }
+  assert.throws(() => buildOperation({...base, 'redis-mode':'invalid'}));
+});
 test('CRUD envia inteiros exatos e fontes separadas para os endpoints existentes', () => {
   for (const [action, method] of [['point', 'GET'], ['create', 'POST'], ['update', 'PUT'], ['delete', 'DELETE']]) {
     const {requests} = buildOperation({...base, action});

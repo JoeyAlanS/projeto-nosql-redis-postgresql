@@ -7,6 +7,7 @@ from pathlib import Path
 import psycopg
 import redis
 from psycopg.rows import dict_row
+from app import redis_optimized as opt
 
 FIELDS = ("id", "sensor_id", "ts", "temperature_centi", "humidity_centi")
 MAX_READING_ID = 9_000_000_000_000_000
@@ -45,6 +46,10 @@ class Missing(ValueError):
 
 
 class Invalid(ValueError):
+    pass
+
+
+class Busy(ValueError):
     pass
 
 
@@ -152,7 +157,7 @@ return {count,sensors,tsum,hsum,alerts,minv or false,maxv or false}
 
 # Uma execução Lua mantém hash, índice temporal e unicidade no mesmo passo.
 # Projeto standalone: as chaves NÃO partilham hash slot para uso em Cluster.
-WRITE_LUA = """
+WRITE_LUA = opt.WRITE_HELPERS + """
 local op, id = ARGV[1], ARGV[2]
 local key = 'iot:reading:'..id
 local exists = redis.call('EXISTS', key) == 1
@@ -164,9 +169,10 @@ if op ~= 'delete' then
   if owner and owner ~= id then return 'CONFLICT' end
 end
 if exists then
-  local old = redis.call('HMGET',key,'sensor_id','ts')
-  redis.call('ZREM','iot:sensor:'..old[1]..':readings',id)
-  redis.call('HDEL','iot:unique:'..old[1],old[2])
+  local old = redis.call('HMGET',key,'id','sensor_id','ts','temperature_centi','humidity_centi')
+  opt_change(old,-1)
+  redis.call('ZREM','iot:sensor:'..old[2]..':readings',id)
+  redis.call('HDEL','iot:unique:'..old[2],old[3])
 end
 if op == 'delete' then
   local deleted = redis.call('HMGET',key,'id','sensor_id','ts','temperature_centi','humidity_centi')
@@ -177,15 +183,21 @@ redis.call('HSET',key,'id',id,'sensor_id',ARGV[3],'ts',ARGV[4],
            'temperature_centi',ARGV[5],'humidity_centi',ARGV[6])
 redis.call('ZADD','iot:sensor:'..ARGV[3]..':readings',ARGV[4],id)
 redis.call('HSET','iot:unique:'..ARGV[3],ARGV[4],id)
+opt_change({id,ARGV[3],ARGV[4],ARGV[5],ARGV[6]},1)
 return 'OK'
 """
 
 
 class RedisStore:
-    def __init__(self, connection):
+    def __init__(self, connection, optimized=None):
         self.conn = connection
+        ready = connection.get(opt.STATE) == 'ready'
+        if optimized is True and not ready:
+            raise Busy('Execute make otimizar-redis antes de selecionar a variante otimizada')
+        self.optimized = ready if optimized is None else optimized
         self._history = connection.register_script(HISTORY_LUA)
         self._summary = connection.register_script(SUMMARY_LUA)
+        self._optimized_summary = connection.register_script(opt.SUMMARY_LUA)
         self._write = connection.register_script(WRITE_LUA)
 
     def sensors(self, location=None):
@@ -201,10 +213,18 @@ class RedisStore:
         return normalized(self.conn.hgetall(f"iot:reading:{reading_id}"))
 
     def history(self, sensor_id, start, end, limit=200):
+        if self.optimized:
+            rows = self.conn.execute_command('ZRANGE', f'{opt.PREFIX}:sensor:{sensor_id}:full',
+                                             start, end, 'BYSCORE', 'LIMIT', 0, limit)
+            return [opt.unpack(row) for row in rows]
         rows = self._history(keys=[f"iot:sensor:{sensor_id}:readings"], args=[start, end, limit])
         return [dict(zip(FIELDS, map(int, row))) for row in rows]
 
     def summary(self, sensor_ids, start, end):
+        if self.optimized:
+            values = self._optimized_summary(keys=[f'{opt.PREFIX}:sensor:{sid}' for sid in sorted(set(sensor_ids))],
+                                             args=[start, end])
+            return dict(zip(opt.SUMMARY_FIELDS, [int(v) if v is not None else None for v in values]))
         values = self._summary(keys=[f"iot:sensor:{sid}:readings" for sid in sensor_ids], args=[start, end])
         keys = ("count", "sensors", "temperature_sum", "humidity_sum", "alerts", "minimum", "maximum")
         return dict(zip(keys, [int(v) if v is not None else None for v in values]))
@@ -212,6 +232,8 @@ class RedisStore:
     def write(self, op, row):
         validate_reading(row)
         result = self._write(args=[op] + [row[k] for k in FIELDS])
+        if result == 'BUSY':
+            raise Busy('Construção dos índices Redis em andamento; escrita temporariamente bloqueada')
         errors = {"CONFLICT": Conflict("ID ou par sensor/instante já existe"),
                   "MISSING": Missing("Leitura não encontrada"), "INVALID": Invalid("Sensor não existe")}
         if result in errors:
@@ -227,18 +249,20 @@ class RedisStore:
     def delete(self, reading_id):
         # Retorna a versão efetivamente excluída, na mesma execução atômica.
         result = self._write(args=["delete", reading_id])
+        if result == 'BUSY':
+            raise Busy('Construção dos índices Redis em andamento; escrita temporariamente bloqueada')
         if result == "MISSING":
             raise Missing("Leitura não encontrada")
         return dict(zip(FIELDS, map(int, result)))
 
 
 @contextmanager
-def store(source):
+def store(source, redis_mode='auto'):
     if source == "postgres":
         with pg_connect() as c:
             yield PostgresStore(c)
     elif source == "redis":
         with redis_connect() as c:
-            yield RedisStore(c)
+            yield RedisStore(c, optimized={'auto': None, 'baseline': False, 'optimized': True}[redis_mode])
     else:
         raise Invalid("Fonte deve ser postgres ou redis")

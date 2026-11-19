@@ -1,5 +1,7 @@
 # Engenharia reversa do Observatório IoT
 
+> Atualização de 19/11/2026: esta análise registra a versão de 18/11. A nova implementação com índice completo, agregados diários, variantes de consulta e novos ensaios está documentada em [Otimização Redis](../OTIMIZACAO_REDIS.md). Os trechos e números de linha abaixo são históricos, não um retrato da versão otimizada.
+
 Redis e PostgreSQL na implementação de consultas e na Dashboard
 
 Data da investigação: 18 de novembro de 2026. Commit de base: e7ae3267a2957c8f83a78f00efc086267be3ac03, com correções documentais e do carregador em 18/11/2026. Os hashes da versão analisada constam no manifesto de fontes.

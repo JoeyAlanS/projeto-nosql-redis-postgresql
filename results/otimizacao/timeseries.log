@@ -1,0 +1,31 @@
+{
+  "executed_at": "2026-11-19T10:51:54.671342+00:00",
+  "records": 10000,
+  "sensors": 1000,
+  "redis_version": "8.10.3",
+  "equivalent": true,
+  "repetitions": 10,
+  "warmup": 2,
+  "median_ms": {
+    "postgres_raw": 8.8089825,
+    "redis_optimized": 43.2770355,
+    "redis_timeseries": 96.98832
+  },
+  "update_verified": true,
+  "delete_verified": true,
+  "compaction_verified": true,
+  "compact_before": [
+    [
+      1793491200000,
+      "10"
+    ]
+  ],
+  "compact_after": [
+    [
+      1793491200000,
+      "9"
+    ]
+  ],
+  "scope": "Experimento isolado de 10 mil leituras. Não substitui os índices/CRUD da API nem representa ensaio de 1M/5M.",
+  "temporary_keys_removed": true
+}

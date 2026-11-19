@@ -1,5 +1,6 @@
 import json
 import time
+from fastapi.responses import JSONResponse
 from typing import Annotated, Literal
 
 from fastapi import FastAPI, HTTPException, Path, Query
@@ -7,12 +8,13 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
-from app.store import (Conflict, Invalid, Missing, ROOT, MAX_READING_ID, MAX_SENSOR_ID,
+from app.store import (Busy, Conflict, Invalid, Missing, ROOT, MAX_READING_ID, MAX_SENSOR_ID,
                        MAX_TIMESTAMP, pg_connect, redis_connect, store)
 
 app = FastAPI(title="Observatório IoT: PostgreSQL e Redis", version="1.0.0")
 Source = Literal["postgres", "redis"]
 Operation = Literal["point", "history", "summary"]
+RedisMode = Literal['auto', 'baseline', 'optimized']
 ReadingPath = Annotated[int, Path(gt=0, le=MAX_READING_ID)]
 
 
@@ -47,10 +49,10 @@ def meta(source: Source = "postgres"):
         raise HTTPException(503, "Massa não carregada. Execute make load.") from e
 
 
-def run_query(source, operation, reading_id, sensor_id, start, end, limit, location):
+def run_query(source, operation, reading_id, sensor_id, start, end, limit, location, redis_mode='auto'):
     if end < start:
         raise HTTPException(422, "Fim deve ser maior ou igual ao início")
-    with store(source) as s:
+    with store(source, redis_mode) as s:
         # Conexão e seleção de sensores fora do trecho cronometrado em ambas as fontes.
         ids = [sensor_id] if sensor_id else [row["id"] for row in s.sensors(location)]
         if sensor_id and location and sensor_id not in [row["id"] for row in s.sensors(location)]:
@@ -65,23 +67,47 @@ def run_query(source, operation, reading_id, sensor_id, start, end, limit, locat
         else:
             result = s.summary(ids, start, end)
         elapsed = (time.perf_counter_ns() - t) / 1e6
-    return {"source": source, "operation": operation, "elapsed_ms": elapsed, "data": result}
+    strategy = ('redis_optimized' if s.optimized else 'redis_baseline') if source == 'redis' else 'postgres_raw'
+    return {"source": source, "operation": operation, "strategy": strategy, "elapsed_ms": elapsed, "data": result}
 
 
 @app.get("/api/query")
 def query(source: Source = "postgres", operation: Operation = "summary", reading_id: int = Query(1, gt=0, le=MAX_READING_ID),
           sensor_id: int | None = Query(None, gt=0, le=MAX_SENSOR_ID), start: int = Query(1, gt=0, le=MAX_TIMESTAMP),
-          end: int = Query(4_102_444_800, gt=0, le=MAX_TIMESTAMP), limit: int = Query(200, ge=1, le=1000), location: str | None = None):
-    return run_query(source, operation, reading_id, sensor_id, start, end, limit, location)
+          end: int = Query(4_102_444_800, gt=0, le=MAX_TIMESTAMP), limit: int = Query(200, ge=1, le=1000), location: str | None = None,
+          redis_mode: RedisMode = 'auto'):
+    return run_query(source, operation, reading_id, sensor_id, start, end, limit, location, redis_mode)
 
 
 @app.get("/api/compare")
 def compare(operation: Operation = "point", reading_id: int = Query(500001, gt=0, le=MAX_READING_ID),
             sensor_id: int | None = Query(None, gt=0, le=MAX_SENSOR_ID), start: int = Query(1, gt=0, le=MAX_TIMESTAMP),
-            end: int = Query(4_102_444_800, gt=0, le=MAX_TIMESTAMP), limit: int = Query(200, ge=1, le=1000), location: str | None = None):
-    outputs = [run_query(src, operation, reading_id, sensor_id, start, end, limit, location) for src in ("postgres", "redis")]
+            end: int = Query(4_102_444_800, gt=0, le=MAX_TIMESTAMP), limit: int = Query(200, ge=1, le=1000), location: str | None = None,
+            redis_mode: RedisMode = 'auto'):
+    outputs = [run_query(src, operation, reading_id, sensor_id, start, end, limit, location, redis_mode) for src in ("postgres", "redis")]
     return {"results": outputs, "equivalent": outputs[0]["data"] == outputs[1]["data"],
             "note": "Uma execução por fonte. Use o benchmark para medianas com aquecimento e ordem alternada."}
+
+
+@app.exception_handler(Busy)
+def busy_handler(request, exc):
+    return JSONResponse(status_code=503, content={'detail': str(exc)})
+
+
+@app.get('/api/optimization')
+def optimization():
+    with redis_connect() as rd:
+        state = rd.get('iot:opt:v1:state') or 'not_built'
+    paths = [ROOT/'results/otimizacao/benchmark.json', ROOT/'results/escala/5000000/otimizacao/benchmark.json']
+    return {'state':state,'scenarios':[json.loads(p.read_text()) for p in paths if p.exists()]}
+
+
+@app.get('/api/optimization/chart')
+def optimization_chart():
+    path = ROOT/'results/otimizacao/comparacao.png'
+    if not path.exists():
+        raise HTTPException(404,'Gráfico ainda não gerado')
+    return FileResponse(path,media_type='image/png')
 
 
 @app.get("/api/benchmark")
@@ -120,6 +146,8 @@ def mutate(source, operation, row=None, reading_id=None):
             return s.delete(reading_id)
     except Conflict as e:
         raise HTTPException(409, str(e)) from e
+    except Busy as e:
+        raise HTTPException(503, str(e)) from e
     except Missing as e:
         raise HTTPException(404, str(e)) from e
     except Invalid as e:

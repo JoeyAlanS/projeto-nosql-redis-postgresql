@@ -69,6 +69,11 @@ class PostgresStore:
             "SELECT * FROM sensors WHERE (%s::text IS NULL OR location=%s) ORDER BY id", (location, location)
         ).fetchall()
 
+    def sensor_ids(self, location=None):
+        return [r['id'] for r in self.conn.execute(
+            'SELECT id FROM sensors WHERE (%s::text IS NULL OR location=%s) ORDER BY id',
+            (location, location)).fetchall()]
+
     def point(self, reading_id):
         return self.conn.execute("SELECT * FROM readings WHERE id=%s", (reading_id,)).fetchone()
 
@@ -208,6 +213,16 @@ class RedisStore:
             rows = p.execute()
         return [dict(id=int(r["id"]), name=r["name"], location=r["location"], active=r["active"] == "1")
                 for r in rows if location is None or r["location"] == location]
+
+    def sensor_ids(self, location=None):
+        ids = sorted(map(int, self.conn.smembers('iot:sensors')))
+        if location is None:
+            return ids
+        with self.conn.pipeline(transaction=False) as p:
+            for sid in ids:
+                p.hget(f'iot:sensor:{sid}', 'location')
+            locations = p.execute()
+        return [sid for sid, actual in zip(ids, locations) if actual == location]
 
     def point(self, reading_id):
         return normalized(self.conn.hgetall(f"iot:reading:{reading_id}"))

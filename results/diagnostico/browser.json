@@ -1,0 +1,9 @@
+{
+  "url": "http://localhost:8000/#operations",
+  "summary_count": 10000,
+  "responses_equal": true,
+  "preparation_phases_visible": true,
+  "historical_revision_label_visible": true,
+  "browser_errors": 0,
+  "screenshot": "console.jpg"
+}

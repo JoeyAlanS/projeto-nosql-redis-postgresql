@@ -91,6 +91,8 @@ function renderResult(result, operation) {
   section.append(node('p', `Ponta a ponta: ${formatMs(result.elapsed_ms)}`));
   if (result.ok && ['history', 'summary'].includes(operation.action) && Number.isFinite(result.response.elapsed_ms)) {
     section.append(node('p', `Trecho da consulta no backend: ${formatMs(result.response.elapsed_ms)} (exclui abertura da conexão e seleção dos sensores).`));
+    const phases = result.response.timings_ms;
+    if (phases) section.append(node('p', `Preparação: conexão e estratégia ${formatMs(phases.connection_and_strategy)} · seleção dos sensores ${formatMs(phases.sensor_selection)} · total no backend ${formatMs(phases.backend_total)}. O tempo HTTP também inclui serialização, transporte e processamento no navegador.`));
   }
   if (!result.ok) section.append(node('p', errorHint(result.status), 'console-error'));
   const request = node('details');

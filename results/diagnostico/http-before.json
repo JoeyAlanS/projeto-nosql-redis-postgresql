@@ -1,0 +1,1170 @@
+{
+  "executed_at": "2026-11-19T17:05:51.823428+00:00",
+  "repetitions": 20,
+  "warmup": 3,
+  "client": "urllib, HTTP local, uma requisi\u00e7\u00e3o de cada vez, ordem alternada",
+  "results": {
+    "ID_dashboard": {
+      "postgres": {
+        "http_median_ms": 20.214007000000002,
+        "backend_query_median_ms": null
+      },
+      "redis": {
+        "http_median_ms": 6.5500845000000005,
+        "backend_query_median_ms": null
+      }
+    },
+    "ID_query": {
+      "postgres": {
+        "http_median_ms": 24.369458,
+        "backend_query_median_ms": 1.32697
+      },
+      "redis": {
+        "http_median_ms": 45.737638,
+        "backend_query_median_ms": 0.561844
+      }
+    },
+    "historico_200": {
+      "postgres": {
+        "http_median_ms": 24.858573,
+        "backend_query_median_ms": 3.168288
+      },
+      "redis": {
+        "http_median_ms": 11.2061375,
+        "backend_query_median_ms": 1.326301
+      }
+    },
+    "resumo_10000": {
+      "postgres": {
+        "http_median_ms": 36.8679555,
+        "backend_query_median_ms": 15.4185625
+      },
+      "redis": {
+        "http_median_ms": 84.6325065,
+        "backend_query_median_ms": 42.0403
+      }
+    }
+  },
+  "samples": [
+    {
+      "case": "ID_dashboard",
+      "source": "redis",
+      "repetition": 1,
+      "http_ms": 7.283444,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "postgres",
+      "repetition": 1,
+      "http_ms": 21.667976,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "postgres",
+      "repetition": 2,
+      "http_ms": 19.057281,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "redis",
+      "repetition": 2,
+      "http_ms": 7.295114,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "redis",
+      "repetition": 3,
+      "http_ms": 6.220693,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "postgres",
+      "repetition": 3,
+      "http_ms": 20.267501,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "postgres",
+      "repetition": 4,
+      "http_ms": 21.565394,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "redis",
+      "repetition": 4,
+      "http_ms": 6.05937,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "redis",
+      "repetition": 5,
+      "http_ms": 5.56546,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "postgres",
+      "repetition": 5,
+      "http_ms": 19.736021,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "postgres",
+      "repetition": 6,
+      "http_ms": 18.124143,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "redis",
+      "repetition": 6,
+      "http_ms": 6.883156,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "redis",
+      "repetition": 7,
+      "http_ms": 5.160091,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "postgres",
+      "repetition": 7,
+      "http_ms": 19.102315,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "postgres",
+      "repetition": 8,
+      "http_ms": 21.016831,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "redis",
+      "repetition": 8,
+      "http_ms": 6.527933,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "redis",
+      "repetition": 9,
+      "http_ms": 7.065511,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "postgres",
+      "repetition": 9,
+      "http_ms": 21.47455,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "postgres",
+      "repetition": 10,
+      "http_ms": 21.244234,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "redis",
+      "repetition": 10,
+      "http_ms": 6.165244,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "redis",
+      "repetition": 11,
+      "http_ms": 8.2921,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "postgres",
+      "repetition": 11,
+      "http_ms": 22.092343,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "postgres",
+      "repetition": 12,
+      "http_ms": 21.072765,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "redis",
+      "repetition": 12,
+      "http_ms": 6.837369,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "redis",
+      "repetition": 13,
+      "http_ms": 6.318342,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "postgres",
+      "repetition": 13,
+      "http_ms": 21.557412,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "postgres",
+      "repetition": 14,
+      "http_ms": 20.160513,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "redis",
+      "repetition": 14,
+      "http_ms": 6.23305,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "redis",
+      "repetition": 15,
+      "http_ms": 6.904211,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "postgres",
+      "repetition": 15,
+      "http_ms": 19.405757,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "postgres",
+      "repetition": 16,
+      "http_ms": 22.349841,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "redis",
+      "repetition": 16,
+      "http_ms": 7.67864,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "redis",
+      "repetition": 17,
+      "http_ms": 6.182913,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "postgres",
+      "repetition": 17,
+      "http_ms": 18.547335,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "postgres",
+      "repetition": 18,
+      "http_ms": 18.621632,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "redis",
+      "repetition": 18,
+      "http_ms": 8.075008,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "redis",
+      "repetition": 19,
+      "http_ms": 5.107028,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "postgres",
+      "repetition": 19,
+      "http_ms": 18.769073,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "postgres",
+      "repetition": 20,
+      "http_ms": 19.124465,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_dashboard",
+      "source": "redis",
+      "repetition": 20,
+      "http_ms": 6.572236,
+      "backend_query_ms": null
+    },
+    {
+      "case": "ID_query",
+      "source": "redis",
+      "repetition": 1,
+      "http_ms": 52.658545,
+      "backend_query_ms": 0.502198
+    },
+    {
+      "case": "ID_query",
+      "source": "postgres",
+      "repetition": 1,
+      "http_ms": 25.640694,
+      "backend_query_ms": 1.245176
+    },
+    {
+      "case": "ID_query",
+      "source": "postgres",
+      "repetition": 2,
+      "http_ms": 25.979863,
+      "backend_query_ms": 1.734906
+    },
+    {
+      "case": "ID_query",
+      "source": "redis",
+      "repetition": 2,
+      "http_ms": 47.529465,
+      "backend_query_ms": 0.625741
+    },
+    {
+      "case": "ID_query",
+      "source": "redis",
+      "repetition": 3,
+      "http_ms": 48.333583,
+      "backend_query_ms": 0.587653
+    },
+    {
+      "case": "ID_query",
+      "source": "postgres",
+      "repetition": 3,
+      "http_ms": 24.903088,
+      "backend_query_ms": 1.328801
+    },
+    {
+      "case": "ID_query",
+      "source": "postgres",
+      "repetition": 4,
+      "http_ms": 25.545297,
+      "backend_query_ms": 1.355677
+    },
+    {
+      "case": "ID_query",
+      "source": "redis",
+      "repetition": 4,
+      "http_ms": 46.767534,
+      "backend_query_ms": 0.704267
+    },
+    {
+      "case": "ID_query",
+      "source": "redis",
+      "repetition": 5,
+      "http_ms": 42.730456,
+      "backend_query_ms": 0.50448
+    },
+    {
+      "case": "ID_query",
+      "source": "postgres",
+      "repetition": 5,
+      "http_ms": 22.666771,
+      "backend_query_ms": 1.292137
+    },
+    {
+      "case": "ID_query",
+      "source": "postgres",
+      "repetition": 6,
+      "http_ms": 24.448908,
+      "backend_query_ms": 1.325139
+    },
+    {
+      "case": "ID_query",
+      "source": "redis",
+      "repetition": 6,
+      "http_ms": 43.619951,
+      "backend_query_ms": 0.582336
+    },
+    {
+      "case": "ID_query",
+      "source": "redis",
+      "repetition": 7,
+      "http_ms": 41.221889,
+      "backend_query_ms": 0.460375
+    },
+    {
+      "case": "ID_query",
+      "source": "postgres",
+      "repetition": 7,
+      "http_ms": 28.146435,
+      "backend_query_ms": 1.566293
+    },
+    {
+      "case": "ID_query",
+      "source": "postgres",
+      "repetition": 8,
+      "http_ms": 25.236892,
+      "backend_query_ms": 1.221492
+    },
+    {
+      "case": "ID_query",
+      "source": "redis",
+      "repetition": 8,
+      "http_ms": 47.606339,
+      "backend_query_ms": 0.567011
+    },
+    {
+      "case": "ID_query",
+      "source": "redis",
+      "repetition": 9,
+      "http_ms": 43.589579,
+      "backend_query_ms": 0.574759
+    },
+    {
+      "case": "ID_query",
+      "source": "postgres",
+      "repetition": 9,
+      "http_ms": 24.290008,
+      "backend_query_ms": 1.900415
+    },
+    {
+      "case": "ID_query",
+      "source": "postgres",
+      "repetition": 10,
+      "http_ms": 26.607378,
+      "backend_query_ms": 1.3299
+    },
+    {
+      "case": "ID_query",
+      "source": "redis",
+      "repetition": 10,
+      "http_ms": 44.407564,
+      "backend_query_ms": 0.623818
+    },
+    {
+      "case": "ID_query",
+      "source": "redis",
+      "repetition": 11,
+      "http_ms": 44.005409,
+      "backend_query_ms": 0.503457
+    },
+    {
+      "case": "ID_query",
+      "source": "postgres",
+      "repetition": 11,
+      "http_ms": 22.139032,
+      "backend_query_ms": 1.112733
+    },
+    {
+      "case": "ID_query",
+      "source": "postgres",
+      "repetition": 12,
+      "http_ms": 23.121038,
+      "backend_query_ms": 1.188347
+    },
+    {
+      "case": "ID_query",
+      "source": "redis",
+      "repetition": 12,
+      "http_ms": 42.288777,
+      "backend_query_ms": 0.476276
+    },
+    {
+      "case": "ID_query",
+      "source": "redis",
+      "repetition": 13,
+      "http_ms": 41.975149,
+      "backend_query_ms": 0.523854
+    },
+    {
+      "case": "ID_query",
+      "source": "postgres",
+      "repetition": 13,
+      "http_ms": 22.689925,
+      "backend_query_ms": 1.238114
+    },
+    {
+      "case": "ID_query",
+      "source": "postgres",
+      "repetition": 14,
+      "http_ms": 23.005331,
+      "backend_query_ms": 1.336676
+    },
+    {
+      "case": "ID_query",
+      "source": "redis",
+      "repetition": 14,
+      "http_ms": 42.864493,
+      "backend_query_ms": 0.510901
+    },
+    {
+      "case": "ID_query",
+      "source": "redis",
+      "repetition": 15,
+      "http_ms": 45.781389,
+      "backend_query_ms": 0.584164
+    },
+    {
+      "case": "ID_query",
+      "source": "postgres",
+      "repetition": 15,
+      "http_ms": 21.746418,
+      "backend_query_ms": 1.112883
+    },
+    {
+      "case": "ID_query",
+      "source": "postgres",
+      "repetition": 16,
+      "http_ms": 24.0437,
+      "backend_query_ms": 1.318148
+    },
+    {
+      "case": "ID_query",
+      "source": "redis",
+      "repetition": 16,
+      "http_ms": 45.693887,
+      "backend_query_ms": 0.556677
+    },
+    {
+      "case": "ID_query",
+      "source": "redis",
+      "repetition": 17,
+      "http_ms": 46.496192,
+      "backend_query_ms": 0.597022
+    },
+    {
+      "case": "ID_query",
+      "source": "postgres",
+      "repetition": 17,
+      "http_ms": 26.780847,
+      "backend_query_ms": 1.428826
+    },
+    {
+      "case": "ID_query",
+      "source": "postgres",
+      "repetition": 18,
+      "http_ms": 26.901621,
+      "backend_query_ms": 1.679987
+    },
+    {
+      "case": "ID_query",
+      "source": "redis",
+      "repetition": 18,
+      "http_ms": 56.424395,
+      "backend_query_ms": 0.598012
+    },
+    {
+      "case": "ID_query",
+      "source": "redis",
+      "repetition": 19,
+      "http_ms": 51.289223,
+      "backend_query_ms": 0.492488
+    },
+    {
+      "case": "ID_query",
+      "source": "postgres",
+      "repetition": 19,
+      "http_ms": 22.034658,
+      "backend_query_ms": 0.935995
+    },
+    {
+      "case": "ID_query",
+      "source": "postgres",
+      "repetition": 20,
+      "http_ms": 23.392579,
+      "backend_query_ms": 1.714719
+    },
+    {
+      "case": "ID_query",
+      "source": "redis",
+      "repetition": 20,
+      "http_ms": 76.172871,
+      "backend_query_ms": 0.515798
+    },
+    {
+      "case": "historico_200",
+      "source": "redis",
+      "repetition": 1,
+      "http_ms": 10.604379,
+      "backend_query_ms": 1.284993
+    },
+    {
+      "case": "historico_200",
+      "source": "postgres",
+      "repetition": 1,
+      "http_ms": 22.879873,
+      "backend_query_ms": 2.625946
+    },
+    {
+      "case": "historico_200",
+      "source": "postgres",
+      "repetition": 2,
+      "http_ms": 23.153107,
+      "backend_query_ms": 3.072111
+    },
+    {
+      "case": "historico_200",
+      "source": "redis",
+      "repetition": 2,
+      "http_ms": 10.849017,
+      "backend_query_ms": 1.292384
+    },
+    {
+      "case": "historico_200",
+      "source": "redis",
+      "repetition": 3,
+      "http_ms": 10.766648,
+      "backend_query_ms": 1.346005
+    },
+    {
+      "case": "historico_200",
+      "source": "postgres",
+      "repetition": 3,
+      "http_ms": 24.680401,
+      "backend_query_ms": 3.949489
+    },
+    {
+      "case": "historico_200",
+      "source": "postgres",
+      "repetition": 4,
+      "http_ms": 25.997417,
+      "backend_query_ms": 3.264465
+    },
+    {
+      "case": "historico_200",
+      "source": "redis",
+      "repetition": 4,
+      "http_ms": 11.531112,
+      "backend_query_ms": 1.411353
+    },
+    {
+      "case": "historico_200",
+      "source": "redis",
+      "repetition": 5,
+      "http_ms": 10.841952,
+      "backend_query_ms": 1.353624
+    },
+    {
+      "case": "historico_200",
+      "source": "postgres",
+      "repetition": 5,
+      "http_ms": 25.551258,
+      "backend_query_ms": 4.148126
+    },
+    {
+      "case": "historico_200",
+      "source": "postgres",
+      "repetition": 6,
+      "http_ms": 24.437728,
+      "backend_query_ms": 2.936218
+    },
+    {
+      "case": "historico_200",
+      "source": "redis",
+      "repetition": 6,
+      "http_ms": 10.581186,
+      "backend_query_ms": 1.378079
+    },
+    {
+      "case": "historico_200",
+      "source": "redis",
+      "repetition": 7,
+      "http_ms": 10.406884,
+      "backend_query_ms": 1.336564
+    },
+    {
+      "case": "historico_200",
+      "source": "postgres",
+      "repetition": 7,
+      "http_ms": 26.100983,
+      "backend_query_ms": 4.40025
+    },
+    {
+      "case": "historico_200",
+      "source": "postgres",
+      "repetition": 8,
+      "http_ms": 24.433172,
+      "backend_query_ms": 3.025506
+    },
+    {
+      "case": "historico_200",
+      "source": "redis",
+      "repetition": 8,
+      "http_ms": 11.20256,
+      "backend_query_ms": 1.293603
+    },
+    {
+      "case": "historico_200",
+      "source": "redis",
+      "repetition": 9,
+      "http_ms": 11.273073,
+      "backend_query_ms": 1.3264
+    },
+    {
+      "case": "historico_200",
+      "source": "postgres",
+      "repetition": 9,
+      "http_ms": 25.250521,
+      "backend_query_ms": 3.463952
+    },
+    {
+      "case": "historico_200",
+      "source": "postgres",
+      "repetition": 10,
+      "http_ms": 23.546837,
+      "backend_query_ms": 2.890874
+    },
+    {
+      "case": "historico_200",
+      "source": "redis",
+      "repetition": 10,
+      "http_ms": 10.720994,
+      "backend_query_ms": 1.312624
+    },
+    {
+      "case": "historico_200",
+      "source": "redis",
+      "repetition": 11,
+      "http_ms": 11.130554,
+      "backend_query_ms": 1.301499
+    },
+    {
+      "case": "historico_200",
+      "source": "postgres",
+      "repetition": 11,
+      "http_ms": 22.581715,
+      "backend_query_ms": 2.683516
+    },
+    {
+      "case": "historico_200",
+      "source": "postgres",
+      "repetition": 12,
+      "http_ms": 23.511532,
+      "backend_query_ms": 2.460944
+    },
+    {
+      "case": "historico_200",
+      "source": "redis",
+      "repetition": 12,
+      "http_ms": 11.508232,
+      "backend_query_ms": 1.279085
+    },
+    {
+      "case": "historico_200",
+      "source": "redis",
+      "repetition": 13,
+      "http_ms": 13.169575,
+      "backend_query_ms": 1.560003
+    },
+    {
+      "case": "historico_200",
+      "source": "postgres",
+      "repetition": 13,
+      "http_ms": 25.036745,
+      "backend_query_ms": 3.601702
+    },
+    {
+      "case": "historico_200",
+      "source": "postgres",
+      "repetition": 14,
+      "http_ms": 25.223793,
+      "backend_query_ms": 3.007512
+    },
+    {
+      "case": "historico_200",
+      "source": "redis",
+      "repetition": 14,
+      "http_ms": 11.875921,
+      "backend_query_ms": 1.545296
+    },
+    {
+      "case": "historico_200",
+      "source": "redis",
+      "repetition": 15,
+      "http_ms": 11.524353,
+      "backend_query_ms": 1.506306
+    },
+    {
+      "case": "historico_200",
+      "source": "postgres",
+      "repetition": 15,
+      "http_ms": 25.495329,
+      "backend_query_ms": 2.923625
+    },
+    {
+      "case": "historico_200",
+      "source": "postgres",
+      "repetition": 16,
+      "http_ms": 24.546483,
+      "backend_query_ms": 2.955809
+    },
+    {
+      "case": "historico_200",
+      "source": "redis",
+      "repetition": 16,
+      "http_ms": 10.581706,
+      "backend_query_ms": 1.233778
+    },
+    {
+      "case": "historico_200",
+      "source": "redis",
+      "repetition": 17,
+      "http_ms": 11.277955,
+      "backend_query_ms": 1.316242
+    },
+    {
+      "case": "historico_200",
+      "source": "postgres",
+      "repetition": 17,
+      "http_ms": 24.017566,
+      "backend_query_ms": 3.621282
+    },
+    {
+      "case": "historico_200",
+      "source": "postgres",
+      "repetition": 18,
+      "http_ms": 25.838575,
+      "backend_query_ms": 3.813749
+    },
+    {
+      "case": "historico_200",
+      "source": "redis",
+      "repetition": 18,
+      "http_ms": 12.610627,
+      "backend_query_ms": 1.349586
+    },
+    {
+      "case": "historico_200",
+      "source": "redis",
+      "repetition": 19,
+      "http_ms": 12.572401,
+      "backend_query_ms": 1.259852
+    },
+    {
+      "case": "historico_200",
+      "source": "postgres",
+      "repetition": 19,
+      "http_ms": 25.622276,
+      "backend_query_ms": 3.627577
+    },
+    {
+      "case": "historico_200",
+      "source": "postgres",
+      "repetition": 20,
+      "http_ms": 25.223996,
+      "backend_query_ms": 3.887836
+    },
+    {
+      "case": "historico_200",
+      "source": "redis",
+      "repetition": 20,
+      "http_ms": 11.209715,
+      "backend_query_ms": 1.326202
+    },
+    {
+      "case": "resumo_10000",
+      "source": "redis",
+      "repetition": 1,
+      "http_ms": 93.415991,
+      "backend_query_ms": 46.621982
+    },
+    {
+      "case": "resumo_10000",
+      "source": "postgres",
+      "repetition": 1,
+      "http_ms": 35.259902,
+      "backend_query_ms": 15.201444
+    },
+    {
+      "case": "resumo_10000",
+      "source": "postgres",
+      "repetition": 2,
+      "http_ms": 35.45205,
+      "backend_query_ms": 15.135672
+    },
+    {
+      "case": "resumo_10000",
+      "source": "redis",
+      "repetition": 2,
+      "http_ms": 84.271525,
+      "backend_query_ms": 41.385068
+    },
+    {
+      "case": "resumo_10000",
+      "source": "redis",
+      "repetition": 3,
+      "http_ms": 82.306203,
+      "backend_query_ms": 41.280802
+    },
+    {
+      "case": "resumo_10000",
+      "source": "postgres",
+      "repetition": 3,
+      "http_ms": 36.557112,
+      "backend_query_ms": 17.215645
+    },
+    {
+      "case": "resumo_10000",
+      "source": "postgres",
+      "repetition": 4,
+      "http_ms": 39.293397,
+      "backend_query_ms": 15.89977
+    },
+    {
+      "case": "resumo_10000",
+      "source": "redis",
+      "repetition": 4,
+      "http_ms": 92.554299,
+      "backend_query_ms": 46.331296
+    },
+    {
+      "case": "resumo_10000",
+      "source": "redis",
+      "repetition": 5,
+      "http_ms": 84.465868,
+      "backend_query_ms": 42.902049
+    },
+    {
+      "case": "resumo_10000",
+      "source": "postgres",
+      "repetition": 5,
+      "http_ms": 37.391612,
+      "backend_query_ms": 15.945922
+    },
+    {
+      "case": "resumo_10000",
+      "source": "postgres",
+      "repetition": 6,
+      "http_ms": 38.594727,
+      "backend_query_ms": 15.449909
+    },
+    {
+      "case": "resumo_10000",
+      "source": "redis",
+      "repetition": 6,
+      "http_ms": 87.808806,
+      "backend_query_ms": 42.171923
+    },
+    {
+      "case": "resumo_10000",
+      "source": "redis",
+      "repetition": 7,
+      "http_ms": 82.872183,
+      "backend_query_ms": 42.186186
+    },
+    {
+      "case": "resumo_10000",
+      "source": "postgres",
+      "repetition": 7,
+      "http_ms": 36.157247,
+      "backend_query_ms": 15.37206
+    },
+    {
+      "case": "resumo_10000",
+      "source": "postgres",
+      "repetition": 8,
+      "http_ms": 40.606974,
+      "backend_query_ms": 17.46485
+    },
+    {
+      "case": "resumo_10000",
+      "source": "redis",
+      "repetition": 8,
+      "http_ms": 86.876088,
+      "backend_query_ms": 40.966171
+    },
+    {
+      "case": "resumo_10000",
+      "source": "redis",
+      "repetition": 9,
+      "http_ms": 84.531485,
+      "backend_query_ms": 40.321143
+    },
+    {
+      "case": "resumo_10000",
+      "source": "postgres",
+      "repetition": 9,
+      "http_ms": 38.060945,
+      "backend_query_ms": 15.188403
+    },
+    {
+      "case": "resumo_10000",
+      "source": "postgres",
+      "repetition": 10,
+      "http_ms": 37.708391,
+      "backend_query_ms": 15.417712
+    },
+    {
+      "case": "resumo_10000",
+      "source": "redis",
+      "repetition": 10,
+      "http_ms": 80.50575,
+      "backend_query_ms": 37.738753
+    },
+    {
+      "case": "resumo_10000",
+      "source": "redis",
+      "repetition": 11,
+      "http_ms": 77.582292,
+      "backend_query_ms": 38.046979
+    },
+    {
+      "case": "resumo_10000",
+      "source": "postgres",
+      "repetition": 11,
+      "http_ms": 35.618023,
+      "backend_query_ms": 15.577977
+    },
+    {
+      "case": "resumo_10000",
+      "source": "postgres",
+      "repetition": 12,
+      "http_ms": 38.395857,
+      "backend_query_ms": 15.637964
+    },
+    {
+      "case": "resumo_10000",
+      "source": "redis",
+      "repetition": 12,
+      "http_ms": 87.148073,
+      "backend_query_ms": 42.229584
+    },
+    {
+      "case": "resumo_10000",
+      "source": "redis",
+      "repetition": 13,
+      "http_ms": 82.551996,
+      "backend_query_ms": 40.984599
+    },
+    {
+      "case": "resumo_10000",
+      "source": "postgres",
+      "repetition": 13,
+      "http_ms": 37.2983,
+      "backend_query_ms": 15.273267
+    },
+    {
+      "case": "resumo_10000",
+      "source": "postgres",
+      "repetition": 14,
+      "http_ms": 36.703045,
+      "backend_query_ms": 15.336072
+    },
+    {
+      "case": "resumo_10000",
+      "source": "redis",
+      "repetition": 14,
+      "http_ms": 85.012387,
+      "backend_query_ms": 42.601923
+    },
+    {
+      "case": "resumo_10000",
+      "source": "redis",
+      "repetition": 15,
+      "http_ms": 81.968677,
+      "backend_query_ms": 43.038541
+    },
+    {
+      "case": "resumo_10000",
+      "source": "postgres",
+      "repetition": 15,
+      "http_ms": 39.889339,
+      "backend_query_ms": 17.502087
+    },
+    {
+      "case": "resumo_10000",
+      "source": "postgres",
+      "repetition": 16,
+      "http_ms": 36.003333,
+      "backend_query_ms": 15.419413
+    },
+    {
+      "case": "resumo_10000",
+      "source": "redis",
+      "repetition": 16,
+      "http_ms": 87.47334,
+      "backend_query_ms": 42.543713
+    },
+    {
+      "case": "resumo_10000",
+      "source": "redis",
+      "repetition": 17,
+      "http_ms": 84.733528,
+      "backend_query_ms": 40.552729
+    },
+    {
+      "case": "resumo_10000",
+      "source": "postgres",
+      "repetition": 17,
+      "http_ms": 34.734044,
+      "backend_query_ms": 14.958839
+    },
+    {
+      "case": "resumo_10000",
+      "source": "postgres",
+      "repetition": 18,
+      "http_ms": 34.906353,
+      "backend_query_ms": 14.392765
+    },
+    {
+      "case": "resumo_10000",
+      "source": "redis",
+      "repetition": 18,
+      "http_ms": 106.43536,
+      "backend_query_ms": 41.908677
+    },
+    {
+      "case": "resumo_10000",
+      "source": "redis",
+      "repetition": 19,
+      "http_ms": 81.550024,
+      "backend_query_ms": 40.66063
+    },
+    {
+      "case": "resumo_10000",
+      "source": "postgres",
+      "repetition": 19,
+      "http_ms": 33.946811,
+      "backend_query_ms": 14.679693
+    },
+    {
+      "case": "resumo_10000",
+      "source": "postgres",
+      "repetition": 20,
+      "http_ms": 37.032866,
+      "backend_query_ms": 15.572273
+    },
+    {
+      "case": "resumo_10000",
+      "source": "redis",
+      "repetition": 20,
+      "http_ms": 86.454177,
+      "backend_query_ms": 44.492702
+    }
+  ]
+}

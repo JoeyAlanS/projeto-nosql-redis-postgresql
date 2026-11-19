@@ -1,5 +1,7 @@
 # Otimização Redis — atualização de 19/11/2026
 
+Complemento posterior: [diagnóstico de latência, correções no cliente e propostas de modelagem](DIAGNOSTICO_DESEMPENHO.md). Os ensaios 1M/5M abaixo correspondem à revisão `0d7a74a`; as fontes medidas estão arquivadas em `results/otimizacao/measured-source/`, e a auditoria confere seus hashes mesmo após novas alterações na aplicação.
+
 Esta revisão acrescenta variantes de consulta e mede seu efeito. Os resultados originais de novembro permanecem em `results/benchmark.json` e `results/escala/`; os novos ficam em `results/otimizacao/` e `results/escala/5000000/otimizacao/`. Não compare os tempos de execuções distintas como se fossem pares do mesmo ensaio.
 
 [Tabela das novas medições e interpretação](RESULTADOS_OTIMIZACAO.md).

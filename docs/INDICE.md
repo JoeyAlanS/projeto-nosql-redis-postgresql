@@ -2,6 +2,8 @@
 
 Atualização de 19/11: [Otimização Redis: estrutura, comandos, novos testes e limites](OTIMIZACAO_REDIS.md).
 
+[Diagnóstico de desempenho: por que Redis perde em algumas consultas e como remodelar](DIAGNOSTICO_DESEMPENHO.md).
+
 ## Usar e apresentar
 
 - [Engenharia reversa completa de Redis, consultas, testes e Dashboard](engenharia/ANALISE_TECNICA_COMPLETA.md), [PDF](../output/pdf/Analise_Tecnica_Completa_Redis_PostgreSQL.pdf) e [Word](../output/documentos/Analise_Tecnica_Completa_Redis_PostgreSQL.docx).

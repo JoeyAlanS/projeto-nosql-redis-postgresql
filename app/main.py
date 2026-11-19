@@ -52,13 +52,15 @@ def meta(source: Source = "postgres"):
 def run_query(source, operation, reading_id, sensor_id, start, end, limit, location, redis_mode='auto'):
     if end < start:
         raise HTTPException(422, "Fim deve ser maior ou igual ao início")
+    if operation == 'history' and not sensor_id:
+        raise HTTPException(422, "Selecione um sensor para consultar o histórico")
+    begin = time.perf_counter_ns()
     with store(source, redis_mode) as s:
+        connected = time.perf_counter_ns()
         # Conexão e seleção de sensores fora do trecho cronometrado em ambas as fontes.
-        ids = [sensor_id] if sensor_id else [row["id"] for row in s.sensors(location)]
-        if sensor_id and location and sensor_id not in [row["id"] for row in s.sensors(location)]:
+        ids = [sensor_id] if sensor_id else s.sensor_ids(location) if operation == 'summary' else []
+        if sensor_id and location and sensor_id not in s.sensor_ids(location):
             raise HTTPException(422, "Sensor não pertence ao local selecionado")
-        if operation == "history" and not sensor_id:
-            raise HTTPException(422, "Selecione um sensor para consultar o histórico")
         t = time.perf_counter_ns()
         if operation == "point":
             result = s.point(reading_id)
@@ -66,9 +68,15 @@ def run_query(source, operation, reading_id, sensor_id, start, end, limit, locat
             result = s.history(sensor_id, start, end, limit)
         else:
             result = s.summary(ids, start, end)
-        elapsed = (time.perf_counter_ns() - t) / 1e6
+        finished = time.perf_counter_ns()
+        elapsed = (finished - t) / 1e6
+    closed = time.perf_counter_ns()
     strategy = ('redis_optimized' if s.optimized else 'redis_baseline') if source == 'redis' else 'postgres_raw'
-    return {"source": source, "operation": operation, "strategy": strategy, "elapsed_ms": elapsed, "data": result}
+    return {"source": source, "operation": operation, "strategy": strategy, "elapsed_ms": elapsed,
+            'timings_ms': {'connection_and_strategy': (connected-begin)/1e6,
+                           'sensor_selection': (t-connected)/1e6, 'query': elapsed,
+                           'connection_close': (closed-finished)/1e6,
+                           'backend_total': (closed-begin)/1e6}, "data": result}
 
 
 @app.get("/api/query")

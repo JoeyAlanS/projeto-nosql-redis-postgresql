@@ -1,5 +1,7 @@
 # Novos resultados — otimização Redis (19/11/2026)
 
+Medições da revisão `0d7a74a`, anteriores ao parser compilado e à redução da seleção de sensores. [Diagnóstico e medições da revisão seguinte](DIAGNOSTICO_DESEMPENHO.md).
+
 Medições com um cliente, cache aquecido, 10 repetições e 2 aquecimentos por variante/operação. Tempos de cliente, incluindo execução, rede e desserialização, sem abertura da conexão e sem HTTP. A ordem das variantes foi rotacionada. Todos os resultados foram comparados campo a campo.
 
 | Massa | Consulta | PostgreSQL bruto (ms) | Redis original (ms) | Redis otimizado (ms) | PostgreSQL pré-agregado (ms) |

@@ -2,6 +2,7 @@
 PYTHON_GRAFICOS ?= .venv-graficos/bin/python
 .NOTPARALLEL: all check
 .PHONY: otimizar-redis benchmark-otimizado test-otimizacao timeseries graficos-otimizacao
+.PHONY: diagnostico
 otimizar-redis:
 	docker compose exec -T app python -m scripts.optimize_redis
 benchmark-otimizado:
@@ -12,6 +13,8 @@ timeseries:
 	docker compose exec -T app python -m scripts.experiment_timeseries
 graficos-otimizacao:
 	$(PYTHON_GRAFICOS) -m scripts.plot_optimized
+diagnostico:
+	docker compose exec -T app python -m scripts.diagnose_latency --output results/diagnostico/reproducao
 up:
 	docker compose up -d --build --wait
 load:

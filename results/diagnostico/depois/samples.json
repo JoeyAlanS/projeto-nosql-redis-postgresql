@@ -1,0 +1,6242 @@
+[
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 1,
+    "position": 1,
+    "elapsed_ms": 0.575091,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 1,
+    "position": 2,
+    "elapsed_ms": 0.249616,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 1,
+    "position": 3,
+    "elapsed_ms": 0.23284,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 2,
+    "position": 1,
+    "elapsed_ms": 0.192311,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 2,
+    "position": 2,
+    "elapsed_ms": 0.155358,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 2,
+    "position": 3,
+    "elapsed_ms": 0.798391,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 3,
+    "position": 1,
+    "elapsed_ms": 0.323743,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 3,
+    "position": 2,
+    "elapsed_ms": 0.480765,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 3,
+    "position": 3,
+    "elapsed_ms": 0.36347,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 4,
+    "position": 1,
+    "elapsed_ms": 0.463851,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 4,
+    "position": 2,
+    "elapsed_ms": 0.318044,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 4,
+    "position": 3,
+    "elapsed_ms": 0.227601,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 5,
+    "position": 1,
+    "elapsed_ms": 0.241142,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 5,
+    "position": 2,
+    "elapsed_ms": 0.212058,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 5,
+    "position": 3,
+    "elapsed_ms": 0.829635,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 6,
+    "position": 1,
+    "elapsed_ms": 0.482774,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 6,
+    "position": 2,
+    "elapsed_ms": 0.677786,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 6,
+    "position": 3,
+    "elapsed_ms": 0.481404,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 7,
+    "position": 1,
+    "elapsed_ms": 0.694898,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 7,
+    "position": 2,
+    "elapsed_ms": 0.462494,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 7,
+    "position": 3,
+    "elapsed_ms": 0.407475,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 8,
+    "position": 1,
+    "elapsed_ms": 0.235939,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 8,
+    "position": 2,
+    "elapsed_ms": 0.097861,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 8,
+    "position": 3,
+    "elapsed_ms": 0.354264,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 9,
+    "position": 1,
+    "elapsed_ms": 0.288314,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 9,
+    "position": 2,
+    "elapsed_ms": 0.410973,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 9,
+    "position": 3,
+    "elapsed_ms": 0.355284,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 10,
+    "position": 1,
+    "elapsed_ms": 0.38032,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 10,
+    "position": 2,
+    "elapsed_ms": 0.182618,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 10,
+    "position": 3,
+    "elapsed_ms": 0.085608,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 11,
+    "position": 1,
+    "elapsed_ms": 0.086804,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 11,
+    "position": 2,
+    "elapsed_ms": 0.060214,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 11,
+    "position": 3,
+    "elapsed_ms": 0.137854,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 12,
+    "position": 1,
+    "elapsed_ms": 0.071697,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 12,
+    "position": 2,
+    "elapsed_ms": 0.096137,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 12,
+    "position": 3,
+    "elapsed_ms": 0.093151,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 13,
+    "position": 1,
+    "elapsed_ms": 0.091973,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 13,
+    "position": 2,
+    "elapsed_ms": 0.099888,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 13,
+    "position": 3,
+    "elapsed_ms": 0.062221,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 14,
+    "position": 1,
+    "elapsed_ms": 0.078029,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 14,
+    "position": 2,
+    "elapsed_ms": 0.060977,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 14,
+    "position": 3,
+    "elapsed_ms": 0.118202,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 15,
+    "position": 1,
+    "elapsed_ms": 0.073153,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 15,
+    "position": 2,
+    "elapsed_ms": 0.110688,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 15,
+    "position": 3,
+    "elapsed_ms": 0.097796,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 16,
+    "position": 1,
+    "elapsed_ms": 0.110585,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 16,
+    "position": 2,
+    "elapsed_ms": 0.329688,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 16,
+    "position": 3,
+    "elapsed_ms": 0.082214,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 17,
+    "position": 1,
+    "elapsed_ms": 0.080384,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 17,
+    "position": 2,
+    "elapsed_ms": 0.056012,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 17,
+    "position": 3,
+    "elapsed_ms": 0.137344,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 18,
+    "position": 1,
+    "elapsed_ms": 0.064631,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 18,
+    "position": 2,
+    "elapsed_ms": 0.089724,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 18,
+    "position": 3,
+    "elapsed_ms": 0.087813,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 19,
+    "position": 1,
+    "elapsed_ms": 0.102827,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 19,
+    "position": 2,
+    "elapsed_ms": 0.089363,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 19,
+    "position": 3,
+    "elapsed_ms": 0.282083,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 20,
+    "position": 1,
+    "elapsed_ms": 0.338707,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 20,
+    "position": 2,
+    "elapsed_ms": 0.282713,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 20,
+    "position": 3,
+    "elapsed_ms": 0.441481,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 21,
+    "position": 1,
+    "elapsed_ms": 0.272316,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 21,
+    "position": 2,
+    "elapsed_ms": 0.427955,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 21,
+    "position": 3,
+    "elapsed_ms": 0.323802,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 22,
+    "position": 1,
+    "elapsed_ms": 0.414705,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 22,
+    "position": 2,
+    "elapsed_ms": 0.319544,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 22,
+    "position": 3,
+    "elapsed_ms": 0.193938,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 23,
+    "position": 1,
+    "elapsed_ms": 0.300333,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 23,
+    "position": 2,
+    "elapsed_ms": 0.193864,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 23,
+    "position": 3,
+    "elapsed_ms": 0.435887,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 24,
+    "position": 1,
+    "elapsed_ms": 0.272272,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 24,
+    "position": 2,
+    "elapsed_ms": 0.356265,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 24,
+    "position": 3,
+    "elapsed_ms": 0.638211,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 25,
+    "position": 1,
+    "elapsed_ms": 0.585016,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 25,
+    "position": 2,
+    "elapsed_ms": 0.499167,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 25,
+    "position": 3,
+    "elapsed_ms": 0.428675,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 26,
+    "position": 1,
+    "elapsed_ms": 0.458744,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 26,
+    "position": 2,
+    "elapsed_ms": 0.430275,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 26,
+    "position": 3,
+    "elapsed_ms": 0.513224,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 27,
+    "position": 1,
+    "elapsed_ms": 0.247076,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 27,
+    "position": 2,
+    "elapsed_ms": 0.3094,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 27,
+    "position": 3,
+    "elapsed_ms": 0.242711,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 28,
+    "position": 1,
+    "elapsed_ms": 0.168353,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 28,
+    "position": 2,
+    "elapsed_ms": 0.134791,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 28,
+    "position": 3,
+    "elapsed_ms": 0.30359,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 29,
+    "position": 1,
+    "elapsed_ms": 0.304636,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 29,
+    "position": 2,
+    "elapsed_ms": 0.111586,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 29,
+    "position": 3,
+    "elapsed_ms": 0.413947,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_hiredis",
+    "repetition": 30,
+    "position": 1,
+    "elapsed_ms": 0.395242,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "postgres",
+    "repetition": 30,
+    "position": 2,
+    "elapsed_ms": 0.28957,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q1_ID",
+    "variant": "redis_python",
+    "repetition": 30,
+    "position": 3,
+    "elapsed_ms": 0.336501,
+    "result_sha256": "4ba6db46b8a59c32c5c1e6582c9ec0f97c7463cdb8c2a6c32e9ceb3c5c29ae81"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 1,
+    "position": 1,
+    "elapsed_ms": 1.137518,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 1,
+    "position": 2,
+    "elapsed_ms": 1.375835,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 1,
+    "position": 3,
+    "elapsed_ms": 1.0155,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 2,
+    "position": 1,
+    "elapsed_ms": 1.258409,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 2,
+    "position": 2,
+    "elapsed_ms": 1.079574,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 2,
+    "position": 3,
+    "elapsed_ms": 1.641942,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 3,
+    "position": 1,
+    "elapsed_ms": 1.063099,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 3,
+    "position": 2,
+    "elapsed_ms": 1.090954,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 3,
+    "position": 3,
+    "elapsed_ms": 1.482585,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 4,
+    "position": 1,
+    "elapsed_ms": 1.091661,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 4,
+    "position": 2,
+    "elapsed_ms": 1.310674,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 4,
+    "position": 3,
+    "elapsed_ms": 1.024811,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 5,
+    "position": 1,
+    "elapsed_ms": 1.287702,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 5,
+    "position": 2,
+    "elapsed_ms": 1.043578,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 5,
+    "position": 3,
+    "elapsed_ms": 1.15716,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 6,
+    "position": 1,
+    "elapsed_ms": 1.392161,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 6,
+    "position": 2,
+    "elapsed_ms": 1.095563,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 6,
+    "position": 3,
+    "elapsed_ms": 1.496678,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 7,
+    "position": 1,
+    "elapsed_ms": 1.039163,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 7,
+    "position": 2,
+    "elapsed_ms": 1.317023,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 7,
+    "position": 3,
+    "elapsed_ms": 0.907997,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 8,
+    "position": 1,
+    "elapsed_ms": 1.674056,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 8,
+    "position": 2,
+    "elapsed_ms": 1.089917,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 8,
+    "position": 3,
+    "elapsed_ms": 0.968272,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 9,
+    "position": 1,
+    "elapsed_ms": 1.752142,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 9,
+    "position": 2,
+    "elapsed_ms": 1.129865,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 9,
+    "position": 3,
+    "elapsed_ms": 1.635542,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 10,
+    "position": 1,
+    "elapsed_ms": 0.938687,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 10,
+    "position": 2,
+    "elapsed_ms": 1.470113,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 10,
+    "position": 3,
+    "elapsed_ms": 1.063582,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 11,
+    "position": 1,
+    "elapsed_ms": 1.483039,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 11,
+    "position": 2,
+    "elapsed_ms": 1.146658,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 11,
+    "position": 3,
+    "elapsed_ms": 1.10965,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 12,
+    "position": 1,
+    "elapsed_ms": 1.351864,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 12,
+    "position": 2,
+    "elapsed_ms": 1.025936,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 12,
+    "position": 3,
+    "elapsed_ms": 1.466999,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 13,
+    "position": 1,
+    "elapsed_ms": 1.059803,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 13,
+    "position": 2,
+    "elapsed_ms": 1.472842,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 13,
+    "position": 3,
+    "elapsed_ms": 1.05967,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 14,
+    "position": 1,
+    "elapsed_ms": 1.449463,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 14,
+    "position": 2,
+    "elapsed_ms": 1.088271,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 14,
+    "position": 3,
+    "elapsed_ms": 0.933567,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 15,
+    "position": 1,
+    "elapsed_ms": 0.96562,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 15,
+    "position": 2,
+    "elapsed_ms": 0.956077,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 15,
+    "position": 3,
+    "elapsed_ms": 1.408628,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 16,
+    "position": 1,
+    "elapsed_ms": 0.939055,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 16,
+    "position": 2,
+    "elapsed_ms": 1.443235,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 16,
+    "position": 3,
+    "elapsed_ms": 0.970382,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 17,
+    "position": 1,
+    "elapsed_ms": 1.407244,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 17,
+    "position": 2,
+    "elapsed_ms": 0.991273,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 17,
+    "position": 3,
+    "elapsed_ms": 1.132447,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 18,
+    "position": 1,
+    "elapsed_ms": 2.017274,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 18,
+    "position": 2,
+    "elapsed_ms": 1.095691,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 18,
+    "position": 3,
+    "elapsed_ms": 1.992748,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 19,
+    "position": 1,
+    "elapsed_ms": 1.333,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 19,
+    "position": 2,
+    "elapsed_ms": 1.932926,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 19,
+    "position": 3,
+    "elapsed_ms": 1.483015,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 20,
+    "position": 1,
+    "elapsed_ms": 1.666301,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 20,
+    "position": 2,
+    "elapsed_ms": 1.179835,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 20,
+    "position": 3,
+    "elapsed_ms": 1.242294,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 21,
+    "position": 1,
+    "elapsed_ms": 1.493381,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 21,
+    "position": 2,
+    "elapsed_ms": 1.04599,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 21,
+    "position": 3,
+    "elapsed_ms": 1.597595,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 22,
+    "position": 1,
+    "elapsed_ms": 1.026427,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 22,
+    "position": 2,
+    "elapsed_ms": 1.561079,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 22,
+    "position": 3,
+    "elapsed_ms": 1.724191,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 23,
+    "position": 1,
+    "elapsed_ms": 2.09579,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 23,
+    "position": 2,
+    "elapsed_ms": 1.312327,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 23,
+    "position": 3,
+    "elapsed_ms": 1.085968,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 24,
+    "position": 1,
+    "elapsed_ms": 1.195872,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 24,
+    "position": 2,
+    "elapsed_ms": 0.897185,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 24,
+    "position": 3,
+    "elapsed_ms": 1.594789,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 25,
+    "position": 1,
+    "elapsed_ms": 0.969216,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 25,
+    "position": 2,
+    "elapsed_ms": 1.56256,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 25,
+    "position": 3,
+    "elapsed_ms": 1.36297,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 26,
+    "position": 1,
+    "elapsed_ms": 1.648053,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 26,
+    "position": 2,
+    "elapsed_ms": 1.173616,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 26,
+    "position": 3,
+    "elapsed_ms": 1.042451,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 27,
+    "position": 1,
+    "elapsed_ms": 1.101351,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 27,
+    "position": 2,
+    "elapsed_ms": 0.929353,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 27,
+    "position": 3,
+    "elapsed_ms": 1.712814,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 28,
+    "position": 1,
+    "elapsed_ms": 0.874851,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 28,
+    "position": 2,
+    "elapsed_ms": 1.615566,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 28,
+    "position": 3,
+    "elapsed_ms": 1.305576,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 29,
+    "position": 1,
+    "elapsed_ms": 1.617741,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 29,
+    "position": 2,
+    "elapsed_ms": 1.173993,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 29,
+    "position": 3,
+    "elapsed_ms": 0.939107,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_hiredis",
+    "repetition": 30,
+    "position": 1,
+    "elapsed_ms": 0.984472,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "postgres",
+    "repetition": 30,
+    "position": 2,
+    "elapsed_ms": 0.870548,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q2_200",
+    "variant": "redis_python",
+    "repetition": 30,
+    "position": 3,
+    "elapsed_ms": 1.451695,
+    "result_sha256": "492f62ac2815759c5bad0bc9c8fe93a30db202c5bdf89f725a4caf68874257c9"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 1,
+    "position": 1,
+    "elapsed_ms": 9.991329,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 1,
+    "position": 2,
+    "elapsed_ms": 46.720988,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 1,
+    "position": 3,
+    "elapsed_ms": 45.574443,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 1,
+    "position": 4,
+    "elapsed_ms": 19.474327,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 2,
+    "position": 1,
+    "elapsed_ms": 42.882029,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 2,
+    "position": 2,
+    "elapsed_ms": 44.631393,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 2,
+    "position": 3,
+    "elapsed_ms": 18.523748,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 2,
+    "position": 4,
+    "elapsed_ms": 8.951074,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 3,
+    "position": 1,
+    "elapsed_ms": 40.409314,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 3,
+    "position": 2,
+    "elapsed_ms": 16.582183,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 3,
+    "position": 3,
+    "elapsed_ms": 8.747661,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 3,
+    "position": 4,
+    "elapsed_ms": 37.062137,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 4,
+    "position": 1,
+    "elapsed_ms": 16.899059,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 4,
+    "position": 2,
+    "elapsed_ms": 9.582669,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 4,
+    "position": 3,
+    "elapsed_ms": 37.126443,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 4,
+    "position": 4,
+    "elapsed_ms": 39.474217,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 5,
+    "position": 1,
+    "elapsed_ms": 9.145556,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 5,
+    "position": 2,
+    "elapsed_ms": 41.439974,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 5,
+    "position": 3,
+    "elapsed_ms": 41.026252,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 5,
+    "position": 4,
+    "elapsed_ms": 16.318357,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 6,
+    "position": 1,
+    "elapsed_ms": 41.071989,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 6,
+    "position": 2,
+    "elapsed_ms": 46.867338,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 6,
+    "position": 3,
+    "elapsed_ms": 19.446114,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 6,
+    "position": 4,
+    "elapsed_ms": 10.037478,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 7,
+    "position": 1,
+    "elapsed_ms": 50.809531,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 7,
+    "position": 2,
+    "elapsed_ms": 18.967356,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 7,
+    "position": 3,
+    "elapsed_ms": 8.898667,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 7,
+    "position": 4,
+    "elapsed_ms": 44.069376,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 8,
+    "position": 1,
+    "elapsed_ms": 15.442829,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 8,
+    "position": 2,
+    "elapsed_ms": 9.87328,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 8,
+    "position": 3,
+    "elapsed_ms": 42.327517,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 8,
+    "position": 4,
+    "elapsed_ms": 43.90953,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 9,
+    "position": 1,
+    "elapsed_ms": 9.973604,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 9,
+    "position": 2,
+    "elapsed_ms": 46.236004,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 9,
+    "position": 3,
+    "elapsed_ms": 58.580799,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 9,
+    "position": 4,
+    "elapsed_ms": 19.018579,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 10,
+    "position": 1,
+    "elapsed_ms": 56.092572,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 10,
+    "position": 2,
+    "elapsed_ms": 45.20241,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 10,
+    "position": 3,
+    "elapsed_ms": 13.505397,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 10,
+    "position": 4,
+    "elapsed_ms": 8.883521,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 11,
+    "position": 1,
+    "elapsed_ms": 46.694135,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 11,
+    "position": 2,
+    "elapsed_ms": 12.372267,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 11,
+    "position": 3,
+    "elapsed_ms": 8.552944,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 11,
+    "position": 4,
+    "elapsed_ms": 42.998673,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 12,
+    "position": 1,
+    "elapsed_ms": 11.067821,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 12,
+    "position": 2,
+    "elapsed_ms": 7.358017,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 12,
+    "position": 3,
+    "elapsed_ms": 40.890335,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 12,
+    "position": 4,
+    "elapsed_ms": 38.658322,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 13,
+    "position": 1,
+    "elapsed_ms": 9.030084,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 13,
+    "position": 2,
+    "elapsed_ms": 36.314533,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 13,
+    "position": 3,
+    "elapsed_ms": 36.423939,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 13,
+    "position": 4,
+    "elapsed_ms": 10.988202,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 14,
+    "position": 1,
+    "elapsed_ms": 40.019585,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 14,
+    "position": 2,
+    "elapsed_ms": 37.998334,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 14,
+    "position": 3,
+    "elapsed_ms": 11.666359,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 14,
+    "position": 4,
+    "elapsed_ms": 8.281276,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 15,
+    "position": 1,
+    "elapsed_ms": 42.496044,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 15,
+    "position": 2,
+    "elapsed_ms": 12.050119,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 15,
+    "position": 3,
+    "elapsed_ms": 8.590439,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 15,
+    "position": 4,
+    "elapsed_ms": 42.24469,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 16,
+    "position": 1,
+    "elapsed_ms": 11.39184,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 16,
+    "position": 2,
+    "elapsed_ms": 7.816659,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 16,
+    "position": 3,
+    "elapsed_ms": 40.484223,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 16,
+    "position": 4,
+    "elapsed_ms": 41.528827,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 17,
+    "position": 1,
+    "elapsed_ms": 8.024468,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 17,
+    "position": 2,
+    "elapsed_ms": 43.937978,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 17,
+    "position": 3,
+    "elapsed_ms": 39.825407,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 17,
+    "position": 4,
+    "elapsed_ms": 11.581751,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 18,
+    "position": 1,
+    "elapsed_ms": 41.52502,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 18,
+    "position": 2,
+    "elapsed_ms": 41.119957,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 18,
+    "position": 3,
+    "elapsed_ms": 11.616931,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 18,
+    "position": 4,
+    "elapsed_ms": 7.273185,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 19,
+    "position": 1,
+    "elapsed_ms": 40.202161,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 19,
+    "position": 2,
+    "elapsed_ms": 11.332374,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 19,
+    "position": 3,
+    "elapsed_ms": 8.138774,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 19,
+    "position": 4,
+    "elapsed_ms": 40.662399,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 20,
+    "position": 1,
+    "elapsed_ms": 12.490897,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 20,
+    "position": 2,
+    "elapsed_ms": 8.259781,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 20,
+    "position": 3,
+    "elapsed_ms": 45.116868,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 20,
+    "position": 4,
+    "elapsed_ms": 43.985913,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 21,
+    "position": 1,
+    "elapsed_ms": 8.375938,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 21,
+    "position": 2,
+    "elapsed_ms": 43.444401,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 21,
+    "position": 3,
+    "elapsed_ms": 39.861131,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 21,
+    "position": 4,
+    "elapsed_ms": 13.561188,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 22,
+    "position": 1,
+    "elapsed_ms": 39.551075,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 22,
+    "position": 2,
+    "elapsed_ms": 40.521666,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 22,
+    "position": 3,
+    "elapsed_ms": 11.139565,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 22,
+    "position": 4,
+    "elapsed_ms": 7.497708,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 23,
+    "position": 1,
+    "elapsed_ms": 41.038054,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 23,
+    "position": 2,
+    "elapsed_ms": 11.203893,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 23,
+    "position": 3,
+    "elapsed_ms": 9.193436,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 23,
+    "position": 4,
+    "elapsed_ms": 43.410427,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 24,
+    "position": 1,
+    "elapsed_ms": 11.563102,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 24,
+    "position": 2,
+    "elapsed_ms": 7.517258,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 24,
+    "position": 3,
+    "elapsed_ms": 41.643272,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 24,
+    "position": 4,
+    "elapsed_ms": 41.913755,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 25,
+    "position": 1,
+    "elapsed_ms": 8.191505,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 25,
+    "position": 2,
+    "elapsed_ms": 42.950891,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 25,
+    "position": 3,
+    "elapsed_ms": 39.97268,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 25,
+    "position": 4,
+    "elapsed_ms": 11.753927,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 26,
+    "position": 1,
+    "elapsed_ms": 40.433683,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 26,
+    "position": 2,
+    "elapsed_ms": 42.494345,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 26,
+    "position": 3,
+    "elapsed_ms": 14.004269,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 26,
+    "position": 4,
+    "elapsed_ms": 9.358454,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 27,
+    "position": 1,
+    "elapsed_ms": 43.122608,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 27,
+    "position": 2,
+    "elapsed_ms": 12.671283,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 27,
+    "position": 3,
+    "elapsed_ms": 8.329059,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 27,
+    "position": 4,
+    "elapsed_ms": 46.792928,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 28,
+    "position": 1,
+    "elapsed_ms": 13.321301,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 28,
+    "position": 2,
+    "elapsed_ms": 8.230976,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 28,
+    "position": 3,
+    "elapsed_ms": 43.48635,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 28,
+    "position": 4,
+    "elapsed_ms": 40.392529,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 29,
+    "position": 1,
+    "elapsed_ms": 8.540364,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 29,
+    "position": 2,
+    "elapsed_ms": 41.30465,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 29,
+    "position": 3,
+    "elapsed_ms": 42.003353,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 29,
+    "position": 4,
+    "elapsed_ms": 12.570796,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_python",
+    "repetition": 30,
+    "position": 1,
+    "elapsed_ms": 44.877299,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "redis_hiredis",
+    "repetition": 30,
+    "position": 2,
+    "elapsed_ms": 45.125525,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres_preagregado",
+    "repetition": 30,
+    "position": 3,
+    "elapsed_ms": 14.235297,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_10000",
+    "variant": "postgres",
+    "repetition": 30,
+    "position": 4,
+    "elapsed_ms": 8.184215,
+    "result_sha256": "35b363dcf7105a7ea85a50ee07ae84a1d1304da3ec1056e8fc5ed2bea5954f31"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 1,
+    "position": 1,
+    "elapsed_ms": 236.430064,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 1,
+    "position": 2,
+    "elapsed_ms": 34.365388,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 1,
+    "position": 3,
+    "elapsed_ms": 34.599705,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 1,
+    "position": 4,
+    "elapsed_ms": 6.313043,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 2,
+    "position": 1,
+    "elapsed_ms": 36.907409,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 2,
+    "position": 2,
+    "elapsed_ms": 37.977054,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 2,
+    "position": 3,
+    "elapsed_ms": 6.206556,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 2,
+    "position": 4,
+    "elapsed_ms": 234.444791,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 3,
+    "position": 1,
+    "elapsed_ms": 34.007248,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 3,
+    "position": 2,
+    "elapsed_ms": 6.608557,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 3,
+    "position": 3,
+    "elapsed_ms": 233.597986,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 3,
+    "position": 4,
+    "elapsed_ms": 35.108063,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 4,
+    "position": 1,
+    "elapsed_ms": 5.869921,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 4,
+    "position": 2,
+    "elapsed_ms": 234.600429,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 4,
+    "position": 3,
+    "elapsed_ms": 34.944048,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 4,
+    "position": 4,
+    "elapsed_ms": 36.047202,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 5,
+    "position": 1,
+    "elapsed_ms": 255.334374,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 5,
+    "position": 2,
+    "elapsed_ms": 36.384562,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 5,
+    "position": 3,
+    "elapsed_ms": 35.887019,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 5,
+    "position": 4,
+    "elapsed_ms": 6.430802,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 6,
+    "position": 1,
+    "elapsed_ms": 36.328077,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 6,
+    "position": 2,
+    "elapsed_ms": 37.661825,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 6,
+    "position": 3,
+    "elapsed_ms": 9.097105,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 6,
+    "position": 4,
+    "elapsed_ms": 259.760931,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 7,
+    "position": 1,
+    "elapsed_ms": 36.27643,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 7,
+    "position": 2,
+    "elapsed_ms": 6.547021,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 7,
+    "position": 3,
+    "elapsed_ms": 238.992881,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 7,
+    "position": 4,
+    "elapsed_ms": 38.605191,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 8,
+    "position": 1,
+    "elapsed_ms": 6.818323,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 8,
+    "position": 2,
+    "elapsed_ms": 272.222252,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 8,
+    "position": 3,
+    "elapsed_ms": 41.394309,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 8,
+    "position": 4,
+    "elapsed_ms": 38.600934,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 9,
+    "position": 1,
+    "elapsed_ms": 243.019378,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 9,
+    "position": 2,
+    "elapsed_ms": 38.832837,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 9,
+    "position": 3,
+    "elapsed_ms": 39.973081,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 9,
+    "position": 4,
+    "elapsed_ms": 6.891028,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 10,
+    "position": 1,
+    "elapsed_ms": 38.673381,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 10,
+    "position": 2,
+    "elapsed_ms": 44.31332,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 10,
+    "position": 3,
+    "elapsed_ms": 8.188876,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 10,
+    "position": 4,
+    "elapsed_ms": 251.972935,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 11,
+    "position": 1,
+    "elapsed_ms": 39.338134,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 11,
+    "position": 2,
+    "elapsed_ms": 8.454513,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 11,
+    "position": 3,
+    "elapsed_ms": 240.787799,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 11,
+    "position": 4,
+    "elapsed_ms": 36.286078,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 12,
+    "position": 1,
+    "elapsed_ms": 6.961328,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 12,
+    "position": 2,
+    "elapsed_ms": 235.510279,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 12,
+    "position": 3,
+    "elapsed_ms": 36.470478,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 12,
+    "position": 4,
+    "elapsed_ms": 37.044137,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 13,
+    "position": 1,
+    "elapsed_ms": 245.297542,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 13,
+    "position": 2,
+    "elapsed_ms": 38.640965,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 13,
+    "position": 3,
+    "elapsed_ms": 37.250717,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 13,
+    "position": 4,
+    "elapsed_ms": 7.421684,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 14,
+    "position": 1,
+    "elapsed_ms": 37.148108,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 14,
+    "position": 2,
+    "elapsed_ms": 39.702483,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 14,
+    "position": 3,
+    "elapsed_ms": 7.388955,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 14,
+    "position": 4,
+    "elapsed_ms": 252.192244,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 15,
+    "position": 1,
+    "elapsed_ms": 36.124259,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 15,
+    "position": 2,
+    "elapsed_ms": 6.392635,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 15,
+    "position": 3,
+    "elapsed_ms": 255.850412,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 15,
+    "position": 4,
+    "elapsed_ms": 37.197779,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 16,
+    "position": 1,
+    "elapsed_ms": 6.894529,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 16,
+    "position": 2,
+    "elapsed_ms": 249.710995,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 16,
+    "position": 3,
+    "elapsed_ms": 36.494239,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 16,
+    "position": 4,
+    "elapsed_ms": 34.40612,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 17,
+    "position": 1,
+    "elapsed_ms": 269.570382,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 17,
+    "position": 2,
+    "elapsed_ms": 37.042166,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 17,
+    "position": 3,
+    "elapsed_ms": 35.458789,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 17,
+    "position": 4,
+    "elapsed_ms": 6.034403,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 18,
+    "position": 1,
+    "elapsed_ms": 35.840511,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 18,
+    "position": 2,
+    "elapsed_ms": 36.638034,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 18,
+    "position": 3,
+    "elapsed_ms": 6.696135,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 18,
+    "position": 4,
+    "elapsed_ms": 257.248576,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 19,
+    "position": 1,
+    "elapsed_ms": 41.179079,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 19,
+    "position": 2,
+    "elapsed_ms": 7.75068,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 19,
+    "position": 3,
+    "elapsed_ms": 261.244007,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 19,
+    "position": 4,
+    "elapsed_ms": 37.163107,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 20,
+    "position": 1,
+    "elapsed_ms": 5.923607,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 20,
+    "position": 2,
+    "elapsed_ms": 258.966848,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 20,
+    "position": 3,
+    "elapsed_ms": 45.067845,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 20,
+    "position": 4,
+    "elapsed_ms": 39.631384,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 21,
+    "position": 1,
+    "elapsed_ms": 272.89472,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 21,
+    "position": 2,
+    "elapsed_ms": 47.452751,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 21,
+    "position": 3,
+    "elapsed_ms": 51.541248,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 21,
+    "position": 4,
+    "elapsed_ms": 8.629577,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 22,
+    "position": 1,
+    "elapsed_ms": 44.766313,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 22,
+    "position": 2,
+    "elapsed_ms": 39.883158,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 22,
+    "position": 3,
+    "elapsed_ms": 8.334123,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 22,
+    "position": 4,
+    "elapsed_ms": 307.891821,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 23,
+    "position": 1,
+    "elapsed_ms": 44.554351,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 23,
+    "position": 2,
+    "elapsed_ms": 6.920923,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 23,
+    "position": 3,
+    "elapsed_ms": 252.159097,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 23,
+    "position": 4,
+    "elapsed_ms": 35.943705,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 24,
+    "position": 1,
+    "elapsed_ms": 6.016398,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 24,
+    "position": 2,
+    "elapsed_ms": 230.483039,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 24,
+    "position": 3,
+    "elapsed_ms": 36.801552,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 24,
+    "position": 4,
+    "elapsed_ms": 38.661611,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 25,
+    "position": 1,
+    "elapsed_ms": 274.752199,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 25,
+    "position": 2,
+    "elapsed_ms": 38.508061,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 25,
+    "position": 3,
+    "elapsed_ms": 39.037147,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 25,
+    "position": 4,
+    "elapsed_ms": 6.764122,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 26,
+    "position": 1,
+    "elapsed_ms": 39.166256,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 26,
+    "position": 2,
+    "elapsed_ms": 37.697019,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 26,
+    "position": 3,
+    "elapsed_ms": 6.56227,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 26,
+    "position": 4,
+    "elapsed_ms": 246.011794,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 27,
+    "position": 1,
+    "elapsed_ms": 37.506723,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 27,
+    "position": 2,
+    "elapsed_ms": 8.191849,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 27,
+    "position": 3,
+    "elapsed_ms": 248.386557,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 27,
+    "position": 4,
+    "elapsed_ms": 38.582964,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 28,
+    "position": 1,
+    "elapsed_ms": 6.479268,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 28,
+    "position": 2,
+    "elapsed_ms": 254.620668,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 28,
+    "position": 3,
+    "elapsed_ms": 36.071237,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 28,
+    "position": 4,
+    "elapsed_ms": 38.123046,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 29,
+    "position": 1,
+    "elapsed_ms": 262.515068,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 29,
+    "position": 2,
+    "elapsed_ms": 37.930998,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 29,
+    "position": 3,
+    "elapsed_ms": 36.467116,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 29,
+    "position": 4,
+    "elapsed_ms": 8.119954,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_python",
+    "repetition": 30,
+    "position": 1,
+    "elapsed_ms": 38.784655,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "redis_hiredis",
+    "repetition": 30,
+    "position": 2,
+    "elapsed_ms": 36.905119,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres_preagregado",
+    "repetition": 30,
+    "position": 3,
+    "elapsed_ms": 8.270228,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_total",
+    "variant": "postgres",
+    "repetition": 30,
+    "position": 4,
+    "elapsed_ms": 259.522513,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 1,
+    "position": 1,
+    "elapsed_ms": 0.982697,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 1,
+    "position": 2,
+    "elapsed_ms": 0.595975,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 1,
+    "position": 3,
+    "elapsed_ms": 0.389634,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 1,
+    "position": 4,
+    "elapsed_ms": 0.957094,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 2,
+    "position": 1,
+    "elapsed_ms": 0.571508,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 2,
+    "position": 2,
+    "elapsed_ms": 0.414055,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 2,
+    "position": 3,
+    "elapsed_ms": 0.901446,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 2,
+    "position": 4,
+    "elapsed_ms": 0.984503,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 3,
+    "position": 1,
+    "elapsed_ms": 0.582904,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 3,
+    "position": 2,
+    "elapsed_ms": 0.665235,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 3,
+    "position": 3,
+    "elapsed_ms": 0.678084,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 3,
+    "position": 4,
+    "elapsed_ms": 0.576373,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 4,
+    "position": 1,
+    "elapsed_ms": 0.651194,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 4,
+    "position": 2,
+    "elapsed_ms": 0.658547,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 4,
+    "position": 3,
+    "elapsed_ms": 0.438777,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 4,
+    "position": 4,
+    "elapsed_ms": 0.315533,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 5,
+    "position": 1,
+    "elapsed_ms": 0.618809,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 5,
+    "position": 2,
+    "elapsed_ms": 0.395248,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 5,
+    "position": 3,
+    "elapsed_ms": 0.395083,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 5,
+    "position": 4,
+    "elapsed_ms": 0.843047,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 6,
+    "position": 1,
+    "elapsed_ms": 0.411255,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 6,
+    "position": 2,
+    "elapsed_ms": 0.160832,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 6,
+    "position": 3,
+    "elapsed_ms": 0.486788,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 6,
+    "position": 4,
+    "elapsed_ms": 0.641924,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 7,
+    "position": 1,
+    "elapsed_ms": 0.467914,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 7,
+    "position": 2,
+    "elapsed_ms": 0.639832,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 7,
+    "position": 3,
+    "elapsed_ms": 0.629694,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 7,
+    "position": 4,
+    "elapsed_ms": 0.707007,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 8,
+    "position": 1,
+    "elapsed_ms": 0.903314,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 8,
+    "position": 2,
+    "elapsed_ms": 1.015501,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 8,
+    "position": 3,
+    "elapsed_ms": 0.711039,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 8,
+    "position": 4,
+    "elapsed_ms": 0.734379,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 9,
+    "position": 1,
+    "elapsed_ms": 1.189245,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 9,
+    "position": 2,
+    "elapsed_ms": 0.546194,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 9,
+    "position": 3,
+    "elapsed_ms": 0.458566,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 9,
+    "position": 4,
+    "elapsed_ms": 0.987914,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 10,
+    "position": 1,
+    "elapsed_ms": 0.603148,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 10,
+    "position": 2,
+    "elapsed_ms": 0.217332,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 10,
+    "position": 3,
+    "elapsed_ms": 0.929516,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 10,
+    "position": 4,
+    "elapsed_ms": 1.088862,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 11,
+    "position": 1,
+    "elapsed_ms": 0.545092,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 11,
+    "position": 2,
+    "elapsed_ms": 0.755917,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 11,
+    "position": 3,
+    "elapsed_ms": 0.922125,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 11,
+    "position": 4,
+    "elapsed_ms": 0.441791,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 12,
+    "position": 1,
+    "elapsed_ms": 0.68919,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 12,
+    "position": 2,
+    "elapsed_ms": 1.047571,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 12,
+    "position": 3,
+    "elapsed_ms": 0.592733,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 12,
+    "position": 4,
+    "elapsed_ms": 0.442005,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 13,
+    "position": 1,
+    "elapsed_ms": 0.969947,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 13,
+    "position": 2,
+    "elapsed_ms": 0.458847,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 13,
+    "position": 3,
+    "elapsed_ms": 0.52202,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 13,
+    "position": 4,
+    "elapsed_ms": 0.799775,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 14,
+    "position": 1,
+    "elapsed_ms": 0.530867,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 14,
+    "position": 2,
+    "elapsed_ms": 0.54419,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 14,
+    "position": 3,
+    "elapsed_ms": 1.105276,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 14,
+    "position": 4,
+    "elapsed_ms": 0.764164,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 15,
+    "position": 1,
+    "elapsed_ms": 0.509426,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 15,
+    "position": 2,
+    "elapsed_ms": 0.778402,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 15,
+    "position": 3,
+    "elapsed_ms": 0.964491,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 15,
+    "position": 4,
+    "elapsed_ms": 0.644131,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 16,
+    "position": 1,
+    "elapsed_ms": 0.737813,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 16,
+    "position": 2,
+    "elapsed_ms": 0.864436,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 16,
+    "position": 3,
+    "elapsed_ms": 0.530205,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 16,
+    "position": 4,
+    "elapsed_ms": 0.48735,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 17,
+    "position": 1,
+    "elapsed_ms": 0.995458,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 17,
+    "position": 2,
+    "elapsed_ms": 0.487991,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 17,
+    "position": 3,
+    "elapsed_ms": 0.452443,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 17,
+    "position": 4,
+    "elapsed_ms": 0.650594,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 18,
+    "position": 1,
+    "elapsed_ms": 0.758763,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 18,
+    "position": 2,
+    "elapsed_ms": 0.330393,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 18,
+    "position": 3,
+    "elapsed_ms": 0.658253,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 18,
+    "position": 4,
+    "elapsed_ms": 1.05031,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 19,
+    "position": 1,
+    "elapsed_ms": 0.421289,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 19,
+    "position": 2,
+    "elapsed_ms": 0.666412,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 19,
+    "position": 3,
+    "elapsed_ms": 1.025714,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 19,
+    "position": 4,
+    "elapsed_ms": 0.536582,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 20,
+    "position": 1,
+    "elapsed_ms": 0.890914,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 20,
+    "position": 2,
+    "elapsed_ms": 0.800151,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 20,
+    "position": 3,
+    "elapsed_ms": 0.542528,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 20,
+    "position": 4,
+    "elapsed_ms": 0.519992,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 21,
+    "position": 1,
+    "elapsed_ms": 1.363576,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 21,
+    "position": 2,
+    "elapsed_ms": 0.47263,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 21,
+    "position": 3,
+    "elapsed_ms": 0.409565,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 21,
+    "position": 4,
+    "elapsed_ms": 0.862557,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 22,
+    "position": 1,
+    "elapsed_ms": 0.378371,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 22,
+    "position": 2,
+    "elapsed_ms": 0.284381,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 22,
+    "position": 3,
+    "elapsed_ms": 0.846323,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 22,
+    "position": 4,
+    "elapsed_ms": 1.043738,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 23,
+    "position": 1,
+    "elapsed_ms": 0.390957,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 23,
+    "position": 2,
+    "elapsed_ms": 0.38875,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 23,
+    "position": 3,
+    "elapsed_ms": 0.760761,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 23,
+    "position": 4,
+    "elapsed_ms": 0.550708,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 24,
+    "position": 1,
+    "elapsed_ms": 0.838221,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 24,
+    "position": 2,
+    "elapsed_ms": 0.817949,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 24,
+    "position": 3,
+    "elapsed_ms": 0.594884,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 24,
+    "position": 4,
+    "elapsed_ms": 0.505979,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 25,
+    "position": 1,
+    "elapsed_ms": 0.807802,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 25,
+    "position": 2,
+    "elapsed_ms": 0.605368,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 25,
+    "position": 3,
+    "elapsed_ms": 0.534858,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 25,
+    "position": 4,
+    "elapsed_ms": 0.941073,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 26,
+    "position": 1,
+    "elapsed_ms": 0.615382,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 26,
+    "position": 2,
+    "elapsed_ms": 0.401452,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 26,
+    "position": 3,
+    "elapsed_ms": 0.819897,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 26,
+    "position": 4,
+    "elapsed_ms": 0.922897,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 27,
+    "position": 1,
+    "elapsed_ms": 0.494663,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 27,
+    "position": 2,
+    "elapsed_ms": 0.757133,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 27,
+    "position": 3,
+    "elapsed_ms": 1.074265,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 27,
+    "position": 4,
+    "elapsed_ms": 0.65294,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 28,
+    "position": 1,
+    "elapsed_ms": 0.792872,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 28,
+    "position": 2,
+    "elapsed_ms": 0.823171,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 28,
+    "position": 3,
+    "elapsed_ms": 0.587943,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 28,
+    "position": 4,
+    "elapsed_ms": 0.41466,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 29,
+    "position": 1,
+    "elapsed_ms": 0.969911,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 29,
+    "position": 2,
+    "elapsed_ms": 0.654422,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 29,
+    "position": 3,
+    "elapsed_ms": 0.384645,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 29,
+    "position": 4,
+    "elapsed_ms": 0.756805,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_python",
+    "repetition": 30,
+    "position": 1,
+    "elapsed_ms": 0.50729,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "redis_hiredis",
+    "repetition": 30,
+    "position": 2,
+    "elapsed_ms": 0.605366,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres_preagregado",
+    "repetition": 30,
+    "position": 3,
+    "elapsed_ms": 0.792002,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "Q3_sensor",
+    "variant": "postgres",
+    "repetition": 30,
+    "position": 4,
+    "elapsed_ms": 1.035144,
+    "result_sha256": "65dd2ba5cf6efada2623c71815a5093410d2026db02844726fe15a0528038c0f"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 1,
+    "position": 1,
+    "elapsed_ms": 3.340238,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 1,
+    "position": 2,
+    "elapsed_ms": 55.738861,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 1,
+    "position": 3,
+    "elapsed_ms": 16.504577,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 2,
+    "position": 1,
+    "elapsed_ms": 35.277718,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 2,
+    "position": 2,
+    "elapsed_ms": 18.447642,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 2,
+    "position": 3,
+    "elapsed_ms": 2.775703,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 3,
+    "position": 1,
+    "elapsed_ms": 18.223849,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 3,
+    "position": 2,
+    "elapsed_ms": 3.042264,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 3,
+    "position": 3,
+    "elapsed_ms": 42.812961,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 4,
+    "position": 1,
+    "elapsed_ms": 4.169065,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 4,
+    "position": 2,
+    "elapsed_ms": 39.303461,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 4,
+    "position": 3,
+    "elapsed_ms": 19.691002,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 5,
+    "position": 1,
+    "elapsed_ms": 39.396276,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 5,
+    "position": 2,
+    "elapsed_ms": 16.719814,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 5,
+    "position": 3,
+    "elapsed_ms": 3.449847,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 6,
+    "position": 1,
+    "elapsed_ms": 17.66515,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 6,
+    "position": 2,
+    "elapsed_ms": 3.109068,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 6,
+    "position": 3,
+    "elapsed_ms": 37.16976,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 7,
+    "position": 1,
+    "elapsed_ms": 2.564222,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 7,
+    "position": 2,
+    "elapsed_ms": 31.710196,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 7,
+    "position": 3,
+    "elapsed_ms": 14.411593,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 8,
+    "position": 1,
+    "elapsed_ms": 32.994662,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 8,
+    "position": 2,
+    "elapsed_ms": 15.237369,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 8,
+    "position": 3,
+    "elapsed_ms": 2.434232,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 9,
+    "position": 1,
+    "elapsed_ms": 14.003987,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 9,
+    "position": 2,
+    "elapsed_ms": 2.687932,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 9,
+    "position": 3,
+    "elapsed_ms": 33.694088,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 10,
+    "position": 1,
+    "elapsed_ms": 2.442668,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 10,
+    "position": 2,
+    "elapsed_ms": 31.245507,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 10,
+    "position": 3,
+    "elapsed_ms": 17.739386,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 11,
+    "position": 1,
+    "elapsed_ms": 34.118804,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 11,
+    "position": 2,
+    "elapsed_ms": 14.67306,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 11,
+    "position": 3,
+    "elapsed_ms": 2.722525,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 12,
+    "position": 1,
+    "elapsed_ms": 20.792017,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 12,
+    "position": 2,
+    "elapsed_ms": 3.622187,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 12,
+    "position": 3,
+    "elapsed_ms": 34.845508,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 13,
+    "position": 1,
+    "elapsed_ms": 2.913474,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 13,
+    "position": 2,
+    "elapsed_ms": 49.050547,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 13,
+    "position": 3,
+    "elapsed_ms": 22.455163,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 14,
+    "position": 1,
+    "elapsed_ms": 44.329448,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 14,
+    "position": 2,
+    "elapsed_ms": 20.010192,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 14,
+    "position": 3,
+    "elapsed_ms": 2.770202,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 15,
+    "position": 1,
+    "elapsed_ms": 15.111003,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 15,
+    "position": 2,
+    "elapsed_ms": 2.706282,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 15,
+    "position": 3,
+    "elapsed_ms": 33.275231,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 16,
+    "position": 1,
+    "elapsed_ms": 2.526011,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 16,
+    "position": 2,
+    "elapsed_ms": 34.049277,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 16,
+    "position": 3,
+    "elapsed_ms": 17.426587,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 17,
+    "position": 1,
+    "elapsed_ms": 35.894278,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 17,
+    "position": 2,
+    "elapsed_ms": 15.107562,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 17,
+    "position": 3,
+    "elapsed_ms": 2.691616,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 18,
+    "position": 1,
+    "elapsed_ms": 15.853634,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 18,
+    "position": 2,
+    "elapsed_ms": 2.485793,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 18,
+    "position": 3,
+    "elapsed_ms": 36.656906,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 19,
+    "position": 1,
+    "elapsed_ms": 3.204812,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 19,
+    "position": 2,
+    "elapsed_ms": 35.687801,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 19,
+    "position": 3,
+    "elapsed_ms": 15.659628,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 20,
+    "position": 1,
+    "elapsed_ms": 35.441063,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 20,
+    "position": 2,
+    "elapsed_ms": 14.936215,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 20,
+    "position": 3,
+    "elapsed_ms": 2.669987,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 21,
+    "position": 1,
+    "elapsed_ms": 14.698296,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 21,
+    "position": 2,
+    "elapsed_ms": 2.974541,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 21,
+    "position": 3,
+    "elapsed_ms": 38.544076,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 22,
+    "position": 1,
+    "elapsed_ms": 3.018582,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 22,
+    "position": 2,
+    "elapsed_ms": 36.311372,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 22,
+    "position": 3,
+    "elapsed_ms": 18.96428,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 23,
+    "position": 1,
+    "elapsed_ms": 42.844981,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 23,
+    "position": 2,
+    "elapsed_ms": 26.296654,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 23,
+    "position": 3,
+    "elapsed_ms": 4.233114,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 24,
+    "position": 1,
+    "elapsed_ms": 21.171446,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 24,
+    "position": 2,
+    "elapsed_ms": 3.990677,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 24,
+    "position": 3,
+    "elapsed_ms": 50.216638,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 25,
+    "position": 1,
+    "elapsed_ms": 14.942189,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 25,
+    "position": 2,
+    "elapsed_ms": 35.092501,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 25,
+    "position": 3,
+    "elapsed_ms": 15.302425,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 26,
+    "position": 1,
+    "elapsed_ms": 34.281597,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 26,
+    "position": 2,
+    "elapsed_ms": 14.929373,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 26,
+    "position": 3,
+    "elapsed_ms": 2.672436,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 27,
+    "position": 1,
+    "elapsed_ms": 16.763971,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 27,
+    "position": 2,
+    "elapsed_ms": 2.700236,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 27,
+    "position": 3,
+    "elapsed_ms": 34.587917,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 28,
+    "position": 1,
+    "elapsed_ms": 3.02729,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 28,
+    "position": 2,
+    "elapsed_ms": 36.7705,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 28,
+    "position": 3,
+    "elapsed_ms": 14.858876,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 29,
+    "position": 1,
+    "elapsed_ms": 35.612603,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 29,
+    "position": 2,
+    "elapsed_ms": 17.031318,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 29,
+    "position": 3,
+    "elapsed_ms": 4.171697,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_hiredis",
+    "repetition": 30,
+    "position": 1,
+    "elapsed_ms": 19.69991,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "postgres",
+    "repetition": 30,
+    "position": 2,
+    "elapsed_ms": 3.363724,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_sensores",
+    "variant": "redis_python",
+    "repetition": 30,
+    "position": 3,
+    "elapsed_ms": 40.034317,
+    "result_sha256": "5bbd2f4229cb535f1b104397f93ed0804cd841776caf118bcdb5266e6a6720e5"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 1,
+    "position": 1,
+    "elapsed_ms": 3.056115,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 1,
+    "position": 2,
+    "elapsed_ms": 4.571346,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 1,
+    "position": 3,
+    "elapsed_ms": 1.66991,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 2,
+    "position": 1,
+    "elapsed_ms": 3.780503,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 2,
+    "position": 2,
+    "elapsed_ms": 1.356766,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 2,
+    "position": 3,
+    "elapsed_ms": 2.759825,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 3,
+    "position": 1,
+    "elapsed_ms": 1.172033,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 3,
+    "position": 2,
+    "elapsed_ms": 2.745964,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 3,
+    "position": 3,
+    "elapsed_ms": 3.156626,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 4,
+    "position": 1,
+    "elapsed_ms": 2.245785,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 4,
+    "position": 2,
+    "elapsed_ms": 3.079311,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 4,
+    "position": 3,
+    "elapsed_ms": 1.276124,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 5,
+    "position": 1,
+    "elapsed_ms": 3.123747,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 5,
+    "position": 2,
+    "elapsed_ms": 1.192829,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 5,
+    "position": 3,
+    "elapsed_ms": 2.226596,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 6,
+    "position": 1,
+    "elapsed_ms": 1.133934,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 6,
+    "position": 2,
+    "elapsed_ms": 2.129828,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 6,
+    "position": 3,
+    "elapsed_ms": 3.078004,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 7,
+    "position": 1,
+    "elapsed_ms": 1.97546,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 7,
+    "position": 2,
+    "elapsed_ms": 3.00259,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 7,
+    "position": 3,
+    "elapsed_ms": 1.115288,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 8,
+    "position": 1,
+    "elapsed_ms": 3.153106,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 8,
+    "position": 2,
+    "elapsed_ms": 1.170963,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 8,
+    "position": 3,
+    "elapsed_ms": 2.168498,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 9,
+    "position": 1,
+    "elapsed_ms": 1.139641,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 9,
+    "position": 2,
+    "elapsed_ms": 1.873158,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 9,
+    "position": 3,
+    "elapsed_ms": 3.169911,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 10,
+    "position": 1,
+    "elapsed_ms": 2.226555,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 10,
+    "position": 2,
+    "elapsed_ms": 3.420169,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 10,
+    "position": 3,
+    "elapsed_ms": 1.598731,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 11,
+    "position": 1,
+    "elapsed_ms": 4.002116,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 11,
+    "position": 2,
+    "elapsed_ms": 1.268659,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 11,
+    "position": 3,
+    "elapsed_ms": 2.06966,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 12,
+    "position": 1,
+    "elapsed_ms": 1.265001,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 12,
+    "position": 2,
+    "elapsed_ms": 3.069116,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 12,
+    "position": 3,
+    "elapsed_ms": 3.783419,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 13,
+    "position": 1,
+    "elapsed_ms": 2.477915,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 13,
+    "position": 2,
+    "elapsed_ms": 3.651732,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 13,
+    "position": 3,
+    "elapsed_ms": 1.290789,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 14,
+    "position": 1,
+    "elapsed_ms": 3.002343,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 14,
+    "position": 2,
+    "elapsed_ms": 1.438982,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 14,
+    "position": 3,
+    "elapsed_ms": 2.419118,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 15,
+    "position": 1,
+    "elapsed_ms": 1.443598,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 15,
+    "position": 2,
+    "elapsed_ms": 2.633707,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 15,
+    "position": 3,
+    "elapsed_ms": 3.35181,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 16,
+    "position": 1,
+    "elapsed_ms": 2.002974,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 16,
+    "position": 2,
+    "elapsed_ms": 3.542868,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 16,
+    "position": 3,
+    "elapsed_ms": 1.267196,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 17,
+    "position": 1,
+    "elapsed_ms": 3.053964,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 17,
+    "position": 2,
+    "elapsed_ms": 1.31295,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 17,
+    "position": 3,
+    "elapsed_ms": 1.848765,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 18,
+    "position": 1,
+    "elapsed_ms": 1.204116,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 18,
+    "position": 2,
+    "elapsed_ms": 2.33851,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 18,
+    "position": 3,
+    "elapsed_ms": 3.658001,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 19,
+    "position": 1,
+    "elapsed_ms": 2.126961,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 19,
+    "position": 2,
+    "elapsed_ms": 3.129291,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 19,
+    "position": 3,
+    "elapsed_ms": 1.085772,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 20,
+    "position": 1,
+    "elapsed_ms": 3.113103,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 20,
+    "position": 2,
+    "elapsed_ms": 1.267422,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 20,
+    "position": 3,
+    "elapsed_ms": 2.256646,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 21,
+    "position": 1,
+    "elapsed_ms": 1.179814,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 21,
+    "position": 2,
+    "elapsed_ms": 2.040618,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 21,
+    "position": 3,
+    "elapsed_ms": 2.84294,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 22,
+    "position": 1,
+    "elapsed_ms": 1.943105,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 22,
+    "position": 2,
+    "elapsed_ms": 2.969009,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 22,
+    "position": 3,
+    "elapsed_ms": 1.168301,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 23,
+    "position": 1,
+    "elapsed_ms": 2.88718,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 23,
+    "position": 2,
+    "elapsed_ms": 1.147023,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 23,
+    "position": 3,
+    "elapsed_ms": 2.205965,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 24,
+    "position": 1,
+    "elapsed_ms": 1.192881,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 24,
+    "position": 2,
+    "elapsed_ms": 2.414319,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 24,
+    "position": 3,
+    "elapsed_ms": 3.228008,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 25,
+    "position": 1,
+    "elapsed_ms": 1.807023,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 25,
+    "position": 2,
+    "elapsed_ms": 3.645279,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 25,
+    "position": 3,
+    "elapsed_ms": 1.334986,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 26,
+    "position": 1,
+    "elapsed_ms": 3.381574,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 26,
+    "position": 2,
+    "elapsed_ms": 1.170046,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 26,
+    "position": 3,
+    "elapsed_ms": 2.341044,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 27,
+    "position": 1,
+    "elapsed_ms": 1.199824,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 27,
+    "position": 2,
+    "elapsed_ms": 2.275424,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 27,
+    "position": 3,
+    "elapsed_ms": 3.597066,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 28,
+    "position": 1,
+    "elapsed_ms": 2.311883,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 28,
+    "position": 2,
+    "elapsed_ms": 3.3547,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 28,
+    "position": 3,
+    "elapsed_ms": 1.18716,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 29,
+    "position": 1,
+    "elapsed_ms": 3.27367,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 29,
+    "position": 2,
+    "elapsed_ms": 1.246649,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 29,
+    "position": 3,
+    "elapsed_ms": 1.978508,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_hiredis",
+    "repetition": 30,
+    "position": 1,
+    "elapsed_ms": 1.29425,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "postgres",
+    "repetition": 30,
+    "position": 2,
+    "elapsed_ms": 2.21599,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "selecao_somente_ids",
+    "variant": "redis_python",
+    "repetition": 30,
+    "position": 3,
+    "elapsed_ms": 3.452916,
+    "result_sha256": "e90d78fefd723cd59b1e88bc162b03ca112227a7b417fb3e053bbef96284befd"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 1,
+    "position": 1,
+    "elapsed_ms": 0.398754,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 1,
+    "position": 2,
+    "elapsed_ms": 0.423028,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 2,
+    "position": 1,
+    "elapsed_ms": 0.207496,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 2,
+    "position": 2,
+    "elapsed_ms": 0.379688,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 3,
+    "position": 1,
+    "elapsed_ms": 0.75581,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 3,
+    "position": 2,
+    "elapsed_ms": 0.363479,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 4,
+    "position": 1,
+    "elapsed_ms": 0.295109,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 4,
+    "position": 2,
+    "elapsed_ms": 0.477954,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 5,
+    "position": 1,
+    "elapsed_ms": 0.422855,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 5,
+    "position": 2,
+    "elapsed_ms": 0.276264,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 6,
+    "position": 1,
+    "elapsed_ms": 0.249976,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 6,
+    "position": 2,
+    "elapsed_ms": 0.346429,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 7,
+    "position": 1,
+    "elapsed_ms": 0.372547,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 7,
+    "position": 2,
+    "elapsed_ms": 0.319113,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 8,
+    "position": 1,
+    "elapsed_ms": 0.291072,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 8,
+    "position": 2,
+    "elapsed_ms": 0.42106,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 9,
+    "position": 1,
+    "elapsed_ms": 0.205451,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 9,
+    "position": 2,
+    "elapsed_ms": 0.28081,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 10,
+    "position": 1,
+    "elapsed_ms": 0.239995,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 10,
+    "position": 2,
+    "elapsed_ms": 0.408727,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 11,
+    "position": 1,
+    "elapsed_ms": 0.50813,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 11,
+    "position": 2,
+    "elapsed_ms": 0.348255,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 12,
+    "position": 1,
+    "elapsed_ms": 0.357021,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 12,
+    "position": 2,
+    "elapsed_ms": 0.456649,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 13,
+    "position": 1,
+    "elapsed_ms": 0.297761,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 13,
+    "position": 2,
+    "elapsed_ms": 0.361032,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 14,
+    "position": 1,
+    "elapsed_ms": 0.328085,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 14,
+    "position": 2,
+    "elapsed_ms": 0.503006,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 15,
+    "position": 1,
+    "elapsed_ms": 0.392437,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 15,
+    "position": 2,
+    "elapsed_ms": 0.323757,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 16,
+    "position": 1,
+    "elapsed_ms": 0.380455,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 16,
+    "position": 2,
+    "elapsed_ms": 0.439012,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 17,
+    "position": 1,
+    "elapsed_ms": 0.564751,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 17,
+    "position": 2,
+    "elapsed_ms": 0.321372,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 18,
+    "position": 1,
+    "elapsed_ms": 0.187659,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 18,
+    "position": 2,
+    "elapsed_ms": 0.411901,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 19,
+    "position": 1,
+    "elapsed_ms": 0.258912,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 19,
+    "position": 2,
+    "elapsed_ms": 0.374962,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 20,
+    "position": 1,
+    "elapsed_ms": 0.387183,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 20,
+    "position": 2,
+    "elapsed_ms": 0.538279,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 21,
+    "position": 1,
+    "elapsed_ms": 0.422208,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 21,
+    "position": 2,
+    "elapsed_ms": 0.308804,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 22,
+    "position": 1,
+    "elapsed_ms": 0.292596,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 22,
+    "position": 2,
+    "elapsed_ms": 0.498528,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 23,
+    "position": 1,
+    "elapsed_ms": 0.541866,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 23,
+    "position": 2,
+    "elapsed_ms": 0.311806,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 24,
+    "position": 1,
+    "elapsed_ms": 0.425016,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 24,
+    "position": 2,
+    "elapsed_ms": 0.503894,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 25,
+    "position": 1,
+    "elapsed_ms": 0.317868,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 25,
+    "position": 2,
+    "elapsed_ms": 0.2262,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 26,
+    "position": 1,
+    "elapsed_ms": 0.116816,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 26,
+    "position": 2,
+    "elapsed_ms": 0.35064,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 27,
+    "position": 1,
+    "elapsed_ms": 0.402225,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 27,
+    "position": 2,
+    "elapsed_ms": 0.362,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 28,
+    "position": 1,
+    "elapsed_ms": 0.318719,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 28,
+    "position": 2,
+    "elapsed_ms": 0.55303,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 29,
+    "position": 1,
+    "elapsed_ms": 0.500233,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 29,
+    "position": 2,
+    "elapsed_ms": 0.320604,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "redis_hiredis",
+    "repetition": 30,
+    "position": 1,
+    "elapsed_ms": 0.33211,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  },
+  {
+    "case": "resposta_pronta",
+    "variant": "postgres",
+    "repetition": 30,
+    "position": 2,
+    "elapsed_ms": 0.388223,
+    "result_sha256": "7689e6c3ac369cbdb07f7d8103f87d3b809f26ce62540608509c0c7a603c5945"
+  }
+]

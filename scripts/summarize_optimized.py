@@ -7,11 +7,14 @@ import statistics
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
+MEASURED_REVISION='0d7a74adea48f06aecbac78a09dc880677ddd89c'
 
 
 def main():
     paths=[ROOT/'results/otimizacao/benchmark.json',ROOT/'results/escala/5000000/otimizacao/benchmark.json']
     lines=['# Novos resultados — otimização Redis (19/11/2026)','',
+           'Medições da revisão `0d7a74a`, anteriores ao parser compilado e à redução da seleção de sensores. '
+           '[Diagnóstico e medições da revisão seguinte](DIAGNOSTICO_DESEMPENHO.md).','',
            'Medições com um cliente, cache aquecido, 10 repetições e 2 aquecimentos por variante/operação. '
            'Tempos de cliente, incluindo execução, rede e desserialização, sem abertura da conexão e sem HTTP. '
            'A ordem das variantes foi rotacionada. Todos os resultados foram comparados campo a campo.','',
@@ -59,9 +62,13 @@ def main():
                   'Estrutura, scripts, comandos e limites: [guia da otimização](OTIMIZACAO_REDIS.md).',''])
     (ROOT/'docs/RESULTADOS_OTIMIZACAO.md').write_text('\n'.join(lines))
     receipt={'scenarios':audited,'samples_total':sum(r['samples'] for r in audited),
-             'source_files_match_measured':all(all(hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==digest
+             'source_revision':MEASURED_REVISION,
+             'source_files_match_measured_revision':all(all(hashlib.sha256(
+                 (ROOT/'results/otimizacao/measured-source'/name).read_bytes()).hexdigest()==digest
+                for name,digest in json.loads(p.read_text())['code_sha256'].items()) for p in paths),
+             'working_tree_matches_measured':all(all(hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==digest
                 for name,digest in json.loads(p.read_text())['code_sha256'].items()) for p in paths)}
-    assert receipt['source_files_match_measured']
+    assert receipt['source_files_match_measured_revision']
     (ROOT/'results/otimizacao/audit.json').write_text(json.dumps(receipt,indent=2)+'\n')
     print(json.dumps(receipt,indent=2))
 

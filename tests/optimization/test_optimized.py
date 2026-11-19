@@ -5,6 +5,7 @@ import unittest
 import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
+from unittest.mock import patch
 
 from app.store import Busy, Conflict, PostgresStore, RedisStore, pg_connect, redis_connect
 from app.redis_optimized import PREFIX, STATE
@@ -33,6 +34,21 @@ class OptimizedContracts(unittest.TestCase):
 
     def row(self,i,**kwargs):
         return dict(id=self.ids[i],sensor_id=1,ts=self.start+i*300,temperature_centi=2000+i*100,humidity_centi=4000,**kwargs)
+
+    def test_id_selection_matches_metadata_for_all_location_filters(self):
+        for location in (None, 'Laboratório', '', 'Local inexistente'):
+            for store in (self.sql, self.fast):
+                self.assertEqual(store.sensor_ids(location),[r['id'] for r in store.sensors(location)])
+
+    def test_point_query_does_not_enumerate_sensors_and_reports_phases(self):
+        from app.main import run_query
+        for source, cls in [('postgres',PostgresStore),('redis',RedisStore)]:
+            with patch.object(cls,'sensor_ids',side_effect=AssertionError('Seleção desnecessária')):
+                value=run_query(source,'point',500001,None,1,4102444800,200,None)
+            self.assertEqual(value['data']['id'],500001)
+            phases=value['timings_ms']
+            self.assertGreaterEqual(phases['backend_total'],phases['query'])
+            self.assertEqual(value['elapsed_ms'],phases['query'])
 
     def create(self,row):
         self.sql.create(row); self.fast.create(row)

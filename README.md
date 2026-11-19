@@ -8,6 +8,8 @@ O [relatório completo](output/pdf/Relatorio_Completo_Projeto_3.pdf) reúne os p
 
 ## Otimização Redis — 19/11/2026
 
+O [diagnóstico de desempenho](docs/DIAGNOSTICO_DESEMPENHO.md) identifica o custo de Lua, dos filtros e do cliente Python. A aplicação usa `hiredis`, seleciona somente os IDs necessários e mostra as fases do tempo no console. Reproduza com `make diagnostico`. Esses ensaios usam a base principal de 1M; os ensaios anteriores de 1M/5M continuam identificados pela revisão medida.
+
 O histórico agora pode usar um sorted set com registros completos; o resumo usa agregados diários mantidos pelo CRUD. Ative com `make otimizar-redis` após `make up`. A dashboard permite escolher original ou otimizado e mostra os novos ensaios em **http://localhost:8000/#optimization**.
 
 Consulte o [guia de otimização, comandos e limites](docs/OTIMIZACAO_REDIS.md) e os [novos resultados medidos](docs/RESULTADOS_OTIMIZACAO.md). Os documentos e PDFs revisados em 18/11 descrevem a versão anterior; esta atualização é seu complemento técnico, com medições separadas. O experimento também inclui PostgreSQL pré-agregado e uma prova RedisTimeSeries de 10 mil registros.
@@ -61,7 +63,7 @@ Os serviços ficam acessíveis apenas no localhost: dashboard 8000, PostgreSQL 5
 
 `make check` executa 31 testes (11 de integração, 12 de JavaScript, 3 dos exemplos Redis e 5 das ferramentas de carga) e a auditoria dos resultados. Requer os serviços ativos, Node 20+ para os testes do frontend e as bases equivalentes, sem uma divergência de demonstração em andamento. Node não é necessário para usar a dashboard.
 
-`make test-otimizacao` acrescenta 8 testes nos bancos reais, após construir os índices, totalizando 39 testes.
+`make test-otimizacao` acrescenta 10 testes nos bancos reais, após construir os índices, totalizando 41 testes.
 
 `make verify` compara integralmente os dados e índices com o CSV original. `make package` recompõe o ZIP local e seu manifesto. Dados volumosos, ambientes virtuais, caches, credenciais locais e ZIPs gerados ficam fora do Git; os resultados e arquivos finais versionados são evidências do trabalho.
 

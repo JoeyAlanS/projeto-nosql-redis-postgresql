@@ -1,0 +1,16 @@
+{
+  "verified_at": "2026-11-19T17:10:58.834003+00:00",
+  "postgres_records": 1000000,
+  "redis_hashes": 1000000,
+  "redis_summary": {
+    "count": 1000000,
+    "sensors": 1000,
+    "temperature_sum": 2999503000,
+    "humidity_sum": 5496155000,
+    "alerts": 356430,
+    "minimum": 2300,
+    "maximum": 3699
+  },
+  "parser": "_HiredisParser",
+  "temporary_keys_removed": true
+}

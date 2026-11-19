@@ -1,0 +1,16 @@
+docker compose exec -T app python -m unittest discover -s tests/optimization -v
+test_api_strategy_selector_and_unavailable_optimization (test_optimized.OptimizedContracts.test_api_strategy_selector_and_unavailable_optimization) ... ok
+test_building_blocks_writes_before_mutation (test_optimized.OptimizedContracts.test_building_blocks_writes_before_mutation) ... ok
+test_concurrent_writers_keep_hash_and_rollups_equivalent (test_optimized.OptimizedContracts.test_concurrent_writers_keep_hash_and_rollups_equivalent) ... ok
+test_conflicting_update_does_not_change_derived_indexes (test_optimized.OptimizedContracts.test_conflicting_update_does_not_change_derived_indexes) ... ok
+test_create_update_move_delete_extremes_and_empty_bucket (test_optimized.OptimizedContracts.test_create_update_move_delete_extremes_and_empty_bucket) ... ok
+test_full_index_keeps_large_id_exact (test_optimized.OptimizedContracts.test_full_index_keeps_large_id_exact) ... ok
+test_id_selection_matches_metadata_for_all_location_filters (test_optimized.OptimizedContracts.test_id_selection_matches_metadata_for_all_location_filters) ... ok
+test_inclusive_partial_midnight_empty_and_materialized (test_optimized.OptimizedContracts.test_inclusive_partial_midnight_empty_and_materialized) ... ok
+test_point_query_does_not_enumerate_sensors_and_reports_phases (test_optimized.OptimizedContracts.test_point_query_does_not_enumerate_sensors_and_reports_phases) ... ok
+test_random_updates_and_deletes_match_sql (test_optimized.OptimizedContracts.test_random_updates_and_deletes_match_sql) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 2.285s
+
+OK

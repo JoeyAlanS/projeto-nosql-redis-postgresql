@@ -1,0 +1,19 @@
+{
+  "direct_measurements": [
+    {
+      "path": "results/diagnostico",
+      "samples": 690,
+      "responses_equal": true,
+      "medians_recomputed": true
+    },
+    {
+      "path": "results/diagnostico/depois",
+      "samples": 780,
+      "responses_equal": true,
+      "medians_recomputed": true
+    }
+  ],
+  "http_samples": 320,
+  "source_hashes_match_current": true,
+  "http_medians_recomputed": true
+}

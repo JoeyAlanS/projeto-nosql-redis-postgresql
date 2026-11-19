@@ -1,0 +1,350 @@
+{
+  "executed_at": "2026-11-19T17:07:09.610888+00:00",
+  "records": 1000000,
+  "dataset_sha256": "519f2a3fceac765890289c51876e3be1980ff8c03d9f74d9768beb84a264369f",
+  "repetitions": 30,
+  "warmup": 3,
+  "measurement": "Cliente Python, conexões reutilizadas, ordem rotativa, respostas iguais, sem HTTP",
+  "results": {
+    "Q1_ID": {
+      "postgres": {
+        "median_ms": 0.3956465,
+        "min_ms": 0.089724,
+        "max_ms": 0.829635,
+        "samples": 30
+      },
+      "redis_python": {
+        "median_ms": 0.2749745,
+        "min_ms": 0.078029,
+        "max_ms": 0.638211,
+        "samples": 30
+      },
+      "redis_hiredis": {
+        "median_ms": 0.2198295,
+        "min_ms": 0.056012,
+        "max_ms": 0.482774,
+        "samples": 30
+      }
+    },
+    "Q2_200": {
+      "postgres": {
+        "median_ms": 1.0442205,
+        "min_ms": 0.870548,
+        "max_ms": 1.641942,
+        "samples": 30
+      },
+      "redis_python": {
+        "median_ms": 1.4898585,
+        "min_ms": 1.258409,
+        "max_ms": 2.09579,
+        "samples": 30
+      },
+      "redis_hiredis": {
+        "median_ms": 1.1240044999999999,
+        "min_ms": 0.907997,
+        "max_ms": 2.017274,
+        "samples": 30
+      }
+    },
+    "Q3_10000": {
+      "postgres": {
+        "median_ms": 8.546654,
+        "min_ms": 7.273185,
+        "max_ms": 10.037478,
+        "samples": 30
+      },
+      "redis_python": {
+        "median_ms": 42.286103499999996,
+        "min_ms": 36.314533,
+        "max_ms": 56.092572,
+        "samples": 30
+      },
+      "redis_hiredis": {
+        "median_ms": 41.721291,
+        "min_ms": 36.423939,
+        "max_ms": 58.580799,
+        "samples": 30
+      },
+      "postgres_preagregado": {
+        "median_ms": 12.6210395,
+        "min_ms": 10.988202,
+        "max_ms": 19.474327,
+        "samples": 30
+      }
+    },
+    "Q3_total": {
+      "postgres": {
+        "median_ms": 252.1756705,
+        "min_ms": 230.483039,
+        "max_ms": 307.891821,
+        "samples": 30
+      },
+      "redis_python": {
+        "median_ms": 37.1556075,
+        "min_ms": 34.365388,
+        "max_ms": 47.452751,
+        "samples": 30
+      },
+      "redis_hiredis": {
+        "median_ms": 37.679422,
+        "min_ms": 34.007248,
+        "max_ms": 51.541248,
+        "samples": 30
+      },
+      "postgres_preagregado": {
+        "median_ms": 6.854675500000001,
+        "min_ms": 5.869921,
+        "max_ms": 9.097105,
+        "samples": 30
+      }
+    },
+    "Q3_sensor": {
+      "postgres": {
+        "median_ms": 0.967201,
+        "min_ms": 0.618809,
+        "max_ms": 1.363576,
+        "samples": 30
+      },
+      "redis_python": {
+        "median_ms": 0.5611079999999999,
+        "min_ms": 0.378371,
+        "max_ms": 0.758763,
+        "samples": 30
+      },
+      "redis_hiredis": {
+        "median_ms": 0.44722399999999995,
+        "min_ms": 0.160832,
+        "max_ms": 0.734379,
+        "samples": 30
+      },
+      "postgres_preagregado": {
+        "median_ms": 0.7924370000000001,
+        "min_ms": 0.38875,
+        "max_ms": 1.105276,
+        "samples": 30
+      }
+    },
+    "selecao_sensores": {
+      "postgres": {
+        "median_ms": 2.9440074999999997,
+        "min_ms": 2.434232,
+        "max_ms": 14.942189,
+        "samples": 30
+      },
+      "redis_python": {
+        "median_ms": 35.7910395,
+        "min_ms": 31.245507,
+        "max_ms": 55.738861,
+        "samples": 30
+      },
+      "redis_hiredis": {
+        "median_ms": 16.7418925,
+        "min_ms": 14.003987,
+        "max_ms": 26.296654,
+        "samples": 30
+      }
+    },
+    "selecao_somente_ids": {
+      "postgres": {
+        "median_ms": 2.2265755,
+        "min_ms": 1.807023,
+        "max_ms": 3.069116,
+        "samples": 30
+      },
+      "redis_python": {
+        "median_ms": 3.250839,
+        "min_ms": 2.84294,
+        "max_ms": 4.571346,
+        "samples": 30
+      },
+      "redis_hiredis": {
+        "median_ms": 1.2253824999999998,
+        "min_ms": 1.085772,
+        "max_ms": 1.66991,
+        "samples": 30
+      }
+    },
+    "resposta_pronta": {
+      "postgres": {
+        "median_ms": 0.421634,
+        "min_ms": 0.205451,
+        "max_ms": 0.75581,
+        "samples": 30
+      },
+      "redis_hiredis": {
+        "median_ms": 0.3198585,
+        "min_ms": 0.116816,
+        "max_ms": 0.425016,
+        "samples": 30
+      }
+    }
+  },
+  "command_profiles": {
+    "Q1_ID": {
+      "hgetall": {
+        "calls_per_query": 1.0,
+        "server_ms_per_query": 0.0058000000000000005
+      }
+    },
+    "Q2_200": {
+      "zrange": {
+        "calls_per_query": 1.0,
+        "server_ms_per_query": 0.0264
+      }
+    },
+    "Q3_10000": {
+      "zrange": {
+        "calls_per_query": 2000.0,
+        "server_ms_per_query": 3.0748
+      },
+      "evalsha": {
+        "calls_per_query": 1.0,
+        "server_ms_per_query": 39.766000000000005
+      },
+      "hmget": {
+        "calls_per_query": 1000.0,
+        "server_ms_per_query": 2.154
+      }
+    },
+    "Q3_total": {
+      "zrange": {
+        "calls_per_query": 1000.0,
+        "server_ms_per_query": 1.6092
+      },
+      "evalsha": {
+        "calls_per_query": 1.0,
+        "server_ms_per_query": 36.0202
+      },
+      "hmget": {
+        "calls_per_query": 4000.0,
+        "server_ms_per_query": 7.8578
+      }
+    },
+    "Q3_sensor": {
+      "zrange": {
+        "calls_per_query": 1.0,
+        "server_ms_per_query": 0.008400000000000001
+      },
+      "evalsha": {
+        "calls_per_query": 1.0,
+        "server_ms_per_query": 0.0844
+      },
+      "hmget": {
+        "calls_per_query": 4.0,
+        "server_ms_per_query": 0.0126
+      }
+    },
+    "selecao_sensores": {
+      "smembers": {
+        "calls_per_query": 1.0,
+        "server_ms_per_query": 0.08159999999999999
+      },
+      "hgetall": {
+        "calls_per_query": 1000.0,
+        "server_ms_per_query": 0.968
+      }
+    }
+  },
+  "plans": {
+    "Q2": [
+      {
+        "Plan": {
+          "Node Type": "Limit",
+          "Parallel Aware": false,
+          "Async Capable": false,
+          "Startup Cost": 0.42,
+          "Total Cost": 14.55,
+          "Plan Rows": 200,
+          "Plan Width": 28,
+          "Actual Startup Time": 0.032,
+          "Actual Total Time": 0.119,
+          "Actual Rows": 200,
+          "Actual Loops": 1,
+          "Shared Hit Blocks": 6,
+          "Shared Read Blocks": 0,
+          "Shared Dirtied Blocks": 0,
+          "Shared Written Blocks": 0,
+          "Local Hit Blocks": 0,
+          "Local Read Blocks": 0,
+          "Local Dirtied Blocks": 0,
+          "Local Written Blocks": 0,
+          "Temp Read Blocks": 0,
+          "Temp Written Blocks": 0,
+          "Plans": [
+            {
+              "Node Type": "Index Only Scan",
+              "Parent Relationship": "Outer",
+              "Parallel Aware": false,
+              "Async Capable": false,
+              "Scan Direction": "Backward",
+              "Index Name": "readings_sensor_ts_idx",
+              "Relation Name": "readings",
+              "Alias": "readings",
+              "Startup Cost": 0.42,
+              "Total Cost": 70.86,
+              "Plan Rows": 997,
+              "Plan Width": 28,
+              "Actual Startup Time": 0.03,
+              "Actual Total Time": 0.09,
+              "Actual Rows": 200,
+              "Actual Loops": 1,
+              "Index Cond": "((sensor_id = 501) AND (ts >= 1793491200) AND (ts <= 1793790900))",
+              "Rows Removed by Index Recheck": 0,
+              "Heap Fetches": 0,
+              "Shared Hit Blocks": 6,
+              "Shared Read Blocks": 0,
+              "Shared Dirtied Blocks": 0,
+              "Shared Written Blocks": 0,
+              "Local Hit Blocks": 0,
+              "Local Read Blocks": 0,
+              "Local Dirtied Blocks": 0,
+              "Local Written Blocks": 0,
+              "Temp Read Blocks": 0,
+              "Temp Written Blocks": 0
+            }
+          ]
+        },
+        "Planning": {
+          "Shared Hit Blocks": 9,
+          "Shared Read Blocks": 0,
+          "Shared Dirtied Blocks": 0,
+          "Shared Written Blocks": 0,
+          "Local Hit Blocks": 0,
+          "Local Read Blocks": 0,
+          "Local Dirtied Blocks": 0,
+          "Local Written Blocks": 0,
+          "Temp Read Blocks": 0,
+          "Temp Written Blocks": 0
+        },
+        "Planning Time": 0.274,
+        "Triggers": [],
+        "Execution Time": 0.161
+      }
+    ]
+  },
+  "environment": {
+    "redis_version": "8.10.3",
+    "used_memory_human": "332.82M",
+    "evicted_keys": 0,
+    "blocked_clients": 0
+  },
+  "redis_config": {
+    "appendfsync": "everysec",
+    "io-threads": "1"
+  },
+  "versions": {
+    "redis_py": "5.2.1",
+    "hiredis": "3.5.0"
+  },
+  "code_sha256": {
+    "app/store.py": "ae6901369e79d35d060a7fac20031c268444cf1b1ae3ad7d2b5a0884acd50d0c",
+    "app/redis_optimized.py": "1d97d380dbf8c4b8a5765164256e6314a496ff21bf4e4a785c72a51b20cf6a58",
+    "app/postgres_rollup.py": "9fc8c894197857085522814cb23e3b69de1131125000fc813088ea0e74c0fbea"
+  },
+  "limitations": [
+    "Diagnóstico atual somente com a base principal de 1 milhão.",
+    "INFO mede tempo interno acumulado, não rede, parser ou HTTP; EVALSHA inclui comandos internos.",
+    "Resposta pronta é protótipo estático e temporário em ambos; não implementa invalidação/CRUD.",
+    "Máquina compartilhada; medianas não são garantia geral de desempenho."
+  ]
+}

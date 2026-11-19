@@ -14,5 +14,7 @@
     }
   ],
   "samples_total": 200,
-  "source_files_match_measured": true
+  "source_revision": "0d7a74adea48f06aecbac78a09dc880677ddd89c",
+  "source_files_match_measured_revision": true,
+  "working_tree_matches_measured": false
 }

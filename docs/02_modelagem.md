@@ -1,3 +1,5 @@
+> Complemento implementado: [central operacional de estado e alertas](CENTRAL_ESTADO_ALERTAS.md). O modelo abaixo continua sendo usado pelo laboratório histórico; o novo painel tem contratos próprios e manutenção incremental equivalente nos dois bancos.
+
 # Entrega 2 - Vantagens, limitações e modelagem
 
 ## Problema e regras do domínio

@@ -1,0 +1,17 @@
+docker compose exec -T app python -m unittest discover -s tests/live -v
+test_concurrent_updates_match_full_recompute (test_live.LiveContracts.test_concurrent_updates_match_full_recompute) ... ok
+test_delete_absent_idempotent (test_live.LiveContracts.test_delete_absent_idempotent) ... ok
+test_duplicate_extremes_remove_and_recreate (test_live.LiveContracts.test_duplicate_extremes_remove_and_recreate) ... ok
+test_empty_location_and_recreate (test_live.LiveContracts.test_empty_location_and_recreate) ... ok
+test_exact_summaries_and_rankings (test_live.LiveContracts.test_exact_summaries_and_rankings) ... ok
+test_history_reload_protects_operational_states (test_live.LiveContracts.test_history_reload_protects_operational_states) ... ok
+test_http_crud_and_validation (test_live.LiveContracts.test_http_crud_and_validation) ... ok
+test_invalid_sensor_does_not_change_summaries (test_live.LiveContracts.test_invalid_sensor_does_not_change_summaries) ... ok
+test_queries_do_not_execute_lua_or_scan (test_live.LiveContracts.test_queries_do_not_execute_lua_or_scan) ... ok
+test_random_updates (test_live.LiveContracts.test_random_updates) ... ok
+test_repeated_replace_no_double_count_and_location_scopes (test_live.LiveContracts.test_repeated_replace_no_double_count_and_location_scopes) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 2.189s
+
+OK

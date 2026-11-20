@@ -55,3 +55,13 @@ graficos:
 package:
 	python3 scripts/package_delivery.py
 all: up load verify test benchmark
+
+.PHONY: preparar-central test-central benchmark-central graficos-central
+preparar-central:
+	docker compose exec -T app python -m scripts.prepare_live
+test-central:
+	docker compose exec -T app python -m unittest discover -s tests/live -v
+benchmark-central:
+	docker compose exec -T app python -m scripts.benchmark_live
+graficos-central:
+	$(PYTHON_GRAFICOS) -m scripts.plot_live

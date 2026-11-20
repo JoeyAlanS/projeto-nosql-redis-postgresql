@@ -1,0 +1,2402 @@
+[
+  {
+    "case": "estado_sensor",
+    "repetition": 1,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.522498,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 1,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.59491,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 2,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.312654,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 2,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.534013,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 3,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.563158,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 3,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.400942,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 4,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.330218,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 4,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.42995,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 5,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.40923,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 5,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.377565,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 6,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.239598,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 6,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.565248,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 7,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.440234,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 7,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.488598,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 8,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.275928,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 8,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.429605,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 9,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.42074,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 9,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.189845,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 10,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.347922,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 10,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.472113,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 11,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.301486,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 11,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.275878,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 12,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.372171,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 12,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.353171,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 13,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.194144,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 13,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.273157,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 14,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.160402,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 14,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.347571,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 15,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.239721,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 15,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.222964,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 16,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.227094,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 16,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.545873,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 17,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.287008,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 17,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.221504,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 18,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.160396,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 18,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.188611,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 19,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.111906,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 19,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.140502,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 20,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.073457,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 20,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.140006,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 21,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.106654,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 21,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.081946,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 22,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.072172,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 22,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.134625,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 23,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.094008,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 23,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.101559,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 24,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.065251,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 24,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.125756,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 25,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.094952,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 25,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.140015,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 26,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.077018,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 26,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.115962,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 27,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.093147,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 27,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.085329,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 28,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.071026,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 28,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.116839,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 29,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.096422,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 29,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.089267,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 30,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.655355,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "estado_sensor",
+    "repetition": 30,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.486413,
+    "result_sha256": "26a525f7cd8116808a9292e93932634f5f5c37c3b6c42c0017163a11a72ba638"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 1,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.571646,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 1,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.401153,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 2,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.306749,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 2,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.452351,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 3,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.504308,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 3,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.344539,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 4,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.317894,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 4,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.44147,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 5,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.58775,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 5,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.362998,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 6,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.331181,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 6,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.49497,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 7,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.496061,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 7,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.321229,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 8,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.296006,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 8,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.686848,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 9,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.281315,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 9,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.365452,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 10,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.282134,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 10,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.497004,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 11,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.44051,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 11,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.28354,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 12,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.339818,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 12,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.381503,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 13,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.273366,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 13,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.322368,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 14,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.340567,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 14,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.443977,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 15,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.99476,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 15,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.302418,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 16,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.251075,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 16,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.399987,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 17,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.386194,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 17,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.327985,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 18,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.127581,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 18,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.414012,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 19,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.251936,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 19,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.366939,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 20,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.322399,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 20,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.419349,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 21,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.190994,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 21,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.329677,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 22,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.346619,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 22,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.373137,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 23,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.473195,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 23,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.260596,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 24,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.180612,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 24,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.255263,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 25,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.19217,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 25,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.176372,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 26,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.149988,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 26,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.233352,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 27,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.177615,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 27,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.171677,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 28,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.147251,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 28,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.218721,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 29,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.171741,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 29,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.167054,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 30,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.145778,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_global",
+    "repetition": 30,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.202834,
+    "result_sha256": "6996eef7ed48658bcf4345d0feab49ff349f2e11a8315658334874d0c55f0fef"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 1,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.301799,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 1,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.201955,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 2,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.16606,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 2,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.210787,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 3,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.178859,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 3,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.181252,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 4,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.239337,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 4,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.280178,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 5,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.219553,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 5,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.27189,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 6,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.355444,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 6,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.351635,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 7,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.359088,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 7,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.323045,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 8,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.219871,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 8,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.514885,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 9,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.236116,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 9,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.329391,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 10,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.216368,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 10,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.281415,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 11,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.194868,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 11,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.191265,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 12,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.336399,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 12,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.34719,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 13,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.293722,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 13,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.30072,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 14,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.102752,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 14,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.249728,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 15,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.115673,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 15,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.269724,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 16,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.078509,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 16,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.147243,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 17,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.100575,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 17,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.113308,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 18,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.08199,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 18,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.129962,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 19,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.103405,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 19,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.176587,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 20,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.081758,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 20,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.132074,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 21,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.307524,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 21,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.353192,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 22,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.171118,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 22,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.365235,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 23,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.367789,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 23,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.322695,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 24,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.396249,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 24,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.355282,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 25,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.208378,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 25,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.305705,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 26,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.128841,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 26,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.19676,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 27,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.113256,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 27,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.229472,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 28,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.32023,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 28,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.279708,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 29,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.294937,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 29,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.360953,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 30,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.097747,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "resumo_local",
+    "repetition": 30,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.333074,
+    "result_sha256": "2b617d31f61dfd6d9118ca0a7da86d778dfb88c7a90e2aeaf4059dba8acef3bf"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 1,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.543092,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 1,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.311011,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 2,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.279329,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 2,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.612748,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 3,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.629796,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 3,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.46134,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 4,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.41942,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 4,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.658986,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 5,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.706014,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 5,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.403093,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 6,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.245194,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 6,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.665058,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 7,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.633593,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 7,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.363554,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 8,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.122042,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 8,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.399664,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 9,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.29854,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 9,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.151732,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 10,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.099721,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 10,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.350984,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 11,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.281874,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 11,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.140348,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 12,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.093349,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 12,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.460158,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 13,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.594452,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 13,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.233969,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 14,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.130438,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 14,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.567635,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 15,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.543601,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 15,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.404205,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 16,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.324413,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 16,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.355476,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 17,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.266987,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 17,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.173416,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 18,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.129026,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 18,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.189083,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 19,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.133981,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 19,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.114294,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 20,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.089567,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 20,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.32007,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 21,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.210601,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 21,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.140366,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 22,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.095491,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 22,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.384153,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 23,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.299948,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 23,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.295986,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 24,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.222515,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 24,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.312025,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 25,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.608784,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 25,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.359349,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 26,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.208061,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 26,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.532948,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 27,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.264846,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 27,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.23629,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 28,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.136913,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 28,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.352067,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 29,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.199911,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 29,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.243859,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 30,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.305251,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "top_20_alertas",
+    "repetition": 30,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 0.554934,
+    "result_sha256": "38c78d39d1fc7bdad5a7836d75f916fd087e08ed7ed52396037952562a6b5e17"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 1,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 1.814956,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 1,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.561307,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 2,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.72105,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 2,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 1.754765,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 3,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 2.320995,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 3,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.598284,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 4,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.467592,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 4,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 1.369987,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 5,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 1.342394,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 5,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.602194,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 6,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.371454,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 6,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 1.150687,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 7,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 1.267989,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 7,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.563999,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 8,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.285813,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 8,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 1.265995,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 9,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 1.185748,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 9,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.554251,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 10,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.48393,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 10,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 1.214617,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 11,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 1.125354,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 11,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.586801,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 12,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.475557,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 12,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 1.292827,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 13,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 1.142154,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 13,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.505007,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 14,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.61483,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 14,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 1.150831,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 15,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 0.869175,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 15,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.494619,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 16,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.38495,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 16,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 1.143157,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 17,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 1.244716,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 17,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.669121,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 18,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.605915,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 18,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 1.263689,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 19,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 1.12804,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 19,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.568103,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 20,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.343774,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 20,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 1.114047,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 21,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 1.201042,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 21,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.612337,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 22,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.572022,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 22,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 1.307028,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 23,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 1.296612,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 23,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.644764,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 24,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.321156,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 24,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 1.158867,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 25,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 1.257725,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 25,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.555347,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 26,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.479548,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 26,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 1.498502,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 27,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 1.558996,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 27,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.640288,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 28,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.367267,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 28,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 1.230845,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 29,
+    "position": 1,
+    "source": "postgres",
+    "elapsed_ms": 1.441706,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 29,
+    "position": 2,
+    "source": "redis",
+    "elapsed_ms": 0.615059,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 30,
+    "position": 1,
+    "source": "redis",
+    "elapsed_ms": 0.490297,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  },
+  {
+    "case": "atualizar_estado_e_indicadores",
+    "repetition": 30,
+    "position": 2,
+    "source": "postgres",
+    "elapsed_ms": 1.410991,
+    "result_sha256": "4ba075465fdce5c4c53b1569e4301aa9fedddb3e85f590802e56c0198d3bf1c1"
+  }
+]

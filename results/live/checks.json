@@ -1,0 +1,15 @@
+{
+  "backend_live_tests": 11,
+  "historical_integration_tests": 11,
+  "historical_optimization_tests": 10,
+  "frontend_tests": 12,
+  "example_tests": 3,
+  "scalability_tools_tests": 5,
+  "total_tests_passed": 52,
+  "benchmark_raw_samples": 300,
+  "benchmark_statistics_recomputed": true,
+  "result_hashes_equal_per_pair": true,
+  "benchmark_source_hashes_current": true,
+  "historical_verification": "results/verification.json",
+  "browser_verification": "results/live/browser.json"
+}

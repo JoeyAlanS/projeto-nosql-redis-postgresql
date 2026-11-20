@@ -24,7 +24,10 @@ def main():
     parser.add_argument("--sensors", type=int, default=1000)
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--replace", action="store_true", help="Substitui apenas a massa do projeto")
+    parser.add_argument("--replace-live", action="store_true", help="Com --replace, também descarta a central operacional para reinicialização")
     args = parser.parse_args()
+    if args.replace_live and not args.replace:
+        parser.error("--replace-live exige --replace")
     if args.records < 1 or not 1 <= args.sensors <= args.records:
         parser.error("Quantidades devem ser positivas e sensores <= registros")
     (ROOT / "data").mkdir(exist_ok=True)
@@ -37,7 +40,13 @@ def main():
         if (existing or rd.exists("iot:loaded") or rd.scard("iot:sensors")) and not args.replace:
             raise SystemExit("Massa já existe. Para substituir conscientemente use --replace.")
         if args.replace:
-            pg.execute("TRUNCATE readings,sensors")
+            has_live = pg.execute("SELECT to_regclass('live_states') AS name").fetchone()['name'] is not None
+            if (has_live or rd.exists('iot:live:v1:status')) and not args.replace_live:
+                raise SystemExit('Central operacional preservada. Para descartar também seus estados, use --replace --replace-live; depois execute make preparar-central.')
+            if has_live:
+                pg.execute("TRUNCATE live_states,live_summaries,live_metadata,readings,sensors")
+            else:
+                pg.execute("TRUNCATE readings,sensors")
             pg.commit()
             keys = []
             for key in rd.scan_iter("iot:*"):

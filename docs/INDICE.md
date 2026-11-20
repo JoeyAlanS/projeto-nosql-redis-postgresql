@@ -1,5 +1,7 @@
 # Índice do trabalho
 
+Novo foco implementado: [Central de estado atual e alertas: modelo, comandos, demonstração e comparação](CENTRAL_ESTADO_ALERTAS.md).
+
 Atualização de 19/11: [Otimização Redis: estrutura, comandos, novos testes e limites](OTIMIZACAO_REDIS.md).
 
 [Diagnóstico de desempenho: por que Redis perde em algumas consultas e como remodelar](DIAGNOSTICO_DESEMPENHO.md).

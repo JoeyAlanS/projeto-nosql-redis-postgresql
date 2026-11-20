@@ -1,10 +1,26 @@
-# Observatório IoT - Projeto 3 de Bancos de Dados NoSQL
+# Central IoT - Estado atual, alertas e histórico
 
-Implementação comparativa de telemetria ambiental com **PostgreSQL e Redis**, massa sintética de **1.000.000 de leituras**, CRUD, benchmark e dashboard funcional. A fundamentação inclui Memcached como referência teórica do paradigma chave-valor/cache.
+Implementação comparativa com **PostgreSQL e Redis**, agora centrada no **estado atual de 1.000 sensores e seus alertas**. Cada escrita mantém os indicadores global e local; o Redis consulta hashes prontos e um ranking ordenado. Os dois bancos conservam também **1.000.000 de leituras históricas**, com CRUD, benchmark e dashboard. A fundamentação inclui Memcached como referência teórica do paradigma chave-valor/cache.
 
 Repositório da entrega: [JoeyAlanS/projeto-nosql-redis-postgresql](https://github.com/JoeyAlanS/projeto-nosql-redis-postgresql).
 
 O [relatório completo](output/pdf/Relatorio_Completo_Projeto_3.pdf) reúne os pontos do enunciado e os gráficos de 1M/5M. Consulte também a [análise técnica do código](docs/engenharia/ANALISE_TECNICA_COMPLETA.md) e a [conferência dos requisitos](docs/CONFORMIDADE_TRABALHO.md), revisadas com os bancos reais em 18/11/2026.
+
+## Novo foco: central de estado e alertas
+
+O [guia da central](docs/CENTRAL_ESTADO_ALERTAS.md) explica o modelo, os comandos, a demonstração e a comparação justa. Redis usa leitura direta de hashes e sorted sets; PostgreSQL mantém os mesmos indicadores em tabelas e índices. Não há varredura de sensores em Lua nas consultas da central.
+
+Com a massa já carregada:
+
+```bash
+make up
+make preparar-central
+make test-central
+```
+
+Abra **http://localhost:8000/#live** para consultar, alterar e remover estados em um ou ambos os bancos, com retorno JSON. `make benchmark-central` mede os cinco contratos; `make graficos-central` gera o gráfico Python. A central existente é preservada ao preparar novamente.
+
+A central possui 1.000 estados, não um milhão. O milhão permanece no histórico e seus testes de 1M/5M continuam disponíveis. Após a preparação, as operações da central e do histórico são independentes. O [guia](docs/CENTRAL_ESTADO_ALERTAS.md) complementa os PDFs/slides anteriores, que ainda descrevem o experimento histórico.
 
 ## Otimização Redis — 19/11/2026
 
@@ -14,7 +30,7 @@ O histórico agora pode usar um sorted set com registros completos; o resumo usa
 
 Consulte o [guia de otimização, comandos e limites](docs/OTIMIZACAO_REDIS.md) e os [novos resultados medidos](docs/RESULTADOS_OTIMIZACAO.md). Os documentos e PDFs revisados em 18/11 descrevem a versão anterior; esta atualização é seu complemento técnico, com medições separadas. O experimento também inclui PostgreSQL pré-agregado e uma prova RedisTimeSeries de 10 mil registros.
 
-## Comece pela dashboard
+## Laboratório histórico na dashboard
 
 Com os dados já carregados, execute `make up` e abra **http://localhost:8000/#operations**.
 
@@ -32,9 +48,12 @@ Requisitos: Docker com Compose v2 ou superior, aproximadamente 2 GB de RAM dispo
 ```bash
 make up
 make load
+make preparar-central
 make verify
 make test
+make test-central
 make benchmark
+make benchmark-central
 ```
 
 Abra **http://localhost:8000**. A API interativa está em **http://localhost:8000/docs**. A primeira execução baixa imagens; carga, verificação e benchmark levam alguns minutos. Se a massa já está carregada, basta `make up`. Os dados persistem em volumes Docker.
@@ -63,7 +82,7 @@ Os serviços ficam acessíveis apenas no localhost: dashboard 8000, PostgreSQL 5
 
 `make check` executa 31 testes (11 de integração, 12 de JavaScript, 3 dos exemplos Redis e 5 das ferramentas de carga) e a auditoria dos resultados. Requer os serviços ativos, Node 20+ para os testes do frontend e as bases equivalentes, sem uma divergência de demonstração em andamento. Node não é necessário para usar a dashboard.
 
-`make test-otimizacao` acrescenta 10 testes nos bancos reais, após construir os índices, totalizando 41 testes.
+`make test-otimizacao` acrescenta 10 testes históricos nos bancos reais. `make test-central` acrescenta 11 testes do novo modelo, após `make preparar-central`, totalizando 52 testes nas três baterias.
 
 `make verify` compara integralmente os dados e índices com o CSV original. `make package` recompõe o ZIP local e seu manifesto. Dados volumosos, ambientes virtuais, caches, credenciais locais e ZIPs gerados ficam fora do Git; os resultados e arquivos finais versionados são evidências do trabalho.
 
@@ -130,7 +149,7 @@ Não deixe alterações em apenas uma fonte antes de comparar. `make verify` det
 
 `data/readings.csv` é gerado automaticamente (sem cabeçalho, ordem em `docs/03_dados.md`). Os números da execução entregue e o SHA-256 ficam em `results/load.json`. A verificação percorre 100% das leituras e índices, em vez de comparar apenas contagens.
 
-O carregador protege a massa existente. Para substituí-la deliberadamente:
+O carregador protege a massa existente. Se houver uma central operacional, ele também protege seus estados e recusa `--replace` sozinho. A opção adicional `--replace-live` descarta esses estados e requer `make preparar-central` depois. Para substituir uma massa sem central:
 
 ```bash
 docker compose exec -T app python -m scripts.load --records 1000000 --replace

@@ -1,0 +1,260 @@
+{
+  "executed_at": "2026-11-19T17:22:57.632078+00:00",
+  "model": "Central de estado atual e alertas",
+  "operational_states": 1000,
+  "historical_readings": 1000000,
+  "repetitions": 30,
+  "warmup": 3,
+  "concurrency": 1,
+  "results": {
+    "estado_sensor": {
+      "postgres": {
+        "median_ms": 0.294247,
+        "p95_ms": 0.5553797500000001,
+        "samples": 30
+      },
+      "redis": {
+        "median_ms": 0.222234,
+        "p95_ms": 0.5470695999999999,
+        "samples": 30
+      }
+    },
+    "resumo_global": {
+      "postgres": {
+        "median_ms": 0.40699949999999996,
+        "p95_ms": 0.6422539,
+        "samples": 30
+      },
+      "redis": {
+        "median_ms": 0.31232150000000003,
+        "p95_ms": 0.36626985000000006,
+        "samples": 30
+      }
+    },
+    "resumo_local": {
+      "postgres": {
+        "median_ms": 0.264718,
+        "p95_ms": 0.3666397,
+        "samples": 30
+      },
+      "redis": {
+        "median_ms": 0.22467150000000002,
+        "p95_ms": 0.35847395,
+        "samples": 30
+      }
+    },
+    "top_20_alertas": {
+      "postgres": {
+        "median_ms": 0.3919085,
+        "p95_ms": 0.6623256,
+        "samples": 30
+      },
+      "redis": {
+        "median_ms": 0.228242,
+        "p95_ms": 0.41257325,
+        "samples": 30
+      }
+    },
+    "atualizar_estado_e_indicadores": {
+      "postgres": {
+        "median_ms": 1.260707,
+        "p95_ms": 1.78787005,
+        "samples": 30
+      },
+      "redis": {
+        "median_ms": 0.558327,
+        "p95_ms": 0.65816035,
+        "samples": 30
+      }
+    }
+  },
+  "responses_equal": true,
+  "measurement": "Cliente, rede e desserialização; conexões reutilizadas; escrita SQL inclui COMMIT autocommit",
+  "maintenance": "Ambos mantêm resumo global/local e índice de temperatura em cada escrita",
+  "limitations": [
+    "Redis AOF everysec e PostgreSQL synchronous_commit: durabilidade de confirmação diferente.",
+    "Um cliente, máquina compartilhada, cache aquecido; não mede saturação.",
+    "Estado atual de 1000 sensores; não equivale a resumir 1M/5M leituras históricas.",
+    "Escritas atualizam repetidamente o sensor 501 e seus índices/resumos; não representam distribuição multi-sensor."
+  ],
+  "redis_read_commands_per_three_queries": {
+    "zrevrangebyscore": 1.0,
+    "hgetall": 2.0
+  },
+  "postgres_plans": {
+    "state": [
+      {
+        "Plan": {
+          "Node Type": "Index Scan",
+          "Parallel Aware": false,
+          "Async Capable": false,
+          "Scan Direction": "Forward",
+          "Index Name": "live_states_pkey",
+          "Relation Name": "live_states",
+          "Alias": "live_states",
+          "Startup Cost": 0.28,
+          "Total Cost": 8.29,
+          "Plan Rows": 1,
+          "Plan Width": 29,
+          "Actual Startup Time": 0.028,
+          "Actual Total Time": 0.031,
+          "Actual Rows": 1,
+          "Actual Loops": 1,
+          "Index Cond": "(sensor_id = 501)",
+          "Rows Removed by Index Recheck": 0,
+          "Shared Hit Blocks": 4,
+          "Shared Read Blocks": 0,
+          "Shared Dirtied Blocks": 0,
+          "Shared Written Blocks": 0,
+          "Local Hit Blocks": 0,
+          "Local Read Blocks": 0,
+          "Local Dirtied Blocks": 0,
+          "Local Written Blocks": 0,
+          "Temp Read Blocks": 0,
+          "Temp Written Blocks": 0
+        },
+        "Planning": {
+          "Shared Hit Blocks": 0,
+          "Shared Read Blocks": 0,
+          "Shared Dirtied Blocks": 0,
+          "Shared Written Blocks": 0,
+          "Local Hit Blocks": 0,
+          "Local Read Blocks": 0,
+          "Local Dirtied Blocks": 0,
+          "Local Written Blocks": 0,
+          "Temp Read Blocks": 0,
+          "Temp Written Blocks": 0
+        },
+        "Planning Time": 0.124,
+        "Triggers": [],
+        "Execution Time": 0.048
+      }
+    ],
+    "summary": [
+      {
+        "Plan": {
+          "Node Type": "Seq Scan",
+          "Parallel Aware": false,
+          "Async Capable": false,
+          "Relation Name": "live_summaries",
+          "Alias": "live_summaries",
+          "Startup Cost": 0.0,
+          "Total Cost": 1.14,
+          "Plan Rows": 1,
+          "Plan Width": 57,
+          "Actual Startup Time": 0.016,
+          "Actual Total Time": 0.017,
+          "Actual Rows": 1,
+          "Actual Loops": 1,
+          "Filter": "(scope = 'all'::text)",
+          "Rows Removed by Filter": 10,
+          "Shared Hit Blocks": 1,
+          "Shared Read Blocks": 0,
+          "Shared Dirtied Blocks": 0,
+          "Shared Written Blocks": 0,
+          "Local Hit Blocks": 0,
+          "Local Read Blocks": 0,
+          "Local Dirtied Blocks": 0,
+          "Local Written Blocks": 0,
+          "Temp Read Blocks": 0,
+          "Temp Written Blocks": 0
+        },
+        "Planning": {
+          "Shared Hit Blocks": 0,
+          "Shared Read Blocks": 0,
+          "Shared Dirtied Blocks": 0,
+          "Shared Written Blocks": 0,
+          "Local Hit Blocks": 0,
+          "Local Read Blocks": 0,
+          "Local Dirtied Blocks": 0,
+          "Local Written Blocks": 0,
+          "Temp Read Blocks": 0,
+          "Temp Written Blocks": 0
+        },
+        "Planning Time": 0.061,
+        "Triggers": [],
+        "Execution Time": 0.028
+      }
+    ],
+    "alerts": [
+      {
+        "Plan": {
+          "Node Type": "Limit",
+          "Parallel Aware": false,
+          "Async Capable": false,
+          "Startup Cost": 0.28,
+          "Total Cost": 3.12,
+          "Plan Rows": 20,
+          "Plan Width": 8,
+          "Actual Startup Time": 0.051,
+          "Actual Total Time": 0.069,
+          "Actual Rows": 20,
+          "Actual Loops": 1,
+          "Shared Hit Blocks": 22,
+          "Shared Read Blocks": 0,
+          "Shared Dirtied Blocks": 0,
+          "Shared Written Blocks": 0,
+          "Local Hit Blocks": 0,
+          "Local Read Blocks": 0,
+          "Local Dirtied Blocks": 0,
+          "Local Written Blocks": 0,
+          "Temp Read Blocks": 0,
+          "Temp Written Blocks": 0,
+          "Plans": [
+            {
+              "Node Type": "Index Only Scan",
+              "Parent Relationship": "Outer",
+              "Parallel Aware": false,
+              "Async Capable": false,
+              "Scan Direction": "Forward",
+              "Index Name": "live_temperature_idx",
+              "Relation Name": "live_states",
+              "Alias": "live_states",
+              "Startup Cost": 0.28,
+              "Total Cost": 50.43,
+              "Plan Rows": 353,
+              "Plan Width": 8,
+              "Actual Startup Time": 0.049,
+              "Actual Total Time": 0.065,
+              "Actual Rows": 20,
+              "Actual Loops": 1,
+              "Index Cond": "(temperature_centi > 3200)",
+              "Rows Removed by Index Recheck": 0,
+              "Heap Fetches": 20,
+              "Shared Hit Blocks": 22,
+              "Shared Read Blocks": 0,
+              "Shared Dirtied Blocks": 0,
+              "Shared Written Blocks": 0,
+              "Local Hit Blocks": 0,
+              "Local Read Blocks": 0,
+              "Local Dirtied Blocks": 0,
+              "Local Written Blocks": 0,
+              "Temp Read Blocks": 0,
+              "Temp Written Blocks": 0
+            }
+          ]
+        },
+        "Planning": {
+          "Shared Hit Blocks": 0,
+          "Shared Read Blocks": 0,
+          "Shared Dirtied Blocks": 0,
+          "Shared Written Blocks": 0,
+          "Local Hit Blocks": 0,
+          "Local Read Blocks": 0,
+          "Local Dirtied Blocks": 0,
+          "Local Written Blocks": 0,
+          "Temp Read Blocks": 0,
+          "Temp Written Blocks": 0
+        },
+        "Planning Time": 0.092,
+        "Triggers": [],
+        "Execution Time": 0.111
+      }
+    ]
+  },
+  "code_sha256": {
+    "app/live.py": "bbaa900c7387705b670028e45b70f9da19c6a992c4cfbcdb74ba619f5fa595b8",
+    "sql/live.sql": "87fee65785296ea9b010df143e0c43812988a06edead84be2f4b456531ffcaaf",
+    "scripts/benchmark_live.py": "b3dc120b00f547fe7c66546e3b4b5a6f569e04d6c8a9f6143bccb8993a813c79"
+  }
+}

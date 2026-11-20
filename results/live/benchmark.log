@@ -1,0 +1,6 @@
+docker compose exec -T app python -m scripts.benchmark_live
+estado_sensor {"postgres": {"median_ms": 0.294247, "p95_ms": 0.5553797500000001, "samples": 30}, "redis": {"median_ms": 0.222234, "p95_ms": 0.5470695999999999, "samples": 30}}
+resumo_global {"postgres": {"median_ms": 0.40699949999999996, "p95_ms": 0.6422539, "samples": 30}, "redis": {"median_ms": 0.31232150000000003, "p95_ms": 0.36626985000000006, "samples": 30}}
+resumo_local {"postgres": {"median_ms": 0.264718, "p95_ms": 0.3666397, "samples": 30}, "redis": {"median_ms": 0.22467150000000002, "p95_ms": 0.35847395, "samples": 30}}
+top_20_alertas {"postgres": {"median_ms": 0.3919085, "p95_ms": 0.6623256, "samples": 30}, "redis": {"median_ms": 0.228242, "p95_ms": 0.41257325, "samples": 30}}
+atualizar_estado_e_indicadores {"postgres": {"median_ms": 1.260707, "p95_ms": 1.78787005, "samples": 30}, "redis": {"median_ms": 0.558327, "p95_ms": 0.65816035, "samples": 30}}

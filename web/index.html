@@ -2,11 +2,13 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Observatório IoT · Telemetria do campus</title>
+  <title>Central IoT · Estado atual e alertas</title>
   <link rel="stylesheet" href="/static/style.css">
   <link rel="stylesheet" href="/static/scalability.css">
   <link rel="stylesheet" href="/static/operations.css">
   <link rel="stylesheet" href="/static/reading-comparison.css">
+  <link rel="stylesheet" href="/static/live.css">
+  <script src="/static/live.js" defer></script>
   <script src="/static/app.js" defer></script>
   <script src="/static/optimization.js" defer></script>
   <script src="/static/operations.js" type="module"></script>
@@ -15,7 +17,8 @@
 <aside>
   <a class="brand" href="/" aria-label="Observatório IoT, início"><span class="brand-icon">◉</span><span>observatório<span class="brand-sub">IoT / CAMPUS</span></span></a>
   <div class="aside-label">ESPAÇO DE ANÁLISE</div>
-  <a class="nav active" href="#operations"><span>⌘</span> Alterar e comparar</a>
+  <a class="nav active" href="#live"><span>◉</span> Central de alertas</a>
+  <a class="nav" href="#operations"><span>⌘</span> Alterar e comparar</a>
   <a class="nav" href="#overview"><span>◫</span> Visão geral</a>
   <a class="nav" href="#comparison"><span>↔</span> Comparar bancos</a>
   <a class="nav" href="#optimization"><span>⚡</span> Redis otimizado</a>
@@ -24,10 +27,28 @@
   <div class="aside-bottom"><span class="green-dot"></span> Projeto 3 · Banco de Dados<span>Redis e PostgreSQL</span><a href="/docs" target="_blank" rel="noopener">Documentação da API ↗</a></div>
 </aside>
 <main>
-  <nav class="mobile-sections" aria-label="Seções da dashboard"><a href="#overview">Visão geral</a><a href="#operations">Alterar e comparar</a><a href="#scalability">Testes de carga</a></nav>
+  <nav class="mobile-sections" aria-label="Seções da dashboard"><a href="#live">Central atual</a><a href="#overview">Histórico</a><a href="#operations">Alterar e comparar</a><a href="#scalability">Testes de carga</a></nav>
   <header><div class="breadcrumb">Campus / Monitoramento</div><div id="connection" role="status">Conectando aos bancos…</div></header>
+  <section id="live" aria-labelledby="live-title">
+    <div class="live-banner"><p class="eyebrow">CENTRAL OPERACIONAL · REDIS E POSTGRESQL</p><h1 id="live-title">O campus agora: estado e alertas</h1><p>Uma posição atual por sensor. Indicadores globais e por local são mantidos em cada alteração; a consulta encontra o resultado pronto. O histórico de 1 milhão de leituras permanece disponível para análise abaixo.</p></div>
+    <div class="live-flow"><article class="panel"><h3>1 · Atualizar um sensor</h3><p>O estado atual substitui a posição anterior. Temperatura, umidade e instante ficam em um hash Redis ou linha SQL.</p></article><article class="panel"><h3>2 · Manter os indicadores</h3><p>A escrita ajusta somente o resumo global e o local do sensor. Índices ordenados mantêm extremos e alertas.</p></article><article class="panel"><h3>3 · Consultar diretamente</h3><p>Hash do resumo, hash do sensor ou até 20 alertas do sorted set. Sem percorrer o histórico ou todos os sensores em Lua.</p></article></div>
+    <article class="panel"><h2>Consultar e alterar o estado operacional</h2><p>Inicializado com a última leitura histórica de cada sensor. Este modelo evolui pelas operações abaixo; mudanças no laboratório histórico não sincronizam automaticamente esta central.</p>
+      <div class="live-presets"><button class="secondary" type="button" data-live-preset="summary">Indicadores prontos</button><button class="secondary" type="button" data-live-preset="state">Estado de um sensor</button><button class="secondary" type="button" data-live-preset="alerts">Top 20 alertas</button><button class="secondary" type="button" data-live-preset="write">Preparar alteração</button></div>
+      <form id="live-form"><fieldset id="live-controls" class="live-fields">
+        <label>Destino<select id="live-source"><option value="both">Ambos · comparar</option value="redis">Redis</option><option value="postgres">PostgreSQL</option></select></label>
+        <label>Operação atual<select id="live-action"><option value="summary">Indicadores atuais</option><option value="state">Estado do sensor</option><option value="alerts">Top 20 alertas</option><option value="write">Gravar estado atual</option><option value="delete">Remover estado atual</option></select></label>
+        <label data-live-actions="summary alerts">Local atual<select id="live-location"><option value="">Todos os locais</option><option>Laboratório</option><option>Biblioteca</option><option>Auditório</option><option>Bloco A</option><option>Bloco B</option><option>Bloco C</option><option>Refeitório</option><option>Estufa</option><option>Almoxarifado</option><option>Oficina</option></select></label>
+        <label data-live-actions="state write delete" hidden>Sensor atual<input id="live-sensor" type="number" min="1" max="2147483647" step="1" value="501" required></label>
+        <label data-live-actions="write" hidden>Temperatura atual (°C)<input id="live-temperature" type="number" min="-50" max="100" step="0.01" value="36" required></label>
+        <label data-live-actions="write" hidden>Umidade atual (%)<input id="live-humidity" type="number" min="0" max="100" step="0.01" value="51" required></label>
+        <button class="primary" id="live-run" type="submit">Consultar os bancos</button>
+      </fieldset></form><p id="live-help" class="small"></p><p id="live-status" role="status">Escolha a operação e consulte os bancos.</p>
+    </article>
+    <div id="live-results" class="live-results" aria-live="polite"></div>
+    <article class="panel"><h2>Comparação do novo modelo</h2><div id="live-benchmark" class="table-scroll">Carregando medições…</div></article>
+  </section>
   <section id="operations" aria-labelledby="operations-title">
-    <div class="section-heading"><div><p class="eyebrow">LABORATÓRIO AO VIVO</p><h1 id="operations-title">Redis e PostgreSQL, lado a lado</h1><p class="muted">Envie uma alteração pela dashboard e veja o que mudou em cada banco.</p></div><span class="badge">Base principal · execução ao vivo</span></div>
+    <div class="section-heading"><div><p class="eyebrow">LABORATÓRIO AO VIVO</p><h2 id="operations-title">Laboratório do histórico</h2><p class="muted">Envie uma alteração pela dashboard e veja o que mudou em cada banco.</p></div><span class="badge">Base principal · execução ao vivo</span></div>
     <article class="reading-lab" aria-labelledby="visual-id">
       <div class="reading-lab-header"><div><p class="eyebrow">VALORES CONSULTADOS AGORA</p><h3 id="visual-id">Leitura #500001</h3></div><form id="visual-lookup"><label for="visual-reading-id">ID para comparar</label><input id="visual-reading-id" type="number" min="1" max="9000000000000000" step="1" value="500001" required><button id="visual-refresh" class="secondary" type="submit">Consultar os dois</button></form></div>
       <p id="visual-operation" class="visual-operation" hidden role="status"></p>

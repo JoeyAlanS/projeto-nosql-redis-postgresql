@@ -1,0 +1,19 @@
+{
+  "ui_steps": [
+    "summary: 1000 states / 353 alerts, equal",
+    "PUT both 501 to 36 C / 51 percent, HTTP 200",
+    "GET state: same timestamp and values in both",
+    "summary: 1000 states / 354 alerts, equal",
+    "top20: same sorted results in both",
+    "DELETE both 501: HTTP 200"
+  ],
+  "after_delete": {
+    "postgres": null,
+    "redis": null
+  },
+  "original_501_restored_in_both": true,
+  "verified_at": "2026-11-20",
+  "hidden_invalid_sensor_does_not_block_summary": true,
+  "chart_visible": true,
+  "screenshot": "results/live/dashboard.png"
+}

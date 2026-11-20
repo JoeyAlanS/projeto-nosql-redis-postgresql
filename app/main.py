@@ -192,3 +192,48 @@ def index():
 
 
 app.mount("/static", StaticFiles(directory=ROOT / "web"), name="static")
+
+# Central operacional: contratos próprios, sem filtros históricos implícitos.
+from app.live import live_store
+
+class LiveState(BaseModel):
+    ts: int = Field(ge=1,le=MAX_TIMESTAMP)
+    temperature_centi: int = Field(ge=-5000,le=10000)
+    humidity_centi: int = Field(ge=0,le=10000)
+
+@app.get('/api/live')
+def live_query(source: Source='redis',operation: Literal['state','summary','alerts']='summary',
+               sensor_id:int=Query(501,ge=1,le=MAX_SENSOR_ID),location:str|None=None,
+               limit:int=Query(20,ge=1,le=100)):
+    with live_store(source) as s:
+        begin=time.perf_counter_ns()
+        if operation=='state':value=s.latest(sensor_id)
+        elif operation=='summary':value=s.summary(location)
+        else:value=s.alerts(location,limit)
+        elapsed=(time.perf_counter_ns()-begin)/1e6
+    return {'source':source,'operation':operation,'elapsed_ms':elapsed,'data':value,
+            'model':'Estado operacional atual; não é resumo do histórico'}
+
+@app.put('/api/live/sensors/{sensor_id}')
+def live_update(sensor_id:Annotated[int,Path(ge=1,le=MAX_SENSOR_ID)],row:LiveState,source:Source):
+    try:
+        with live_store(source) as s:return s.write(sensor_id,**row.model_dump())
+    except Invalid as exc:raise HTTPException(422,str(exc)) from exc
+
+@app.delete('/api/live/sensors/{sensor_id}')
+def live_delete(sensor_id:Annotated[int,Path(ge=1,le=MAX_SENSOR_ID)],source:Source):
+    try:
+        with live_store(source) as s:return s.write(sensor_id,remove=True)
+    except Invalid as exc:raise HTTPException(422,str(exc)) from exc
+
+@app.get('/api/live/benchmark')
+def live_benchmark():
+    path=ROOT/'results/live/benchmark.json'
+    if not path.exists():raise HTTPException(404,'Execute make benchmark-central')
+    return json.loads(path.read_text())
+
+@app.get('/api/live/chart')
+def live_chart():
+    path=ROOT/'results/live/latency.png'
+    if not path.exists():raise HTTPException(404,'Execute make graficos-central')
+    return FileResponse(path)

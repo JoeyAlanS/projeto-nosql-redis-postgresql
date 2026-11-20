@@ -1,0 +1,9 @@
+{
+  "executed_at": "2026-11-19T17:21:26.535176+00:00",
+  "states": 1000,
+  "scopes": 11,
+  "historical_readings": 1000000,
+  "seconds": 1.9915604399993754,
+  "all_states_and_summaries_equal": true,
+  "source": "Última leitura histórica de cada sensor; central passa a evoluir independentemente via /api/live"
+}

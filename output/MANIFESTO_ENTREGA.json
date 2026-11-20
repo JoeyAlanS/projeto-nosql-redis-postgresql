@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-11-20T04:00:40.792350+00:00",
+  "created_at": "2026-11-20T04:31:47.131127+00:00",
   "files": [
     {
       "path": ".dockerignore",
@@ -43,8 +43,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 16554,
-      "sha256": "85eb8451eba594e0c10c59795c7f794955ce3dc3d1c1699aa55bd0ff41577b06"
+      "bytes": 16858,
+      "sha256": "d240625384b9b9dcb2eeb10a56ce3d7faf6ee9f636025640e90572ed4a1e0235"
     },
     {
       "path": "app/__init__.py",
@@ -118,8 +118,8 @@
     },
     {
       "path": "docs/AUTORIA.md",
-      "bytes": 4685,
-      "sha256": "e3b03c1dd1221440cb0420f47a15a53703ba5953ef581ff3a337f5553b833c08"
+      "bytes": 5159,
+      "sha256": "e9f64fd23f9467ec8a77cd9fd6f8b0971a4f62e23222ce967778c2319755ab2b"
     },
     {
       "path": "docs/CENTRAL_ESTADO_ALERTAS.md",
@@ -173,8 +173,8 @@
     },
     {
       "path": "docs/INDICE.md",
-      "bytes": 2861,
-      "sha256": "aed820de8b628b59dfe49fdc2c24460c45fb390852efe4edd3ae78b830643925"
+      "bytes": 3129,
+      "sha256": "6258012b8f19e2da4b858aaeb335838062b58b7099a0af211307c5e73219de4b"
     },
     {
       "path": "docs/MANUAL_COMPLETO.md",
@@ -377,6 +377,11 @@
       "sha256": "9944c123678f73024d3926a74d8795fb442cdc8ea124072770fc86ea66624185"
     },
     {
+      "path": "output/documentos/Resumo_Melhorias_Rotas_Redis_PostgreSQL.docx",
+      "bytes": 44720,
+      "sha256": "ce53cd2d7240c15f31982fd43fae70fddba25829b4affb547ef47d49112d076b"
+    },
+    {
       "path": "output/graficos/01_tempo_carga.png",
       "bytes": 261938,
       "sha256": "e53399f23dc5e563a4dd795747a4a9ea3f8b987429c2f4d1fd1e4e19fa3b39d4"
@@ -480,6 +485,11 @@
       "path": "output/pdf/Relatorio_Completo_Projeto_3.pdf",
       "bytes": 1534568,
       "sha256": "64eb0925ab76b98d420072e36aea90350ff90881626cfd2401511d72dcd08052"
+    },
+    {
+      "path": "output/pdf/Resumo_Melhorias_Rotas_Redis_PostgreSQL.pdf",
+      "bytes": 164370,
+      "sha256": "ce3af35889863116b32bb2b3c7ae15b2b40938f6ac5cc57d40f6edffaf12bccc"
     },
     {
       "path": "output/pdf/Slides_Projeto_3.pdf",
@@ -1097,6 +1107,11 @@
       "sha256": "e06e3b13d77e5b9f18b0c8c8e14dc34703608e2cd7b1ce072258c1192ad3e674"
     },
     {
+      "path": "results/resumo_rotas_verificacao.json",
+      "bytes": 751,
+      "sha256": "83c04cb7730d657e2f35b9ac4a7578600e939c671cf9e8601b855571e5763cbd"
+    },
+    {
       "path": "results/revisao_documental.json",
       "bytes": 1579,
       "sha256": "7dc62bb558191d4a6ceb487c5407cb28a5ea7a5a444ff821594507a63f532507"
@@ -1180,6 +1195,11 @@
       "path": "scripts/build_models.py",
       "bytes": 4099,
       "sha256": "977b298ad93bcdd9cd01a61ca3763c53babbebdcc356b9a487cf53a52631c659"
+    },
+    {
+      "path": "scripts/build_reading_summary.py",
+      "bytes": 17129,
+      "sha256": "b53a138b9057af6a3396102e3b145b5cb7917921dcf8c7e4b6af8efe2d7fc257"
     },
     {
       "path": "scripts/build_scale_report.py",

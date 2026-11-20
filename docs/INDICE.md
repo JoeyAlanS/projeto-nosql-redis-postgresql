@@ -8,6 +8,7 @@ Atualização de 19/11: [Otimização Redis: estrutura, comandos, novos testes e
 
 ## Usar e apresentar
 
+- [Resumo das melhorias e dos caminhos de leitura em PDF](../output/pdf/Resumo_Melhorias_Rotas_Redis_PostgreSQL.pdf) e [Word](../output/documentos/Resumo_Melhorias_Rotas_Redis_PostgreSQL.docx), com rotas históricas e operacionais, comandos equivalentes e resultados.
 - [Engenharia reversa completa de Redis, consultas, testes e Dashboard](engenharia/ANALISE_TECNICA_COMPLETA.md), [PDF](../output/pdf/Analise_Tecnica_Completa_Redis_PostgreSQL.pdf) e [Word](../output/documentos/Analise_Tecnica_Completa_Redis_PostgreSQL.docx).
 - [Dashboard: alterações, comparação visual e console](CONSOLE_DASHBOARD.md).
 - [Comandos para testar os dados e as 10 mil leituras](COMANDOS_TESTES.md).

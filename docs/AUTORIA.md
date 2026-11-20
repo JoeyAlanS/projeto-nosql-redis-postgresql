@@ -62,6 +62,8 @@ Com os bancos ativos e sem escritas concorrentes, `make verify` seguido de `dock
 
 ## Gerar o pacote atualizado
 
+O resumo das melhorias e rotas é gerado por `python3 scripts/build_reading_summary.py`, no ambiente opcional de autoria com `python-docx`. Ele lê as medianas da central em `results/live/benchmark.json`; as explicações de código e os resultados históricos exigem revisão quando esses caminhos forem alterados. Renderize o Word, confira todas as páginas e copie o PDF aprovado para `output/pdf/Resumo_Melhorias_Rotas_Redis_PostgreSQL.pdf` antes de recompor o pacote.
+
 ```bash
 make audit
 make package

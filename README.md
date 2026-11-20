@@ -10,6 +10,8 @@ O [relatório completo](output/pdf/Relatorio_Completo_Projeto_3.pdf) reúne os p
 
 O [guia da central](docs/CENTRAL_ESTADO_ALERTAS.md) explica o modelo, os comandos, a demonstração e a comparação justa. Redis usa leitura direta de hashes e sorted sets; PostgreSQL mantém os mesmos indicadores em tabelas e índices. Não há varredura de sensores em Lua nas consultas da central.
 
+O [resumo das melhorias e rotas em PDF](output/pdf/Resumo_Melhorias_Rotas_Redis_PostgreSQL.pdf), também [editável em Word](output/documentos/Resumo_Melhorias_Rotas_Redis_PostgreSQL.docx), mostra o fluxo HTTP → adaptador → banco → JSON, as mudanças implementadas e os resultados de cada ensaio.
+
 Com a massa já carregada:
 
 ```bash

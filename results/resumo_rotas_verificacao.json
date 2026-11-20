@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-11-20T04:30:43.720796+00:00",
+  "code_revision": "fddc8ba6e73331f00e4f26f6ab0787fb08ea4168",
+  "scope": "Consultas somente de leitura; sem repetir benchmarks ou alterar registros",
+  "historical_pairs_equal": {
+    "point": true,
+    "history": true,
+    "summary": true
+  },
+  "live_pairs_equal": {
+    "state": true,
+    "summary": true,
+    "alerts": true
+  },
+  "health": {
+    "postgres": "ok",
+    "redis": "ok"
+  },
+  "point_example": {
+    "id": 500001,
+    "sensor_id": 1,
+    "ts": 1793641200,
+    "temperature_centi": 3059,
+    "humidity_centi": 4573
+  },
+  "live_example": {
+    "sensor_id": 501,
+    "ts": 1793790900,
+    "temperature_centi": 2452,
+    "humidity_centi": 6560,
+    "location": "Laboratório"
+  }
+}
